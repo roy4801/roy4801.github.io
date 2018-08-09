@@ -11,7 +11,7 @@ function FindProxyForURL(url, host)
         || shExpMatch(url, "pan.baidu.com/pcloud/*"))
             return "DIRECT";
         else
-            return "PROXY  45.125.32.181:3128";
+            return "PROXY  219.141.153.2:8080";
     }
     else
         return "DIRECT";
