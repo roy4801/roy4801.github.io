@@ -9,10 +9,10 @@ function FindProxyForURL(url, host)
         || shExpMatch(url, "pan.baidu.com/share/list*")
         || shExpMatch(url, "pan.baidu.com/share/verify*")
         || shExpMatch(url, "pan.baidu.com/pcloud/*")
-        || shExpMatch(url, "pcs.baidu.com/*))
+        || shExpMatch(url, "pcs.baidu.com/*"))
             return "DIRECT";
         else
-            return "PROXY  219.141.153.2:8080";
+            return "PROXY  39.104.189.169:8080";
     }
     else
         return "DIRECT";
