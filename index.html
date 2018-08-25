@@ -67,6 +67,242 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-tmux 基本使用" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/08/25/tmux 基本使用/" class="article-date">
+  <time datetime="2018-08-25T12:45:19.000Z" itemprop="datePublished">2018-08-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/25/tmux 基本使用/">tmux 基本使用</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <!-- Table of Contents -->
+        
+        <h2 id="tmux-基本使用"><a href="#tmux-基本使用" class="headerlink" title="tmux 基本使用"></a>tmux 基本使用</h2><h3 id="Terminal-MUltipleXer"><a href="#Terminal-MUltipleXer" class="headerlink" title="Terminal MUltipleXer"></a>Terminal MUltipleXer</h3><ul>
+<li><p>名稱:<code>terminal</code>的多工器</p>
+</li>
+<li><p>在一個terminal視窗下開啟多個視窗或是區塊(pane)，並且可以快速地切換不同的tmux視窗，且<strong>與unix工具契合</strong>，是個<strong>提高生產力</strong>的工具。</p>
+</li>
+</ul>
+<blockquote>
+<p>就像sublime的group<br>或是iTerm的tab跟split<br>[name=roy4801]</p>
+</blockquote>
+<p><img src="https://www.hamvocke.com/assets/img/uploads/tmux.png" alt=""></p>
+<blockquote>
+<p>使用中的tmux</p>
+</blockquote>
+<h3 id="安裝"><a href="#安裝" class="headerlink" title="安裝"></a>安裝</h3><ul>
+<li><p>macos</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew install tmux</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>msys2</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ pacman -S tmux</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>apt</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt install tmux</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>安裝完成後到家目錄下建立<code>.tmux.conf</code>設定檔<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ touch ~/.tmux.conf</span><br></pre></td></tr></table></figure></p>
+<p><a href="https://pastebin.com/bM01dyJa" target="_blank" rel="noopener">設定檔範例</a></p>
+<blockquote>
+<p>設定檔範例<a href="http://mropengate.blogspot.com/2017/12/tmux.html" target="_blank" rel="noopener">取自Mr.opengate</a></p>
+</blockquote>
+<h3 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h3><h4 id="在開始使用之前，要知道一些tmux的概念"><a href="#在開始使用之前，要知道一些tmux的概念" class="headerlink" title="在開始使用之前，要知道一些tmux的概念:"></a>在開始使用之前，要知道一些tmux的概念:</h4><ul>
+<li>會話(<code>Session</code>) : 視窗的集合。</li>
+<li>視窗(<code>Window</code>)  : 覆蓋整個terminal的視窗。</li>
+<li>區塊(<code>Pane</code>)    : 執行程式的地方。</li>
+</ul>
+<p><img src="https://3.bp.blogspot.com/-VWISLRT_Ppw/WjuPq-03itI/AAAAAAABW5g/YOnQ9zNxCnkhMaALcWucsVhAd-srLsoRgCLcBGAs/s1600/tmux-concept.png" alt=""></p>
+<h4 id="開始使用"><a href="#開始使用" class="headerlink" title="開始使用"></a>開始使用</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ tmux</span><br></pre></td></tr></table></figure>
+<h4 id="按鍵說明"><a href="#按鍵說明" class="headerlink" title="按鍵說明"></a>按鍵說明</h4><ul>
+<li>在<code>tmux</code>中，快捷鍵都是要先按<code>&lt;prefix key&gt; + 其他按鍵</code><br><code>tmux</code>預設是<code>ctrl + b</code>，但剛剛的<code>.tmux.conf</code>把<code>&lt;prefix key&gt;</code>改成了<code>Ctrl + a</code><br>  <img src="https://imgur.com/BTvPZpp.png" alt=""></li>
+</ul>
+<h5 id="視窗-Window"><a href="#視窗-Window" class="headerlink" title="視窗(Window)"></a>視窗(Window)</h5><table>
+<thead>
+<tr>
+<th>快捷鍵</th>
+<th>說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;prefix&gt; c</code></td>
+<td>開新視窗</td>
+</tr>
+<tr>
+<td><code>&lt;prefix&gt; &amp;</code></td>
+<td>關閉視窗</td>
+</tr>
+<tr>
+<td><code>&lt;prefix&gt; 0~9</code></td>
+<td>切換至指定視窗</td>
+</tr>
+<tr>
+<td><code>&lt;prefix&gt; n</code></td>
+<td>切換到下一個視窗 (next)</td>
+</tr>
+<tr>
+<td><code>&lt;prefix&gt; p</code></td>
+<td>切換到上一個視窗 (previous)</td>
+</tr>
+<tr>
+<td><code>&lt;prefix&gt; f</code></td>
+<td>找尋指定 pattern 並跳到該視窗</td>
+</tr>
+<tr>
+<td><code>&lt;prefix&gt; ,</code></td>
+<td>命名視窗</td>
+</tr>
+</tbody>
+</table>
+<h5 id="區塊-Pane"><a href="#區塊-Pane" class="headerlink" title="區塊(Pane)"></a>區塊(Pane)</h5><table>
+<thead>
+<tr>
+<th>快捷鍵</th>
+<th>說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>`<prefix></prefix></td>
+<td>`</td>
+<td>水平分割視窗</td>
+</tr>
+<tr>
+<td><code>&lt;prefix&gt; -</code></td>
+<td>垂直分割視窗</td>
+</tr>
+<tr>
+<td><code>&lt;prefix&gt; 方向鍵</code></td>
+<td>分割視窗大小調整</td>
+</tr>
+<tr>
+<td><code>&lt;prefix&gt; h,j,k,l (vim 方向鍵)</code></td>
+<td>切換游標所在區塊</td>
+</tr>
+<tr>
+<td><code>&lt;prefix&gt; space</code></td>
+<td>重新佈局分割視窗，內建多種佈局。</td>
+</tr>
+<tr>
+<td><code>&lt;prefix&gt; x</code></td>
+<td>關閉當前面板</td>
+</tr>
+<tr>
+<td><code>&lt;prefix&gt; q</code></td>
+<td>顯示面板編號</td>
+</tr>
+<tr>
+<td><code>&lt;prefix&gt; {</code></td>
+<td>交換面板位置（向前）</td>
+</tr>
+<tr>
+<td><code>&lt;prefix&gt; }</code></td>
+<td>交換面板位置（向後）</td>
+</tr>
+</tbody>
+</table>
+<h5 id="操作tmux"><a href="#操作tmux" class="headerlink" title="操作tmux"></a>操作tmux</h5><table>
+<thead>
+<tr>
+<th>快捷鍵</th>
+<th>說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;prefix&gt; d</code></td>
+<td>將目前的 session 放到背景執行 (detach)</td>
+</tr>
+<tr>
+<td><code>&lt;prefix&gt; s</code></td>
+<td>切換 session</td>
+</tr>
+<tr>
+<td><code>&lt;prefix&gt; [</code></td>
+<td>進入複製模式</td>
+</tr>
+<tr>
+<td><code>&lt;prefix&gt; :</code></td>
+<td>進入命令模式</td>
+</tr>
+<tr>
+<td><code>&lt;prefix&gt; ?</code></td>
+<td>查詢快捷鍵</td>
+</tr>
+</tbody>
+</table>
+<h5 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h5><p>在<code>&lt;prefix&gt; :</code>中輸入或是在shell中輸入都可</p>
+<table>
+<thead>
+<tr>
+<th>快捷鍵</th>
+<th>說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>tmux</code></td>
+<td>啟動</td>
+</tr>
+<tr>
+<td><code>tmux ls</code></td>
+<td>列出所有 session</td>
+</tr>
+<tr>
+<td><code>tmux detach</code></td>
+<td>背景執行</td>
+</tr>
+<tr>
+<td><code>tmux attach -t [num]</code></td>
+<td>回到第 [num] 號 session</td>
+</tr>
+<tr>
+<td><code>tmux kill-session -t [num]</code></td>
+<td>關閉第 [num] 號 session</td>
+</tr>
+<tr>
+<td><code>tmux kill-session -a</code></td>
+<td>關閉除了自己的所有 session</td>
+</tr>
+</tbody>
+</table>
+<h2 id="參考"><a href="#參考" class="headerlink" title="參考"></a>參考</h2><p>作弊紙<br><a href="http://tmuxcheatsheet.com/" target="_blank" rel="noopener">http://tmuxcheatsheet.com/</a></p>
+<p>終端機管理工具：tmux<br><a href="http://mropengate.blogspot.com/2017/12/tmux.html" target="_blank" rel="noopener">http://mropengate.blogspot.com/2017/12/tmux.html</a></p>
+<p>A Quick and Easy Guide to tmux<br><a href="https://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/" target="_blank" rel="noopener">https://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://roy4801.github.io/2018/08/25/tmux 基本使用/" data-id="cjl9f619a0004vbtkmvzt3k9y" class="article-share-link">Share</a>
+      
+      
+        <a href="http://roy4801.github.io/2018/08/25/tmux 基本使用/#disqus_thread" class="article-comment-link">留言</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/">Linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/教學/">教學</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+ 
+
+
+  
     <article id="post-ssh到linux(ubuntu)上無法輸入中文問題" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/08/25/ssh到linux(ubuntu)上無法輸入中文問題/" class="article-date">
@@ -108,7 +344,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://roy4801.github.io/2018/08/25/ssh到linux(ubuntu)上無法輸入中文問題/" data-id="cjl92lvjr0000uktkitcek3om" class="article-share-link">Share</a>
+      <a data-url="http://roy4801.github.io/2018/08/25/ssh到linux(ubuntu)上無法輸入中文問題/" data-id="cjl9f61990003vbtksuo4e17e" class="article-share-link">Share</a>
       
       
         <a href="http://roy4801.github.io/2018/08/25/ssh到linux(ubuntu)上無法輸入中文問題/#disqus_thread" class="article-comment-link">留言</a>
@@ -176,7 +412,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://roy4801.github.io/2018/08/23/C++ next_permutation:perv_permutation用法/" data-id="cjl92lvjz0001uktkr8j9a7s3" class="article-share-link">Share</a>
+      <a data-url="http://roy4801.github.io/2018/08/23/C++ next_permutation:perv_permutation用法/" data-id="cjl9f618x0000vbtkrab12sx6" class="article-share-link">Share</a>
       
       
         <a href="http://roy4801.github.io/2018/08/23/C++ next_permutation:perv_permutation用法/#disqus_thread" class="article-comment-link">留言</a>
@@ -240,7 +476,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://roy4801.github.io/2018/08/04/在macos 如何build zbarimg/" data-id="cjl92lvk70004uktkqotdzb9x" class="article-share-link">Share</a>
+      <a data-url="http://roy4801.github.io/2018/08/04/在macos 如何build zbarimg/" data-id="cjl9f619b0005vbtkmfdgermt" class="article-share-link">Share</a>
       
       
         <a href="http://roy4801.github.io/2018/08/04/在macos 如何build zbarimg/#disqus_thread" class="article-comment-link">留言</a>
@@ -286,7 +522,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://roy4801.github.io/2018/06/20/hello-world/" data-id="cjl92lvk50003uktk6lglfig1" class="article-share-link">Share</a>
+      <a data-url="http://roy4801.github.io/2018/06/20/hello-world/" data-id="cjl9f61930001vbtkc5qdjyqa" class="article-share-link">Share</a>
       
       
         <a href="http://roy4801.github.io/2018/06/20/hello-world/#disqus_thread" class="article-comment-link">留言</a>
@@ -335,7 +571,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title tagcloud">標籤雲</h3>
     <div class="widget tagcloud">
-      <a href="/tags/C/" style="font-size: 14px;">C++</a> <a href="/tags/Linux/" style="font-size: 14px;">Linux</a> <a href="/tags/STL/" style="font-size: 14px;">STL</a> <a href="/tags/ctf-tools/" style="font-size: 14px;">ctf tools</a> <a href="/tags/其他/" style="font-size: 14px;">其他</a> <a href="/tags/教學/" style="font-size: 25px;">教學</a> <a href="/tags/程式/" style="font-size: 19.5px;">程式</a>
+      <a href="/tags/C/" style="font-size: 14px;">C++</a> <a href="/tags/Linux/" style="font-size: 19.5px;">Linux</a> <a href="/tags/STL/" style="font-size: 14px;">STL</a> <a href="/tags/ctf-tools/" style="font-size: 14px;">ctf tools</a> <a href="/tags/其他/" style="font-size: 14px;">其他</a> <a href="/tags/教學/" style="font-size: 25px;">教學</a> <a href="/tags/程式/" style="font-size: 19.5px;">程式</a>
     </div>
   </div>
 
@@ -345,6 +581,10 @@
     <h3 class="widget-title recent-posts">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2018/08/25/tmux 基本使用/">tmux 基本使用</a>
+          </li>
         
           <li>
             <a href="/2018/08/25/ssh到linux(ubuntu)上無法輸入中文問題/">ssh到linux(ubuntu)上無法輸入中文問題</a>
@@ -371,7 +611,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title archive">彙整</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
