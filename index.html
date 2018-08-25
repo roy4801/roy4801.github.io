@@ -67,6 +67,63 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-ssh到linux(ubuntu)上無法輸入中文問題" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/08/25/ssh到linux(ubuntu)上無法輸入中文問題/" class="article-date">
+  <time datetime="2018-08-24T16:38:03.000Z" itemprop="datePublished">2018-08-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/25/ssh到linux(ubuntu)上無法輸入中文問題/">ssh到linux(ubuntu)上無法輸入中文問題</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <!-- Table of Contents -->
+        
+        <h2 id="ssh到linux-ubuntu-上無法輸入中文問題"><a href="#ssh到linux-ubuntu-上無法輸入中文問題" class="headerlink" title="ssh到linux(ubuntu)上無法輸入中文問題"></a>ssh到linux(ubuntu)上無法輸入中文問題</h2><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>在前幾個星期，筆者被windows折磨（各種工具無法在windows上使用），所以索性將PC灌成Ubuntu，但在ssh進入ubuntu上卻遇到了無法輸入中文的問題。</p>
+<p>連入ssh時可能會注意到一行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-bash: warning: setlocale: LC_ALL: cannot change locale (zh_TW.UTF-8)</span><br></pre></td></tr></table></figure></p>
+<p>原因是ssh在連上主機時會將本地的LC_*環境變數自動設定到遠端主機上，而如果遠端主機不支援該語系時就會出現「<code>-bash: warning: setlocale: LC_ALL: cannot change locale</code>」的錯誤。</p>
+<p>ssh的設定檔可以在<code>/etc/ssh/</code>中找到。</p>
+<h3 id="解決"><a href="#解決" class="headerlink" title="解決"></a>解決</h3><p>更改語系成<code>zh_TW.UTF-8</code></p>
+<p>先用<code>locale -a</code>查看有沒有<code>zh_TW.utf8</code>的選項，如果沒有則使用<code>locale-gen</code>產生新的語系+編碼。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo locale-gen zh_TW.UTF-8</span><br></pre></td></tr></table></figure>
+<p>之後在更改環境變數</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">export</span> LC_ALL=<span class="string">"zh_TW.UTF-8"</span></span><br><span class="line">$ <span class="built_in">export</span> LANG=<span class="string">"zh_TW.UTF-8"</span></span><br></pre></td></tr></table></figure>
+<h2 id="參考"><a href="#參考" class="headerlink" title="參考"></a>參考</h2><p>warning: setlocale: LC_ALL: cannot change locale<br><a href="https://askubuntu.com/questions/114759/warning-setlocale-lc-all-cannot-change-locale" target="_blank" rel="noopener">https://askubuntu.com/questions/114759/warning-setlocale-lc-all-cannot-change-locale</a></p>
+<p>bash: warning: setlocale: LC_ALL: cannot change locale<br><a href="https://coder.tw/?p=7490" target="_blank" rel="noopener">https://coder.tw/?p=7490</a></p>
+<p>[Mac] SSH 到 Linux 機器時，出現 cannot change locale (UTF-8) 訊息<br><a href="https://ephrain.net/mac-ssh-%E5%88%B0-linux-%E6%A9%9F%E5%99%A8%E6%99%82%EF%BC%8C%E5%87%BA%E7%8F%BE-cannot-change-locale-utf-8-%E8%A8%8A%E6%81%AF/" target="_blank" rel="noopener">https://ephrain.net/mac-ssh-%E5%88%B0-linux-%E6%A9%9F%E5%99%A8%E6%99%82%EF%BC%8C%E5%87%BA%E7%8F%BE-cannot-change-locale-utf-8-%E8%A8%8A%E6%81%AF/</a></p>
+<p>[Ubuntu] 如何設定語系locale<br><a href="http://www.davidpai.tw/ubuntu/2011/ubuntu-set-locale/" target="_blank" rel="noopener">http://www.davidpai.tw/ubuntu/2011/ubuntu-set-locale/</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://roy4801.github.io/2018/08/25/ssh到linux(ubuntu)上無法輸入中文問題/" data-id="cjl92lvjr0000uktkitcek3om" class="article-share-link">Share</a>
+      
+      
+        <a href="http://roy4801.github.io/2018/08/25/ssh到linux(ubuntu)上無法輸入中文問題/#disqus_thread" class="article-comment-link">留言</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/">Linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/教學/">教學</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+ 
+
+
+  
     <article id="post-C++ next_permutation:perv_permutation用法" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/08/23/C++ next_permutation:perv_permutation用法/" class="article-date">
@@ -119,7 +176,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://roy4801.github.io/2018/08/23/C++ next_permutation:perv_permutation用法/" data-id="cjl6mbccc0000oitklarknlbg" class="article-share-link">Share</a>
+      <a data-url="http://roy4801.github.io/2018/08/23/C++ next_permutation:perv_permutation用法/" data-id="cjl92lvjz0001uktkr8j9a7s3" class="article-share-link">Share</a>
       
       
         <a href="http://roy4801.github.io/2018/08/23/C++ next_permutation:perv_permutation用法/#disqus_thread" class="article-comment-link">留言</a>
@@ -183,7 +240,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://roy4801.github.io/2018/08/04/在macos 如何build zbarimg/" data-id="cjl6mbccm0003oitki55cywi0" class="article-share-link">Share</a>
+      <a data-url="http://roy4801.github.io/2018/08/04/在macos 如何build zbarimg/" data-id="cjl92lvk70004uktkqotdzb9x" class="article-share-link">Share</a>
       
       
         <a href="http://roy4801.github.io/2018/08/04/在macos 如何build zbarimg/#disqus_thread" class="article-comment-link">留言</a>
@@ -229,7 +286,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://roy4801.github.io/2018/06/20/hello-world/" data-id="cjl6mbccg0001oitk47hsm4ym" class="article-share-link">Share</a>
+      <a data-url="http://roy4801.github.io/2018/06/20/hello-world/" data-id="cjl92lvk50003uktk6lglfig1" class="article-share-link">Share</a>
       
       
         <a href="http://roy4801.github.io/2018/06/20/hello-world/#disqus_thread" class="article-comment-link">留言</a>
@@ -278,7 +335,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title tagcloud">標籤雲</h3>
     <div class="widget tagcloud">
-      <a href="/tags/C/" style="font-size: 14px;">C++</a> <a href="/tags/STL/" style="font-size: 14px;">STL</a> <a href="/tags/ctf-tools/" style="font-size: 14px;">ctf tools</a> <a href="/tags/其他/" style="font-size: 14px;">其他</a> <a href="/tags/教學/" style="font-size: 25px;">教學</a> <a href="/tags/程式/" style="font-size: 25px;">程式</a>
+      <a href="/tags/C/" style="font-size: 14px;">C++</a> <a href="/tags/Linux/" style="font-size: 14px;">Linux</a> <a href="/tags/STL/" style="font-size: 14px;">STL</a> <a href="/tags/ctf-tools/" style="font-size: 14px;">ctf tools</a> <a href="/tags/其他/" style="font-size: 14px;">其他</a> <a href="/tags/教學/" style="font-size: 25px;">教學</a> <a href="/tags/程式/" style="font-size: 19.5px;">程式</a>
     </div>
   </div>
 
@@ -288,6 +345,10 @@
     <h3 class="widget-title recent-posts">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2018/08/25/ssh到linux(ubuntu)上無法輸入中文問題/">ssh到linux(ubuntu)上無法輸入中文問題</a>
+          </li>
         
           <li>
             <a href="/2018/08/23/C++ next_permutation:perv_permutation用法/">next_permutation/perv_permutation用法</a>
@@ -310,7 +371,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title archive">彙整</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
