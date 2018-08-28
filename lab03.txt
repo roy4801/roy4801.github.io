@@ -1,0 +1,75 @@
++======================================+
+||   _           _        ___ ____    ||
+||  | |         | |      / _ \___ \   ||
+||  | |     __ _| |__   | | | |__) |  ||
+||  | |    / _` | '_ \  | | | |__ <   ||
+||  | |___| (_| | |_) | | |_| |__) |  ||
+||  |______\__,_|_.__/   \___/____/   ||
+||                                    ||
++======================================+
+NISRA Enlightened Linux Basics Lab 03
+
+
+==============================================================================
+# 1. Move your cursor with hjkl
+
+Instructions: Follow the line around the screen using h, j, k and l.
+|                                                                             
+|       .-------.                                                             
+|       |       |                                                             
+\_______/       |                                                             
+                |                                                             
+                |                                                             
+                \____.                                                        
+                     |    .-----------------.                                 
+                     |    |                 |                                 
+           .---------+----+----.            |                                 
+           \_________/    |    |            |                                 
+                          |    |            |                                 
+                          |    |            |                                 
+                          |    \________.   \________ Well done! Now scroll   
+                          |             |             down to #2.             
+                          |             |             with j.                 
+           from here      |             |                                     
+              ||          \_____________/                                     
+              \/           
+==============  ==============================================================
+                                                                               
+# 2. Practice in command-mode!                                                 
+                                                                               
+--- 2.1 Use `:q` to quit this file and repoen it again!                        
+                                                                               
+--- 2.2 Move your cursor to the asterisk below and `i`nsert some text as you wish.
+        Then, use `:wq` to save the file and quit.                             
+                                                                               
+*                                                    from here                 
+                                                        ||                     
+                                                        \/                     
+========================================================  ====================
+
+# 3. Delete a letter with `x`
+
+Move your cursor onto the letter you want to delete and press `x`
+There is a sentence below. Please delete the letters you don't want.
+
+* ~Welcomee to NNISRAA Enlightened 2018___ !
+  ^       ^    ^     ^                 ^^^
+
+
+==============================================================  ==============
+
+# 4. Jump in words!
+
+| w  |llllll|   2w    |     2W     |   2e    |   e   |     3e      |w|    w     |   w   |     E    |    2e  |
+Love Live! (Japanese: Rabu Raibu!) School Idol Project is a Japanese multimedia project co-developed by ASCII 
+*    *      *         *            *         *       *             * *          *       *          *        *
+
+|  w  |   W  |   4w,2W   |    W    |    2e   |   e  | 2e |    e    |   e  |   e   |
+Media Works' Dengeki G's Magazine, music label Lantis, and animation studio Sunrise.
+*     *      *           *         *         *      *    *         *      *       *
+
+| b  |  2b   |     2b     |  b |    2b     |  B   |    2b   |    b    |   2b    |  2b   |  b   |   2b   |
+This line is specific for jump backword in words. Because I basically forgot it until I finish this part.<<--- This line start
+*    *       *            *    *           *      *         *         *         *       *      *        *
+
+================================  ============================================
