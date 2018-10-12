@@ -13,7 +13,7 @@ function FindProxyForURL(url, host)
         || shExpMatch(url, "hm.baidu.com/*"))
             return "DIRECT";
         else
-            return "PROXY  39.104.134.135:8080";
+            return "PROXY  103.106.239.2:8080";
     }
     else
         return "DIRECT";
