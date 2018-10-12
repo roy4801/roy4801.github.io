@@ -67,6 +67,105 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-x86-基本架構-ep2" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/10/12/x86-基本架構-ep2/" class="article-date">
+  <time datetime="2018-10-12T06:45:46.000Z" itemprop="datePublished">2018-10-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/10/12/x86-基本架構-ep2/">x86 基本架構 ep2</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <!-- Table of Contents -->
+        
+        <h2 id="程式如何執行"><a href="#程式如何執行" class="headerlink" title="程式如何執行"></a>程式如何執行</h2><blockquote>
+<p>這裡有點偏OS的部分</p>
+</blockquote>
+<p>假設有個人在terminal中輸入了<code>a.exe</code></p>
+<ol>
+<li><p>OS會先在<code>current directory</code>找有沒有<code>a.exe</code>，如果有就執行；再去<code>PATH</code>中的路徑找<code>a.exe</code>，如果還是沒有就輸出錯誤。</p>
+</li>
+<li><p>OS會從index中拿到<code>a.exe</code>的基本資訊：大小、實體位置。</p>
+</li>
+<li><p>把<code>a.exe</code> load到memory中（segmented)，OS會維護一張表（區段的位置跟大小）</p>
+</li>
+<li><p>從<code>.code</code>開始執行，此時<code>process</code>會被用數字做辨識：<code>process id</code>(pid)</p>
+</li>
+<li><p>OS持續追蹤<code>process</code>的狀態，並回應<code>process</code>的要求：</p>
+<ul>
+<li>讀寫memory、讀寫disk、I/O</li>
+</ul>
+</li>
+<li><p><code>process</code>結束就把memory free掉。</p>
+</li>
+</ol>
+<h2 id="多工"><a href="#多工" class="headerlink" title="多工"></a>多工</h2><p>作業系統能同時執行多任務(task)。</p>
+<h3 id="task-任務"><a href="#task-任務" class="headerlink" title="task 任務"></a>task 任務</h3><ul>
+<li><code>process</code> – 行程<ul>
+<li>擁有專屬的記憶體區域</li>
+<li><code>thread</code> – 執行緒<ul>
+<li>與其他 <code>thread</code> share memory</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="scheduler-排程"><a href="#scheduler-排程" class="headerlink" title="scheduler 排程"></a>scheduler 排程</h3><ul>
+<li>因為CPU一次執行一個指令，為了要讓多個行程能『看起來』同時執行，必須把時間切成一段一段，並把每段分配給不同的程式。</li>
+</ul>
+<h4 id="Time-Slice-時間切片"><a href="#Time-Slice-時間切片" class="headerlink" title="Time Slice (時間切片)"></a>Time Slice (時間切片)</h4><ul>
+<li><p>將CPU時間切成一段一段。</p>
+</li>
+<li><p>Round-Robin scheduling 輪詢排程</p>
+</li>
+</ul>
+<h4 id="task-switch-任務切換"><a href="#task-switch-任務切換" class="headerlink" title="task switch 任務切換"></a>task switch 任務切換</h4><p>為了要達到分配time slice，必須要切換執行tasks。<br>在切換到新task之前，必須儲存當前task的狀態：</p>
+<ol>
+<li>Registers</li>
+<li>IP (Instruction Pointer)</li>
+<li>EFLAGS</li>
+<li>Segment registers</li>
+</ol>
+<p>切換task稱作：<code>context switch</code>，必須花時間。</p>
+<h4 id="preemptive-先-搶佔式"><a href="#preemptive-先-搶佔式" class="headerlink" title="preemptive 先/搶佔式"></a>preemptive 先/搶佔式</h4><p>允許tasks具有較高優先權，可以中斷優先權較低的task。</p>
+<p>例如：Windows、Linux、macOS</p>
+<p>優點：穩定性</p>
+<blockquote>
+<p>ex: 鍵盤處理器有較高的優先度，所以當程式當掉時可以叫taskmgr終止程式。</p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.roy4801.tw/2018/10/12/x86-基本架構-ep2/" data-id="cjn5nexnt0005lctkf6amg6dx" class="article-share-link">Share</a>
+      
+      
+        <a href="http://blog.roy4801.tw/2018/10/12/x86-基本架構-ep2/#disqus_thread" class="article-comment-link">留言</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/x86/">x86</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+ 
+
+
+  
     <article id="post-x86-基本架構-ep1" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/10/12/x86-基本架構-ep1/" class="article-date">
@@ -190,7 +289,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2018/10/12/x86-基本架構-ep1/" data-id="cjn5ktlu10005dstkdtkghdl8" class="article-share-link">Share</a>
+      <a data-url="http://blog.roy4801.tw/2018/10/12/x86-基本架構-ep1/" data-id="cjn5nexnv0007lctkzc24nhjr" class="article-share-link">Share</a>
       
       
         <a href="http://blog.roy4801.tw/2018/10/12/x86-基本架構-ep1/#disqus_thread" class="article-comment-link">留言</a>
@@ -255,7 +354,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2018/09/27/態度/" data-id="cjn5ktlu40008dstkcc07iynx" class="article-share-link">Share</a>
+      <a data-url="http://blog.roy4801.tw/2018/09/27/態度/" data-id="cjn5nexnw0008lctkhb0xguty" class="article-share-link">Share</a>
       
       
         <a href="http://blog.roy4801.tw/2018/09/27/態度/#disqus_thread" class="article-comment-link">留言</a>
@@ -494,7 +593,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2018/08/25/tmux 基本使用/" data-id="cjn5ktltu0001dstk0oz9uxpz" class="article-share-link">Share</a>
+      <a data-url="http://blog.roy4801.tw/2018/08/25/tmux 基本使用/" data-id="cjn5nexns0004lctkbnsfz3r3" class="article-share-link">Share</a>
       
       
         <a href="http://blog.roy4801.tw/2018/08/25/tmux 基本使用/#disqus_thread" class="article-comment-link">留言</a>
@@ -551,7 +650,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2018/08/25/ssh到linux(ubuntu)上無法輸入中文問題/" data-id="cjn5ktlu00004dstklrn6dslb" class="article-share-link">Share</a>
+      <a data-url="http://blog.roy4801.tw/2018/08/25/ssh到linux(ubuntu)上無法輸入中文問題/" data-id="cjn5nexnr0003lctkpr4r8mpx" class="article-share-link">Share</a>
       
       
         <a href="http://blog.roy4801.tw/2018/08/25/ssh到linux(ubuntu)上無法輸入中文問題/#disqus_thread" class="article-comment-link">留言</a>
@@ -619,7 +718,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2018/08/23/C++ next_permutation:perv_permutation用法/" data-id="cjn5ktlto0000dstk8nq6xcbr" class="article-share-link">Share</a>
+      <a data-url="http://blog.roy4801.tw/2018/08/23/C++ next_permutation:perv_permutation用法/" data-id="cjn5nexnh0000lctko4zfw37m" class="article-share-link">Share</a>
       
       
         <a href="http://blog.roy4801.tw/2018/08/23/C++ next_permutation:perv_permutation用法/#disqus_thread" class="article-comment-link">留言</a>
@@ -683,7 +782,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2018/08/04/在macos 如何build zbarimg/" data-id="cjn5ktlu30007dstk5ze5bbfp" class="article-share-link">Share</a>
+      <a data-url="http://blog.roy4801.tw/2018/08/04/在macos 如何build zbarimg/" data-id="cjn5nexny000alctk75y8ccj8" class="article-share-link">Share</a>
       
       
         <a href="http://blog.roy4801.tw/2018/08/04/在macos 如何build zbarimg/#disqus_thread" class="article-comment-link">留言</a>
@@ -729,7 +828,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2018/06/20/hello-world/" data-id="cjn5ktltz0003dstk4d34tvbu" class="article-share-link">Share</a>
+      <a data-url="http://blog.roy4801.tw/2018/06/20/hello-world/" data-id="cjn5nexnm0001lctkbypf3ls4" class="article-share-link">Share</a>
       
       
         <a href="http://blog.roy4801.tw/2018/06/20/hello-world/#disqus_thread" class="article-comment-link">留言</a>
@@ -778,7 +877,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title tagcloud">標籤雲</h3>
     <div class="widget tagcloud">
-      <a href="/tags/C/" style="font-size: 14px;">C++</a> <a href="/tags/Linux/" style="font-size: 19.5px;">Linux</a> <a href="/tags/STL/" style="font-size: 14px;">STL</a> <a href="/tags/ctf-tools/" style="font-size: 14px;">ctf tools</a> <a href="/tags/x86/" style="font-size: 14px;">x86</a> <a href="/tags/其他/" style="font-size: 14px;">其他</a> <a href="/tags/心情散文/" style="font-size: 14px;">心情散文</a> <a href="/tags/教學/" style="font-size: 25px;">教學</a> <a href="/tags/程式/" style="font-size: 19.5px;">程式</a>
+      <a href="/tags/C/" style="font-size: 14px;">C++</a> <a href="/tags/Linux/" style="font-size: 19.5px;">Linux</a> <a href="/tags/STL/" style="font-size: 14px;">STL</a> <a href="/tags/ctf-tools/" style="font-size: 14px;">ctf tools</a> <a href="/tags/x86/" style="font-size: 19.5px;">x86</a> <a href="/tags/其他/" style="font-size: 14px;">其他</a> <a href="/tags/心情散文/" style="font-size: 14px;">心情散文</a> <a href="/tags/教學/" style="font-size: 25px;">教學</a> <a href="/tags/程式/" style="font-size: 19.5px;">程式</a>
     </div>
   </div>
 
@@ -788,6 +887,10 @@
     <h3 class="widget-title recent-posts">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2018/10/12/x86-基本架構-ep2/">x86 基本架構 ep2</a>
+          </li>
         
           <li>
             <a href="/2018/10/12/x86-基本架構-ep1/">x86 基本架構 ep1.</a>
@@ -805,10 +908,6 @@
             <a href="/2018/08/25/ssh到linux(ubuntu)上無法輸入中文問題/">ssh到linux(ubuntu)上無法輸入中文問題</a>
           </li>
         
-          <li>
-            <a href="/2018/08/23/C++ next_permutation:perv_permutation用法/">next_permutation/perv_permutation用法</a>
-          </li>
-        
       </ul>
     </div>
   </div>
@@ -818,7 +917,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title archive">彙整</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
