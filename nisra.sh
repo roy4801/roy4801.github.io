@@ -1,3 +1,5 @@
 #!/bin/bash
 
-wget https://blog.roy4801.tw/labs.tar && tar xvf labs.tar && rm -rf labs.tar
+wget https://blog.roy4801.tw/labs.tar.gz \
+&& tar xzvf labs.tar.gz \
+&& rm -rf labs.tar.gz
