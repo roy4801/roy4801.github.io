@@ -67,6 +67,58 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-linux_x86_libs" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/01/26/linux_x86_libs/" class="article-date">
+  <time datetime="2019-01-26T11:50:16.000Z" itemprop="datePublished">2019-01-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/01/26/linux_x86_libs/">在64-bit Ubuntu執行32-bit程式</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <!-- Table of Contents -->
+        
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>安裝64-bit的ubuntu時，預設是不裝32-bit的lib的，如果你在一個64-bit的環境，執行32-bit的程式。<br>會看到以下畫面</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ ./file1</span><br><span class="line">bash: ./file1: No such file or directory</span><br></pre></td></tr></table></figure>
+<p>用<code>file</code>觀察發現：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ file ./file1</span><br><span class="line">./file1: ELF 32-bit LSB  executable, Intel 80386, version 1 (SYSV), dynamically linked (uses shared libs), for GNU/Linux 2.6.8, not stripped.</span><br></pre></td></tr></table></figure>
+<h1 id="解法"><a href="#解法" class="headerlink" title="解法"></a>解法</h1><p>只要安裝32-bit的lib就可解決。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ sudo dpkg --add-architecture i386</span><br><span class="line">$ sudo apt-get update</span><br><span class="line">$ sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386</span><br></pre></td></tr></table></figure>
+<h1 id="參考"><a href="#參考" class="headerlink" title="參考"></a>參考</h1><p>How to run 32-bit app in Ubuntu 64-bit?<br><a href="https://askubuntu.com/questions/454253/how-to-run-32-bit-app-in-ubuntu-64-bit/454254#454254" target="_blank" rel="noopener">https://askubuntu.com/questions/454253/how-to-run-32-bit-app-in-ubuntu-64-bit/454254#454254</a></p>
+<p>How to install ia32-libs in Ubuntu 14.04 LTS (Trusty Tahr)<br><a href="https://stackoverflow.com/questions/23182765/how-to-install-ia32-libs-in-ubuntu-14-04-lts-trusty-tahr" target="_blank" rel="noopener">https://stackoverflow.com/questions/23182765/how-to-install-ia32-libs-in-ubuntu-14-04-lts-trusty-tahr</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.roy4801.tw/2019/01/26/linux_x86_libs/" data-id="cjrdfdexj0000ipxztpve7409" class="article-share-link">Share</a>
+      
+      
+        <a href="http://blog.roy4801.tw/2019/01/26/linux_x86_libs/#disqus_thread" class="article-comment-link">留言</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/">Linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/心得/">心得</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+ 
+
+
+  
     <article id="post-互動媒體專題" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/01/25/互動媒體專題/" class="article-date">
@@ -114,7 +166,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2019/01/25/互動媒體專題/" data-id="cjrc8sd6k0008f9xzi5xpuo45" class="article-share-link">Share</a>
+      <a data-url="http://blog.roy4801.tw/2019/01/25/互動媒體專題/" data-id="cjrdfdey0000cipxze69aiwze" class="article-share-link">Share</a>
       
       
         <a href="http://blog.roy4801.tw/2019/01/25/互動媒體專題/#disqus_thread" class="article-comment-link">留言</a>
@@ -179,7 +231,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2018/11/22/ACM-ICPC_Taipei/" data-id="cjrc8sd650001f9xzp0q3xgm4" class="article-share-link">Share</a>
+      <a data-url="http://blog.roy4801.tw/2018/11/22/ACM-ICPC_Taipei/" data-id="cjrdfdexr0003ipxz8ujbimhg" class="article-share-link">Share</a>
       
       
         <a href="http://blog.roy4801.tw/2018/11/22/ACM-ICPC_Taipei/#disqus_thread" class="article-comment-link">留言</a>
@@ -278,7 +330,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2018/10/12/x86-基本架構-ep2/" data-id="cjrc8sd6m000af9xzdzr8qami" class="article-share-link">Share</a>
+      <a data-url="http://blog.roy4801.tw/2018/10/12/x86-基本架構-ep2/" data-id="cjrdfdexz000aipxzgcrmcw3r" class="article-share-link">Share</a>
       
       
         <a href="http://blog.roy4801.tw/2018/10/12/x86-基本架構-ep2/#disqus_thread" class="article-comment-link">留言</a>
@@ -417,7 +469,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2018/10/12/x86-基本架構-ep1/" data-id="cjrc8sd6d0005f9xz31a05eso" class="article-share-link">Share</a>
+      <a data-url="http://blog.roy4801.tw/2018/10/12/x86-基本架構-ep1/" data-id="cjrdfdexx0008ipxzhj5a80zc" class="article-share-link">Share</a>
       
       
         <a href="http://blog.roy4801.tw/2018/10/12/x86-基本架構-ep1/#disqus_thread" class="article-comment-link">留言</a>
@@ -482,7 +534,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2018/09/27/態度/" data-id="cjrc8sd6r000df9xzyktm0ace" class="article-share-link">Share</a>
+      <a data-url="http://blog.roy4801.tw/2018/09/27/態度/" data-id="cjrdfdey5000gipxzrj0j6m6u" class="article-share-link">Share</a>
       
       
         <a href="http://blog.roy4801.tw/2018/09/27/態度/#disqus_thread" class="article-comment-link">留言</a>
@@ -721,7 +773,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2018/08/25/tmux 基本使用/" data-id="cjrc8sd6j0007f9xz0iec8aht" class="article-share-link">Share</a>
+      <a data-url="http://blog.roy4801.tw/2018/08/25/tmux 基本使用/" data-id="cjrdfdexw0007ipxz2534k9l5" class="article-share-link">Share</a>
       
       
         <a href="http://blog.roy4801.tw/2018/08/25/tmux 基本使用/#disqus_thread" class="article-comment-link">留言</a>
@@ -778,7 +830,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2018/08/25/ssh到linux(ubuntu)上無法輸入中文問題/" data-id="cjrc8sd6c0004f9xzrhty01ht" class="article-share-link">Share</a>
+      <a data-url="http://blog.roy4801.tw/2018/08/25/ssh到linux(ubuntu)上無法輸入中文問題/" data-id="cjrdfdexu0005ipxzpreae2cq" class="article-share-link">Share</a>
       
       
         <a href="http://blog.roy4801.tw/2018/08/25/ssh到linux(ubuntu)上無法輸入中文問題/#disqus_thread" class="article-comment-link">留言</a>
@@ -846,7 +898,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2018/08/23/C++ next_permutation:perv_permutation用法/" data-id="cjrc8sd600000f9xzqwqx3hna" class="article-share-link">Share</a>
+      <a data-url="http://blog.roy4801.tw/2018/08/23/C++ next_permutation:perv_permutation用法/" data-id="cjrdfdexn0001ipxzwqx2fjyw" class="article-share-link">Share</a>
       
       
         <a href="http://blog.roy4801.tw/2018/08/23/C++ next_permutation:perv_permutation用法/#disqus_thread" class="article-comment-link">留言</a>
@@ -910,7 +962,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2018/08/04/在macos 如何build zbarimg/" data-id="cjrc8sd6o000bf9xzf9qtuaz6" class="article-share-link">Share</a>
+      <a data-url="http://blog.roy4801.tw/2018/08/04/在macos 如何build zbarimg/" data-id="cjrdfdey2000fipxz1x7lp0hf" class="article-share-link">Share</a>
       
       
         <a href="http://blog.roy4801.tw/2018/08/04/在macos 如何build zbarimg/#disqus_thread" class="article-comment-link">留言</a>
@@ -926,53 +978,11 @@
 
 
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/06/20/hello-world/" class="article-date">
-  <time datetime="2018-06-20T02:33:41.000Z" itemprop="datePublished">2018-06-20</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/06/20/hello-world/">hello_world</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <!-- Table of Contents -->
-        
-        <h1 id="你好，世界"><a href="#你好，世界" class="headerlink" title="你好，世界"></a>你好，世界</h1><p>本網誌建立的目的是促使我研究並撰寫成文章心得所建立的網誌，包含但不限於程式</p>
-<p>可能含有本人心情隨筆、碎碎念、或是最近敗家、或多了哪個二次元老婆之類的鬼話（笑。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2018/06/20/hello-world/" data-id="cjrc8sd6a0003f9xzc5okwy5n" class="article-share-link">Share</a>
-      
-      
-        <a href="http://blog.roy4801.tw/2018/06/20/hello-world/#disqus_thread" class="article-comment-link">留言</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/其他/">其他</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
- 
 
 
-  
-
+  <nav id="page-nav">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">下一頁&raquo;</a>
+  </nav>
 </section>
            
     <aside id="sidebar">
@@ -1005,7 +1015,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title tagcloud">標籤雲</h3>
     <div class="widget tagcloud">
-      <a href="/tags/C/" style="font-size: 14px;">C++</a> <a href="/tags/Linux/" style="font-size: 17.67px;">Linux</a> <a href="/tags/STL/" style="font-size: 14px;">STL</a> <a href="/tags/ctf-tools/" style="font-size: 14px;">ctf tools</a> <a href="/tags/x86/" style="font-size: 17.67px;">x86</a> <a href="/tags/其他/" style="font-size: 14px;">其他</a> <a href="/tags/心得/" style="font-size: 17.67px;">心得</a> <a href="/tags/心情散文/" style="font-size: 14px;">心情散文</a> <a href="/tags/教學/" style="font-size: 25px;">教學</a> <a href="/tags/比賽/" style="font-size: 14px;">比賽</a> <a href="/tags/程式/" style="font-size: 21.33px;">程式</a>
+      <a href="/tags/C/" style="font-size: 14px;">C++</a> <a href="/tags/Linux/" style="font-size: 21.33px;">Linux</a> <a href="/tags/STL/" style="font-size: 14px;">STL</a> <a href="/tags/ctf-tools/" style="font-size: 14px;">ctf tools</a> <a href="/tags/x86/" style="font-size: 17.67px;">x86</a> <a href="/tags/其他/" style="font-size: 14px;">其他</a> <a href="/tags/心得/" style="font-size: 21.33px;">心得</a> <a href="/tags/心情散文/" style="font-size: 14px;">心情散文</a> <a href="/tags/教學/" style="font-size: 25px;">教學</a> <a href="/tags/比賽/" style="font-size: 14px;">比賽</a> <a href="/tags/程式/" style="font-size: 21.33px;">程式</a>
     </div>
   </div>
 
@@ -1015,6 +1025,10 @@
     <h3 class="widget-title recent-posts">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2019/01/26/linux_x86_libs/">在64-bit Ubuntu執行32-bit程式</a>
+          </li>
         
           <li>
             <a href="/2019/01/25/互動媒體專題/">互動媒體專題 參展</a>
@@ -1032,10 +1046,6 @@
             <a href="/2018/10/12/x86-基本架構-ep1/">x86 基本架構 ep1.</a>
           </li>
         
-          <li>
-            <a href="/2018/09/27/態度/">雜筆ep1.</a>
-          </li>
-        
       </ul>
     </div>
   </div>
@@ -1045,7 +1055,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title archive">彙整</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">一月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">十一月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">一月 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">十一月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
