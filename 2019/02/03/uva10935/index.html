@@ -3,20 +3,20 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>x86 基本架構 ep1. | r0yblog</title>
+  <title>Uva 10935 - Throwing cards away I | r0yblog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="CPU(Centrual Processing Unit) 中央處理器  暫存器(register) 儲存運算/待運算的數值/位址   Clock 同步訊號   控制單元CU (Control Unit) 控制操作順序   ALU (Arithmetic Logic Unit) 算術邏輯單元 做數學運算(+, -)/邏輯運算(and, or, not)     CPU與Memory跟I/O裝置之間">
-<meta name="keywords" content="x86">
+  <meta name="description" content="題目 Problem有一疊卡，有標數字從$1$到$n$（頂端是$1$），每次從頂端丟掉一張卡片，再把一張卡片放到底部，直到卡片只剩一張。">
+<meta name="keywords" content="Uva,解題紀錄">
 <meta property="og:type" content="article">
-<meta property="og:title" content="x86 基本架構 ep1.">
-<meta property="og:url" content="http://blog.roy4801.tw/2018/10/12/x86-基本架構-ep1/index.html">
+<meta property="og:title" content="Uva 10935 - Throwing cards away I">
+<meta property="og:url" content="http://blog.roy4801.tw/2019/02/03/uva10935/index.html">
 <meta property="og:site_name" content="r0yblog">
-<meta property="og:description" content="CPU(Centrual Processing Unit) 中央處理器  暫存器(register) 儲存運算/待運算的數值/位址   Clock 同步訊號   控制單元CU (Control Unit) 控制操作順序   ALU (Arithmetic Logic Unit) 算術邏輯單元 做數學運算(+, -)/邏輯運算(and, or, not)     CPU與Memory跟I/O裝置之間">
+<meta property="og:description" content="題目 Problem有一疊卡，有標數字從$1$到$n$（頂端是$1$），每次從頂端丟掉一張卡片，再把一張卡片放到底部，直到卡片只剩一張。">
 <meta property="og:locale" content="zh-TW">
-<meta property="og:updated_time" content="2019-02-01T17:25:30.000Z">
+<meta property="og:updated_time" content="2019-02-02T16:37:18.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="x86 基本架構 ep1.">
-<meta name="twitter:description" content="CPU(Centrual Processing Unit) 中央處理器  暫存器(register) 儲存運算/待運算的數值/位址   Clock 同步訊號   控制單元CU (Control Unit) 控制操作順序   ALU (Arithmetic Logic Unit) 算術邏輯單元 做數學運算(+, -)/邏輯運算(and, or, not)     CPU與Memory跟I/O裝置之間">
+<meta name="twitter:title" content="Uva 10935 - Throwing cards away I">
+<meta name="twitter:description" content="題目 Problem有一疊卡，有標數字從$1$到$n$（頂端是$1$），每次從頂端丟掉一張卡片，再把一張卡片放到底部，直到卡片只剩一張。">
   
     <link rel="alternate" href="/atom.xml" title="r0yblog" type="application/atom+xml">
   
@@ -84,14 +84,14 @@ ga('send', 'pageview');
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-x86-基本架構-ep1" class="article article-type-post" itemscope="" itemprop="blogPost">
+        <section id="main"><article id="post-uva10935" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/10/12/x86-基本架構-ep1/" class="article-date">
-  <time datetime="2018-10-12T05:32:11.000Z" itemprop="datePublished">2018-10-12</time>
+    <a href="/2019/02/03/uva10935/" class="article-date">
+  <time datetime="2019-02-02T16:22:42.000Z" itemprop="datePublished">2019-02-03</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/學習紀錄/">學習紀錄</a>►<a class="article-category-link" href="/categories/學習紀錄/組合語言/">組合語言</a>
+    <a class="article-category-link" href="/categories/解題區/">解題區</a>►<a class="article-category-link" href="/categories/解題區/Uva/">Uva</a>
   </div>
 
   </div>
@@ -102,7 +102,7 @@ ga('send', 'pageview');
         
   
     <h1 class="article-title" itemprop="name">
-      x86 基本架構 ep1.
+      Uva 10935 - Throwing cards away I
     </h1>
   
 
@@ -112,112 +112,23 @@ ga('send', 'pageview');
       
         <!-- Table of Contents -->
         
-        <h2 id="CPU-Centrual-Processing-Unit"><a href="#CPU-Centrual-Processing-Unit" class="headerlink" title="CPU(Centrual Processing Unit)"></a>CPU(Centrual Processing Unit)</h2><ul>
-<li><p>中央處理器</p>
-<ul>
-<li>暫存器(register)<ul>
-<li>儲存運算/待運算的數值/位址</li>
-</ul>
-</li>
-<li>Clock<ul>
-<li>同步訊號</li>
-</ul>
-</li>
-<li>控制單元CU (Control Unit)<ul>
-<li>控制操作順序</li>
-</ul>
-</li>
-<li>ALU (Arithmetic Logic Unit) 算術邏輯單元<ul>
-<li>做數學運算(+, -)/邏輯運算(and, or, not)</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>CPU與Memory跟I/O裝置之間以 <strong>Bus(匯流排)</strong> 連接著</p>
-<ul>
-<li>Data Bus (資料bus)<ul>
-<li>「CPU跟Memory」之間傳輸資料的路徑</li>
-</ul>
-</li>
-<li>I/O Bus<ul>
-<li>「CPU跟I/O裝置」之間傳輸資料的路徑</li>
-</ul>
-</li>
-<li>Control Bus<ul>
-<li>控制memory, I/O裝置</li>
-</ul>
-</li>
-<li>Address Bus<ul>
-<li>指定寫入/讀取的位址（對memory, I/O裝置）</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>Clock</p>
-<ul>
-<li>Clock cycle (時脈週期)<ul>
-<li>一次電子脈衝所需的時間</li>
-</ul>
-</li>
-<li>每個指令<strong>至少</strong>需要一個以上的cycle( $\ge{1}$)，有些長、有些短。</li>
-<li>Wait State (等待狀態)<ul>
-<li>一個cycle沒做事，就只是等待<del>浪費電</del>。</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>指令執行週期</p>
-<ul>
-<li>CPU在執行程式之前，先把當前要執行的指令存到<code>instruction queue</code>中，然後把<code>IP</code>指向下個指令，才開始執行。</li>
-<li>分成三個基本步驟：<ol>
-<li>Fetch （擷取)<ul>
-<li>從<code>instruction queue</code>中拿指令，並改變<code>IP</code></li>
-</ul>
-</li>
-<li>Decode (解碼)<ul>
-<li><code>CU</code>decode送進來的指令，接著把指令的操作對象送到<code>ALU</code>中，並且告訴<code>ALU</code>要執行的運算。</li>
-<li>Fetch operands (擷取運算元)<ul>
-<li>如果指令要操作的對象在memory中，則要等待讀取，會放到一個看不見的register中。</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Execute (執行)<ul>
-<li><code>ALU</code>執行運算，把結果放到Named register(有名字的暫存器)中。</li>
-<li>並更新<code>EFLAGS</code></li>
-<li>Store Output operands (儲存輸出運算元)<ul>
-<li>如果輸出要放在memory中，則要等待寫入。</li>
-</ul>
-</li>
-</ul>
-</li>
-</ol>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="Cache-快取記憶體"><a href="#Cache-快取記憶體" class="headerlink" title="Cache 快取記憶體"></a>Cache 快取記憶體</h2><p>一般的記憶體太慢，CPU會使用<strong>較快</strong>的記憶體：<strong>cache</strong>，儲存最近用的的資料及指令。<br>如果程式要讀相同資料，則會去cache找：</p>
-<ul>
-<li>Cache Hit (快取命中)<ul>
-<li>資料在cache中找到</li>
-</ul>
-</li>
-<li>Cache Miss (快取未中)<ul>
-<li>找不到，必須去讀RAM（較慢）</li>
-</ul>
-</li>
-</ul>
+        <p><a href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;Itemid=8&amp;page=show_problem&amp;problem=1876" target="_blank" rel="noopener">題目</a></p>
+<h1 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h1><p>有一疊卡，有標數字從$1$到$n$（頂端是$1$），每次從頂端丟掉一張卡片，再把一張卡片放到底部，直到卡片只剩一張。</p>
+<h2 id="輸入"><a href="#輸入" class="headerlink" title="輸入"></a>輸入</h2><p>每行代表卡片的數量($n \le{50} $)，以<code>0</code>結尾。</p>
+<h2 id="輸出"><a href="#輸出" class="headerlink" title="輸出"></a>輸出</h2><p>每筆測資第一行輸出丟棄的卡片編號順序，第二行輸出最後剩下的卡片之編號。<br>注意輸出格式（最後沒有空白）</p>
+<h1 id="想法"><a href="#想法" class="headerlink" title="想法"></a>想法</h1><p>直接模擬即可。</p>
+<h1 id="AC-Code"><a href="#AC-Code" class="headerlink" title="AC Code"></a>AC Code</h1><p><a href="https://github.com/roy4801/solved_problems/blob/master/uva/10935.cpp" target="_blank" rel="noopener">https://github.com/roy4801/solved_problems/blob/master/uva/10935.cpp</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2018/10/12/x86-基本架構-ep1/" data-id="cjrnpak1h000g0zxzlnroeep0" class="article-share-link">分享</a>
+      <a data-url="http://blog.roy4801.tw/2019/02/03/uva10935/" data-id="cjrnpak0300090zxz90foosxp" class="article-share-link">分享</a>
       
       
-        <a href="http://blog.roy4801.tw/2018/10/12/x86-基本架構-ep1/#disqus_thread" class="article-comment-link">留言</a>
+        <a href="http://blog.roy4801.tw/2019/02/03/uva10935/#disqus_thread" class="article-comment-link">留言</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/x86/">x86</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Uva/">Uva</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/解題紀錄/">解題紀錄</a></li></ul>
 
     </footer>
   </div>
@@ -267,19 +178,10 @@ ga('send', 'pageview');
     
 <nav id="article-nav">
   
-    <a href="/2018/10/12/x86-基本架構-ep2/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          x86 基本架構 ep2
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/09/27/態度/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2019/02/02/uva402/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">雜筆ep1.</div>
+      <div class="article-nav-title">Uva 402 - M*A*S*H</div>
     </a>
   
 </nav>
@@ -324,7 +226,7 @@ ga('send', 'pageview');
       
         <strong class="toc-title">文章目錄</strong>
         <div class="toc-widget-list">
-              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#CPU-Centrual-Processing-Unit"><span class="toc-number">1.</span> <span class="toc-text">CPU(Centrual Processing Unit)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Cache-快取記憶體"><span class="toc-number">2.</span> <span class="toc-text">Cache 快取記憶體</span></a></li></ol>
+              <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Problem"><span class="toc-number">1.</span> <span class="toc-text">Problem</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#輸入"><span class="toc-number">1.1.</span> <span class="toc-text">輸入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#輸出"><span class="toc-number">1.2.</span> <span class="toc-text">輸出</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#想法"><span class="toc-number">2.</span> <span class="toc-text">想法</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#AC-Code"><span class="toc-number">3.</span> <span class="toc-text">AC Code</span></a></li></ol>
           </div>
       </div>
     </div>
@@ -385,7 +287,7 @@ window.onload = function() {
 <script>
   var disqus_shortname = 'roy-blog';
   
-  var disqus_url = 'http://blog.roy4801.tw/2018/10/12/x86-基本架構-ep1/';
+  var disqus_url = 'http://blog.roy4801.tw/2019/02/03/uva10935/';
   
   (function(){
     var dsq = document.createElement('script');
