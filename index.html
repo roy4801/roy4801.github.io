@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
   <title>r0yblog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="存放一些有關程式、生活、心得隨筆的網誌">
+<meta name="keywords" content="programming,程式,心得,日誌,網誌,blog">
 <meta property="og:type" content="website">
 <meta property="og:title" content="r0yblog">
 <meta property="og:url" content="http://blog.roy4801.tw/index.html">
@@ -39,7 +40,7 @@ ga('send', 'pageview');
 
 
 </head>
-
+</html>
 <body>
   <div id="container">
     <div id="wrap">
@@ -80,12 +81,16 @@ ga('send', 'pageview');
       <div class="outer">
         <section id="main">
   
-    <article id="post-linux_x86_libs" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-linux_x86_libs" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/01/26/linux_x86_libs/" class="article-date">
   <time datetime="2019-01-26T11:50:16.000Z" itemprop="datePublished">2019-01-26</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/學習紀錄/">學習紀錄</a>►<a class="article-category-link" href="/categories/學習紀錄/Linux/">Linux</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -102,21 +107,17 @@ ga('send', 'pageview');
     
     <div class="article-entry" itemprop="articleBody">
       
-        <!-- Table of Contents -->
-        
         <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>安裝64-bit的ubuntu時，預設是不裝32-bit的lib的，如果你在一個64-bit的環境，執行32-bit的程式。<br>會看到以下畫面</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ ./file1</span><br><span class="line">bash: ./file1: No such file or directory</span><br></pre></td></tr></table></figure>
-<p>用<code>file</code>觀察發現：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ file ./file1</span><br><span class="line">./file1: ELF 32-bit LSB  executable, Intel 80386, version 1 (SYSV), dynamically linked (uses shared libs), for GNU/Linux 2.6.8, not stripped.</span><br></pre></td></tr></table></figure>
-<h1 id="解法"><a href="#解法" class="headerlink" title="解法"></a>解法</h1><p>只要安裝32-bit的lib就可解決。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ sudo dpkg --add-architecture i386</span><br><span class="line">$ sudo apt-get update</span><br><span class="line">$ sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386</span><br></pre></td></tr></table></figure>
-<h1 id="參考"><a href="#參考" class="headerlink" title="參考"></a>參考</h1><p>How to run 32-bit app in Ubuntu 64-bit?<br><a href="https://askubuntu.com/questions/454253/how-to-run-32-bit-app-in-ubuntu-64-bit/454254#454254" target="_blank" rel="noopener">https://askubuntu.com/questions/454253/how-to-run-32-bit-app-in-ubuntu-64-bit/454254#454254</a></p>
-<p>How to install ia32-libs in Ubuntu 14.04 LTS (Trusty Tahr)<br><a href="https://stackoverflow.com/questions/23182765/how-to-install-ia32-libs-in-ubuntu-14-04-lts-trusty-tahr" target="_blank" rel="noopener">https://stackoverflow.com/questions/23182765/how-to-install-ia32-libs-in-ubuntu-14-04-lts-trusty-tahr</a></p>
-
+        
+          <p class="article-more-link">
+            <a href="/2019/01/26/linux_x86_libs/#more">繼續閱讀全文 »</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2019/01/26/linux_x86_libs/" data-id="cjrm4rcjx0004wsxzi6nrcrit" class="article-share-link">Share</a>
+      <a data-url="http://blog.roy4801.tw/2019/01/26/linux_x86_libs/" data-id="cjrnmce080006k5xze73ylst9" class="article-share-link">分享</a>
       
       
         <a href="http://blog.roy4801.tw/2019/01/26/linux_x86_libs/#disqus_thread" class="article-comment-link">留言</a>
@@ -132,12 +133,16 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-互動媒體專題" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-互動媒體專題" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/01/25/互動媒體專題/" class="article-date">
   <time datetime="2019-01-25T15:19:15.000Z" itemprop="datePublished">2019-01-25</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/心得散文/">心得散文</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -154,32 +159,17 @@ ga('send', 'pageview');
     
     <div class="article-entry" itemprop="articleBody">
       
-        <!-- Table of Contents -->
-        
         <p><img src="https://i.imgur.com/lOR0hl1.jpg" alt=""></p>
 <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;這學期的互動媒體概論要寫專題，我在學期初便決定了要寫音樂遊戲。有幸能獲得投票最高，不愧是我跟<a href="https://github.com/lpc0503" target="_blank" rel="noopener">我的隊友</a>爆肝的成果www。雖然說學期初早早就有想法，但到了期中前一星期才算認真開始寫，只能說我的惰性太強，不過經過一星期的爆肝，把基本的功能都做出來後，就直接放置，到了學期末事情才堆在一起QQ，我這種壞習慣真的要改。</p>
-<h1 id="當天的情況"><a href="#當天的情況" class="headerlink" title="當天的情況"></a>當天的情況</h1><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;專題發表的那天早上，果不其然的我睡過頭了，在沒其他辦法的情況下，我只好坐車去學校，剛下樓便望見一台計程車從對向開過來，我只是看一下，結果司機竟然知道我要搭車，真是厲害（笑。到了學校後，隊友早已在等待，等人都到齊了，我們便搭上遊覽車出發了。</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;原本以為銘傳很遠，結果沒多久就到了，銘傳竟然在山上，所以我們就走著很陡的坡到了會場。到了現場，完全沒有預計會有那麼多組要參加這個活動，原先低估了這個活動，沒預料到會比預想中的還多人。做了簡易的佈置、貼了海報後，便等著活動的開始。</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;活動規則是：每組有4張貼紙，要貼在你覺得好的組別上，最後統計該學校最高的前三名（有獎金），然後還有評審（老師）會來你們的組別，要和他們Promote你/妳的project。我們這組主要是我介紹，我隊友負責demo（我對於我們遊戲死亡的判定苦手QQ），覺得我講的還好，但評審沒選我們，可能是我們哪裡還做不好吧，真希望他們能給回饋。</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;稍微逛了一下會場的其他組，發覺有幾組的海報做得好有設計感，真想問問他們（最後沒問），還有幾組也是做遊戲，原先被一組的完成度趕到震驚，有圖、音樂，不過後來實際玩才發現遊戲性很差，我被外表騙辣（票都投了），但也沒辦法</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;宣布名次結束後，跟組員討論著為何我們沒上的原因時，聽到主辦單位說要幫忙收東西（桌子、椅子），「這不是該工讀生做嗎？」我跟我的組員都這麼吐槽道。但看在他們發的餐盒上，我們還是幫忙了。</p>
-<h2 id="感想"><a href="#感想" class="headerlink" title="感想"></a>感想</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;這次專題是我第一次和人合作寫Project，原本都是我自己一個人在寫的，一直想要跟其他人合作，看看能不能完成什麼事（追求著共同目標）是我一直以來憧憬著的。跟他人合作時，感受到了跟自己獨自寫時的不同之處，用了許多協作程式碼有幫助的工具(git, trello …etc)，像是如果自己一個人寫，根本不會用得到git branch/merge，也是多了個機會讓我熟悉這些工具。</p>
-<h3 id="遇到的困難"><a href="#遇到的困難" class="headerlink" title="遇到的困難"></a>遇到的困難</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在實作過程中，遇到了一些困難，像是：Library有BUG、沒有debugger⋯⋯等。其中，Lib的BUG讓我們最頭痛，原本以為是自己的實作邏輯有誤，遊戲結束遊玩後如果重新開始，會有「機會」直接結束。在trace程式後，想破頭都覺得自己沒寫錯，也不知道是發生了什麼事，就覺得會不會是播放聲音的thread沒有同步？（我是用音樂播放結束來當遊戲結束的時間點），就直接換了聲音的library，就沒事了（笑。</p>
-<h3 id="開心之後"><a href="#開心之後" class="headerlink" title="開心之後"></a>開心之後</h3><p>回過頭來看這次的專題，其中我有幾個做不好的地方：</p>
-<ol>
-<li><p>拖延症<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我老是如此，在時間多時不做，等到時間不夠了，快截止了，才來趕工。高中時就是如此，到了大學還是不改。深感慚愧，然後在想著「如果」我有更多時間的話會做得更好，用客觀的角度檢視後，發現時間都被自己浪費掉了。</p>
-</li>
-<li><p>BUG不清，老是想新的功能<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;大概是不敢面對自己寫出來的邏輯漏洞吧，或是面對長長的code對於要trace這件事懶惰，然後想著要加新功能進去=埋更多炸彈進去，更慘的是：什麼時候爆炸還不知道，是Demo那天嗎？</p>
-</li>
-</ol>
-<h1 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h1><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首次跟人合作的經驗，得來不易，趕緊寫下來（拖了一個月），順便梳理自己的想法，從中學習到了一些東西，發現了自己的錯誤，希望自己是有成長。也希望這些學習到的知識、經驗，能幫助未來的自己，在做事上能更好。</p>
-<p>2019/1/25 接近午夜寫畢</p>
-<p><img src="https://i.imgur.com/gLA9A34.jpg" alt=""><br><img src="https://i.imgur.com/pMP8kwT.jpg" alt=""></p>
-
+        
+          <p class="article-more-link">
+            <a href="/2019/01/25/互動媒體專題/#more">繼續閱讀全文 »</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2019/01/25/互動媒體專題/" data-id="cjrm4rck9000cwsxzx5qvf0um" class="article-share-link">Share</a>
+      <a data-url="http://blog.roy4801.tw/2019/01/25/互動媒體專題/" data-id="cjrnmce0f000ek5xzl8mnjvuf" class="article-share-link">分享</a>
       
       
         <a href="http://blog.roy4801.tw/2019/01/25/互動媒體專題/#disqus_thread" class="article-comment-link">留言</a>
@@ -195,12 +185,16 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-ACM-ICPC_Taipei" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-ACM-ICPC_Taipei" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/11/22/ACM-ICPC_Taipei/" class="article-date">
   <time datetime="2018-11-22T10:32:26.000Z" itemprop="datePublished">2018-11-22</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/心得散文/">心得散文</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -217,34 +211,18 @@ ga('send', 'pageview');
     
     <div class="article-entry" itemprop="articleBody">
       
-        <!-- Table of Contents -->
-        
         <p>比賽完過了12天我才想起來之前想著要寫的心得，硬是拖了12天才開始寫QQ</p>
 <p>導致有點忘記了，只能靠著照片回想，但由於我並不是個喜歡拍照片的人，所以照片也有點少QQ<br>看來以後得時常紀錄了。</p>
-<h2 id="Day-01"><a href="#Day-01" class="headerlink" title="Day 01"></a>Day 01</h2><p>早上是組語期中考，我們考試分成偶數題跟奇數題，看到偶數題的題目以為奇數題也很簡單，結果跟偶數題天差地遠（我是奇數題），需要用到條件跳轉，不過還好手寫卷上有相關的題目，讓我回憶了一下，沒花多少時間就寫完了。<br>到了6F的助教辦公室影印了三份（每份25張單面）的codebook，便急忙地趕往捷運站。</p>
-<p>到了公館站下車，第一次到台大的校園感受到台大校園的規模之大，光是從捷運站道體育館都要一段時間，跟同學會合後便前往體育館<br>爬上體育館那三層樓高的樓梯，第一眼看到的便是那碩大的ACM ICPC的牌子<br><img src="https://i.imgur.com/7Wyp5ZV.jpg" width="850"><br>我跟我的隊友都感受到ACM ICPC比賽的規模不同於其他的比賽，光是從門口的擺設規模來看就跟其他比賽差很多，<br>簽到並領取完隊伍的物品後，到了比賽場地內，再次體認到這次比賽的規模，目測場地內的座位有1XX個。<br>在隊伍領取的時候領了蠻多東西的，而竟然有送ACM ICPC的包包，潮到出水www<br>還有ACM ICPC的衣服，覺得顏色有點怪怪的。<br><br><br><img src="https://i.imgur.com/7DM2RRb.jpg" width="850"><br>桌上擺著提供給參賽者的水、ACM ICPC手冊、還有介紹台大的手冊，還有看了一部介紹台大的影片，根本是意圖使人轉學到台大(X<br>在coffee break時主辦方開放到後放的餐點區領取點心，是Buffet的形式，我們排隊排的比較後方，排到的時候就沒東西了QQ<br>吃完東西，接著就是練習賽。</p>
-<p><a href="http://icpc2018.ntu.edu.tw/environment.html" target="_blank" rel="noopener">比賽環境</a>是<code>Ubuntu 16.04</code>，然後 <strong>並沒有</strong> sublime，我的隊友並不熟悉<code>vim</code>，而我也只會基本使用而已，所以就果斷使用<code>code block</code>作為主要coding工具</p>
-<blockquote>
-<p>練習賽待補，題目我忘記了QQ</p>
-</blockquote>
-<p>練習賽結束之後可以領便當，由於我們太晚去領所以只能拿壽司組，沒有很喜歡但還是秉持不浪費食物的精神吃完了QQ</p>
-<p>原本想說要帶機械式鍵盤(茶軸)過去的，但我沒想到是第一天就要帶去現場，所以很可惜的是沒帶到，只能用薄膜鍵盤<br>(雖然說別人用薄膜鍵盤AC也超多就是了…<br>還有一點想吐槽的是：桌面有夠滑，可能是美觀的原因吧？每張桌子都有桌巾，但鍵盤跟滑鼠放在上面根本難以使用，讓我懷疑是主辦方故意增加困難度(X<br>起碼也給個滑鼠墊，我們只能用現場給的信封袋充當滑鼠墊，真是克難。</p>
-<p>第一天場地拍照<br><img src="https://i.imgur.com/ITGdZx2.jpg" width="850"><br><img src="https://i.imgur.com/ox7CzR6.jpg" width="850"></p>
-<h2 id="Day-02"><a href="#Day-02" class="headerlink" title="Day 02"></a>Day 02</h2><p>平時難起床的我，竟然7:15就自然醒，簡單盥洗後便整理出門了，到了場地時發現我竟然是最早到的(超反常)，集合完並放完行李後便前往會場，由於第二天有規定不能帶東西進入會場，所以並沒有比賽中的照片。在快9:30時，比賽會場的所有電腦的電源都沒了（不知道是不是工作人員踢到線），工作人員們急急忙忙地一百多台的電腦人工開機，幸好沒有延遲太長時間，比賽還是開始了。</p>
-<p>第二天的點心是改以用小盤子裝，避免掉第一天的情況再次發生，中午的盒餐都是麵包，私心希望點心能夠多一點(笑。</p>
-<p>不愧是區域賽等級的題目，我跟我隊友拿到題目後並看完後的感想就是：「X，好難。」在比賽途中看著其他隊伍一個接著一個AC，也讓我原本就已經炸裂的心態更加崩壞(躺)。<br>最後我們只解出pA而已，而負責看pB的我竟然沒有看出來是floyd-warshall，直到賽後看第一名的code才知道，想起來真是慚愧，只拿了個紅色氣球(pA)。</p>
-<p><img src="https://i.imgur.com/mRXiNJz.jpg" width="850"></p>
-<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>雖然前三個星期都在準備，想當然是不夠的，根本比不上別人從高中就開始打競賽的強度。看了第一名的<a href="https://github.com/edisonhello/waynedisonitau123" target="_blank" rel="noopener">codebook</a>後，像他們那麼強的組也是努力的團練，查了一下他們各自的經歷，各個都是從高中就努力到大學的。看到這麼強的組，我自己又有什麼藉口說累、不想努力呢？高中時的我不努力，對於自己所熱愛的事物無所作為，到了大學再後悔當初，想想真是可笑。</p>
-<p>謝謝陪我打競賽的兩位同學，感謝你們願意陪我團練，感謝你們願意付出心力練習，也希望我們越來越強。</p>
-<p><img src="https://i.imgur.com/aH5AXKV.jpg" width="850"></p>
-<hr>
-<p>離開前拍的會場</p>
-<p><img src="https://i.imgur.com/Xqd3VFA.jpg" width="850"><br><img src="https://i.imgur.com/8O2Xr4I.jpg" width="850"><br><img src="https://i.imgur.com/9B2xMzm.jpg" width="850"></p>
-
+<h2 id="Day-01"><a href="#Day-01" class="headerlink" title="Day 01"></a>Day 01</h2>
+        
+          <p class="article-more-link">
+            <a href="/2018/11/22/ACM-ICPC_Taipei/#more">繼續閱讀全文 »</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2018/11/22/ACM-ICPC_Taipei/" data-id="cjrm4rcjn0000wsxzocoelxor" class="article-share-link">Share</a>
+      <a data-url="http://blog.roy4801.tw/2018/11/22/ACM-ICPC_Taipei/" data-id="cjrnmce040003k5xz3b13l50y" class="article-share-link">分享</a>
       
       
         <a href="http://blog.roy4801.tw/2018/11/22/ACM-ICPC_Taipei/#disqus_thread" class="article-comment-link">留言</a>
@@ -260,12 +238,16 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-x86-基本架構-ep2" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-x86-基本架構-ep2" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/10/12/x86-基本架構-ep2/" class="article-date">
   <time datetime="2018-10-12T06:45:46.000Z" itemprop="datePublished">2018-10-12</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/學習紀錄/">學習紀錄</a>►<a class="article-category-link" href="/categories/學習紀錄/組合語言/">組合語言</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -282,68 +264,19 @@ ga('send', 'pageview');
     
     <div class="article-entry" itemprop="articleBody">
       
-        <!-- Table of Contents -->
-        
         <h2 id="程式如何執行"><a href="#程式如何執行" class="headerlink" title="程式如何執行"></a>程式如何執行</h2><blockquote>
 <p>這裡有點偏OS的部分</p>
 </blockquote>
 <p>假設有個人在terminal中輸入了<code>a.exe</code></p>
-<ol>
-<li><p>OS會先在<code>current directory</code>找有沒有<code>a.exe</code>，如果有就執行；再去<code>PATH</code>中的路徑找<code>a.exe</code>，如果還是沒有就輸出錯誤。</p>
-</li>
-<li><p>OS會從index中拿到<code>a.exe</code>的基本資訊：大小、實體位置。</p>
-</li>
-<li><p>把<code>a.exe</code> load到memory中（segmented)，OS會維護一張表（區段的位置跟大小）</p>
-</li>
-<li><p>從<code>.code</code>開始執行，此時<code>process</code>會被用數字做辨識：<code>process id</code>(pid)</p>
-</li>
-<li><p>OS持續追蹤<code>process</code>的狀態，並回應<code>process</code>的要求：</p>
-<ul>
-<li>讀寫memory、讀寫disk、I/O</li>
-</ul>
-</li>
-<li><p><code>process</code>結束就把memory free掉。</p>
-</li>
-</ol>
-<h2 id="多工"><a href="#多工" class="headerlink" title="多工"></a>多工</h2><p>作業系統能同時執行多任務(task)。</p>
-<h3 id="task-任務"><a href="#task-任務" class="headerlink" title="task 任務"></a>task 任務</h3><ul>
-<li><code>process</code> – 行程<ul>
-<li>擁有專屬的記憶體區域</li>
-<li><code>thread</code> – 執行緒<ul>
-<li>與其他 <code>thread</code> share memory</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="scheduler-排程"><a href="#scheduler-排程" class="headerlink" title="scheduler 排程"></a>scheduler 排程</h3><ul>
-<li>因為CPU一次執行一個指令，為了要讓多個行程能『看起來』同時執行，必須把時間切成一段一段，並把每段分配給不同的程式。</li>
-</ul>
-<h4 id="Time-Slice-時間切片"><a href="#Time-Slice-時間切片" class="headerlink" title="Time Slice (時間切片)"></a>Time Slice (時間切片)</h4><ul>
-<li><p>將CPU時間切成一段一段。</p>
-</li>
-<li><p>Round-Robin scheduling 輪詢排程</p>
-</li>
-</ul>
-<h4 id="task-switch-任務切換"><a href="#task-switch-任務切換" class="headerlink" title="task switch 任務切換"></a>task switch 任務切換</h4><p>為了要達到分配time slice，必須要切換執行tasks。<br>在切換到新task之前，必須儲存當前task的狀態：</p>
-<ol>
-<li>Registers</li>
-<li>IP (Instruction Pointer)</li>
-<li>EFLAGS</li>
-<li>Segment registers</li>
-</ol>
-<p>切換task稱作：<code>context switch</code>，必須花時間。</p>
-<h4 id="preemptive-先-搶佔式"><a href="#preemptive-先-搶佔式" class="headerlink" title="preemptive 先/搶佔式"></a>preemptive 先/搶佔式</h4><p>允許tasks具有較高優先權，可以中斷優先權較低的task。</p>
-<p>例如：Windows、Linux、macOS</p>
-<p>優點：穩定性</p>
-<blockquote>
-<p>ex: 鍵盤處理器有較高的優先度，所以當程式當掉時可以叫taskmgr終止程式。</p>
-</blockquote>
-
+        
+          <p class="article-more-link">
+            <a href="/2018/10/12/x86-基本架構-ep2/#more">繼續閱讀全文 »</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2018/10/12/x86-基本架構-ep2/" data-id="cjrm4rck6000awsxzbhg2l6px" class="article-share-link">Share</a>
+      <a data-url="http://blog.roy4801.tw/2018/10/12/x86-基本架構-ep2/" data-id="cjrnmce0e000dk5xzvhhvtff6" class="article-share-link">分享</a>
       
       
         <a href="http://blog.roy4801.tw/2018/10/12/x86-基本架構-ep2/#disqus_thread" class="article-comment-link">留言</a>
@@ -359,12 +292,16 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-x86-基本架構-ep1" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-x86-基本架構-ep1" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/10/12/x86-基本架構-ep1/" class="article-date">
   <time datetime="2018-10-12T05:32:11.000Z" itemprop="datePublished">2018-10-12</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/學習紀錄/">學習紀錄</a>►<a class="article-category-link" href="/categories/學習紀錄/組合語言/">組合語言</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -381,8 +318,6 @@ ga('send', 'pageview');
     
     <div class="article-entry" itemprop="articleBody">
       
-        <!-- Table of Contents -->
-        
         <h2 id="CPU-Centrual-Processing-Unit"><a href="#CPU-Centrual-Processing-Unit" class="headerlink" title="CPU(Centrual Processing Unit)"></a>CPU(Centrual Processing Unit)</h2><ul>
 <li><p>中央處理器</p>
 <ul>
@@ -467,22 +402,16 @@ ga('send', 'pageview');
 </ul>
 </li>
 </ul>
-<h2 id="Cache-快取記憶體"><a href="#Cache-快取記憶體" class="headerlink" title="Cache 快取記憶體"></a>Cache 快取記憶體</h2><p>一般的記憶體太慢，CPU會使用<strong>較快</strong>的記憶體：<strong>cache</strong>，儲存最近用的的資料及指令。<br>如果程式要讀相同資料，則會去cache找：</p>
-<ul>
-<li>Cache Hit (快取命中)<ul>
-<li>資料在cache中找到</li>
-</ul>
-</li>
-<li>Cache Miss (快取未中)<ul>
-<li>找不到，必須去讀RAM（較慢）</li>
-</ul>
-</li>
-</ul>
-
+<h2 id="Cache-快取記憶體"><a href="#Cache-快取記憶體" class="headerlink" title="Cache 快取記憶體"></a>Cache 快取記憶體</h2>
+        
+          <p class="article-more-link">
+            <a href="/2018/10/12/x86-基本架構-ep1/#more">繼續閱讀全文 »</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2018/10/12/x86-基本架構-ep1/" data-id="cjrm4rck20008wsxz2pqcpyzj" class="article-share-link">Share</a>
+      <a data-url="http://blog.roy4801.tw/2018/10/12/x86-基本架構-ep1/" data-id="cjrnmce0c000ak5xzxa0e8mux" class="article-share-link">分享</a>
       
       
         <a href="http://blog.roy4801.tw/2018/10/12/x86-基本架構-ep1/#disqus_thread" class="article-comment-link">留言</a>
@@ -498,12 +427,16 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-態度" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-態度" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/09/27/態度/" class="article-date">
   <time datetime="2018-09-27T05:15:00.000Z" itemprop="datePublished">2018-09-27</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/心得散文/">心得散文</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -520,34 +453,17 @@ ga('send', 'pageview');
     
     <div class="article-entry" itemprop="articleBody">
       
-        <!-- Table of Contents -->
-        
         <h2 id="態度"><a href="#態度" class="headerlink" title="態度"></a>態度</h2><p><img src="http://www.bootstrapping101.com/wp-content/uploads/2015/12/attitude-success-quote.jpg" alt=""></p>
 <p>最近心情一直很煩躁，明明這件事不是我的義務，我卻還是多管閒事。</p>
-<p>有個朋友，就用同學A來稱呼好了，這位同學說著 <strong><code>Computer Science</code></strong> 是自己的興趣，但卻沒有看到他花時間在實作程式。<br><br>他似乎還天真地認為想要變強只要在臨時抱佛腳就好。這種態度我十分不以為然。</p>
-<p>上課不聽，下課才再問同學？明明這些知識老師不到5分鐘前才說過，但上課時你卻不利用機會，選擇發呆、用手機，然後下課再讓同學花時間教你？<br>你當你的同學都是你的家教嗎？自己不付出努力又想變好？如果是聽不懂的話，同學還願意花時間教你，但問題是自己不願意付出努力，又想要同學教你？</p>
-<p>嘴上說著想要變強，但又沒看見努力的跡象<br><br>我尊重你的選擇，但請不要以為我們也要耍廢。</p>
-<p>就看我剩多少耐心。</p>
-<hr>
-<h2 id="今年的目標"><a href="#今年的目標" class="headerlink" title="今年的目標"></a>今年的目標</h2><ul>
-<li><p>增進程式設計能力</p>
-<ul>
-<li style="list-style: none"><input type="checkbox"> Uva 寫200題</li>
-<li style="list-style: none"><input type="checkbox"> 打比賽</li>
-</ul>
-</li>
-<li><p>增進資訊安全能力</p>
-<ul>
-<li style="list-style: none"><input type="checkbox"> 打CTF</li>
-<li style="list-style: none"><input type="checkbox"> 會打基本Pwn題目</li>
-</ul>
-</li>
-</ul>
-
+        
+          <p class="article-more-link">
+            <a href="/2018/09/27/態度/#more">繼續閱讀全文 »</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2018/09/27/態度/" data-id="cjrm4rckg000gwsxze63yzxuw" class="article-share-link">Share</a>
+      <a data-url="http://blog.roy4801.tw/2018/09/27/態度/" data-id="cjrnmce0k000jk5xzdk8xvlsy" class="article-share-link">分享</a>
       
       
         <a href="http://blog.roy4801.tw/2018/09/27/態度/#disqus_thread" class="article-comment-link">留言</a>
@@ -563,12 +479,16 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-tmux 基本使用" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-tmux 基本使用" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/08/25/tmux 基本使用/" class="article-date">
   <time datetime="2018-08-25T12:45:19.000Z" itemprop="datePublished">2018-08-25</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/學習紀錄/">學習紀錄</a>►<a class="article-category-link" href="/categories/學習紀錄/Linux/">Linux</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -585,208 +505,21 @@ ga('send', 'pageview');
     
     <div class="article-entry" itemprop="articleBody">
       
-        <!-- Table of Contents -->
-        
         <h2 id="tmux-基本使用"><a href="#tmux-基本使用" class="headerlink" title="tmux 基本使用"></a>tmux 基本使用</h2><h3 id="Terminal-MUltipleXer"><a href="#Terminal-MUltipleXer" class="headerlink" title="Terminal MUltipleXer"></a>Terminal MUltipleXer</h3><ul>
 <li><p>名稱:<code>terminal</code>的多工器</p>
 </li>
 <li><p>在一個terminal視窗下開啟多個視窗或是區塊(pane)，並且可以快速地切換不同的tmux視窗，且<strong>與unix工具契合</strong>，是個<strong>提高生產力</strong>的工具。</p>
 </li>
 </ul>
-<blockquote>
-<p>就像sublime的group<br>或是iTerm的tab跟split<br>[name=roy4801]</p>
-</blockquote>
-<p><img src="https://www.hamvocke.com/assets/img/uploads/tmux.png" alt=""></p>
-<blockquote>
-<p>使用中的tmux</p>
-</blockquote>
-<h3 id="安裝"><a href="#安裝" class="headerlink" title="安裝"></a>安裝</h3><ul>
-<li><p>macos</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew install tmux</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>msys2</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ pacman -S tmux</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>apt</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt install tmux</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>安裝完成後到家目錄下建立<code>.tmux.conf</code>設定檔<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ touch ~/.tmux.conf</span><br></pre></td></tr></table></figure></p>
-<p><a href="https://pastebin.com/bM01dyJa" target="_blank" rel="noopener">設定檔範例</a></p>
-<blockquote>
-<p>設定檔範例<a href="http://mropengate.blogspot.com/2017/12/tmux.html" target="_blank" rel="noopener">取自Mr.opengate</a></p>
-</blockquote>
-<h3 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h3><h4 id="在開始使用之前，要知道一些tmux的概念"><a href="#在開始使用之前，要知道一些tmux的概念" class="headerlink" title="在開始使用之前，要知道一些tmux的概念:"></a>在開始使用之前，要知道一些tmux的概念:</h4><ul>
-<li>會話(<code>Session</code>) : 視窗的集合。</li>
-<li>視窗(<code>Window</code>)  : 覆蓋整個terminal的視窗。</li>
-<li>區塊(<code>Pane</code>)    : 執行程式的地方。</li>
-</ul>
-<p><img src="https://3.bp.blogspot.com/-VWISLRT_Ppw/WjuPq-03itI/AAAAAAABW5g/YOnQ9zNxCnkhMaALcWucsVhAd-srLsoRgCLcBGAs/s1600/tmux-concept.png" alt=""></p>
-<h4 id="開始使用"><a href="#開始使用" class="headerlink" title="開始使用"></a>開始使用</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ tmux</span><br></pre></td></tr></table></figure>
-<h4 id="按鍵說明"><a href="#按鍵說明" class="headerlink" title="按鍵說明"></a>按鍵說明</h4><ul>
-<li>在<code>tmux</code>中，快捷鍵都是要先按<code>&lt;prefix key&gt; + 其他按鍵</code><br><code>tmux</code>預設是<code>ctrl + b</code>，但剛剛的<code>.tmux.conf</code>把<code>&lt;prefix key&gt;</code>改成了<code>Ctrl + a</code><br>  <img src="https://imgur.com/BTvPZpp.png" alt=""></li>
-</ul>
-<hr>
-<h5 id="視窗-Window"><a href="#視窗-Window" class="headerlink" title="視窗(Window)"></a>視窗(Window)</h5><table>
-<thead>
-<tr>
-<th>快捷鍵</th>
-<th>說明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>&lt;prefix&gt; c</code></td>
-<td>開新視窗</td>
-</tr>
-<tr>
-<td><code>&lt;prefix&gt; &amp;</code></td>
-<td>關閉視窗</td>
-</tr>
-<tr>
-<td><code>&lt;prefix&gt; 0~9</code></td>
-<td>切換至指定視窗</td>
-</tr>
-<tr>
-<td><code>&lt;prefix&gt; n</code></td>
-<td>切換到下一個視窗 (next)</td>
-</tr>
-<tr>
-<td><code>&lt;prefix&gt; p</code></td>
-<td>切換到上一個視窗 (previous)</td>
-</tr>
-<tr>
-<td><code>&lt;prefix&gt; f</code></td>
-<td>找尋指定 pattern 並跳到該視窗</td>
-</tr>
-<tr>
-<td><code>&lt;prefix&gt; ,</code></td>
-<td>命名視窗</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<h5 id="區塊-Pane"><a href="#區塊-Pane" class="headerlink" title="區塊(Pane)"></a>區塊(Pane)</h5><table>
-<thead>
-<tr>
-<th>快捷鍵</th>
-<th>說明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>&lt;prefix> &#124;</code></td>
-<td>水平分割視窗</td>
-</tr>
-<tr>
-<td><code>&lt;prefix&gt; -</code></td>
-<td>垂直分割視窗</td>
-</tr>
-<tr>
-<td><code>&lt;prefix&gt; 方向鍵</code></td>
-<td>分割視窗大小調整</td>
-</tr>
-<tr>
-<td><code>&lt;prefix&gt; h,j,k,l (vim 方向鍵)</code></td>
-<td>切換游標所在區塊</td>
-</tr>
-<tr>
-<td><code>&lt;prefix&gt; space</code></td>
-<td>重新佈局分割視窗，內建多種佈局。</td>
-</tr>
-<tr>
-<td><code>&lt;prefix&gt; x</code></td>
-<td>關閉當前面板</td>
-</tr>
-<tr>
-<td><code>&lt;prefix&gt; q</code></td>
-<td>顯示面板編號</td>
-</tr>
-<tr>
-<td><code>&lt;prefix&gt; {</code></td>
-<td>交換面板位置（向前）</td>
-</tr>
-<tr>
-<td><code>&lt;prefix&gt; }</code></td>
-<td>交換面板位置（向後）</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<h5 id="操作tmux"><a href="#操作tmux" class="headerlink" title="操作tmux"></a>操作tmux</h5><table>
-<thead>
-<tr>
-<th>快捷鍵</th>
-<th>說明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>&lt;prefix&gt; d</code></td>
-<td>將目前的 session 放到背景執行 (detach)</td>
-</tr>
-<tr>
-<td><code>&lt;prefix&gt; s</code></td>
-<td>切換 session</td>
-</tr>
-<tr>
-<td><code>&lt;prefix&gt; [</code></td>
-<td>進入複製模式</td>
-</tr>
-<tr>
-<td><code>&lt;prefix&gt; :</code></td>
-<td>進入命令模式</td>
-</tr>
-<tr>
-<td><code>&lt;prefix&gt; ?</code></td>
-<td>查詢快捷鍵</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<h5 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h5><p>在<code>&lt;prefix&gt; :</code>中輸入或是在shell中輸入都可</p>
-<table>
-<thead>
-<tr>
-<th>快捷鍵</th>
-<th>說明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>tmux</code></td>
-<td>啟動</td>
-</tr>
-<tr>
-<td><code>tmux ls</code></td>
-<td>列出所有 session</td>
-</tr>
-<tr>
-<td><code>tmux detach</code></td>
-<td>背景執行</td>
-</tr>
-<tr>
-<td><code>tmux attach -t [num]</code></td>
-<td>回到第 [num] 號 session</td>
-</tr>
-<tr>
-<td><code>tmux kill-session -t [num]</code></td>
-<td>關閉第 [num] 號 session</td>
-</tr>
-<tr>
-<td><code>tmux kill-session -a</code></td>
-<td>關閉除了自己的所有 session</td>
-</tr>
-</tbody>
-</table>
-<h2 id="參考"><a href="#參考" class="headerlink" title="參考"></a>參考</h2><p>作弊紙<br><a href="http://tmuxcheatsheet.com/" target="_blank" rel="noopener">http://tmuxcheatsheet.com/</a></p>
-<p>終端機管理工具：tmux<br><a href="http://mropengate.blogspot.com/2017/12/tmux.html" target="_blank" rel="noopener">http://mropengate.blogspot.com/2017/12/tmux.html</a></p>
-<p>A Quick and Easy Guide to tmux<br><a href="https://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/" target="_blank" rel="noopener">https://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/</a></p>
-
+        
+          <p class="article-more-link">
+            <a href="/2018/08/25/tmux 基本使用/#more">繼續閱讀全文 »</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2018/08/25/tmux 基本使用/" data-id="cjrm4rck10007wsxzahq3o7g8" class="article-share-link">Share</a>
+      <a data-url="http://blog.roy4801.tw/2018/08/25/tmux 基本使用/" data-id="cjrnmce0b0009k5xzizceaqg2" class="article-share-link">分享</a>
       
       
         <a href="http://blog.roy4801.tw/2018/08/25/tmux 基本使用/#disqus_thread" class="article-comment-link">留言</a>
@@ -802,12 +535,16 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-ssh到linux(ubuntu)上無法輸入中文問題" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-ssh到linux(ubuntu)上無法輸入中文問題" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/08/25/ssh到linux(ubuntu)上無法輸入中文問題/" class="article-date">
   <time datetime="2018-08-24T16:38:03.000Z" itemprop="datePublished">2018-08-25</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/學習紀錄/">學習紀錄</a>►<a class="article-category-link" href="/categories/學習紀錄/Linux/">Linux</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -824,26 +561,16 @@ ga('send', 'pageview');
     
     <div class="article-entry" itemprop="articleBody">
       
-        <!-- Table of Contents -->
-        
         <h2 id="ssh到linux-ubuntu-上無法輸入中文問題"><a href="#ssh到linux-ubuntu-上無法輸入中文問題" class="headerlink" title="ssh到linux(ubuntu)上無法輸入中文問題"></a>ssh到linux(ubuntu)上無法輸入中文問題</h2><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>在前幾個星期，筆者被windows折磨（各種工具無法在windows上使用），所以索性將PC灌成Ubuntu，但在ssh進入ubuntu上卻遇到了無法輸入中文的問題。</p>
-<p>連入ssh時可能會注意到一行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-bash: warning: setlocale: LC_ALL: cannot change locale (zh_TW.UTF-8)</span><br></pre></td></tr></table></figure></p>
-<p>原因是ssh在連上主機時會將本地的LC_*環境變數自動設定到遠端主機上，而如果遠端主機不支援該語系時就會出現「<code>-bash: warning: setlocale: LC_ALL: cannot change locale</code>」的錯誤。</p>
-<p>ssh的設定檔可以在<code>/etc/ssh/</code>中找到。</p>
-<h3 id="解決"><a href="#解決" class="headerlink" title="解決"></a>解決</h3><p>更改語系成<code>zh_TW.UTF-8</code></p>
-<p>先用<code>locale -a</code>查看有沒有<code>zh_TW.utf8</code>的選項，如果沒有則使用<code>locale-gen</code>產生新的語系+編碼。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo locale-gen zh_TW.UTF-8</span><br></pre></td></tr></table></figure>
-<p>之後在更改環境變數</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">export</span> LC_ALL=<span class="string">"zh_TW.UTF-8"</span></span><br><span class="line">$ <span class="built_in">export</span> LANG=<span class="string">"zh_TW.UTF-8"</span></span><br></pre></td></tr></table></figure>
-<h2 id="參考"><a href="#參考" class="headerlink" title="參考"></a>參考</h2><p>warning: setlocale: LC_ALL: cannot change locale<br><a href="https://askubuntu.com/questions/114759/warning-setlocale-lc-all-cannot-change-locale" target="_blank" rel="noopener">https://askubuntu.com/questions/114759/warning-setlocale-lc-all-cannot-change-locale</a></p>
-<p>bash: warning: setlocale: LC_ALL: cannot change locale<br><a href="https://coder.tw/?p=7490" target="_blank" rel="noopener">https://coder.tw/?p=7490</a></p>
-<p>[Mac] SSH 到 Linux 機器時，出現 cannot change locale (UTF-8) 訊息<br><a href="https://ephrain.net/mac-ssh-%E5%88%B0-linux-%E6%A9%9F%E5%99%A8%E6%99%82%EF%BC%8C%E5%87%BA%E7%8F%BE-cannot-change-locale-utf-8-%E8%A8%8A%E6%81%AF/" target="_blank" rel="noopener">https://ephrain.net/mac-ssh-%E5%88%B0-linux-%E6%A9%9F%E5%99%A8%E6%99%82%EF%BC%8C%E5%87%BA%E7%8F%BE-cannot-change-locale-utf-8-%E8%A8%8A%E6%81%AF/</a></p>
-<p>[Ubuntu] 如何設定語系locale<br><a href="http://www.davidpai.tw/ubuntu/2011/ubuntu-set-locale/" target="_blank" rel="noopener">http://www.davidpai.tw/ubuntu/2011/ubuntu-set-locale/</a></p>
-
+        
+          <p class="article-more-link">
+            <a href="/2018/08/25/ssh到linux(ubuntu)上無法輸入中文問題/#more">繼續閱讀全文 »</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2018/08/25/ssh到linux(ubuntu)上無法輸入中文問題/" data-id="cjrm4rcjz0005wsxzzyckzx2h" class="article-share-link">Share</a>
+      <a data-url="http://blog.roy4801.tw/2018/08/25/ssh到linux(ubuntu)上無法輸入中文問題/" data-id="cjrnmce060005k5xzh3ws6cl2" class="article-share-link">分享</a>
       
       
         <a href="http://blog.roy4801.tw/2018/08/25/ssh到linux(ubuntu)上無法輸入中文問題/#disqus_thread" class="article-comment-link">留言</a>
@@ -859,12 +586,16 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-C++ next_permutation:perv_permutation用法" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-C++ next_permutation:perv_permutation用法" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/08/23/C++ next_permutation:perv_permutation用法/" class="article-date">
   <time datetime="2018-08-23T09:48:03.000Z" itemprop="datePublished">2018-08-23</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/學習紀錄/">學習紀錄</a>►<a class="article-category-link" href="/categories/學習紀錄/C-C/">C/C++</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -881,37 +612,17 @@ ga('send', 'pageview');
     
     <div class="article-entry" itemprop="articleBody">
       
-        <!-- Table of Contents -->
-        
         <h2 id="C-STL-組合"><a href="#C-STL-組合" class="headerlink" title="C++ STL 組合"></a>C++ STL 組合</h2><p>STL中提供了兩個template function可以舉出一組資料的所有組合：分別是<code>next_permutation()</code>與<code>prev_permutation()</code></p>
 <p>組合順序交換的依據是照<strong>字典排序</strong>(<em>lexicographically</em>)</p>
-<blockquote>
-<p>有如有一組資料是{‘a’, ‘b’, ‘c’}<br>那麼next_permutation()的順序就會是：<br>abc &lt; acb &lt; bac &lt; bca &lt; cab &lt; cba<br>就如字典排列的順序一般</p>
-</blockquote>
-<p>以上面的例子說明：<code>abc</code>是開頭，而<code>cba</code>是結束<br><code>next_permutation()</code>是找出右邊的組合（以字典序來說比較大），而<code>prev_permutation()</code>是找出左邊的組合（以字典序來說比較小），碰到開始或結束就return false，否則return true（代表還有沒有舉出的組合）。</p>
-<h3 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h3><p>要使用<code>next_permutation()</code>與<code>prev_permutation()</code>必須include標頭檔algorithm<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br></pre></td></tr></table></figure></p>
-<p>跟許多STL的function一樣，輸入的iterator是$[first, last)$的形式。</p>
-<p>另外，此函式有兩個版本，一個是預設使用operator&lt;來進行大小判斷；而另一個是則是可以自訂比較的方法。<br>看個人的需求使用即可。</p>
-<h5 id="要注意的事"><a href="#要注意的事" class="headerlink" title="要注意的事"></a>要注意的事</h5><p>由於<code>next_permutation()</code>實作的關係，如果要求出<em>全部的組合</em>，資料必須要先<em>遞增</em>(ascending)排序過才行。</p>
-<h4 id="1-預設-Default"><a href="#1-預設-Default" class="headerlink" title="1. 預設(Default)"></a>1. 預設(Default)</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">template</span> &lt;<span class="class"><span class="keyword">class</span> <span class="title">BidirectionalIterator</span>&gt;</span></span><br><span class="line"><span class="class"><span class="title">bool</span> <span class="title">next_permutation</span>(<span class="title">BidirectionalIterator</span> <span class="title">first</span>, <span class="title">BidirectionalIterator</span> <span class="title">last</span>);</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> arr[] = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// Do something</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">const</span> <span class="keyword">int</span> i : arr)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d "</span>, i);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">while</span>(next_permutation(arr, arr+<span class="number">3</span>));</span><br></pre></td></tr></table></figure>
-<p>輸出<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1 2 3 </span><br><span class="line">1 3 2 </span><br><span class="line">2 1 3 </span><br><span class="line">2 3 1 </span><br><span class="line">3 1 2 </span><br><span class="line">3 2 1</span><br></pre></td></tr></table></figure></p>
-<h4 id="2-自訂-Custom"><a href="#2-自訂-Custom" class="headerlink" title="2. 自訂(Custom)"></a>2. 自訂(Custom)</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">template</span> &lt;<span class="class"><span class="keyword">class</span> <span class="title">BidirectionalIterator</span>, <span class="title">class</span> <span class="title">Compare</span>&gt;</span></span><br><span class="line"><span class="class">  <span class="title">bool</span> <span class="title">next_permutation</span>(<span class="title">BidirectionalIterator</span> <span class="title">first</span>, <span class="title">BidirectionalIterator</span> <span class="title">last</span>, <span class="title">Compare</span> <span class="title">comp</span>);</span></span><br></pre></td></tr></table></figure>
-<p>有時候在自訂的class/struct需要用到自訂判斷的function，或是標準庫的東西行為不是開發者所預期的，這是自訂判斷的版本就派上用場了。</p>
-<p>範例：假設有一組這樣的資料，我們想求出pair有多少種組合<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">vector</span>&lt;pair&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt; &gt; v;</span><br><span class="line">    </span><br><span class="line">v.push_back(pair&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt;(<span class="number">1</span>, <span class="number">3000</span>));</span><br><span class="line">v.push_back(pair&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt;(<span class="number">3</span>, <span class="number">5000</span>));</span><br><span class="line">v.push_back(pair&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt;(<span class="number">2</span>, <span class="number">9000</span>));</span><br></pre></td></tr></table></figure></p>
-<p>在用上<code>next_permutation()</code>之前，要先自訂判斷的struct。<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">ComparePair</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="comment">// overloading operator()</span></span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">operator</span><span class="params">()</span><span class="params">(<span class="keyword">const</span> pair&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt; &amp;lhs, <span class="keyword">const</span> pair&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt; &amp;rhs)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> lhs.first &lt; rhs.first;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;comparePair;</span><br></pre></td></tr></table></figure></p>
-<p>才使用<code>next_permutation()</code><br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">sort(v.begin(), v.end(), comparePair);</span><br><span class="line">    </span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span> &amp;i : v)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; i.first &lt;&lt; <span class="string">' '</span> &lt;&lt; i.second &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">while</span>(next_permutation(v.begin(), v.end(), comparePair));</span><br></pre></td></tr></table></figure></p>
-<p>輸出</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1 3000 2 9000 3 5000 </span><br><span class="line">1 3000 3 5000 2 9000 </span><br><span class="line">2 9000 1 3000 3 5000 </span><br><span class="line">2 9000 3 5000 1 3000 </span><br><span class="line">3 5000 1 3000 2 9000 </span><br><span class="line">3 5000 2 9000 1 3000</span><br></pre></td></tr></table></figure>
-<h4 id="Source-Code"><a href="#Source-Code" class="headerlink" title="Source Code"></a><a href="https://ideone.com/ioPYEH" target="_blank" rel="noopener">Source Code</a></h4><h3 id="參考"><a href="#參考" class="headerlink" title="參考"></a>參考</h3><p>cplusplus.com – std::next_permutation<br><a href="http://www.cplusplus.com/reference/algorithm/next_permutation/" target="_blank" rel="noopener">http://www.cplusplus.com/reference/algorithm/next_permutation/</a></p>
-<p>next_permutation compare function<br><a href="https://stackoverflow.com/questions/24150840/next-permutation-compare-function" target="_blank" rel="noopener">https://stackoverflow.com/questions/24150840/next-permutation-compare-function</a></p>
-<p>【STL】next_permutation的原理和使用<br><a href="http://leonard1853.iteye.com/blog/1450085" target="_blank" rel="noopener">http://leonard1853.iteye.com/blog/1450085</a></p>
-<p>next_permutation(全排列算法)<br><a href="https://blog.csdn.net/c18219227162/article/details/50301513" target="_blank" rel="noopener">https://blog.csdn.net/c18219227162/article/details/50301513</a></p>
-
+        
+          <p class="article-more-link">
+            <a href="/2018/08/23/C++ next_permutation:perv_permutation用法/#more">繼續閱讀全文 »</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2018/08/23/C++ next_permutation:perv_permutation用法/" data-id="cjrm4rcjr0001wsxz5wm92hij" class="article-share-link">Share</a>
+      <a data-url="http://blog.roy4801.tw/2018/08/23/C++ next_permutation:perv_permutation用法/" data-id="cjrnmcdzv0000k5xz3kvj65x7" class="article-share-link">分享</a>
       
       
         <a href="http://blog.roy4801.tw/2018/08/23/C++ next_permutation:perv_permutation用法/#disqus_thread" class="article-comment-link">留言</a>
@@ -927,12 +638,16 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-在macos 如何build zbarimg" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-在macos 如何build zbarimg" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/08/04/在macos 如何build zbarimg/" class="article-date">
   <time datetime="2018-08-04T08:57:45.000Z" itemprop="datePublished">2018-08-04</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/學習紀錄/">學習紀錄</a>►<a class="article-category-link" href="/categories/學習紀錄/其他/">其他</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -949,33 +664,17 @@ ga('send', 'pageview');
     
     <div class="article-entry" itemprop="articleBody">
       
-        <!-- Table of Contents -->
-        
         <h2 id="在macos-如何build-zbarimg"><a href="#在macos-如何build-zbarimg" class="headerlink" title="在macos 如何build zbarimg"></a>在macos 如何build <code>zbarimg</code></h2><p>tags: <a href="tags/ctf-tools/"><code>ctf tools</code></a>, <a href="tags/程式"><code>程式</code></a>, <a href="tags/教學"><code>教學</code></a></p>
-<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>在打CTF時，在<code>Misc</code>遇到有用<a href="https://en.wikipedia.org/wiki/QR_code" target="_blank" rel="noopener">QRcode</a> encode的flag，雖然有線上的工具，但身為<del>programmer</del>就要用command-line，所以就找到了一個cli的qrcode-decoder，但是官方並沒有提供macos的binary而brew也沒有，以至於就得自己build了。</p>
-<p>macos版本：<code>OS X 10.11.6 El Capitan</code></p>
-<h3 id="Build"><a href="#Build" class="headerlink" title="Build"></a>Build</h3><ol>
-<li><p>下載<code>zbarimg</code> source code，並解壓<br><a href="http://zbar.sourceforge.net/download.html" target="_blank" rel="noopener">http://zbar.sourceforge.net/download.html</a></p>
-</li>
-<li><p>在資料夾下開起terminal</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ./configure --disable-video --without-python --without-gtk --without-qt</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>接著開始build並安裝</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ make</span><br><span class="line">$ make install</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<h4 id="問題：Can-39-t-find-MagickWand-h"><a href="#問題：Can-39-t-find-MagickWand-h" class="headerlink" title="問題：Can&#39;t find MagickWand.h."></a>問題：<code>Can&#39;t find MagickWand.h.</code></h4><p>zbarimg需要依賴imgagemagick<br>而在<code>brew</code>不加後綴的的是7.<em>版，而zbarimg使用6.</em>版，所以導致錯誤。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ brew unlink imagemagick</span><br><span class="line">$ brew install imagemagick@6 &amp;&amp; brew link imagemagick@6 --force</span><br></pre></td></tr></table></figure></p>
-<blockquote>
-<p>Imagemagick-7<br><code>/usr/local/Cellar/imagemagick/7.0.8-8/include/ImageMagick-7/MagickWand/MagickWand.h</code><br>Imagemagick-6<br><code>/usr/local/Cellar/imagemagick@6/6.9.10-8/include/ImageMagick-6/wand/MagickWand.h</code></p>
-</blockquote>
-<h3 id="參考"><a href="#參考" class="headerlink" title="參考"></a>參考</h3><p>QR decoder that works on mac?<br><a href="https://stackoverflow.com/questions/210470/qr-decoder-that-works-on-mac" target="_blank" rel="noopener">https://stackoverflow.com/questions/210470/qr-decoder-that-works-on-mac</a></p>
-<p>zbar src<br><a href="http://zbar.sourceforge.net/download.html" target="_blank" rel="noopener">http://zbar.sourceforge.net/download.html</a></p>
-<p>RMagick installation: Can’t find MagickWand.h<br><a href="https://stackoverflow.com/questions/39494672/rmagick-installation-cant-find-magickwand-h" target="_blank" rel="noopener">https://stackoverflow.com/questions/39494672/rmagick-installation-cant-find-magickwand-h</a></p>
-
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3>
+        
+          <p class="article-more-link">
+            <a href="/2018/08/04/在macos 如何build zbarimg/#more">繼續閱讀全文 »</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2018/08/04/在macos 如何build zbarimg/" data-id="cjrm4rckd000fwsxz3238av94" class="article-share-link">Share</a>
+      <a data-url="http://blog.roy4801.tw/2018/08/04/在macos 如何build zbarimg/" data-id="cjrnmce0j000hk5xzyxzqu0ad" class="article-share-link">分享</a>
       
       
         <a href="http://blog.roy4801.tw/2018/08/04/在macos 如何build zbarimg/#disqus_thread" class="article-comment-link">留言</a>
@@ -1012,7 +711,7 @@ ga('send', 'pageview');
       
       
       
-            <a class="email" aria-hidden="true"  href="mailto:a82611141@gmail.com" target="_blank" title="邮箱"></a>
+            <a class="email" aria-hidden="true" href="mailto:a82611141@gmail.com" target="_blank" title="邮箱"></a>
       
     </div>
   </div>
@@ -1022,6 +721,23 @@ ga('send', 'pageview');
     
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title categories">分類</h3>
+    <div class="widget" id="categories">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/其他/">其他</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/學習紀錄/">學習紀錄</a><span class="category-list-count">7</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/學習紀錄/C-C/">C/C++</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/學習紀錄/Linux/">Linux</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/學習紀錄/其他/">其他</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/學習紀錄/組合語言/">組合語言</a><span class="category-list-count">2</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/心得散文/">心得散文</a><span class="category-list-count">3</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title tags">標籤</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/">C++</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/">Linux</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/STL/">STL</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ctf-tools/">ctf tools</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/x86/">x86</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/其他/">其他</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/心得/">心得</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/心情散文/">心情散文</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/教學/">教學</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/比賽/">比賽</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/程式/">程式</a><span class="tag-list-count">3</span></li></ul>
+    </div>
+  </div>
+
 
   
     
@@ -1083,11 +799,11 @@ ga('send', 'pageview');
   
   <div class="outer">
     <div id="footer-left">
-      &copy; 2014 - 2019 roy4801&nbsp;|&nbsp;
+      &copy; 2018 - 2019 roy4801&nbsp;|&nbsp;
       Theme by <a href="https://github.com/giscafer/hexo-theme-cafe/" target="_blank">Cafe</a>
     </div>
      <div id="footer-right">
-      联系方式&nbsp;|&nbsp;http://blog.roy4801.tw
+      聯繫方式&nbsp;|&nbsp;http://blog.roy4801.tw
     </div>
   </div>
 </footer>
@@ -1100,7 +816,7 @@ ga('send', 'pageview');
     <a href="/archives" class="mobile-nav-link">歸檔</a>
   
 </nav>
-    <img class="back-to-top-btn" src="/images/fly-to-top.png"/>
+    <img class="back-to-top-btn" src="/images/fly-to-top.png">
 <script>
 // Elevator script included on the page, already.
 window.onload = function() {
