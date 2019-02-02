@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.roy4801.tw/"/>
-  <updated>2019-02-01T17:23:46.000Z</updated>
+  <updated>2019-02-02T16:09:57.000Z</updated>
   <id>http://blog.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Uva 402 - M*A*S*H</title>
+    <link href="http://blog.roy4801.tw/2019/02/02/uva402/"/>
+    <id>http://blog.roy4801.tw/2019/02/02/uva402/</id>
+    <published>2019-02-02T15:54:28.000Z</published>
+    <updated>2019-02-02T16:09:57.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=onlinejudge&amp;amp;page=show_problem&amp;amp;problem=343&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;Problem&quot;&gt;&lt;a href=&quot;#Problem&quot; class=&quot;headerlink&quot; title=&quot;Problem&quot;&gt;&lt;/a&gt;Problem&lt;/h1&gt;&lt;p&gt;有一排人（長度$N$），每次從一疊卡（20張）頂端抽出一張卡，點數$i$ 代表 列隊每$i$個人要去除。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="解題區" scheme="http://blog.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+      <category term="Uva" scheme="http://blog.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Uva/"/>
+    
+    
+      <category term="Uva, 解題紀錄" scheme="http://blog.roy4801.tw/tags/Uva-%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+  </entry>
   
   <entry>
     <title>在64-bit Ubuntu執行32-bit程式</title>
