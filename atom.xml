@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.roy4801.tw/"/>
-  <updated>2019-02-02T16:37:18.000Z</updated>
+  <updated>2019-02-07T13:04:47.000Z</updated>
   <id>http://blog.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Uva 11995 - I Can Guess the Data Structure!</title>
+    <link href="http://blog.roy4801.tw/2019/02/07/uva11995/"/>
+    <id>http://blog.roy4801.tw/2019/02/07/uva11995/</id>
+    <published>2019-02-07T12:42:47.000Z</published>
+    <updated>2019-02-07T13:04:47.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=3146&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;Problem&quot;&gt;&lt;a href=&quot;#Problem&quot; class=&quot;headerlink&quot; title=&quot;Problem&quot;&gt;&lt;/a&gt;Problem&lt;/h1&gt;&lt;p&gt;有種資料結構(你不知道是什麼）支援兩種操作：放入、拿出。給定一個操作的序列，你要寫支程式推測出是哪種資料結構（&lt;code&gt;stack&lt;/code&gt;, &lt;code&gt;queue&lt;/code&gt;, &lt;code&gt;priority queue&lt;/code&gt;），不確定則輸出不確定，不知道輸出不知道。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="解題紀錄" scheme="http://blog.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+      <category term="Uva" scheme="http://blog.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/Uva/"/>
+    
+    
+      <category term="Uva" scheme="http://blog.roy4801.tw/tags/Uva/"/>
+    
+      <category term="解題紀錄" scheme="http://blog.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+  </entry>
   
   <entry>
     <title>Uva 10935 - Throwing cards away I</title>
@@ -108,9 +133,9 @@
       <category term="心得散文" scheme="http://blog.roy4801.tw/categories/%E5%BF%83%E5%BE%97%E6%95%A3%E6%96%87/"/>
     
     
-      <category term="心得" scheme="http://blog.roy4801.tw/tags/%E5%BF%83%E5%BE%97/"/>
-    
       <category term="程式" scheme="http://blog.roy4801.tw/tags/%E7%A8%8B%E5%BC%8F/"/>
+    
+      <category term="心得" scheme="http://blog.roy4801.tw/tags/%E5%BF%83%E5%BE%97/"/>
     
   </entry>
   
