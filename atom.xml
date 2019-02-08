@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.roy4801.tw/"/>
-  <updated>2019-02-07T13:04:47.000Z</updated>
+  <updated>2019-02-08T13:33:55.000Z</updated>
   <id>http://blog.roy4801.tw/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Uva 12100 - Printer Queue</title>
+    <link href="http://blog.roy4801.tw/2019/02/08/uva12100/"/>
+    <id>http://blog.roy4801.tw/2019/02/08/uva12100/</id>
+    <published>2019-02-08T06:34:58.000Z</published>
+    <updated>2019-02-08T13:33:55.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;category=&amp;amp;problem=3252&amp;amp;mosmsg=Submission+received+with+ID+22756147&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;Problem&quot;&gt;&lt;a href=&quot;#Problem&quot; class=&quot;headerlink&quot; title=&quot;Problem&quot;&gt;&lt;/a&gt;Problem&lt;/h1&gt;&lt;p&gt;有台印表機，有$n$件工作等待列印($1 \le n \le 100$)，你排在第$m$號位置($0 \le m \le {n-1}$)，位置從零開始。&lt;br&gt;由於實在是太多人印了，所以把每件工作都加上優先權，從1~9代表低到高。&lt;br&gt;對於是否要列印有特殊的規則：（假設佇列的頭是&lt;code&gt;job j&lt;/code&gt;）&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="解題區" scheme="http://blog.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+      <category term="Uva" scheme="http://blog.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Uva/"/>
+    
+    
+      <category term="Uva" scheme="http://blog.roy4801.tw/tags/Uva/"/>
+    
+      <category term="解題紀錄" scheme="http://blog.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Uva 11995 - I Can Guess the Data Structure!</title>
     <link href="http://blog.roy4801.tw/2019/02/07/uva11995/"/>
     <id>http://blog.roy4801.tw/2019/02/07/uva11995/</id>
     <published>2019-02-07T12:42:47.000Z</published>
-    <updated>2019-02-07T13:04:47.000Z</updated>
+    <updated>2019-02-07T17:22:36.000Z</updated>
     
     <summary type="html">
     
@@ -30,9 +55,9 @@
     
     </summary>
     
-      <category term="解題紀錄" scheme="http://blog.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+      <category term="解題區" scheme="http://blog.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
     
-      <category term="Uva" scheme="http://blog.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/Uva/"/>
+      <category term="Uva" scheme="http://blog.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Uva/"/>
     
     
       <category term="Uva" scheme="http://blog.roy4801.tw/tags/Uva/"/>
@@ -71,7 +96,7 @@
     <link href="http://blog.roy4801.tw/2019/02/02/uva402/"/>
     <id>http://blog.roy4801.tw/2019/02/02/uva402/</id>
     <published>2019-02-02T15:54:28.000Z</published>
-    <updated>2019-02-02T16:13:17.000Z</updated>
+    <updated>2019-02-07T17:22:35.000Z</updated>
     
     <summary type="html">
     
