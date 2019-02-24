@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.roy4801.tw/"/>
-  <updated>2019-02-08T13:33:55.000Z</updated>
+  <updated>2019-02-24T06:01:43.000Z</updated>
   <id>http://blog.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Uva 136 - Ugly Number</title>
+    <link href="http://blog.roy4801.tw/2019/02/24/uva136/"/>
+    <id>http://blog.roy4801.tw/2019/02/24/uva136/</id>
+    <published>2019-02-24T05:26:12.000Z</published>
+    <updated>2019-02-24T06:01:43.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=onlinejudge&amp;amp;page=show_problem&amp;amp;problem=72&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;Problem&quot;&gt;&lt;a href=&quot;#Problem&quot; class=&quot;headerlink&quot; title=&quot;Problem&quot;&gt;&lt;/a&gt;Problem&lt;/h1&gt;&lt;p&gt;&lt;code&gt;Ulgy Number&lt;/code&gt;是只有$2$、$3$、$5$質因數的數字。前11項是：&lt;br&gt;$$&lt;br&gt;1,\ 2,\ 3,\ 4,\ 5,\ 6,\ 8,\ 9,\ 10,\ 12,\ 15,\ …&lt;br&gt;$$&lt;br&gt;程式必須印出第1500項&lt;code&gt;ugly number&lt;/code&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="解題區" scheme="http://blog.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+      <category term="Uva" scheme="http://blog.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Uva/"/>
+    
+    
+      <category term="Uva" scheme="http://blog.roy4801.tw/tags/Uva/"/>
+    
+      <category term="解題紀錄" scheme="http://blog.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+      <category term="DP" scheme="http://blog.roy4801.tw/tags/DP/"/>
+    
+  </entry>
   
   <entry>
     <title>Uva 12100 - Printer Queue</title>
