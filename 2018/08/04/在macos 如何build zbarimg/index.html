@@ -3,20 +3,20 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>在macos 如何build`zbarimg` | r0yblog</title>
+  <title>在macos 如何build zbarimg | r0yblog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="在macos 如何build zbarimgtags: ctf tools, 程式, 教學 前言">
+  <meta name="description" content="前言在打CTF時，在Misc遇到有用QRcode encode的flag，雖然有線上的工具，但身為programmer就要用command-line，所以就找到了一個cli的qrcode-decoder，但是官方並沒有提供macos的binary而brew也沒有，以至於就得自己build了。 macos版本：OS X 10.11.6 El Capitan">
 <meta name="keywords" content="程式,教學,ctf tools">
 <meta property="og:type" content="article">
-<meta property="og:title" content="在macos 如何build`zbarimg`">
+<meta property="og:title" content="在macos 如何build zbarimg">
 <meta property="og:url" content="http://blog.roy4801.tw/2018/08/04/在macos 如何build zbarimg/index.html">
 <meta property="og:site_name" content="r0yblog">
-<meta property="og:description" content="在macos 如何build zbarimgtags: ctf tools, 程式, 教學 前言">
+<meta property="og:description" content="前言在打CTF時，在Misc遇到有用QRcode encode的flag，雖然有線上的工具，但身為programmer就要用command-line，所以就找到了一個cli的qrcode-decoder，但是官方並沒有提供macos的binary而brew也沒有，以至於就得自己build了。 macos版本：OS X 10.11.6 El Capitan">
 <meta property="og:locale" content="zh-TW">
-<meta property="og:updated_time" content="2019-02-01T17:25:59.000Z">
+<meta property="og:updated_time" content="2019-03-31T15:08:47.714Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="在macos 如何build`zbarimg`">
-<meta name="twitter:description" content="在macos 如何build zbarimgtags: ctf tools, 程式, 教學 前言">
+<meta name="twitter:title" content="在macos 如何build zbarimg">
+<meta name="twitter:description" content="前言在打CTF時，在Misc遇到有用QRcode encode的flag，雖然有線上的工具，但身為programmer就要用command-line，所以就找到了一個cli的qrcode-decoder，但是官方並沒有提供macos的binary而brew也沒有，以至於就得自己build了。 macos版本：OS X 10.11.6 El Capitan">
   
     <link rel="alternate" href="/atom.xml" title="r0yblog" type="application/atom+xml">
   
@@ -102,7 +102,7 @@ ga('send', 'pageview');
         
   
     <h1 class="article-title" itemprop="name">
-      在macos 如何build`zbarimg`
+      在macos 如何build zbarimg
     </h1>
   
 
@@ -112,10 +112,9 @@ ga('send', 'pageview');
       
         <!-- Table of Contents -->
         
-        <h2 id="在macos-如何build-zbarimg"><a href="#在macos-如何build-zbarimg" class="headerlink" title="在macos 如何build zbarimg"></a>在macos 如何build <code>zbarimg</code></h2><p>tags: <a href="tags/ctf-tools/"><code>ctf tools</code></a>, <a href="tags/程式"><code>程式</code></a>, <a href="tags/教學"><code>教學</code></a></p>
-<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>在打CTF時，在<code>Misc</code>遇到有用<a href="https://en.wikipedia.org/wiki/QR_code" target="_blank" rel="noopener">QRcode</a> encode的flag，雖然有線上的工具，但身為<del>programmer</del>就要用command-line，所以就找到了一個cli的qrcode-decoder，但是官方並沒有提供macos的binary而brew也沒有，以至於就得自己build了。</p>
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在打CTF時，在<code>Misc</code>遇到有用<a href="https://en.wikipedia.org/wiki/QR_code" target="_blank" rel="noopener">QRcode</a> encode的flag，雖然有線上的工具，但身為<del>programmer</del>就要用command-line，所以就找到了一個cli的qrcode-decoder，但是官方並沒有提供macos的binary而brew也沒有，以至於就得自己build了。</p>
 <p>macos版本：<code>OS X 10.11.6 El Capitan</code></p>
-<h3 id="Build"><a href="#Build" class="headerlink" title="Build"></a>Build</h3><ol>
+<h2 id="Build"><a href="#Build" class="headerlink" title="Build"></a>Build</h2><ol>
 <li><p>下載<code>zbarimg</code> source code，並解壓<br><a href="http://zbar.sourceforge.net/download.html" target="_blank" rel="noopener">http://zbar.sourceforge.net/download.html</a></p>
 </li>
 <li><p>在資料夾下開起terminal</p>
@@ -125,18 +124,18 @@ ga('send', 'pageview');
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ make</span><br><span class="line">$ make install</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<h4 id="問題：Can-39-t-find-MagickWand-h"><a href="#問題：Can-39-t-find-MagickWand-h" class="headerlink" title="問題：Can&#39;t find MagickWand.h."></a>問題：<code>Can&#39;t find MagickWand.h.</code></h4><p>zbarimg需要依賴imgagemagick<br>而在<code>brew</code>不加後綴的的是7.<em>版，而zbarimg使用6.</em>版，所以導致錯誤。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ brew unlink imagemagick</span><br><span class="line">$ brew install imagemagick@6 &amp;&amp; brew link imagemagick@6 --force</span><br></pre></td></tr></table></figure></p>
+<h3 id="問題：Can-39-t-find-MagickWand-h"><a href="#問題：Can-39-t-find-MagickWand-h" class="headerlink" title="問題：Can&#39;t find MagickWand.h."></a>問題：<code>Can&#39;t find MagickWand.h.</code></h3><p>zbarimg需要依賴imgagemagick<br>而在<code>brew</code>不加後綴的的是7.<em>版，而zbarimg使用6.</em>版，所以導致錯誤。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ brew unlink imagemagick</span><br><span class="line">$ brew install imagemagick@6 &amp;&amp; brew link imagemagick@6 --force</span><br></pre></td></tr></table></figure></p>
 <blockquote>
 <p>Imagemagick-7<br><code>/usr/local/Cellar/imagemagick/7.0.8-8/include/ImageMagick-7/MagickWand/MagickWand.h</code><br>Imagemagick-6<br><code>/usr/local/Cellar/imagemagick@6/6.9.10-8/include/ImageMagick-6/wand/MagickWand.h</code></p>
 </blockquote>
-<h3 id="參考"><a href="#參考" class="headerlink" title="參考"></a>參考</h3><p>QR decoder that works on mac?<br><a href="https://stackoverflow.com/questions/210470/qr-decoder-that-works-on-mac" target="_blank" rel="noopener">https://stackoverflow.com/questions/210470/qr-decoder-that-works-on-mac</a></p>
+<h2 id="參考"><a href="#參考" class="headerlink" title="參考"></a>參考</h2><p>QR decoder that works on mac?<br><a href="https://stackoverflow.com/questions/210470/qr-decoder-that-works-on-mac" target="_blank" rel="noopener">https://stackoverflow.com/questions/210470/qr-decoder-that-works-on-mac</a></p>
 <p>zbar src<br><a href="http://zbar.sourceforge.net/download.html" target="_blank" rel="noopener">http://zbar.sourceforge.net/download.html</a></p>
 <p>RMagick installation: Can’t find MagickWand.h<br><a href="https://stackoverflow.com/questions/39494672/rmagick-installation-cant-find-magickwand-h" target="_blank" rel="noopener">https://stackoverflow.com/questions/39494672/rmagick-installation-cant-find-magickwand-h</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2018/08/04/在macos 如何build zbarimg/" data-id="cjtx1xtx2000r5uxzhikupoiv" class="article-share-link">分享</a>
+      <a data-url="http://blog.roy4801.tw/2018/08/04/在macos 如何build zbarimg/" data-id="cjtx2ab5b00119oxzok81uc1m" class="article-share-link">分享</a>
       
       
         <a href="http://blog.roy4801.tw/2018/08/04/在macos 如何build zbarimg/#disqus_thread" class="article-comment-link">留言</a>
@@ -249,7 +248,7 @@ ga('send', 'pageview');
       
         <strong class="toc-title">文章目錄</strong>
         <div class="toc-widget-list">
-              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#在macos-如何build-zbarimg"><span class="toc-number">1.</span> <span class="toc-text">在macos 如何build zbarimg</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#前言"><span class="toc-number">1.1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Build"><span class="toc-number">1.2.</span> <span class="toc-text">Build</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#問題：Can-39-t-find-MagickWand-h"><span class="toc-number">1.2.1.</span> <span class="toc-text">問題：Can&#39;t find MagickWand.h.</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#參考"><span class="toc-number">1.3.</span> <span class="toc-text">參考</span></a></li></ol></li></ol>
+              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Build"><span class="toc-number">2.</span> <span class="toc-text">Build</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#問題：Can-39-t-find-MagickWand-h"><span class="toc-number">2.1.</span> <span class="toc-text">問題：Can&#39;t find MagickWand.h.</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#參考"><span class="toc-number">3.</span> <span class="toc-text">參考</span></a></li></ol>
           </div>
       </div>
     </div>

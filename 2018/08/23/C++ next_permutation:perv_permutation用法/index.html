@@ -13,7 +13,7 @@
 <meta property="og:site_name" content="r0yblog">
 <meta property="og:description" content="C++ STL 組合STL中提供了兩個template function可以舉出一組資料的所有組合：分別是next_permutation()與prev_permutation() 組合順序交換的依據是照字典排序(lexicographically)">
 <meta property="og:locale" content="zh-TW">
-<meta property="og:updated_time" content="2019-02-01T17:22:56.000Z">
+<meta property="og:updated_time" content="2019-03-31T15:10:09.209Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="next_permutation&#x2F;perv_permutation用法">
 <meta name="twitter:description" content="C++ STL 組合STL中提供了兩個template function可以舉出一組資料的所有組合：分別是next_permutation()與prev_permutation() 組合順序交換的依據是照字典排序(lexicographically)">
@@ -115,7 +115,7 @@ ga('send', 'pageview');
         <h2 id="C-STL-組合"><a href="#C-STL-組合" class="headerlink" title="C++ STL 組合"></a>C++ STL 組合</h2><p>STL中提供了兩個template function可以舉出一組資料的所有組合：分別是<code>next_permutation()</code>與<code>prev_permutation()</code></p>
 <p>組合順序交換的依據是照<strong>字典排序</strong>(<em>lexicographically</em>)</p>
 <blockquote>
-<p>有如有一組資料是{‘a’, ‘b’, ‘c’}<br>那麼next_permutation()的順序就會是：<br>abc &lt; acb &lt; bac &lt; bca &lt; cab &lt; cba<br>就如字典排列的順序一般</p>
+<p>有如有一組資料是<code>{&#39;a&#39;, &#39;b&#39;, &#39;c&#39;}</code><br>那麼next_permutation()的順序就會是：<br>abc &lt; acb &lt; bac &lt; bca &lt; cab &lt; cba<br>就如字典排列的順序一般</p>
 </blockquote>
 <p>以上面的例子說明：<code>abc</code>是開頭，而<code>cba</code>是結束<br><code>next_permutation()</code>是找出右邊的組合（以字典序來說比較大），而<code>prev_permutation()</code>是找出左邊的組合（以字典序來說比較小），碰到開始或結束就return false，否則return true（代表還有沒有舉出的組合）。</p>
 <h3 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h3><p>要使用<code>next_permutation()</code>與<code>prev_permutation()</code>必須include標頭檔algorithm<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br></pre></td></tr></table></figure></p>
@@ -140,7 +140,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2018/08/23/C++ next_permutation:perv_permutation用法/" data-id="cjtx1xtvw00015uxzi8yvt0gd" class="article-share-link">分享</a>
+      <a data-url="http://blog.roy4801.tw/2018/08/23/C++ next_permutation:perv_permutation用法/" data-id="cjtx2ab4400059oxz5v8lxir5" class="article-share-link">分享</a>
       
       
         <a href="http://blog.roy4801.tw/2018/08/23/C++ next_permutation:perv_permutation用法/#disqus_thread" class="article-comment-link">留言</a>
@@ -208,7 +208,7 @@ ga('send', 'pageview');
   
     <a href="/2018/08/04/在macos 如何build zbarimg/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">在macos 如何build`zbarimg`</div>
+      <div class="article-nav-title">在macos 如何build zbarimg</div>
     </a>
   
 </nav>
