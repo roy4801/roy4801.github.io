@@ -13,7 +13,7 @@
 <meta property="og:site_name" content="r0yblog">
 <meta property="og:description" content="題目 Problem(簡化)有一組數列($a_i$)，對所有$i&amp;lt;j$，求最大的$a_i - a_j$">
 <meta property="og:locale" content="zh-TW">
-<meta property="og:updated_time" content="2019-05-18T07:42:15.572Z">
+<meta property="og:updated_time" content="2019-05-18T07:51:59.541Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Uva 11078 - Open Credit System">
 <meta name="twitter:description" content="題目 Problem(簡化)有一組數列($a_i$)，對所有$i&amp;lt;j$，求最大的$a_i - a_j$">
@@ -114,14 +114,15 @@ ga('send', 'pageview');
         
         <p><a href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;Itemid=8&amp;page=show_problem&amp;category=0&amp;problem=2019&amp;mosmsg=Submission+received+with+ID+23355296" target="_blank" rel="noopener">題目</a></p>
 <h1 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h1><p>(簡化)<br>有一組數列($a_i$)，對所有$i&lt;j$，求最大的$a_i - a_j$</p>
-<h1 id="想法"><a href="#想法" class="headerlink" title="想法"></a>想法</h1><p>$O(n^2)$暴力會TLE，但觀察可以發現，對於每個$a_j$，如果$a_i - a_j$要最大，那$a_i$一定越大越好，所以可以直接維護一個最大值($M$)，代表從$1\approxi$的最大。<br>只要掃一遍，就得到答案。($O(n)$)</p>
+<h1 id="想法"><a href="#想法" class="headerlink" title="想法"></a>想法</h1><p>$O(n^2)$暴力會TLE，但觀察可以發現，對於每個$a_j$，如果$a_i - a_j$要最大，那$a_i$一定越大越好，所以可以直接維護一個最大值($M$)，代表從$1 \sim i$的最大。<br>只要掃一遍，就得到答案。($O(n)$)</p>
 <h1 id="AC-Code"><a href="#AC-Code" class="headerlink" title="AC Code"></a>AC Code</h1><p><a href="https://github.com/roy4801/solved_problems/blob/master/uva/11078.cpp" target="_blank" rel="noopener">https://github.com/roy4801/solved_problems/blob/master/uva/11078.cpp</a></p>
 <h2 id="其他解法"><a href="#其他解法" class="headerlink" title="其他解法"></a>其他解法</h2><p>單調隊列<br><a href="https://csy54.github.io/2019/02/UVa-11078/" target="_blank" rel="noopener">https://csy54.github.io/2019/02/UVa-11078/</a></p>
+<p><a href="https://gist.github.com/roy4801/b417a1a65d2e43f3534f580a3bacd78d" target="_blank" rel="noopener">https://gist.github.com/roy4801/b417a1a65d2e43f3534f580a3bacd78d</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2019/05/18/uva11078/" data-id="cjvt7cuqn000aictk3ojck2s6" class="article-share-link">分享</a>
+      <a data-url="http://blog.roy4801.tw/2019/05/18/uva11078/" data-id="cjvt7siqg000evutkamb8oh24" class="article-share-link">分享</a>
       
       
         <a href="http://blog.roy4801.tw/2019/05/18/uva11078/#disqus_thread" class="article-comment-link">留言</a>

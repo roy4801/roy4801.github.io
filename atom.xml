@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.roy4801.tw/"/>
-  <updated>2019-05-18T07:42:15.572Z</updated>
+  <updated>2019-05-18T07:51:59.541Z</updated>
   <id>http://blog.roy4801.tw/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://blog.roy4801.tw/2019/05/18/uva11078/"/>
     <id>http://blog.roy4801.tw/2019/05/18/uva11078/</id>
     <published>2019-05-18T07:29:18.000Z</published>
-    <updated>2019-05-18T07:42:15.572Z</updated>
+    <updated>2019-05-18T07:51:59.541Z</updated>
     
     <summary type="html">
     
@@ -237,9 +237,9 @@
       <category term="Linux" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/Linux/"/>
     
     
-      <category term="Linux" scheme="http://blog.roy4801.tw/tags/Linux/"/>
-    
       <category term="心得" scheme="http://blog.roy4801.tw/tags/%E5%BF%83%E5%BE%97/"/>
+    
+      <category term="Linux" scheme="http://blog.roy4801.tw/tags/Linux/"/>
     
   </entry>
   
@@ -260,9 +260,9 @@
       <category term="心得散文" scheme="http://blog.roy4801.tw/categories/%E5%BF%83%E5%BE%97%E6%95%A3%E6%96%87/"/>
     
     
-      <category term="心得" scheme="http://blog.roy4801.tw/tags/%E5%BF%83%E5%BE%97/"/>
-    
       <category term="程式" scheme="http://blog.roy4801.tw/tags/%E7%A8%8B%E5%BC%8F/"/>
+    
+      <category term="心得" scheme="http://blog.roy4801.tw/tags/%E5%BF%83%E5%BE%97/"/>
     
   </entry>
   
@@ -284,9 +284,9 @@
       <category term="心得散文" scheme="http://blog.roy4801.tw/categories/%E5%BF%83%E5%BE%97%E6%95%A3%E6%96%87/"/>
     
     
-      <category term="心得" scheme="http://blog.roy4801.tw/tags/%E5%BF%83%E5%BE%97/"/>
-    
       <category term="比賽" scheme="http://blog.roy4801.tw/tags/%E6%AF%94%E8%B3%BD/"/>
+    
+      <category term="心得" scheme="http://blog.roy4801.tw/tags/%E5%BF%83%E5%BE%97/"/>
     
   </entry>
   
@@ -465,9 +465,9 @@
       <category term="Linux" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/Linux/"/>
     
     
-      <category term="Linux" scheme="http://blog.roy4801.tw/tags/Linux/"/>
-    
       <category term="教學" scheme="http://blog.roy4801.tw/tags/%E6%95%99%E5%AD%B8/"/>
+    
+      <category term="Linux" scheme="http://blog.roy4801.tw/tags/Linux/"/>
     
   </entry>
   
@@ -490,9 +490,9 @@
       <category term="Linux" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/Linux/"/>
     
     
-      <category term="Linux" scheme="http://blog.roy4801.tw/tags/Linux/"/>
-    
       <category term="教學" scheme="http://blog.roy4801.tw/tags/%E6%95%99%E5%AD%B8/"/>
+    
+      <category term="Linux" scheme="http://blog.roy4801.tw/tags/Linux/"/>
     
   </entry>
   
@@ -515,13 +515,13 @@
       <category term="C/C++" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/C-C/"/>
     
     
-      <category term="教學" scheme="http://blog.roy4801.tw/tags/%E6%95%99%E5%AD%B8/"/>
-    
       <category term="C++" scheme="http://blog.roy4801.tw/tags/C/"/>
     
       <category term="STL" scheme="http://blog.roy4801.tw/tags/STL/"/>
     
       <category term="程式" scheme="http://blog.roy4801.tw/tags/%E7%A8%8B%E5%BC%8F/"/>
+    
+      <category term="教學" scheme="http://blog.roy4801.tw/tags/%E6%95%99%E5%AD%B8/"/>
     
   </entry>
   
@@ -544,9 +544,9 @@
       <category term="其他" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/%E5%85%B6%E4%BB%96/"/>
     
     
-      <category term="教學" scheme="http://blog.roy4801.tw/tags/%E6%95%99%E5%AD%B8/"/>
-    
       <category term="程式" scheme="http://blog.roy4801.tw/tags/%E7%A8%8B%E5%BC%8F/"/>
+    
+      <category term="教學" scheme="http://blog.roy4801.tw/tags/%E6%95%99%E5%AD%B8/"/>
     
       <category term="ctf tools" scheme="http://blog.roy4801.tw/tags/ctf-tools/"/>
     
