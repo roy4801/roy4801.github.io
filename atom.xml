@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.roy4801.tw/"/>
-  <updated>2019-05-17T16:01:02.051Z</updated>
+  <updated>2019-05-18T07:42:15.572Z</updated>
   <id>http://blog.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Uva 11078 - Open Credit System</title>
+    <link href="http://blog.roy4801.tw/2019/05/18/uva11078/"/>
+    <id>http://blog.roy4801.tw/2019/05/18/uva11078/</id>
+    <published>2019-05-18T07:29:18.000Z</published>
+    <updated>2019-05-18T07:42:15.572Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;category=0&amp;amp;problem=2019&amp;amp;mosmsg=Submission+received+with+ID+23355296&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;Problem&quot;&gt;&lt;a href=&quot;#Problem&quot; class=&quot;headerlink&quot; title=&quot;Problem&quot;&gt;&lt;/a&gt;Problem&lt;/h1&gt;&lt;p&gt;(簡化)&lt;br&gt;有一組數列($a_i$)，對所有$i&amp;lt;j$，求最大的$a_i - a_j$&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="解題區" scheme="http://blog.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+      <category term="Uva" scheme="http://blog.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Uva/"/>
+    
+    
+      <category term="解題紀錄" scheme="http://blog.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+      <category term="Uva" scheme="http://blog.roy4801.tw/tags/Uva/"/>
+    
+  </entry>
   
   <entry>
     <title>Uva 10685 - Nature</title>

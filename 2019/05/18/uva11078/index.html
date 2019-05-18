@@ -3,20 +3,20 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>Uva 12100 - Printer Queue | r0yblog</title>
+  <title>Uva 11078 - Open Credit System | r0yblog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="題目 Problem有台印表機，有$n$件工作等待列印($1 \le n \le 100$)，你排在第$m$號位置($0 \le m \le {n-1}$)，位置從零開始。由於實在是太多人印了，所以把每件工作都加上優先權，從1~9代表低到高。對於是否要列印有特殊的規則：（假設佇列的頭是job j）">
+  <meta name="description" content="題目 Problem(簡化)有一組數列($a_i$)，對所有$i&amp;lt;j$，求最大的$a_i - a_j$">
 <meta name="keywords" content="解題紀錄,Uva">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Uva 12100 - Printer Queue">
-<meta property="og:url" content="http://blog.roy4801.tw/2019/02/08/uva12100/index.html">
+<meta property="og:title" content="Uva 11078 - Open Credit System">
+<meta property="og:url" content="http://blog.roy4801.tw/2019/05/18/uva11078/index.html">
 <meta property="og:site_name" content="r0yblog">
-<meta property="og:description" content="題目 Problem有台印表機，有$n$件工作等待列印($1 \le n \le 100$)，你排在第$m$號位置($0 \le m \le {n-1}$)，位置從零開始。由於實在是太多人印了，所以把每件工作都加上優先權，從1~9代表低到高。對於是否要列印有特殊的規則：（假設佇列的頭是job j）">
+<meta property="og:description" content="題目 Problem(簡化)有一組數列($a_i$)，對所有$i&amp;lt;j$，求最大的$a_i - a_j$">
 <meta property="og:locale" content="zh-TW">
-<meta property="og:updated_time" content="2019-02-08T13:33:55.000Z">
+<meta property="og:updated_time" content="2019-05-18T07:42:15.572Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Uva 12100 - Printer Queue">
-<meta name="twitter:description" content="題目 Problem有台印表機，有$n$件工作等待列印($1 \le n \le 100$)，你排在第$m$號位置($0 \le m \le {n-1}$)，位置從零開始。由於實在是太多人印了，所以把每件工作都加上優先權，從1~9代表低到高。對於是否要列印有特殊的規則：（假設佇列的頭是job j）">
+<meta name="twitter:title" content="Uva 11078 - Open Credit System">
+<meta name="twitter:description" content="題目 Problem(簡化)有一組數列($a_i$)，對所有$i&amp;lt;j$，求最大的$a_i - a_j$">
   
     <link rel="alternate" href="/atom.xml" title="r0yblog" type="application/atom+xml">
   
@@ -84,10 +84,10 @@ ga('send', 'pageview');
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-uva12100" class="article article-type-post" itemscope="" itemprop="blogPost">
+        <section id="main"><article id="post-uva11078" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2019/02/08/uva12100/" class="article-date">
-  <time datetime="2019-02-08T06:34:58.000Z" itemprop="datePublished">2019-02-08</time>
+    <a href="/2019/05/18/uva11078/" class="article-date">
+  <time datetime="2019-05-18T07:29:18.000Z" itemprop="datePublished">2019-05-18</time>
 </a>
     
   <div class="article-category">
@@ -102,7 +102,7 @@ ga('send', 'pageview');
         
   
     <h1 class="article-title" itemprop="name">
-      Uva 12100 - Printer Queue
+      Uva 11078 - Open Credit System
     </h1>
   
 
@@ -112,25 +112,19 @@ ga('send', 'pageview');
       
         <!-- Table of Contents -->
         
-        <p><a href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;Itemid=8&amp;page=show_problem&amp;category=&amp;problem=3252&amp;mosmsg=Submission+received+with+ID+22756147" target="_blank" rel="noopener">題目</a></p>
-<h1 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h1><p>有台印表機，有$n$件工作等待列印($1 \le n \le 100$)，你排在第$m$號位置($0 \le m \le {n-1}$)，位置從零開始。<br>由於實在是太多人印了，所以把每件工作都加上優先權，從1~9代表低到高。<br>對於是否要列印有特殊的規則：（假設佇列的頭是<code>job j</code>）</p>
-<ul>
-<li>如果佇列裡頭有比<code>job j</code>還高優先的工作，則把<code>job j</code>放到佇列最後頭。</li>
-<li>如果沒有，就執行<code>job j</code>。</li>
-</ul>
-<p>你需要計算你必須花多少時間才能完成你的工作。</p>
-<h2 id="輸入"><a href="#輸入" class="headerlink" title="輸入"></a>輸入</h2><p>第一行有個正整數(最多100)代表有幾筆測資。<br>接著每筆測資第一行有兩個整數：$n$有幾個工作在佇列裡，$m$你的工作在第幾個位置(0-index)<br>每筆測資的第二行，有$n$個整數，代表$n$個工作的優先級。</p>
-<h2 id="輸出"><a href="#輸出" class="headerlink" title="輸出"></a>輸出</h2><p>對於每筆測資，輸出一個正整數代表到你的工作完成要花多少時間（包含）。</p>
-<h1 id="想法"><a href="#想法" class="headerlink" title="想法"></a>想法</h1><p>直接模擬題目所述。</p>
-<h1 id="AC-Code"><a href="#AC-Code" class="headerlink" title="AC Code"></a>AC Code</h1><p><a href="https://github.com/roy4801/solved_problems/blob/master/uva/12100.cpp" target="_blank" rel="noopener">https://github.com/roy4801/solved_problems/blob/master/uva/12100.cpp</a></p>
+        <p><a href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;Itemid=8&amp;page=show_problem&amp;category=0&amp;problem=2019&amp;mosmsg=Submission+received+with+ID+23355296" target="_blank" rel="noopener">題目</a></p>
+<h1 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h1><p>(簡化)<br>有一組數列($a_i$)，對所有$i&lt;j$，求最大的$a_i - a_j$</p>
+<h1 id="想法"><a href="#想法" class="headerlink" title="想法"></a>想法</h1><p>$O(n^2)$暴力會TLE，但觀察可以發現，對於每個$a_j$，如果$a_i - a_j$要最大，那$a_i$一定越大越好，所以可以直接維護一個最大值($M$)，代表從$1\approxi$的最大。<br>只要掃一遍，就得到答案。($O(n)$)</p>
+<h1 id="AC-Code"><a href="#AC-Code" class="headerlink" title="AC Code"></a>AC Code</h1><p><a href="https://github.com/roy4801/solved_problems/blob/master/uva/11078.cpp" target="_blank" rel="noopener">https://github.com/roy4801/solved_problems/blob/master/uva/11078.cpp</a></p>
+<h2 id="其他解法"><a href="#其他解法" class="headerlink" title="其他解法"></a>其他解法</h2><p>單調隊列<br><a href="https://csy54.github.io/2019/02/UVa-11078/" target="_blank" rel="noopener">https://csy54.github.io/2019/02/UVa-11078/</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2019/02/08/uva12100/" data-id="cjvt7cur5000pictkt8sqh5so" class="article-share-link">分享</a>
+      <a data-url="http://blog.roy4801.tw/2019/05/18/uva11078/" data-id="cjvt7cuqn000aictk3ojck2s6" class="article-share-link">分享</a>
       
       
-        <a href="http://blog.roy4801.tw/2019/02/08/uva12100/#disqus_thread" class="article-comment-link">留言</a>
+        <a href="http://blog.roy4801.tw/2019/05/18/uva11078/#disqus_thread" class="article-comment-link">留言</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Uva/">Uva</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/解題紀錄/">解題紀錄</a></li></ul>
@@ -183,19 +177,10 @@ ga('send', 'pageview');
     
 <nav id="article-nav">
   
-    <a href="/2019/02/24/uva136/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Uva 136 - Ugly Number
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/02/07/uva11995/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2019/05/17/uva10685/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Uva 11995 - I Can Guess the Data Structure!</div>
+      <div class="article-nav-title">Uva 10685 - Nature</div>
     </a>
   
 </nav>
@@ -240,7 +225,7 @@ ga('send', 'pageview');
       
         <strong class="toc-title">文章目錄</strong>
         <div class="toc-widget-list">
-              <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Problem"><span class="toc-number">1.</span> <span class="toc-text">Problem</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#輸入"><span class="toc-number">1.1.</span> <span class="toc-text">輸入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#輸出"><span class="toc-number">1.2.</span> <span class="toc-text">輸出</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#想法"><span class="toc-number">2.</span> <span class="toc-text">想法</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#AC-Code"><span class="toc-number">3.</span> <span class="toc-text">AC Code</span></a></li></ol>
+              <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Problem"><span class="toc-number">1.</span> <span class="toc-text">Problem</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#想法"><span class="toc-number">2.</span> <span class="toc-text">想法</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#AC-Code"><span class="toc-number">3.</span> <span class="toc-text">AC Code</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#其他解法"><span class="toc-number">3.1.</span> <span class="toc-text">其他解法</span></a></li></ol></li></ol>
           </div>
       </div>
     </div>
@@ -301,7 +286,7 @@ window.onload = function() {
 <script>
   var disqus_shortname = 'roy-blog';
   
-  var disqus_url = 'http://blog.roy4801.tw/2019/02/08/uva12100/';
+  var disqus_url = 'http://blog.roy4801.tw/2019/05/18/uva11078/';
   
   (function(){
     var dsq = document.createElement('script');
