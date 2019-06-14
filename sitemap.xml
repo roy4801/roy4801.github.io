@@ -2,14 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://blog.roy4801.tw/2019/05/18/uva11059/</loc>
+    <loc>http://blog.roy4801.tw/2019/06/14/uva/uva526/</loc>
+    
+    <lastmod>2019-06-14T12:20:08.176Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.roy4801.tw/ais3_2019_pre_exam.html</loc>
+    
+    <lastmod>2019-05-31T07:14:14.025Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.roy4801.tw/2019/05/18/uva/uva11059/</loc>
     
     <lastmod>2019-05-18T13:47:33.672Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.roy4801.tw/2019/05/18/uva11078/</loc>
+    <loc>http://blog.roy4801.tw/2019/05/18/uva/uva11078/</loc>
     
     <lastmod>2019-05-18T07:51:59.541Z</lastmod>
     
@@ -23,21 +37,21 @@
   </url>
   
   <url>
-    <loc>http://blog.roy4801.tw/2019/05/17/uva10685/</loc>
+    <loc>http://blog.roy4801.tw/2019/05/17/uva/uva10685/</loc>
     
     <lastmod>2019-05-17T16:01:02.051Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.roy4801.tw/2018/08/23/C++%20next_permutation:perv_permutation%E7%94%A8%E6%B3%95/</loc>
+    <loc>http://blog.roy4801.tw/2018/08/23/c++/C++%20next_permutation:perv_permutation%E7%94%A8%E6%B3%95/</loc>
     
     <lastmod>2019-03-31T15:10:09.209Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.roy4801.tw/2018/08/25/ssh%E5%88%B0linux(ubuntu)%E4%B8%8A%E7%84%A1%E6%B3%95%E8%BC%B8%E5%85%A5%E4%B8%AD%E6%96%87%E5%95%8F%E9%A1%8C/</loc>
+    <loc>http://blog.roy4801.tw/2018/08/25/linux/ssh%E5%88%B0linux(ubuntu)%E4%B8%8A%E7%84%A1%E6%B3%95%E8%BC%B8%E5%85%A5%E4%B8%AD%E6%96%87%E5%95%8F%E9%A1%8C/</loc>
     
     <lastmod>2019-03-31T15:09:31.245Z</lastmod>
     
@@ -58,35 +72,35 @@
   </url>
   
   <url>
-    <loc>http://blog.roy4801.tw/2019/02/24/uva136/</loc>
+    <loc>http://blog.roy4801.tw/2019/02/24/uva/uva136/</loc>
     
     <lastmod>2019-02-24T06:01:43.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.roy4801.tw/2019/02/08/uva12100/</loc>
+    <loc>http://blog.roy4801.tw/2019/02/08/uva/uva12100/</loc>
     
     <lastmod>2019-02-08T13:33:55.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.roy4801.tw/2019/02/07/uva11995/</loc>
+    <loc>http://blog.roy4801.tw/2019/02/07/uva/uva11995/</loc>
     
     <lastmod>2019-02-07T17:22:36.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.roy4801.tw/2019/02/02/uva402/</loc>
+    <loc>http://blog.roy4801.tw/2019/02/02/uva/uva402/</loc>
     
     <lastmod>2019-02-07T17:22:35.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.roy4801.tw/2019/02/03/uva10935/</loc>
+    <loc>http://blog.roy4801.tw/2019/02/03/uva/uva10935/</loc>
     
     <lastmod>2019-02-02T16:37:18.000Z</lastmod>
     
@@ -114,14 +128,14 @@
   </url>
   
   <url>
-    <loc>http://blog.roy4801.tw/2018/08/25/tmux%20%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</loc>
+    <loc>http://blog.roy4801.tw/2018/08/25/linux/tmux%20%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</loc>
     
     <lastmod>2019-02-01T17:24:20.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.roy4801.tw/2019/01/26/linux_x86_libs/</loc>
+    <loc>http://blog.roy4801.tw/2019/01/26/linux/linux_x86_libs/</loc>
     
     <lastmod>2019-02-01T17:23:46.000Z</lastmod>
     

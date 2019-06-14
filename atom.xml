@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.roy4801.tw/"/>
-  <updated>2019-05-18T13:47:33.672Z</updated>
+  <updated>2019-06-14T12:20:08.176Z</updated>
   <id>http://blog.roy4801.tw/</id>
   
   <author>
@@ -17,9 +17,34 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Uva 526 - String Distance and Transform Process</title>
+    <link href="http://blog.roy4801.tw/2019/06/14/uva/uva526/"/>
+    <id>http://blog.roy4801.tw/2019/06/14/uva/uva526/</id>
+    <published>2019-06-14T10:30:55.000Z</published>
+    <updated>2019-06-14T12:20:08.176Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=467&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;Problem&quot;&gt;&lt;a href=&quot;#Problem&quot; class=&quot;headerlink&quot; title=&quot;Problem&quot;&gt;&lt;/a&gt;Problem&lt;/h1&gt;&lt;p&gt;字串距離是一個代表兩個字串的非負整數。接著要轉換(transform)$a$字串至$b$字串，有三種操作：插入(Insert)、刪除(Delete)、及取代（Replace)。&lt;br&gt;字串距離就是轉換的數量，求任意$a$字串轉換至$b$字串的字串距離及如何轉換的。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="解題區" scheme="http://blog.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+      <category term="Uva" scheme="http://blog.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Uva/"/>
+    
+    
+      <category term="解題紀錄" scheme="http://blog.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+      <category term="Uva" scheme="http://blog.roy4801.tw/tags/Uva/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Uva 11059 - Maximum Product</title>
-    <link href="http://blog.roy4801.tw/2019/05/18/uva11059/"/>
-    <id>http://blog.roy4801.tw/2019/05/18/uva11059/</id>
+    <link href="http://blog.roy4801.tw/2019/05/18/uva/uva11059/"/>
+    <id>http://blog.roy4801.tw/2019/05/18/uva/uva11059/</id>
     <published>2019-05-18T13:40:29.000Z</published>
     <updated>2019-05-18T13:47:33.672Z</updated>
     
@@ -43,8 +68,8 @@
   
   <entry>
     <title>Uva 11078 - Open Credit System</title>
-    <link href="http://blog.roy4801.tw/2019/05/18/uva11078/"/>
-    <id>http://blog.roy4801.tw/2019/05/18/uva11078/</id>
+    <link href="http://blog.roy4801.tw/2019/05/18/uva/uva11078/"/>
+    <id>http://blog.roy4801.tw/2019/05/18/uva/uva11078/</id>
     <published>2019-05-18T07:29:18.000Z</published>
     <updated>2019-05-18T07:51:59.541Z</updated>
     
@@ -68,8 +93,8 @@
   
   <entry>
     <title>Uva 10685 - Nature</title>
-    <link href="http://blog.roy4801.tw/2019/05/17/uva10685/"/>
-    <id>http://blog.roy4801.tw/2019/05/17/uva10685/</id>
+    <link href="http://blog.roy4801.tw/2019/05/17/uva/uva10685/"/>
+    <id>http://blog.roy4801.tw/2019/05/17/uva/uva10685/</id>
     <published>2019-05-17T15:37:37.000Z</published>
     <updated>2019-05-17T16:01:02.051Z</updated>
     
@@ -118,8 +143,8 @@
   
   <entry>
     <title>Uva 136 - Ugly Number</title>
-    <link href="http://blog.roy4801.tw/2019/02/24/uva136/"/>
-    <id>http://blog.roy4801.tw/2019/02/24/uva136/</id>
+    <link href="http://blog.roy4801.tw/2019/02/24/uva/uva136/"/>
+    <id>http://blog.roy4801.tw/2019/02/24/uva/uva136/</id>
     <published>2019-02-24T05:26:12.000Z</published>
     <updated>2019-02-24T06:01:43.000Z</updated>
     
@@ -145,8 +170,8 @@
   
   <entry>
     <title>Uva 12100 - Printer Queue</title>
-    <link href="http://blog.roy4801.tw/2019/02/08/uva12100/"/>
-    <id>http://blog.roy4801.tw/2019/02/08/uva12100/</id>
+    <link href="http://blog.roy4801.tw/2019/02/08/uva/uva12100/"/>
+    <id>http://blog.roy4801.tw/2019/02/08/uva/uva12100/</id>
     <published>2019-02-08T06:34:58.000Z</published>
     <updated>2019-02-08T13:33:55.000Z</updated>
     
@@ -170,8 +195,8 @@
   
   <entry>
     <title>Uva 11995 - I Can Guess the Data Structure!</title>
-    <link href="http://blog.roy4801.tw/2019/02/07/uva11995/"/>
-    <id>http://blog.roy4801.tw/2019/02/07/uva11995/</id>
+    <link href="http://blog.roy4801.tw/2019/02/07/uva/uva11995/"/>
+    <id>http://blog.roy4801.tw/2019/02/07/uva/uva11995/</id>
     <published>2019-02-07T12:42:47.000Z</published>
     <updated>2019-02-07T17:22:36.000Z</updated>
     
@@ -195,8 +220,8 @@
   
   <entry>
     <title>Uva 10935 - Throwing cards away I</title>
-    <link href="http://blog.roy4801.tw/2019/02/03/uva10935/"/>
-    <id>http://blog.roy4801.tw/2019/02/03/uva10935/</id>
+    <link href="http://blog.roy4801.tw/2019/02/03/uva/uva10935/"/>
+    <id>http://blog.roy4801.tw/2019/02/03/uva/uva10935/</id>
     <published>2019-02-02T16:22:42.000Z</published>
     <updated>2019-02-02T16:37:18.000Z</updated>
     
@@ -220,8 +245,8 @@
   
   <entry>
     <title>Uva 402 - M*A*S*H</title>
-    <link href="http://blog.roy4801.tw/2019/02/02/uva402/"/>
-    <id>http://blog.roy4801.tw/2019/02/02/uva402/</id>
+    <link href="http://blog.roy4801.tw/2019/02/02/uva/uva402/"/>
+    <id>http://blog.roy4801.tw/2019/02/02/uva/uva402/</id>
     <published>2019-02-02T15:54:28.000Z</published>
     <updated>2019-02-07T17:22:35.000Z</updated>
     
@@ -245,8 +270,8 @@
   
   <entry>
     <title>在64-bit Ubuntu執行32-bit程式</title>
-    <link href="http://blog.roy4801.tw/2019/01/26/linux_x86_libs/"/>
-    <id>http://blog.roy4801.tw/2019/01/26/linux_x86_libs/</id>
+    <link href="http://blog.roy4801.tw/2019/01/26/linux/linux_x86_libs/"/>
+    <id>http://blog.roy4801.tw/2019/01/26/linux/linux_x86_libs/</id>
     <published>2019-01-26T11:50:16.000Z</published>
     <updated>2019-02-01T17:23:46.000Z</updated>
     
@@ -469,8 +494,8 @@
   
   <entry>
     <title>tmux 基本使用</title>
-    <link href="http://blog.roy4801.tw/2018/08/25/tmux%20%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/"/>
-    <id>http://blog.roy4801.tw/2018/08/25/tmux 基本使用/</id>
+    <link href="http://blog.roy4801.tw/2018/08/25/linux/tmux%20%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/"/>
+    <id>http://blog.roy4801.tw/2018/08/25/linux/tmux 基本使用/</id>
     <published>2018-08-25T12:45:19.000Z</published>
     <updated>2019-02-01T17:24:20.000Z</updated>
     
@@ -498,8 +523,8 @@
   
   <entry>
     <title>ssh到linux(ubuntu)上無法輸入中文問題</title>
-    <link href="http://blog.roy4801.tw/2018/08/25/ssh%E5%88%B0linux(ubuntu)%E4%B8%8A%E7%84%A1%E6%B3%95%E8%BC%B8%E5%85%A5%E4%B8%AD%E6%96%87%E5%95%8F%E9%A1%8C/"/>
-    <id>http://blog.roy4801.tw/2018/08/25/ssh到linux(ubuntu)上無法輸入中文問題/</id>
+    <link href="http://blog.roy4801.tw/2018/08/25/linux/ssh%E5%88%B0linux(ubuntu)%E4%B8%8A%E7%84%A1%E6%B3%95%E8%BC%B8%E5%85%A5%E4%B8%AD%E6%96%87%E5%95%8F%E9%A1%8C/"/>
+    <id>http://blog.roy4801.tw/2018/08/25/linux/ssh到linux(ubuntu)上無法輸入中文問題/</id>
     <published>2018-08-24T16:38:03.000Z</published>
     <updated>2019-03-31T15:09:31.245Z</updated>
     
@@ -523,8 +548,8 @@
   
   <entry>
     <title>next_permutation/perv_permutation用法</title>
-    <link href="http://blog.roy4801.tw/2018/08/23/C++%20next_permutation:perv_permutation%E7%94%A8%E6%B3%95/"/>
-    <id>http://blog.roy4801.tw/2018/08/23/C++ next_permutation:perv_permutation用法/</id>
+    <link href="http://blog.roy4801.tw/2018/08/23/c++/C++%20next_permutation:perv_permutation%E7%94%A8%E6%B3%95/"/>
+    <id>http://blog.roy4801.tw/2018/08/23/c++/C++ next_permutation:perv_permutation用法/</id>
     <published>2018-08-23T09:48:03.000Z</published>
     <updated>2019-03-31T15:10:09.209Z</updated>
     
@@ -540,13 +565,13 @@
       <category term="C/C++" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/C-C/"/>
     
     
-      <category term="C++" scheme="http://blog.roy4801.tw/tags/C/"/>
-    
-      <category term="STL" scheme="http://blog.roy4801.tw/tags/STL/"/>
-    
       <category term="程式" scheme="http://blog.roy4801.tw/tags/%E7%A8%8B%E5%BC%8F/"/>
     
       <category term="教學" scheme="http://blog.roy4801.tw/tags/%E6%95%99%E5%AD%B8/"/>
+    
+      <category term="C++" scheme="http://blog.roy4801.tw/tags/C/"/>
+    
+      <category term="STL" scheme="http://blog.roy4801.tw/tags/STL/"/>
     
   </entry>
   
