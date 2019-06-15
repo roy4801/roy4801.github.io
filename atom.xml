@@ -42,6 +42,32 @@
   </entry>
   
   <entry>
+    <title>AIS3 2019 pre-exam writeups+心得</title>
+    <link href="http://blog.roy4801.tw/2019/05/31/ais3/ais3_2019_pre_exam/"/>
+    <id>http://blog.roy4801.tw/2019/05/31/ais3/ais3_2019_pre_exam/</id>
+    <published>2019-05-31T06:50:18.000Z</published>
+    <updated>2019-05-31T07:14:14.025Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;參加過一次&lt;a href=&quot;https://ais3.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;AIS3&lt;/a&gt;(2018)，今年也打算挑戰看看，去年場地是辦在台科大，而今年是在交大，所以有提供住宿，但一切的的前提都建立在我有進第二階段。&lt;br&gt;在5/25~5/27有為期三天的CTF，目的在篩選出可以參加暑期課程的學員，預計正取150人、備取30人。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/eLCBDy1.png&quot; width=&quot;870&quot;&gt;&lt;/p&gt;
+&lt;p&gt;這次解了10題，是去年的兩倍，自認是有點進步了，但還是很渺小QQ&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Writeup" scheme="http://blog.roy4801.tw/categories/Writeup/"/>
+    
+    
+      <category term="比賽" scheme="http://blog.roy4801.tw/tags/%E6%AF%94%E8%B3%BD/"/>
+    
+      <category term="心得" scheme="http://blog.roy4801.tw/tags/%E5%BF%83%E5%BE%97/"/>
+    
+      <category term="CTF" scheme="http://blog.roy4801.tw/tags/CTF/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Uva 11059 - Maximum Product</title>
     <link href="http://blog.roy4801.tw/2019/05/18/uva/uva11059/"/>
     <id>http://blog.roy4801.tw/2019/05/18/uva/uva11059/</id>
