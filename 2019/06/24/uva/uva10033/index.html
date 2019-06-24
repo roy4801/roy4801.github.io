@@ -3,20 +3,20 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>Uva 10004 - Bicoloring | r0yblog</title>
+  <title>Uva 10033 - Interpreter | r0yblog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="題目 Problem給定任意的圖形，問可不可以在每個點上著不同兩種的顏色，並且相同顏色的點不相鄰。">
+  <meta name="description" content="題目 Problemhttp://rubyacm.blogspot.com/2010/08/10033-interpreter.html">
 <meta name="keywords" content="解題紀錄,Uva">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Uva 10004 - Bicoloring">
-<meta property="og:url" content="http://blog.roy4801.tw/2019/06/23/uva/uva10004/index.html">
+<meta property="og:title" content="Uva 10033 - Interpreter">
+<meta property="og:url" content="http://blog.roy4801.tw/2019/06/24/uva/uva10033/index.html">
 <meta property="og:site_name" content="r0yblog">
-<meta property="og:description" content="題目 Problem給定任意的圖形，問可不可以在每個點上著不同兩種的顏色，並且相同顏色的點不相鄰。">
+<meta property="og:description" content="題目 Problemhttp://rubyacm.blogspot.com/2010/08/10033-interpreter.html">
 <meta property="og:locale" content="zh-TW">
-<meta property="og:updated_time" content="2019-06-22T16:44:02.760Z">
+<meta property="og:updated_time" content="2019-06-24T07:29:51.125Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Uva 10004 - Bicoloring">
-<meta name="twitter:description" content="題目 Problem給定任意的圖形，問可不可以在每個點上著不同兩種的顏色，並且相同顏色的點不相鄰。">
+<meta name="twitter:title" content="Uva 10033 - Interpreter">
+<meta name="twitter:description" content="題目 Problemhttp://rubyacm.blogspot.com/2010/08/10033-interpreter.html">
   
     <link rel="alternate" href="/atom.xml" title="r0yblog" type="application/atom+xml">
   
@@ -84,10 +84,10 @@ ga('send', 'pageview');
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-uva/uva10004" class="article article-type-post" itemscope="" itemprop="blogPost">
+        <section id="main"><article id="post-uva/uva10033" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2019/06/23/uva/uva10004/" class="article-date">
-  <time datetime="2019-06-22T16:28:43.000Z" itemprop="datePublished">2019-06-23</time>
+    <a href="/2019/06/24/uva/uva10033/" class="article-date">
+  <time datetime="2019-06-24T07:23:00.000Z" itemprop="datePublished">2019-06-24</time>
 </a>
     
   <div class="article-category">
@@ -102,7 +102,7 @@ ga('send', 'pageview');
         
   
     <h1 class="article-title" itemprop="name">
-      Uva 10004 - Bicoloring
+      Uva 10033 - Interpreter
     </h1>
   
 
@@ -112,23 +112,18 @@ ga('send', 'pageview');
       
         <!-- Table of Contents -->
         
-        <p><a href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;Itemid=8&amp;page=show_problem&amp;problem=945" target="_blank" rel="noopener">題目</a></p>
-<h1 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h1><p>給定任意的圖形，問可不可以在每個點上著不同兩種的顏色，並且相同顏色的點不相鄰。</p>
-<ul>
-<li>沒有自環</li>
-<li>無向圖</li>
-<li>強連通</li>
-</ul>
-<h1 id="想法"><a href="#想法" class="headerlink" title="想法"></a>想法</h1><p>從起點(0)開始，DFS到終點，每次往下DFS時就把點圖上不同顏色，並且檢查相鄰的點，如果是相同顏色就回傳false，反之則true。</p>
-<h1 id="AC-Code"><a href="#AC-Code" class="headerlink" title="AC Code"></a>AC Code</h1><p><a href="https://github.com/roy4801/solved_problems/tree/master/uva/10004.cpp" target="_blank" rel="noopener">https://github.com/roy4801/solved_problems/tree/master/uva/10004.cpp</a></p>
+        <p><a href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;Itemid=8&amp;page=show_problem&amp;problem=974" target="_blank" rel="noopener">題目</a></p>
+<h1 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h1><p><a href="http://rubyacm.blogspot.com/2010/08/10033-interpreter.html" target="_blank" rel="noopener">http://rubyacm.blogspot.com/2010/08/10033-interpreter.html</a></p>
+<h1 id="想法"><a href="#想法" class="headerlink" title="想法"></a>想法</h1><p>挺有趣的一題，要寫個小VM執行code，算出執行了幾個指令。</p>
+<h1 id="AC-Code"><a href="#AC-Code" class="headerlink" title="AC Code"></a>AC Code</h1><p><a href="https://github.com/roy4801/solved_problems/blob/master/uva/10033.cpp" target="_blank" rel="noopener">https://github.com/roy4801/solved_problems/blob/master/uva/10033.cpp</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2019/06/23/uva/uva10004/" data-id="cjxa2a1oe001t78tkim7pcwrq" class="article-share-link">分享</a>
+      <a data-url="http://blog.roy4801.tw/2019/06/24/uva/uva10033/" data-id="cjxa2gl010000u8tkbbigmfhw" class="article-share-link">分享</a>
       
       
-        <a href="http://blog.roy4801.tw/2019/06/23/uva/uva10004/#disqus_thread" class="article-comment-link">留言</a>
+        <a href="http://blog.roy4801.tw/2019/06/24/uva/uva10033/#disqus_thread" class="article-comment-link">留言</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Uva/">Uva</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/解題紀錄/">解題紀錄</a></li></ul>
@@ -181,19 +176,10 @@ ga('send', 'pageview');
     
 <nav id="article-nav">
   
-    <a href="/2019/06/24/uva/uva10033/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Uva 10033 - Interpreter
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/06/22/uva/uva1203/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2019/06/23/uva/uva10004/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Uva 1203 - Argus</div>
+      <div class="article-nav-title">Uva 10004 - Bicoloring</div>
     </a>
   
 </nav>
@@ -299,7 +285,7 @@ window.onload = function() {
 <script>
   var disqus_shortname = 'roy-blog';
   
-  var disqus_url = 'http://blog.roy4801.tw/2019/06/23/uva/uva10004/';
+  var disqus_url = 'http://blog.roy4801.tw/2019/06/24/uva/uva10033/';
   
   (function(){
     var dsq = document.createElement('script');
