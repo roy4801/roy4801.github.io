@@ -18,7 +18,7 @@
 <meta property="og:image" content="https://i.imgur.com/NByfWMG.png">
 <meta property="og:image" content="https://i.imgur.com/FHmHAtk.png">
 <meta property="og:image" content="https://i.imgur.com/UAzT6dc.png">
-<meta property="og:updated_time" content="2019-06-26T07:39:35.034Z">
+<meta property="og:updated_time" content="2019-06-26T08:01:22.570Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="AIS3 2019 pre-exam writeups+心得">
 <meta name="twitter:description" content="參加過一次AIS3(2018)，今年也打算挑戰看看，去年場地是辦在台科大，而今年是在交大，所以有提供住宿，但一切的的前提都建立在我有進第二階段。在5/25~5/27有為期三天的CTF，目的在篩選出可以參加暑期課程的學員，預計正取150人、備取30人。  這次解了10題，是去年的兩倍，自認是有點進步了，但還是很渺小QQ">
@@ -122,15 +122,35 @@ ga('send', 'pageview');
 <p><img src="https://i.imgur.com/eLCBDy1.png" width="870"></p>
 <p>這次解了10題，是去年的兩倍，自認是有點進步了，但還是很渺小QQ</p>
 <h2 id="官方解法"><a href="#官方解法" class="headerlink" title="官方解法"></a>官方解法</h2><ul>
-<li>Web<br><a href="https://github.com/w181496/AIS3-PreExam-2019" target="_blank" rel="noopener">https://github.com/w181496/AIS3-PreExam-2019</a></li>
-</ul>
-<p><a href="https://github.com/djosix/AIS3-2019-Pre-Exam" target="_blank" rel="noopener">https://github.com/djosix/AIS3-2019-Pre-Exam</a><br><a href="https://blog.djosix.com/ais3-2019-pre-exam-%E5%AE%98%E6%96%B9%E8%A7%A3%E6%B3%95/" target="_blank" rel="noopener">https://blog.djosix.com/ais3-2019-pre-exam-%E5%AE%98%E6%96%B9%E8%A7%A3%E6%B3%95/</a></p>
+<li><p>Web</p>
 <ul>
-<li><p>Crypto<br><a href="https://github.com/maojui/writeups/tree/master/AIS32019" target="_blank" rel="noopener">https://github.com/maojui/writeups/tree/master/AIS32019</a><br><a href="https://maojui.me/" target="_blank" rel="noopener">https://maojui.me/</a></p>
+<li><a href="https://blog.djosix.com/ais3-2019-pre-exam-%E5%AE%98%E6%96%B9%E8%A7%A3%E6%B3%95/" target="_blank" rel="noopener">AIS3 2019 Pre-Exam 官方解法</a><ul>
+<li><a href="https://github.com/djosix/AIS3-2019-Pre-Exam" target="_blank" rel="noopener">https://github.com/djosix/AIS3-2019-Pre-Exam</a></li>
+</ul>
 </li>
-<li><p>Reverse<br><a href="http://blog.terrynini.tw/tw/2019-AIS3-%E5%89%8D%E6%B8%AC%E5%AE%98%E6%96%B9%E8%A7%A3/" target="_blank" rel="noopener">http://blog.terrynini.tw/tw/2019-AIS3-%E5%89%8D%E6%B8%AC%E5%AE%98%E6%96%B9%E8%A7%A3/</a><br><a href="https://github.com/terrynini/AIS3_2019_challenges" target="_blank" rel="noopener">https://github.com/terrynini/AIS3_2019_challenges</a></p>
+<li><a href="https://github.com/w181496/AIS3-PreExam-2019" target="_blank" rel="noopener">https://github.com/w181496/AIS3-PreExam-2019</a></li>
+</ul>
 </li>
-<li><p>Pwn<br><a href="https://github.com/yuawn/ais3-2019-pre-exam" target="_blank" rel="noopener">https://github.com/yuawn/ais3-2019-pre-exam</a></p>
+<li><p>Crypto</p>
+<ul>
+<li><a href="https://maojui.me/" target="_blank" rel="noopener">https://maojui.me/</a><ul>
+<li><a href="https://github.com/maojui/writeups/tree/master/AIS32019" target="_blank" rel="noopener">https://github.com/maojui/writeups/tree/master/AIS32019</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Reverse</p>
+<ul>
+<li><a href="http://blog.terrynini.tw/tw/2019-AIS3-%E5%89%8D%E6%B8%AC%E5%AE%98%E6%96%B9%E8%A7%A3/" target="_blank" rel="noopener">2019::AIS3::前測官方解</a><ul>
+<li><a href="https://github.com/terrynini/AIS3_2019_challenges" target="_blank" rel="noopener">https://github.com/terrynini/AIS3_2019_challenges</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Pwn</p>
+<ul>
+<li><a href="https://github.com/yuawn/ais3-2019-pre-exam" target="_blank" rel="noopener">https://github.com/yuawn/ais3-2019-pre-exam</a></li>
+</ul>
 </li>
 </ul>
 <h2 id="Pwn"><a href="#Pwn" class="headerlink" title="Pwn"></a>Pwn</h2><h3 id="Welcome-BOF"><a href="#Welcome-BOF" class="headerlink" title="Welcome BOF"></a>Welcome BOF</h3><p>簡單的bof，但是題目敘述有說 <code>ubuntu 18.04</code>，所以我在本地測出來的padding長度是$48+8$但是在remote是$48$</p>
