@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.roy4801.tw/"/>
-  <updated>2019-06-26T07:55:28.140Z</updated>
+  <updated>2019-08-08T16:30:02.702Z</updated>
   <id>http://blog.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>AIS3 2019 心得</title>
+    <link href="http://blog.roy4801.tw/2019/08/06/ais3/ais_2019/"/>
+    <id>http://blog.roy4801.tw/2019/08/06/ais3/ais_2019/</id>
+    <published>2019-08-06T04:36:42.000Z</published>
+    <updated>2019-08-08T16:30:02.702Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;繼&lt;a href=&quot;/2019/05/31/ais3/ais3_2019_pre_exam/&quot;&gt;上次的心得文&lt;/a&gt;後，我成功進入AIS3第五屆的課程，今天跟以往的AIS3不同，是改以集訓的形式，跟以往的上課5天、最後打Final CTF不同，我們要全程住在交大，然後過著早上9:30上課到下午5:00、晚上討論的生活，你問討論什麼？因為今天多了分組專題的活動，且分組的組員是隨機的抽選的，所以第一天晚上有破冰的活動。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://ais3.org/course&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;課程列表&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;分組分成了這些組別：&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="心得散文" scheme="http://blog.roy4801.tw/categories/%E5%BF%83%E5%BE%97%E6%95%A3%E6%96%87/"/>
+    
+    
+      <category term="心得" scheme="http://blog.roy4801.tw/tags/%E5%BF%83%E5%BE%97/"/>
+    
+      <category term="資安" scheme="http://blog.roy4801.tw/tags/%E8%B3%87%E5%AE%89/"/>
+    
+  </entry>
   
   <entry>
     <title>Uva 10226 - Hardwood Species</title>
@@ -720,9 +746,9 @@
       <category term="C/C++" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/C-C/"/>
     
     
-      <category term="程式" scheme="http://blog.roy4801.tw/tags/%E7%A8%8B%E5%BC%8F/"/>
-    
       <category term="教學" scheme="http://blog.roy4801.tw/tags/%E6%95%99%E5%AD%B8/"/>
+    
+      <category term="程式" scheme="http://blog.roy4801.tw/tags/%E7%A8%8B%E5%BC%8F/"/>
     
       <category term="C++" scheme="http://blog.roy4801.tw/tags/C/"/>
     
@@ -749,11 +775,11 @@
       <category term="其他" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/%E5%85%B6%E4%BB%96/"/>
     
     
+      <category term="教學" scheme="http://blog.roy4801.tw/tags/%E6%95%99%E5%AD%B8/"/>
+    
       <category term="程式" scheme="http://blog.roy4801.tw/tags/%E7%A8%8B%E5%BC%8F/"/>
     
       <category term="ctf tools" scheme="http://blog.roy4801.tw/tags/ctf-tools/"/>
-    
-      <category term="教學" scheme="http://blog.roy4801.tw/tags/%E6%95%99%E5%AD%B8/"/>
     
   </entry>
   
