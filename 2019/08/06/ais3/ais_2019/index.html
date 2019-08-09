@@ -16,7 +16,18 @@
 <meta property="og:image" content="https://i.imgur.com/pHJoJYc.png">
 <meta property="og:image" content="https://i.imgur.com/LkG5KVv.png">
 <meta property="og:image" content="https://i.imgur.com/IdligQg.png">
-<meta property="og:updated_time" content="2019-08-08T16:30:02.702Z">
+<meta property="og:image" content="https://i.imgur.com/rOB9BBK.png">
+<meta property="og:image" content="https://i.imgur.com/X8sfdLg.png">
+<meta property="og:image" content="https://i.imgur.com/QRZM7xF.png">
+<meta property="og:image" content="https://i.imgur.com/QNMrdUL.png">
+<meta property="og:image" content="https://i.imgur.com/5Y7UJAX.png">
+<meta property="og:image" content="https://i.imgur.com/DUBhopP.png">
+<meta property="og:image" content="https://i.imgur.com/VbiaVWw.png">
+<meta property="og:image" content="https://i.imgur.com/18XZGVV.png">
+<meta property="og:image" content="https://i.imgur.com/cbIF4Jp.png">
+<meta property="og:image" content="https://i.imgur.com/fYEx0hq.png">
+<meta property="og:image" content="https://i.imgur.com/2dv1eve.png">
+<meta property="og:updated_time" content="2019-08-09T09:34:38.989Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="AIS3 2019 心得">
 <meta name="twitter:description" content="繼上次的心得文後，我成功進入AIS3第五屆的課程，今天跟以往的AIS3不同，是改以集訓的形式，跟以往的上課5天、最後打Final CTF不同，我們要全程住在交大，然後過著早上9:30上課到下午5:00、晚上討論的生活，你問討論什麼？因為今天多了分組專題的活動，且分組的組員是隨機的抽選的，所以第一天晚上有破冰的活動。  課程列表  分組分成了這些組別：">
@@ -217,7 +228,7 @@ ga('send', 'pageview');
 <li>評估衝擊</li>
 </ul>
 <hr>
-<p>這個session講者主要講AWS的細節和可能的問題，雲端和一般主機有相同風險，但除了這些之外，還可能有來源疑慮(AMI Market)，以及雲端環境與一般環境不同的機制。</p>
+<h5 id="EC2"><a href="#EC2" class="headerlink" title="EC2"></a>EC2</h5><p>這個session講者主要講EC2的細節和可能的問題，雲端和一般主機有相同風險，但除了這些之外，還可能有來源疑慮(AMI Market)，以及雲端環境與一般環境不同的機制。</p>
 <blockquote>
 <p>AMI - Amazon Machine Image<br>AMI 封裝方式：主系統（加密）、儲存區</p>
 </blockquote>
@@ -267,8 +278,169 @@ ga('send', 'pageview');
 <li>SSRF</li>
 </ul>
 <hr>
-<p>接下來講者說根據pre-exam的情況，他詳細介紹SSRF的細節：攻擊面、成因。</p>
-<p>TODO</p>
+<h5 id="SSRF"><a href="#SSRF" class="headerlink" title="SSRF"></a>SSRF</h5><p>接下來講者說根據pre-exam的情況，他詳細介紹SSRF的細節：攻擊面、成因。</p>
+<p><img src="https://i.imgur.com/rOB9BBK.png" alt=""><br><img src="https://i.imgur.com/X8sfdLg.png" alt=""></p>
+<ul>
+<li><p>SSRF (Server-Side Request Forgery)</p>
+<ul>
+<li>攻擊者構造payload使得服務端發起請求，目的在於存取服務端的內網</li>
+<li>攻擊面<ul>
+<li>探索內部服務(port scan)</li>
+<li>攻擊內部服務(struct2, redis, ElasticSearch)</li>
+<li>讀取檔案(/etc/passwd)</li>
+<li>辨別服務框架/架構(Banner)</li>
+</ul>
+</li>
+<li>什麼地方會有SSRF?<ul>
+<li>能發起網路請求的地方</li>
+<li>呼叫其他服務</li>
+<li>請求遠端資源（下載、快取…)</li>
+<li>服務內建功能(Oracle, MSSQL, CouchDB…)</li>
+<li>文件處理(ffmpeg, ImageMagick, doc, xlsx, pdf, xml)</li>
+<li>其他漏洞利用(command injection, SQLi, XSS, SSTI)</li>
+</ul>
+</li>
+<li><p>保護繞過</p>
+<ul>
+<li>302 redirect<ul>
+<li><code>Location: scheme://IP:Port/Path</code></li>
+</ul>
+</li>
+<li>IP變形<ul>
+<li><code>127.1</code></li>
+<li><code>127.0x0.0x00.1</code></li>
+<li><code>2130706433</code> decimal</li>
+<li><code>[::]</code></li>
+<li><code>0000::1</code></li>
+</ul>
+</li>
+<li>網域解析<ul>
+<li><a href="https://nip.io/" target="_blank" rel="noopener">nip.io</a></li>
+<li><a href="http://xip.io/" target="_blank" rel="noopener">xip.io</a></li>
+</ul>
+</li>
+<li><p>DNS rebind</p>
+<ul>
+<li><code>A.1.1.1.1.1time.127.0.0.1.1times.repeat.rebind.network</code> &lt;== 這是一串網址<ul>
+<li><a href="https://github.com/brannondorsey/whonow" target="_blank" rel="noopener">https://github.com/brannondorsey/whonow</a><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$domain=&apos;xxx.com&apos;; // 1.1.1.1 (pass)</span><br><span class="line">$ip=gethostbyname($domain);</span><br><span class="line">if(!in_blacklist($ip)) &#123;</span><br><span class="line">    $content=file_getcontents($domain); // 127.0.0.1</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>解析不一致</p>
+<ul>
+<li>不同的url parser可能有不同的行為<br><img src="https://i.imgur.com/QRZM7xF.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>接著便有兩題lab題，都是SSRF去拿metadata資料</p>
+<p><img src="https://i.imgur.com/QNMrdUL.png" alt=""></p>
+<hr>
+<h5 id="PACU"><a href="#PACU" class="headerlink" title="PACU"></a>PACU</h5><p><img src="https://i.imgur.com/5Y7UJAX.png" alt=""></p>
+<p>拿到了IAM Security Credentials之後，檢查Role的權限，好使用此role去存取別的服務。如果<strong>有</strong>IAM查閱權，則可以直接用API獲得權限表；反之，如果<strong>沒有</strong>查閱權，則可以遍歷所有API。講者也介紹了一個工具：<a href="https://github.com/RhinoSecurityLabs/pacu" target="_blank" rel="noopener">PACU - AWS exploitation framework</a>，用於exploit AWS的服務。</p>
+<p><img src="https://i.imgur.com/DUBhopP.png" alt=""></p>
+<p>在使用PACU之前，得先匯入role的資訊到<code>~/.aws/credentials</code>可以直接新建一個檔案，或是使用<a href="https://aws.amazon.com/tw/cli/" target="_blank" rel="noopener">aws-cli</a>來新建credentails，匯入的key等資訊就填入先前從metadata獲得的資訊即可。</p>
+<p><img src="https://i.imgur.com/VbiaVWw.png" alt=""></p>
+<p><code>python3 pacu.py</code>打開PACU後，<code>import_keys &lt;profile name&gt;</code>匯入先前設定的credential至PACU中，可以用<code>whoami</code>檢查是否有成功匯入</p>
+<p><img src="https://i.imgur.com/18XZGVV.png" alt=""></p>
+<p><code>list</code>可以查看可用的功能，執行<code>run iam__bruteforce_permissions</code>枚舉可用的權限</p>
+<ul>
+<li>提權<ul>
+<li>這個部分講師並沒有詳細的說，只是稍微帶過而已，而且lab他也擋掉了提權</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://i.imgur.com/cbIF4Jp.png" alt=""></p>
+<ul>
+<li>honeytoken<ul>
+<li><a href="https://zh.wikipedia.org/wiki/%E8%9C%9C%E7%BD%90_(%E9%9B%BB%E8%85%A6%E7%A7%91%E5%AD%B8)" target="_blank" rel="noopener">蜜罐</a></li>
+<li>產生誘餌token，誘使入侵者使用，則發出警報通知</li>
+<li><a href="http://canarytokens.org/generate#" target="_blank" rel="noopener">http://canarytokens.org/generate#</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h5 id="Container"><a href="#Container" class="headerlink" title="Container"></a>Container</h5><ul>
+<li>安全風險<ul>
+<li>逃逸(escape)弱點<ul>
+<li><a href="https://twitter.com/_fel1x/status/1151487051986087936" target="_blank" rel="noopener">https://twitter.com/_fel1x/status/1151487051986087936</a></li>
+</ul>
+</li>
+<li>image來源疑慮(dockerhub)</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h5 id="S3"><a href="#S3" class="headerlink" title="S3"></a>S3</h5><ul>
+<li>資料儲存服務</li>
+<li>用API進行操作</li>
+<li>雲端環境中的角色<ul>
+<li>資料長時間儲存</li>
+<li>資料交換</li>
+<li>儲存備份資料</li>
+</ul>
+</li>
+<li>安全問題<ul>
+<li>權限配置</li>
+<li>意外存取</li>
+</ul>
+</li>
+</ul>
+<p>如果S3的權限沒設定好，則可能造成資料外洩：<a href="https://github.com/nagwww/s3-leaks" target="_blank" rel="noopener">s3-leaks</a>。而有人也提供了一個服務，可以搜尋網路上公開的s3：<a href="https://buckets.grayhatwarfare.com/" target="_blank" rel="noopener">https://buckets.grayhatwarfare.com/</a></p>
+<p><img src="https://i.imgur.com/fYEx0hq.png" alt=""></p>
+<h6 id="s3規則"><a href="#s3規則" class="headerlink" title="s3規則"></a>s3規則</h6><ul>
+<li>bucket 名稱<strong>唯一</strong></li>
+<li><p>網址格式</p>
+<ul>
+<li><code>&lt;bucket name&gt;.s3-地區.amazonaws.com</code></li>
+<li><code>s3-地區.amazonaws.com/&lt;bucket name&gt;</code></li>
+<li>e.g.: <code>ais3-sample.s3-ap-northeast-1.amazonaws.com</code></li>
+</ul>
+</li>
+<li><p>地區列表: <a href="https://docs.aws.amazon.com/en_us/general/latest/gr/rande.html#s3_region" target="_blank" rel="noopener">https://docs.aws.amazon.com/en_us/general/latest/gr/rande.html#s3_region</a></p>
+</li>
+<li><p>如果網站是自訂網域？</p>
+<ul>
+<li>使用<code>img.ais3.org</code>，而不是<code>ais3.s3.amazonaws.com</code></li>
+<li><code>img.ais3.org.s3-地區.amazonaws.com</code></li>
+</ul>
+</li>
+<li>觀察header<ul>
+<li><img src="https://i.imgur.com/2dv1eve.png" alt=""></li>
+</ul>
+</li>
+</ul>
+<h6 id="列舉s3"><a href="#列舉s3" class="headerlink" title="列舉s3"></a>列舉s3</h6><ul>
+<li><p>字典檔</p>
+<ul>
+<li>手動<ul>
+<li>公司名稱</li>
+<li>參考實際使用名稱</li>
+<li>參考 DevOps 的命名方式</li>
+</ul>
+</li>
+<li>自動<ul>
+<li><a href="https://github.com/SmeegeSec/SmeegeScrape" target="_blank" rel="noopener">Smeegescrape</a></li>
+<li><a href="https://www.freebuf.com/articles/network/190128.html" target="_blank" rel="noopener">CeWL</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>AWSBucketDump</p>
+<ul>
+<li>全自動列舉公開的AWS S3</li>
+<li>自動下載檔案</li>
+<li>usage: <code>python AWSBucketDump.py -l 字典檔 -g 關鍵字 -D -m 大小限制 -t 4</code></li>
+</ul>
+</li>
+</ul>
+<p>接著小lab，用工具爆破兩個s3 bucket。</p>
+<h5 id="Serverless"><a href="#Serverless" class="headerlink" title="Serverless"></a>Serverless</h5><p>TOOD</p>
 <h4 id="破冰"><a href="#破冰" class="headerlink" title="破冰"></a>破冰</h4><p>不得不說，這次分組是用抽籤的這點是不錯，強迫我們打破自己的舒適圈，跟別人尬聊www，我們這一組幾本上就是自我介紹完，接著問說：對專題有無想法，然後就沒話聊了www</p>
 <h3 id="Day2"><a href="#Day2" class="headerlink" title="Day2"></a>Day2</h3><h4 id="上午-Firmware-security-analysis"><a href="#上午-Firmware-security-analysis" class="headerlink" title="上午 Firmware security analysis"></a>上午 Firmware security analysis</h4><p>TODO</p>
 <h4 id="AI攻防-理論與實踐"><a href="#AI攻防-理論與實踐" class="headerlink" title="AI攻防:理論與實踐"></a>AI攻防:理論與實踐</h4><p>TODO</p>
@@ -284,7 +456,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2019/08/06/ais3/ais_2019/" data-id="cjz2wu7je001lertks701u97q" class="article-share-link">分享</a>
+      <a data-url="http://blog.roy4801.tw/2019/08/06/ais3/ais_2019/" data-id="cjz3wzcqb001k0rtkut04avwk" class="article-share-link">分享</a>
       
       
         <a href="http://blog.roy4801.tw/2019/08/06/ais3/ais_2019/#disqus_thread" class="article-comment-link">留言</a>
@@ -388,7 +560,7 @@ ga('send', 'pageview');
       
         <strong class="toc-title">文章目錄</strong>
         <div class="toc-widget-list">
-              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#課程內容"><span class="toc-number">1.</span> <span class="toc-text">課程內容</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Day1"><span class="toc-number">1.1.</span> <span class="toc-text">Day1</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#社群媒體安全：網路選戰、輿論操弄與假新聞"><span class="toc-number">1.1.1.</span> <span class="toc-text">社群媒體安全：網路選戰、輿論操弄與假新聞</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#網站應用程式安全-王凱慶"><span class="toc-number">1.1.2.</span> <span class="toc-text">網站應用程式安全 王凱慶</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#服務探索"><span class="toc-number">1.1.2.1.</span> <span class="toc-text">服務探索</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#弱點掃描"><span class="toc-number">1.1.2.2.</span> <span class="toc-text">弱點掃描</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#弱點驗證"><span class="toc-number">1.1.2.3.</span> <span class="toc-text">弱點驗證</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#破冰"><span class="toc-number">1.1.3.</span> <span class="toc-text">破冰</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Day2"><span class="toc-number">1.2.</span> <span class="toc-text">Day2</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#上午-Firmware-security-analysis"><span class="toc-number">1.2.1.</span> <span class="toc-text">上午 Firmware security analysis</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#AI攻防-理論與實踐"><span class="toc-number">1.2.2.</span> <span class="toc-text">AI攻防:理論與實踐</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Day3"><span class="toc-number">1.3.</span> <span class="toc-text">Day3</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#利用數位鑑識分析手法找出入侵根因"><span class="toc-number">1.3.1.</span> <span class="toc-text">利用數位鑑識分析手法找出入侵根因</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Advanced-Encryption-Standard-AES"><span class="toc-number">1.3.2.</span> <span class="toc-text">Advanced Encryption Standard, AES</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Day4"><span class="toc-number">1.4.</span> <span class="toc-text">Day4</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#An-Overview-of-Secure-Software-Development-Lifecycle"><span class="toc-number">1.4.1.</span> <span class="toc-text">An Overview of Secure Software Development Lifecycle</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Automatic-Binary-Analysis"><span class="toc-number">1.4.2.</span> <span class="toc-text">Automatic Binary Analysis</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Day5"><span class="toc-number">1.5.</span> <span class="toc-text">Day5</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Product-Security-in-Practice"><span class="toc-number">1.5.1.</span> <span class="toc-text">Product Security in Practice</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Without-RCE-what-can-you-do"><span class="toc-number">1.5.2.</span> <span class="toc-text">Without RCE: what can you do?</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Day6-amp-Day7"><span class="toc-number">1.6.</span> <span class="toc-text">Day6 &amp; Day7</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Project-發表"><span class="toc-number">1.6.1.</span> <span class="toc-text">Project 發表</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#心得"><span class="toc-number">1.7.</span> <span class="toc-text">心得</span></a></li></ol></li></ol>
+              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#課程內容"><span class="toc-number">1.</span> <span class="toc-text">課程內容</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Day1"><span class="toc-number">1.1.</span> <span class="toc-text">Day1</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#社群媒體安全：網路選戰、輿論操弄與假新聞"><span class="toc-number">1.1.1.</span> <span class="toc-text">社群媒體安全：網路選戰、輿論操弄與假新聞</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#網站應用程式安全-王凱慶"><span class="toc-number">1.1.2.</span> <span class="toc-text">網站應用程式安全 王凱慶</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#服務探索"><span class="toc-number">1.1.2.1.</span> <span class="toc-text">服務探索</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#弱點掃描"><span class="toc-number">1.1.2.2.</span> <span class="toc-text">弱點掃描</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#弱點驗證"><span class="toc-number">1.1.2.3.</span> <span class="toc-text">弱點驗證</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#EC2"><span class="toc-number">1.1.2.4.</span> <span class="toc-text">EC2</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#SSRF"><span class="toc-number">1.1.2.5.</span> <span class="toc-text">SSRF</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#PACU"><span class="toc-number">1.1.2.6.</span> <span class="toc-text">PACU</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Container"><span class="toc-number">1.1.2.7.</span> <span class="toc-text">Container</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#S3"><span class="toc-number">1.1.2.8.</span> <span class="toc-text">S3</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#s3規則"><span class="toc-number">1.1.2.8.1.</span> <span class="toc-text">s3規則</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#列舉s3"><span class="toc-number">1.1.2.8.2.</span> <span class="toc-text">列舉s3</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Serverless"><span class="toc-number">1.1.2.9.</span> <span class="toc-text">Serverless</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#破冰"><span class="toc-number">1.1.3.</span> <span class="toc-text">破冰</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Day2"><span class="toc-number">1.2.</span> <span class="toc-text">Day2</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#上午-Firmware-security-analysis"><span class="toc-number">1.2.1.</span> <span class="toc-text">上午 Firmware security analysis</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#AI攻防-理論與實踐"><span class="toc-number">1.2.2.</span> <span class="toc-text">AI攻防:理論與實踐</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Day3"><span class="toc-number">1.3.</span> <span class="toc-text">Day3</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#利用數位鑑識分析手法找出入侵根因"><span class="toc-number">1.3.1.</span> <span class="toc-text">利用數位鑑識分析手法找出入侵根因</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Advanced-Encryption-Standard-AES"><span class="toc-number">1.3.2.</span> <span class="toc-text">Advanced Encryption Standard, AES</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Day4"><span class="toc-number">1.4.</span> <span class="toc-text">Day4</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#An-Overview-of-Secure-Software-Development-Lifecycle"><span class="toc-number">1.4.1.</span> <span class="toc-text">An Overview of Secure Software Development Lifecycle</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Automatic-Binary-Analysis"><span class="toc-number">1.4.2.</span> <span class="toc-text">Automatic Binary Analysis</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Day5"><span class="toc-number">1.5.</span> <span class="toc-text">Day5</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Product-Security-in-Practice"><span class="toc-number">1.5.1.</span> <span class="toc-text">Product Security in Practice</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Without-RCE-what-can-you-do"><span class="toc-number">1.5.2.</span> <span class="toc-text">Without RCE: what can you do?</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Day6-amp-Day7"><span class="toc-number">1.6.</span> <span class="toc-text">Day6 &amp; Day7</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Project-發表"><span class="toc-number">1.6.1.</span> <span class="toc-text">Project 發表</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#心得"><span class="toc-number">1.7.</span> <span class="toc-text">心得</span></a></li></ol></li></ol>
           </div>
       </div>
     </div>
