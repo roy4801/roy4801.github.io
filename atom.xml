@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.roy4801.tw/"/>
-  <updated>2019-09-10T14:25:11.444Z</updated>
+  <updated>2019-09-11T16:17:40.453Z</updated>
   <id>http://blog.roy4801.tw/</id>
   
   <author>
@@ -17,6 +17,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Uva 1587 - Box</title>
+    <link href="http://blog.roy4801.tw/2019/09/11/uva/uva1587/"/>
+    <id>http://blog.roy4801.tw/2019/09/11/uva/uva1587/</id>
+    <published>2019-09-11T15:56:25.000Z</published>
+    <updated>2019-09-11T16:17:40.453Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=4462&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;Problem&quot;&gt;&lt;a href=&quot;#Problem&quot; class=&quot;headerlink&quot; title=&quot;Problem&quot;&gt;&lt;/a&gt;Problem&lt;/h1&gt;&lt;p&gt;給你6個寬$w_i$高$h_i$的紙板，問可不可以組成一個長方體&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="解題區" scheme="http://blog.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+      <category term="Uva" scheme="http://blog.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Uva/"/>
+    
+    
+      <category term="解題紀錄" scheme="http://blog.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+      <category term="Uva" scheme="http://blog.roy4801.tw/tags/Uva/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Uva 202 - Repeating Decimals</title>
     <link href="http://blog.roy4801.tw/2019/09/10/uva/uva202/"/>
     <id>http://blog.roy4801.tw/2019/09/10/uva/uva202/</id>
@@ -25,15 +50,8 @@
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;&lt;a href=&quot;&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&quot;Problem&quot;&gt;&lt;a href=&quot;#Problem&quot; class=&quot;headerlink&quot; title=&quot;Problem&quot;&gt;&lt;/a&gt;Problem&lt;/h1&gt;&lt;p&gt;略&lt;/p&gt;
-&lt;h1 id=&quot;想法&quot;&gt;&lt;a
-        
-      
     
     </summary>
     
@@ -57,13 +75,8 @@
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=211&quot;
-        
-      
+      &lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=211&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;Problem&quot;&gt;&lt;a href=&quot;#Problem&quot; class=&quot;headerlink&quot; title=&quot;Problem&quot;&gt;&lt;/a&gt;Problem&lt;/h1&gt;&lt;p&gt;輸入兩個數字a, b，要算a/b的小數，如果有循環小數部分出現，則只輸出一次&lt;br&gt;每筆輸出最後要輸出循環小數的長度（如果沒有則輸出&lt;code&gt;This expansion terminates.&lt;/code&gt;)&lt;/p&gt;
     
     </summary>
     
@@ -87,13 +100,11 @@
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;繼&lt;a href=&quot;/2019/05/31/ais3/ais3_2019_pre_exam/&quot;&gt;上次的心得文&lt;/a&gt;後，我成功進入AIS3第五屆的課程，今天跟以往的AIS3不同，是改以集訓的形式，跟以往的上課5天、最後打Final
-        
-      
+      &lt;p&gt;繼&lt;a href=&quot;/2019/05/31/ais3/ais3_2019_pre_exam/&quot;&gt;上次的心得文&lt;/a&gt;後，我成功進入AIS3第五屆的課程，今天跟以往的AIS3不同，是改以集訓的形式，跟以往的上課5天、最後打Final CTF不同，我們要全程住在交大，然後過著早上9:30上課到下午5:00、晚上討論的生活，你問討論什麼？因為今天多了分組專題的活動，且分組的組員是隨機的抽選的，所以第一天晚上有破冰的活動。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://ais3.org/course&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;課程列表&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;分組分成了這些組別：&lt;/p&gt;
     
     </summary>
     
@@ -115,13 +126,8 @@
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;&lt;a
-        
-      
+      &lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;category=24&amp;amp;page=show_problem&amp;amp;problem=1167&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;Problem&quot;&gt;&lt;a href=&quot;#Problem&quot; class=&quot;headerlink&quot; title=&quot;Problem&quot;&gt;&lt;/a&gt;Problem&lt;/h1&gt;&lt;p&gt;有多種樹的名字，你要輸出每種樹佔的比例（按名稱字典序）&lt;/p&gt;
     
     </summary>
     
@@ -145,13 +151,8 @@
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=734&quot;
-        
-      
+      &lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=734&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;Problem&quot;&gt;&lt;a href=&quot;#Problem&quot; class=&quot;headerlink&quot; title=&quot;Problem&quot;&gt;&lt;/a&gt;Problem&lt;/h1&gt;&lt;p&gt;有一堆電腦用網路連著，今天你是網管，你想知道電腦 $i$ 跟電腦 $j$ 是否有相連（在同個網路內），並且你也可以將兩台電腦相連。有兩個操作：&lt;/p&gt;
     
     </summary>
     
@@ -175,13 +176,8 @@
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=974&quot;
-        
-      
+      &lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=974&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;Problem&quot;&gt;&lt;a href=&quot;#Problem&quot; class=&quot;headerlink&quot; title=&quot;Problem&quot;&gt;&lt;/a&gt;Problem&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;http://rubyacm.blogspot.com/2010/08/10033-interpreter.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://rubyacm.blogspot.com/2010/08/10033-interpreter.html&lt;/a&gt;&lt;/p&gt;
     
     </summary>
     
@@ -205,13 +201,8 @@
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=945&quot;
-        
-      
+      &lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=945&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;Problem&quot;&gt;&lt;a href=&quot;#Problem&quot; class=&quot;headerlink&quot; title=&quot;Problem&quot;&gt;&lt;/a&gt;Problem&lt;/h1&gt;&lt;p&gt;給定任意的圖形，問可不可以在每個點上著不同兩種的顏色，並且相同顏色的點不相鄰。&lt;/p&gt;
     
     </summary>
     
@@ -235,13 +226,8 @@
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=onlinejudge&amp;amp;page=show_problem&amp;amp;problem=3644&quot; target=&quot;_blank&quot;
-        
-      
+      &lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=onlinejudge&amp;amp;page=show_problem&amp;amp;problem=3644&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;Problem&quot;&gt;&lt;a href=&quot;#Problem&quot; class=&quot;headerlink&quot; title=&quot;Problem&quot;&gt;&lt;/a&gt;Problem&lt;/h1&gt;&lt;p&gt;有個程式要記錄眾多的事件，使用者可以輸入指令註冊要監測的事件，指令要包含事件的ID(Q_num)跟週期(Period)，格式如下：&lt;/p&gt;
     
     </summary>
     
@@ -267,13 +253,8 @@
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=467&quot;
-        
-      
+      &lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=467&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;Problem&quot;&gt;&lt;a href=&quot;#Problem&quot; class=&quot;headerlink&quot; title=&quot;Problem&quot;&gt;&lt;/a&gt;Problem&lt;/h1&gt;&lt;p&gt;字串距離是一個代表兩個字串的非負整數。接著要轉換(transform)$a$字串至$b$字串，有三種操作：插入(Insert)、刪除(Delete)、及取代（Replace)。&lt;br&gt;字串距離就是轉換的數量，求任意$a$字串轉換至$b$字串的字串距離及如何轉換的。&lt;/p&gt;
     
     </summary>
     
@@ -299,13 +280,9 @@
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;參加過一次&lt;a href=&quot;https://ais3.org/&quot; target=&quot;_blank&quot;
-        
-      
+      &lt;p&gt;參加過一次&lt;a href=&quot;https://ais3.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;AIS3&lt;/a&gt;(2018)，今年也打算挑戰看看，去年場地是辦在台科大，而今年是在交大，所以有提供住宿，但一切的的前提都建立在我有進第二階段。&lt;br&gt;在5/25~5/27有為期三天的CTF，目的在篩選出可以參加暑期課程的學員，預計正取150人、備取30人。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/eLCBDy1.png&quot; width=&quot;870&quot;&gt;&lt;/p&gt;
+&lt;p&gt;這次解了10題，是去年的兩倍，自認是有點進步了，但還是很渺小QQ&lt;/p&gt;
     
     </summary>
     
@@ -329,13 +306,8 @@
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;&lt;a
-        
-      
+      &lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=onlinejudge&amp;amp;Itemid=99999999&amp;amp;page=show_problem&amp;amp;category=0&amp;amp;problem=2000&amp;amp;mosmsg=Submission+received+with+ID+23356954&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;Problem&quot;&gt;&lt;a href=&quot;#Problem&quot; class=&quot;headerlink&quot; title=&quot;Problem&quot;&gt;&lt;/a&gt;Problem&lt;/h1&gt;&lt;p&gt;給定一個序列$S = {S_1, S_2, …, S_n}$，找一個連續的子序列使得相乘最大。&lt;/p&gt;
     
     </summary>
     
@@ -359,13 +331,8 @@
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;&lt;a
-        
-      
+      &lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;category=0&amp;amp;problem=2019&amp;amp;mosmsg=Submission+received+with+ID+23355296&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;Problem&quot;&gt;&lt;a href=&quot;#Problem&quot; class=&quot;headerlink&quot; title=&quot;Problem&quot;&gt;&lt;/a&gt;Problem&lt;/h1&gt;&lt;p&gt;(簡化)&lt;br&gt;有一組數列($a_i$)，對所有$i&amp;lt;j$，求最大的$a_i - a_j$&lt;/p&gt;
     
     </summary>
     
@@ -389,13 +356,8 @@
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=onlinejudge&amp;amp;page=show_problem&amp;amp;problem=1626&quot; target=&quot;_blank&quot;
-        
-      
+      &lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=onlinejudge&amp;amp;page=show_problem&amp;amp;problem=1626&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;Problem&quot;&gt;&lt;a href=&quot;#Problem&quot; class=&quot;headerlink&quot; title=&quot;Problem&quot;&gt;&lt;/a&gt;Problem&lt;/h1&gt;&lt;p&gt;大自然存在著食物鏈，體型大的動物吃小動物，小動物吃植物，死亡的動物被分解，作為植物的養分。&lt;br&gt;而你的任務是給定一組動物，求出最大的食物鏈動物數量為何？假如A吃B，你可以認定它們在同個食物鏈裡。&lt;/p&gt;
     
     </summary>
     
@@ -419,14 +381,8 @@
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;macOS 預設是無法寫入NTFS檔案系統的硬碟的（只可讀），如果想要寫入NTFS檔案系統的硬碟就必須使用其他工具。&lt;/p&gt;
-&lt;h1 id=&quot;osxfuse&quot;&gt;&lt;a href=&quot;#osxfuse&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;p&gt;macOS 預設是無法寫入NTFS檔案系統的硬碟的（只可讀），如果想要寫入NTFS檔案系統的硬碟就必須使用其他工具。&lt;/p&gt;
+&lt;h1 id=&quot;osxfuse&quot;&gt;&lt;a href=&quot;#osxfuse&quot; class=&quot;headerlink&quot; title=&quot;osxfuse&quot;&gt;&lt;/a&gt;osxfuse&lt;/h1&gt;&lt;p&gt;&lt;code&gt;osxfuse&lt;/code&gt; 使得macOS可以使用第三方的檔案系統&lt;/p&gt;
     
     </summary>
     
@@ -450,13 +406,8 @@
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=onlinejudge&amp;amp;page=show_problem&amp;amp;problem=72&quot; target=&quot;_blank&quot;
-        
-      
+      &lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=onlinejudge&amp;amp;page=show_problem&amp;amp;problem=72&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;Problem&quot;&gt;&lt;a href=&quot;#Problem&quot; class=&quot;headerlink&quot; title=&quot;Problem&quot;&gt;&lt;/a&gt;Problem&lt;/h1&gt;&lt;p&gt;&lt;code&gt;Ulgy Number&lt;/code&gt;是只有$2$、$3$、$5$質因數的數字。前11項是：&lt;br&gt;$$&lt;br&gt;1,\ 2,\ 3,\ 4,\ 5,\ 6,\ 8,\ 9,\ 10,\ 12,\ 15,\ …&lt;br&gt;$$&lt;br&gt;程式必須印出第1500項&lt;code&gt;ugly number&lt;/code&gt;&lt;/p&gt;
     
     </summary>
     
@@ -482,13 +433,8 @@
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;&lt;a
-        
-      
+      &lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;category=&amp;amp;problem=3252&amp;amp;mosmsg=Submission+received+with+ID+22756147&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;Problem&quot;&gt;&lt;a href=&quot;#Problem&quot; class=&quot;headerlink&quot; title=&quot;Problem&quot;&gt;&lt;/a&gt;Problem&lt;/h1&gt;&lt;p&gt;有台印表機，有$n$件工作等待列印($1 \le n \le 100$)，你排在第$m$號位置($0 \le m \le {n-1}$)，位置從零開始。&lt;br&gt;由於實在是太多人印了，所以把每件工作都加上優先權，從1~9代表低到高。&lt;br&gt;對於是否要列印有特殊的規則：（假設佇列的頭是&lt;code&gt;job j&lt;/code&gt;）&lt;/p&gt;
     
     </summary>
     
@@ -512,13 +458,8 @@
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=3146&quot;
-        
-      
+      &lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=3146&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;Problem&quot;&gt;&lt;a href=&quot;#Problem&quot; class=&quot;headerlink&quot; title=&quot;Problem&quot;&gt;&lt;/a&gt;Problem&lt;/h1&gt;&lt;p&gt;有種資料結構(你不知道是什麼）支援兩種操作：放入、拿出。給定一個操作的序列，你要寫支程式推測出是哪種資料結構（&lt;code&gt;stack&lt;/code&gt;, &lt;code&gt;queue&lt;/code&gt;, &lt;code&gt;priority queue&lt;/code&gt;），不確定則輸出不確定，不知道輸出不知道。&lt;/p&gt;
     
     </summary>
     
@@ -542,13 +483,8 @@
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=1876&quot;
-        
-      
+      &lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=1876&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;Problem&quot;&gt;&lt;a href=&quot;#Problem&quot; class=&quot;headerlink&quot; title=&quot;Problem&quot;&gt;&lt;/a&gt;Problem&lt;/h1&gt;&lt;p&gt;有一疊卡，有標數字從$1$到$n$（頂端是$1$），每次從頂端丟掉一張卡片，再把一張卡片放到底部，直到卡片只剩一張。&lt;/p&gt;
     
     </summary>
     
@@ -572,13 +508,8 @@
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=onlinejudge&amp;amp;page=show_problem&amp;amp;problem=343&quot; target=&quot;_blank&quot;
-        
-      
+      &lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=onlinejudge&amp;amp;page=show_problem&amp;amp;problem=343&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;Problem&quot;&gt;&lt;a href=&quot;#Problem&quot; class=&quot;headerlink&quot; title=&quot;Problem&quot;&gt;&lt;/a&gt;Problem&lt;/h1&gt;&lt;p&gt;有一排人（長度$N$），每次從一疊卡（20張）頂端抽出一張卡，點數$i$ 代表 列隊每$i$個人要去除。&lt;/p&gt;
     
     </summary>
     
@@ -602,13 +533,8 @@
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;安裝64-bit的ubuntu時，預設是不裝32-bit的lib的，如果你在一個64-bit的環境，執行32-bit的程式。&lt;br&gt;會看到以下畫面&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ ./file1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;bash: ./file1: No such file or directory&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
@@ -632,14 +558,8 @@
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/lOR0hl1.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/lOR0hl1.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;這學期的互動媒體概論要寫專題，我在學期初便決定了要寫音樂遊戲。有幸能獲得投票最高，不愧是我跟&lt;a href=&quot;https://github.com/lpc0503&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;我的隊友&lt;/a&gt;爆肝的成果www。雖然說學期初早早就有想法，但到了期中前一星期才算認真開始寫，只能說我的惰性太強，不過經過一星期的爆肝，把基本的功能都做出來後，就直接放置，到了學期末事情才堆在一起QQ，我這種壞習慣真的要改。&lt;/p&gt;
     
     </summary>
     
@@ -661,15 +581,9 @@
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;比賽完過了12天我才想起來之前想著要寫的心得，硬是拖了12天才開始寫QQ&lt;/p&gt;
+      &lt;p&gt;比賽完過了12天我才想起來之前想著要寫的心得，硬是拖了12天才開始寫QQ&lt;/p&gt;
 &lt;p&gt;導致有點忘記了，只能靠著照片回想，但由於我並不是個喜歡拍照片的人，所以照片也有點少QQ&lt;br&gt;看來以後得時常紀錄了。&lt;/p&gt;
-&lt;h2 id=&quot;Day-01&quot;&gt;&lt;a
-        
-      
+&lt;h2 id=&quot;Day-01&quot;&gt;&lt;a href=&quot;#Day-01&quot; class=&quot;headerlink&quot; title=&quot;Day 01&quot;&gt;&lt;/a&gt;Day 01&lt;/h2&gt;
     
     </summary>
     
@@ -691,13 +605,10 @@
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;程式如何執行&quot;&gt;&lt;a href=&quot;#程式如何執行&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;h2 id=&quot;程式如何執行&quot;&gt;&lt;a href=&quot;#程式如何執行&quot; class=&quot;headerlink&quot; title=&quot;程式如何執行&quot;&gt;&lt;/a&gt;程式如何執行&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;這裡有點偏OS的部分&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;假設有個人在terminal中輸入了&lt;code&gt;a.exe&lt;/code&gt;&lt;/p&gt;
     
     </summary>
     
@@ -719,13 +630,91 @@
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;CPU-Centrual-Processing-Unit&quot;&gt;&lt;a href=&quot;#CPU-Centrual-Processing-Unit&quot; class=&quot;headerlink&quot; title=&quot;CPU(Centrual Processing
-        
-      
+      &lt;h2 id=&quot;CPU-Centrual-Processing-Unit&quot;&gt;&lt;a href=&quot;#CPU-Centrual-Processing-Unit&quot; class=&quot;headerlink&quot; title=&quot;CPU(Centrual Processing Unit)&quot;&gt;&lt;/a&gt;CPU(Centrual Processing Unit)&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;中央處理器&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;暫存器(register)&lt;ul&gt;
+&lt;li&gt;儲存運算/待運算的數值/位址&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Clock&lt;ul&gt;
+&lt;li&gt;同步訊號&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;控制單元CU (Control Unit)&lt;ul&gt;
+&lt;li&gt;控制操作順序&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ALU (Arithmetic Logic Unit) 算術邏輯單元&lt;ul&gt;
+&lt;li&gt;做數學運算(+, -)/邏輯運算(and, or, not)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;CPU與Memory跟I/O裝置之間以 &lt;strong&gt;Bus(匯流排)&lt;/strong&gt; 連接著&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Data Bus (資料bus)&lt;ul&gt;
+&lt;li&gt;「CPU跟Memory」之間傳輸資料的路徑&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;I/O Bus&lt;ul&gt;
+&lt;li&gt;「CPU跟I/O裝置」之間傳輸資料的路徑&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Control Bus&lt;ul&gt;
+&lt;li&gt;控制memory, I/O裝置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Address Bus&lt;ul&gt;
+&lt;li&gt;指定寫入/讀取的位址（對memory, I/O裝置）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Clock&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Clock cycle (時脈週期)&lt;ul&gt;
+&lt;li&gt;一次電子脈衝所需的時間&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;每個指令&lt;strong&gt;至少&lt;/strong&gt;需要一個以上的cycle( $\ge{1}$)，有些長、有些短。&lt;/li&gt;
+&lt;li&gt;Wait State (等待狀態)&lt;ul&gt;
+&lt;li&gt;一個cycle沒做事，就只是等待&lt;del&gt;浪費電&lt;/del&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;指令執行週期&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CPU在執行程式之前，先把當前要執行的指令存到&lt;code&gt;instruction queue&lt;/code&gt;中，然後把&lt;code&gt;IP&lt;/code&gt;指向下個指令，才開始執行。&lt;/li&gt;
+&lt;li&gt;分成三個基本步驟：&lt;ol&gt;
+&lt;li&gt;Fetch （擷取)&lt;ul&gt;
+&lt;li&gt;從&lt;code&gt;instruction queue&lt;/code&gt;中拿指令，並改變&lt;code&gt;IP&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Decode (解碼)&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;CU&lt;/code&gt;decode送進來的指令，接著把指令的操作對象送到&lt;code&gt;ALU&lt;/code&gt;中，並且告訴&lt;code&gt;ALU&lt;/code&gt;要執行的運算。&lt;/li&gt;
+&lt;li&gt;Fetch operands (擷取運算元)&lt;ul&gt;
+&lt;li&gt;如果指令要操作的對象在memory中，則要等待讀取，會放到一個看不見的register中。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Execute (執行)&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ALU&lt;/code&gt;執行運算，把結果放到Named register(有名字的暫存器)中。&lt;/li&gt;
+&lt;li&gt;並更新&lt;code&gt;EFLAGS&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Store Output operands (儲存輸出運算元)&lt;ul&gt;
+&lt;li&gt;如果輸出要放在memory中，則要等待寫入。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;Cache-快取記憶體&quot;&gt;&lt;a href=&quot;#Cache-快取記憶體&quot; class=&quot;headerlink&quot; title=&quot;Cache 快取記憶體&quot;&gt;&lt;/a&gt;Cache 快取記憶體&lt;/h2&gt;
     
     </summary>
     
@@ -747,13 +736,8 @@
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;態度&quot;&gt;&lt;a href=&quot;#態度&quot; class=&quot;headerlink&quot; title=&quot;態度&quot;&gt;&lt;/a&gt;態度&lt;/h2&gt;&lt;p&gt;&lt;img
-        
-      
+      &lt;h2 id=&quot;態度&quot;&gt;&lt;a href=&quot;#態度&quot; class=&quot;headerlink&quot; title=&quot;態度&quot;&gt;&lt;/a&gt;態度&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://www.bootstrapping101.com/wp-content/uploads/2015/12/attitude-success-quote.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;最近心情一直很煩躁，明明這件事不是我的義務，我卻還是多管閒事。&lt;/p&gt;
     
     </summary>
     
@@ -773,13 +757,12 @@
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;tmux-基本使用&quot;&gt;&lt;a href=&quot;#tmux-基本使用&quot; class=&quot;headerlink&quot; title=&quot;tmux 基本使用&quot;&gt;&lt;/a&gt;tmux 基本使用&lt;/h2&gt;&lt;h3 id=&quot;Terminal-MUltipleXer&quot;&gt;&lt;a
-        
-      
+      &lt;h2 id=&quot;tmux-基本使用&quot;&gt;&lt;a href=&quot;#tmux-基本使用&quot; class=&quot;headerlink&quot; title=&quot;tmux 基本使用&quot;&gt;&lt;/a&gt;tmux 基本使用&lt;/h2&gt;&lt;h3 id=&quot;Terminal-MUltipleXer&quot;&gt;&lt;a href=&quot;#Terminal-MUltipleXer&quot; class=&quot;headerlink&quot; title=&quot;Terminal MUltipleXer&quot;&gt;&lt;/a&gt;Terminal MUltipleXer&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;名稱:&lt;code&gt;terminal&lt;/code&gt;的多工器&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;在一個terminal視窗下開啟多個視窗或是區塊(pane)，並且可以快速地切換不同的tmux視窗，且&lt;strong&gt;與unix工具契合&lt;/strong&gt;，是個&lt;strong&gt;提高生產力&lt;/strong&gt;的工具。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
@@ -803,13 +786,8 @@
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;在前幾個星期，筆者被windows折磨（各種工具無法在windows上使用），所以索性將PC灌成Ubuntu，但在ssh進入ubuntu上卻遇到了無法輸入中文的問題。&lt;/p&gt;
+&lt;p&gt;連入ssh時可能會注意到一行&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;-bash: warning: setlocale: LC_ALL: cannot change locale (zh_TW.UTF-8)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
     
     </summary>
     
@@ -833,13 +811,8 @@
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;C-STL-組合&quot;&gt;&lt;a href=&quot;#C-STL-組合&quot; class=&quot;headerlink&quot; title=&quot;C++ STL 組合&quot;&gt;&lt;/a&gt;C++ STL 組合&lt;/h2&gt;&lt;p&gt;STL中提供了兩個template
-        
-      
+      &lt;h2 id=&quot;C-STL-組合&quot;&gt;&lt;a href=&quot;#C-STL-組合&quot; class=&quot;headerlink&quot; title=&quot;C++ STL 組合&quot;&gt;&lt;/a&gt;C++ STL 組合&lt;/h2&gt;&lt;p&gt;STL中提供了兩個template function可以舉出一組資料的所有組合：分別是&lt;code&gt;next_permutation()&lt;/code&gt;與&lt;code&gt;prev_permutation()&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;組合順序交換的依據是照&lt;strong&gt;字典排序&lt;/strong&gt;(&lt;em&gt;lexicographically&lt;/em&gt;)&lt;/p&gt;
     
     </summary>
     
@@ -867,13 +840,8 @@
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;在打CTF時，在&lt;code&gt;Misc&lt;/code&gt;遇到有用&lt;a
-        
-      
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;在打CTF時，在&lt;code&gt;Misc&lt;/code&gt;遇到有用&lt;a href=&quot;https://en.wikipedia.org/wiki/QR_code&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;QRcode&lt;/a&gt; encode的flag，雖然有線上的工具，但身為&lt;del&gt;programmer&lt;/del&gt;就要用command-line，所以就找到了一個cli的qrcode-decoder，但是官方並沒有提供macos的binary而brew也沒有，以至於就得自己build了。&lt;/p&gt;
+&lt;p&gt;macos版本：&lt;code&gt;OS X 10.11.6 El Capitan&lt;/code&gt;&lt;/p&gt;
     
     </summary>
     
@@ -899,13 +867,8 @@
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;你好，世界&quot;&gt;&lt;a href=&quot;#你好，世界&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;h1 id=&quot;你好，世界&quot;&gt;&lt;a href=&quot;#你好，世界&quot; class=&quot;headerlink&quot; title=&quot;你好，世界&quot;&gt;&lt;/a&gt;你好，世界&lt;/h1&gt;&lt;p&gt;本網誌建立的目的是促使我研究並撰寫成文章心得所建立的網誌，包含但不限於程式&lt;/p&gt;
+&lt;p&gt;可能含有本人心情隨筆、碎碎念、或是最近敗家、或多了哪個二次元老婆之類的鬼話（笑。&lt;/p&gt;
     
     </summary>
     
