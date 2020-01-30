@@ -87,6 +87,59 @@ ga('send', 'pageview');
       <div class="outer">
         <section id="main">
   
+    <article id="post-在-macOS-Mojave-上正常使用-gdb" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/01/27/在-macOS-Mojave-上正常使用-gdb/" class="article-date">
+  <time datetime="2020-01-26T21:42:06.000Z" itemprop="datePublished">2020-01-27</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/學習紀錄/">學習紀錄</a>►<a class="article-category-link" href="/categories/學習紀錄/macOS/">macOS</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/01/27/在-macOS-Mojave-上正常使用-gdb/">在 macOS Mojave 上正常使用 gdb</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在 macOS 上使用 gdb 時，如果沒有做以下修改，通常會是這樣：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">gdb$ r</span><br><span class="line">Starting program: /private/tmp/a.out</span><br><span class="line">Unable to find Mach task port for process-id 20201: (os/kern) failure (0x5).</span><br><span class="line"> (please check gdb is codesigned - see taskgated(8))</span><br></pre></td></tr></table></figure>
+<p>這是因為 Darwin 內核預設禁止沒有特殊權限的程序偵錯(Debugging)其他程序，在預設這個選項是關閉的，如果要開啟則要用系統信任的憑證進行簽章(codesign)。</p>
+        
+          <p class="article-more-link">
+            <a href="/2020/01/27/在-macOS-Mojave-上正常使用-gdb/#more">繼續閱讀全文 »</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.roy4801.tw/2020/01/27/在-macOS-Mojave-上正常使用-gdb/" data-id="ck5vktrcw00069ftki89xbyrk" class="article-share-link">分享</a>
+      
+      
+        <a href="http://blog.roy4801.tw/2020/01/27/在-macOS-Mojave-上正常使用-gdb/#disqus_thread" class="article-comment-link">留言</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/gdb/">gdb</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/教學/">教學</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+ 
+
+
+  
     <article id="post-uva/uva1587" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/09/11/uva/uva1587/" class="article-date">
@@ -123,7 +176,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2019/09/11/uva/uva1587/" data-id="ck0fgwkmm002xawtka4avkk8p" class="article-share-link">分享</a>
+      <a data-url="http://blog.roy4801.tw/2019/09/11/uva/uva1587/" data-id="ck5vktrfc002u9ftkmrs3fcut" class="article-share-link">分享</a>
       
       
         <a href="http://blog.roy4801.tw/2019/09/11/uva/uva1587/#disqus_thread" class="article-comment-link">留言</a>
@@ -175,7 +228,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2019/09/10/uva/uva202/" data-id="ck0fgwkmy0034awtk0esuxca5" class="article-share-link">分享</a>
+      <a data-url="http://blog.roy4801.tw/2019/09/10/uva/uva202/" data-id="ck5vktrfk003c9ftkcb27a6wp" class="article-share-link">分享</a>
       
       
         <a href="http://blog.roy4801.tw/2019/09/10/uva/uva202/#disqus_thread" class="article-comment-link">留言</a>
@@ -227,7 +280,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2019/09/10/uva/uva275/" data-id="ck0fgwkn00036awtkiks13y1r" class="article-share-link">分享</a>
+      <a data-url="http://blog.roy4801.tw/2019/09/10/uva/uva275/" data-id="ck5vktrfl003e9ftkqmx9wech" class="article-share-link">分享</a>
       
       
         <a href="http://blog.roy4801.tw/2019/09/10/uva/uva275/#disqus_thread" class="article-comment-link">留言</a>
@@ -282,7 +335,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2019/08/06/ais3/ais_2019/" data-id="ck0fgwkky001oawtks8seqk8w" class="article-share-link">分享</a>
+      <a data-url="http://blog.roy4801.tw/2019/08/06/ais3/ais_2019/" data-id="ck5vktren001o9ftknsznay9e" class="article-share-link">分享</a>
       
       
         <a href="http://blog.roy4801.tw/2019/08/06/ais3/ais_2019/#disqus_thread" class="article-comment-link">留言</a>
@@ -334,7 +387,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2019/06/26/uva/uva10226/" data-id="ck0fgwkle0022awtkxw806w6e" class="article-share-link">分享</a>
+      <a data-url="http://blog.roy4801.tw/2019/06/26/uva/uva10226/" data-id="ck5vktrf200289ftkikrha28u" class="article-share-link">分享</a>
       
       
         <a href="http://blog.roy4801.tw/2019/06/26/uva/uva10226/#disqus_thread" class="article-comment-link">留言</a>
@@ -386,7 +439,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2019/06/26/uva/uva793/" data-id="ck0fgwknt003gawtk8gxlc602" class="article-share-link">分享</a>
+      <a data-url="http://blog.roy4801.tw/2019/06/26/uva/uva793/" data-id="ck5vktrfo003i9ftk8oauwr2f" class="article-share-link">分享</a>
       
       
         <a href="http://blog.roy4801.tw/2019/06/26/uva/uva793/#disqus_thread" class="article-comment-link">留言</a>
@@ -438,7 +491,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2019/06/24/uva/uva10033/" data-id="ck0fgwkl4001wawtk2rr0tysh" class="article-share-link">分享</a>
+      <a data-url="http://blog.roy4801.tw/2019/06/24/uva/uva10033/" data-id="ck5vktrez00219ftk2qxejwqq" class="article-share-link">分享</a>
       
       
         <a href="http://blog.roy4801.tw/2019/06/24/uva/uva10033/#disqus_thread" class="article-comment-link">留言</a>
@@ -490,7 +543,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2019/06/23/uva/uva10004/" data-id="ck0fgwklc001zawtkzj5xxrvm" class="article-share-link">分享</a>
+      <a data-url="http://blog.roy4801.tw/2019/06/23/uva/uva10004/" data-id="ck5vktrev001x9ftky35s265a" class="article-share-link">分享</a>
       
       
         <a href="http://blog.roy4801.tw/2019/06/23/uva/uva10004/#disqus_thread" class="article-comment-link">留言</a>
@@ -542,65 +595,13 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2019/06/22/uva/uva1203/" data-id="ck0fgwkm5002pawtkp7fv44mg" class="article-share-link">分享</a>
+      <a data-url="http://blog.roy4801.tw/2019/06/22/uva/uva1203/" data-id="ck5vktrf8002m9ftk01wwcd66" class="article-share-link">分享</a>
       
       
         <a href="http://blog.roy4801.tw/2019/06/22/uva/uva1203/#disqus_thread" class="article-comment-link">留言</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Uva/">Uva</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/priority-queue/">priority queue</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/解題紀錄/">解題紀錄</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
- 
-
-
-  
-    <article id="post-uva/uva526" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/06/14/uva/uva526/" class="article-date">
-  <time datetime="2019-06-14T10:30:55.000Z" itemprop="datePublished">2019-06-14</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/解題區/">解題區</a>►<a class="article-category-link" href="/categories/解題區/Uva/">Uva</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/06/14/uva/uva526/">Uva 526 - String Distance and Transform Process</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><a href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;Itemid=8&amp;page=show_problem&amp;problem=467" target="_blank" rel="noopener">題目</a></p>
-<h1 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h1><p>字串距離是一個代表兩個字串的非負整數。接著要轉換(transform)$a$字串至$b$字串，有三種操作：插入(Insert)、刪除(Delete)、及取代（Replace)。<br>字串距離就是轉換的數量，求任意$a$字串轉換至$b$字串的字串距離及如何轉換的。</p>
-        
-          <p class="article-more-link">
-            <a href="/2019/06/14/uva/uva526/#more">繼續閱讀全文 »</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2019/06/14/uva/uva526/" data-id="ck0fgwkne003cawtkqulteb15" class="article-share-link">分享</a>
-      
-      
-        <a href="http://blog.roy4801.tw/2019/06/14/uva/uva526/#disqus_thread" class="article-comment-link">留言</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DP/">DP</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Uva/">Uva</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/解題紀錄/">解題紀錄</a></li></ul>
 
     </footer>
   </div>
@@ -644,7 +645,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title categories">分類</h3>
     <div class="widget" id="categories">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Writeup/">Writeup</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/其他/">其他</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/學習紀錄/">學習紀錄</a><span class="category-list-count">8</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/學習紀錄/C-C/">C/C++</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/學習紀錄/Linux/">Linux</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/學習紀錄/macOS/">macOS</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/學習紀錄/其他/">其他</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/學習紀錄/組合語言/">組合語言</a><span class="category-list-count">2</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/心得散文/">心得散文</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/解題區/">解題區</a><span class="category-list-count">17</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/解題區/Uva/">Uva</a><span class="category-list-count">17</span></li></ul></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Writeup/">Writeup</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/其他/">其他</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/學習紀錄/">學習紀錄</a><span class="category-list-count">9</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/學習紀錄/C-C/">C/C++</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/學習紀錄/Linux/">Linux</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/學習紀錄/macOS/">macOS</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/學習紀錄/其他/">其他</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/學習紀錄/組合語言/">組合語言</a><span class="category-list-count">2</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/心得散文/">心得散文</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/解題區/">解題區</a><span class="category-list-count">17</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/解題區/Uva/">Uva</a><span class="category-list-count">17</span></li></ul></li></ul>
     </div>
   </div>
 
@@ -661,7 +662,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title tags">標籤</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/">C++</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CTF/">CTF</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DP/">DP</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/">Linux</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/STL/">STL</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Uva/">Uva</a><span class="tag-list-count">17</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ctf-tools/">ctf tools</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/priority-queue/">priority queue</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/x86/">x86</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/其他/">其他</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/心得/">心得</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/心情散文/">心情散文</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/教學/">教學</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/檔案系統/">檔案系統</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/比賽/">比賽</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/程式/">程式</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/解題紀錄/">解題紀錄</a><span class="tag-list-count">17</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/資安/">資安</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/">C++</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CTF/">CTF</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DP/">DP</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/">Linux</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/STL/">STL</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Uva/">Uva</a><span class="tag-list-count">17</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ctf-tools/">ctf tools</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gdb/">gdb</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/priority-queue/">priority queue</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/x86/">x86</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/其他/">其他</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/心得/">心得</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/心情散文/">心情散文</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/教學/">教學</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/檔案系統/">檔案系統</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/比賽/">比賽</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/程式/">程式</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/解題紀錄/">解題紀錄</a><span class="tag-list-count">17</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/資安/">資安</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -671,7 +672,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title tagcloud">標籤雲</h3>
     <div class="widget tagcloud">
-      <a href="/tags/C/" style="font-size: 14px;">C++</a> <a href="/tags/CTF/" style="font-size: 14px;">CTF</a> <a href="/tags/DP/" style="font-size: 16.75px;">DP</a> <a href="/tags/Linux/" style="font-size: 19.5px;">Linux</a> <a href="/tags/STL/" style="font-size: 14px;">STL</a> <a href="/tags/Uva/" style="font-size: 25px;">Uva</a> <a href="/tags/ctf-tools/" style="font-size: 14px;">ctf tools</a> <a href="/tags/priority-queue/" style="font-size: 14px;">priority queue</a> <a href="/tags/x86/" style="font-size: 16.75px;">x86</a> <a href="/tags/其他/" style="font-size: 14px;">其他</a> <a href="/tags/心得/" style="font-size: 22.25px;">心得</a> <a href="/tags/心情散文/" style="font-size: 14px;">心情散文</a> <a href="/tags/教學/" style="font-size: 22.25px;">教學</a> <a href="/tags/檔案系統/" style="font-size: 14px;">檔案系統</a> <a href="/tags/比賽/" style="font-size: 16.75px;">比賽</a> <a href="/tags/程式/" style="font-size: 19.5px;">程式</a> <a href="/tags/解題紀錄/" style="font-size: 25px;">解題紀錄</a> <a href="/tags/資安/" style="font-size: 14px;">資安</a>
+      <a href="/tags/C/" style="font-size: 14px;">C++</a> <a href="/tags/CTF/" style="font-size: 14px;">CTF</a> <a href="/tags/DP/" style="font-size: 16.2px;">DP</a> <a href="/tags/Linux/" style="font-size: 18.4px;">Linux</a> <a href="/tags/STL/" style="font-size: 14px;">STL</a> <a href="/tags/Uva/" style="font-size: 25px;">Uva</a> <a href="/tags/ctf-tools/" style="font-size: 14px;">ctf tools</a> <a href="/tags/gdb/" style="font-size: 14px;">gdb</a> <a href="/tags/priority-queue/" style="font-size: 14px;">priority queue</a> <a href="/tags/x86/" style="font-size: 16.2px;">x86</a> <a href="/tags/其他/" style="font-size: 14px;">其他</a> <a href="/tags/心得/" style="font-size: 20.6px;">心得</a> <a href="/tags/心情散文/" style="font-size: 14px;">心情散文</a> <a href="/tags/教學/" style="font-size: 22.8px;">教學</a> <a href="/tags/檔案系統/" style="font-size: 14px;">檔案系統</a> <a href="/tags/比賽/" style="font-size: 16.2px;">比賽</a> <a href="/tags/程式/" style="font-size: 18.4px;">程式</a> <a href="/tags/解題紀錄/" style="font-size: 25px;">解題紀錄</a> <a href="/tags/資安/" style="font-size: 14px;">資安</a>
     </div>
   </div>
 
@@ -681,6 +682,10 @@ ga('send', 'pageview');
     <h3 class="widget-title recent-posts">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2020/01/27/在-macOS-Mojave-上正常使用-gdb/">在 macOS Mojave 上正常使用 gdb</a>
+          </li>
         
           <li>
             <a href="/2019/09/11/uva/uva1587/">Uva 1587 - Box</a>
@@ -698,10 +703,6 @@ ga('send', 'pageview');
             <a href="/2019/08/06/ais3/ais_2019/">AIS3 2019 心得</a>
           </li>
         
-          <li>
-            <a href="/2019/06/26/uva/uva10226/">Uva 10226 - Hardwood Species</a>
-          </li>
-        
       </ul>
     </div>
   </div>
@@ -711,7 +712,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title archive">彙整</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">九月 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">八月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">三月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">二月 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">一月 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">十一月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">一月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">九月 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">八月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">三月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">二月 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">一月 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">十一月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -751,7 +752,7 @@ ga('send', 'pageview');
   
   <div class="outer">
     <div id="footer-left">
-      &copy; 2018 - 2019 roy4801&nbsp;|&nbsp;
+      &copy; 2018 - 2020 roy4801&nbsp;|&nbsp;
       Theme by <a href="https://github.com/giscafer/hexo-theme-cafe/" target="_blank">Cafe</a>
     </div>
      <div id="footer-right">

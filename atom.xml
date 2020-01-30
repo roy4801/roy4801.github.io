@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.roy4801.tw/"/>
-  <updated>2019-09-11T16:17:40.453Z</updated>
+  <updated>2020-01-30T21:54:16.717Z</updated>
   <id>http://blog.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>在 macOS Mojave 上正常使用 gdb</title>
+    <link href="http://blog.roy4801.tw/2020/01/27/%E5%9C%A8-macOS-Mojave-%E4%B8%8A%E6%AD%A3%E5%B8%B8%E4%BD%BF%E7%94%A8-gdb/"/>
+    <id>http://blog.roy4801.tw/2020/01/27/在-macOS-Mojave-上正常使用-gdb/</id>
+    <published>2020-01-26T21:42:06.000Z</published>
+    <updated>2020-01-30T21:54:16.717Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在 macOS 上使用 gdb 時，如果沒有做以下修改，通常會是這樣：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;gdb$ r&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Starting program: /private/tmp/a.out&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Unable to find Mach task port for process-id 20201: (os/kern) failure (0x5).&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; (please check gdb is codesigned - see taskgated(8))&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;這是因為 Darwin 內核預設禁止沒有特殊權限的程序偵錯(Debugging)其他程序，在預設這個選項是關閉的，如果要開啟則要用系統信任的憑證進行簽章(codesign)。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="學習紀錄" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/"/>
+    
+      <category term="macOS" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/macOS/"/>
+    
+    
+      <category term="教學" scheme="http://blog.roy4801.tw/tags/%E6%95%99%E5%AD%B8/"/>
+    
+      <category term="gdb" scheme="http://blog.roy4801.tw/tags/gdb/"/>
+    
+  </entry>
   
   <entry>
     <title>Uva 1587 - Box</title>
