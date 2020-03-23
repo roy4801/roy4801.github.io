@@ -3,20 +3,26 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>Uva 1587 - Box | r0yblog</title>
+  <title>dear imgui 介紹 - 輕量級的 GUI Library | r0yblog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="題目 Problem給你6個寬$w_i$高$h_i$的紙板，問可不可以組成一個長方體">
-<meta name="keywords" content="解題紀錄,Uva">
+  <meta name="description" content="Dear Imgui 是個輕量、快速的 imtermediate GUI 讓開發者可以非常快速的建立 GUI，被遊戲開發(gamedev)、編輯器(editor)、除錯器(debugger)開發者等使用。 使用 imgui 的 code 非常簡單且易於修改，imgui 本身是無狀態的，與一般的 retained mode GUI 相反，imgui 不用儲存 GUI 物件或是註冊回調(Callba">
+<meta name="keywords" content="C++,STL,程式,教學,C++ Library">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Uva 1587 - Box">
-<meta property="og:url" content="http://blog.roy4801.tw/2019/09/11/uva/uva1587/index.html">
+<meta property="og:title" content="dear imgui 介紹 - 輕量級的 GUI Library">
+<meta property="og:url" content="http://blog.roy4801.tw/2020/03/24/imgui-intro-pt1/index.html">
 <meta property="og:site_name" content="r0yblog">
-<meta property="og:description" content="題目 Problem給你6個寬$w_i$高$h_i$的紙板，問可不可以組成一個長方體">
+<meta property="og:description" content="Dear Imgui 是個輕量、快速的 imtermediate GUI 讓開發者可以非常快速的建立 GUI，被遊戲開發(gamedev)、編輯器(editor)、除錯器(debugger)開發者等使用。 使用 imgui 的 code 非常簡單且易於修改，imgui 本身是無狀態的，與一般的 retained mode GUI 相反，imgui 不用儲存 GUI 物件或是註冊回調(Callba">
 <meta property="og:locale" content="zh-TW">
-<meta property="og:updated_time" content="2019-09-11T16:17:40.453Z">
+<meta property="og:image" content="https://i.imgur.com/irlVLsy.png">
+<meta property="og:image" content="https://i.imgur.com/YFSmVdi.gif">
+<meta property="og:image" content="https://i.imgur.com/cz0E7Wt.gif">
+<meta property="og:image" content="https://i.imgur.com/6zdOsUX.png">
+<meta property="og:image" content="https://i.imgur.com/KeFnXt1.gif">
+<meta property="og:updated_time" content="2020-03-23T20:25:07.426Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Uva 1587 - Box">
-<meta name="twitter:description" content="題目 Problem給你6個寬$w_i$高$h_i$的紙板，問可不可以組成一個長方體">
+<meta name="twitter:title" content="dear imgui 介紹 - 輕量級的 GUI Library">
+<meta name="twitter:description" content="Dear Imgui 是個輕量、快速的 imtermediate GUI 讓開發者可以非常快速的建立 GUI，被遊戲開發(gamedev)、編輯器(editor)、除錯器(debugger)開發者等使用。 使用 imgui 的 code 非常簡單且易於修改，imgui 本身是無狀態的，與一般的 retained mode GUI 相反，imgui 不用儲存 GUI 物件或是註冊回調(Callba">
+<meta name="twitter:image" content="https://i.imgur.com/irlVLsy.png">
   
     <link rel="alternate" href="/atom.xml" title="r0yblog" type="application/atom+xml">
   
@@ -86,14 +92,14 @@ ga('send', 'pageview');
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-uva/uva1587" class="article article-type-post" itemscope="" itemprop="blogPost">
+        <section id="main"><article id="post-imgui-intro-pt1" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2019/09/11/uva/uva1587/" class="article-date">
-  <time datetime="2019-09-11T15:56:25.000Z" itemprop="datePublished">2019-09-11</time>
+    <a href="/2020/03/24/imgui-intro-pt1/" class="article-date">
+  <time datetime="2020-03-23T20:18:45.000Z" itemprop="datePublished">2020-03-24</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/解題區/">解題區</a>►<a class="article-category-link" href="/categories/解題區/Uva/">Uva</a>
+    <a class="article-category-link" href="/categories/學習紀錄/">學習紀錄</a>►<a class="article-category-link" href="/categories/學習紀錄/C-C/">C/C++</a>
   </div>
 
   </div>
@@ -104,7 +110,7 @@ ga('send', 'pageview');
         
   
     <h1 class="article-title" itemprop="name">
-      Uva 1587 - Box
+      dear imgui 介紹 - 輕量級的 GUI Library
     </h1>
   
 
@@ -114,32 +120,41 @@ ga('send', 'pageview');
       
         <!-- Table of Contents -->
         
-        <p><a href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;Itemid=8&amp;page=show_problem&amp;problem=4462" target="_blank" rel="noopener">題目</a></p>
-<h1 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h1><p>給你6個寬$w_i$高$h_i$的紙板，問可不可以組成一個長方體</p>
-<h1 id="想法"><a href="#想法" class="headerlink" title="想法"></a>想法</h1><p>組成一個長方體的紙板可以分成三組（相對一組），有三種情況：相異、兩同ㄧ異、全部相同。</p>
-<ol>
-<li>$(x, y), (y, z), (x, z)$</li>
-<li>$(x, y), (x, y), (x, z)$</li>
-<li>$(x, y)$<br>注意，紙板可以旋轉所以$(y, x) = (x, y)$</li>
-</ol>
-<h1 id="AC-Code"><a href="#AC-Code" class="headerlink" title="AC Code"></a>AC Code</h1><p><a href="https://github.com/roy4801/solved_problems/blob/master/uva/1587.cpp" target="_blank" rel="noopener">https://github.com/roy4801/solved_problems/blob/master/uva/1587.cpp</a></p>
+        <p><img src="https://i.imgur.com/irlVLsy.png" alt=""></p>
+<p><a href="https://github.com/ocornut/imgui" target="_blank" rel="noopener">Dear Imgui</a> 是個輕量、快速的 imtermediate GUI 讓開發者可以非常快速的建立 GUI，被遊戲開發(gamedev)、編輯器(editor)、除錯器(debugger)開發者等使用。</p>
+<p>使用 imgui 的 code 非常簡單且易於修改，imgui 本身是無狀態的，與一般的 retained mode GUI 相反，imgui 不用儲存 GUI 物件或是註冊回調(Callback)</p>
+<p><img src="https://i.imgur.com/YFSmVdi.gif" alt=""><br><img src="https://i.imgur.com/cz0E7Wt.gif" alt=""><br><img src="https://i.imgur.com/6zdOsUX.png" alt=""><br><img src="https://i.imgur.com/KeFnXt1.gif" alt=""></p>
+<h2 id="Immediate-mode-GUI-概念"><a href="#Immediate-mode-GUI-概念" class="headerlink" title="Immediate mode GUI 概念"></a>Immediate mode GUI 概念</h2><p>Immediate mode GUI 跟一般 Retained mode 不同的是，其將資料獨立於 GUI 元件外，在每幀都會根據資料重畫窗口部件，不用考慮 GUI 目前的狀態，大大減少元件增加時，個個元件間相互影響的複雜度上升(retained mode)，但也是由於每次畫面所有元件都要重畫，所以效能會比 Retain mode 差。</p>
+<p>如何畫出一個按鈕：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (ImGui::Button(<span class="string">"Some Button"</span>)) &#123;</span><br><span class="line">    ... <span class="comment">// code which will be called on button pressed</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>dear imgui 的優點<ul>
+<li>快速及輕量</li>
+<li>沒有動態分配(dynamic allocation)</li>
+<li>容易移植(portable)</li>
+<li>容易擴展(expandable)</li>
+</ul>
+</li>
+</ul>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p>IMMEDIATE-MODE GRAPHICAL USER INTERFACES (2005)<br><a href="https://caseymuratori.com/blog_0001" target="_blank" rel="noopener">https://caseymuratori.com/blog_0001</a></p>
+<p>Immediate Mode Graphical User Interfaces<br><a href="http://www.cse.chalmers.se/edu/year/2011/course/TDA361/Advanced%20Computer%20Graphics/IMGUI.pdf" target="_blank" rel="noopener">http://www.cse.chalmers.se/edu/year/2011/course/TDA361/Advanced%20Computer%20Graphics/IMGUI.pdf</a></p>
+<p><a href="https://tw.twincl.com/javascript/reactjs/*631q" target="_blank" rel="noopener">https://tw.twincl.com/javascript/reactjs/*631q</a></p>
 
         
         <div>
           <hr>
           <p style="margin-bottom: 0;">如果你覺得這篇文章很棒，請你不吝點讚 (ﾟ∀ﾟ)</p>
-          <iframe width="100%" height="230px" scrolling="no" frameborder="0" id="player" src="https://button.like.co/in/embed/a82611141/button/?referrer=http://blog.roy4801.tw/2019/09/11/uva/uva1587/" allowfullscreen="true"></iframe>
+          <iframe width="100%" height="230px" scrolling="no" frameborder="0" id="player" src="https://button.like.co/in/embed/a82611141/button/?referrer=http://blog.roy4801.tw/2020/03/24/imgui-intro-pt1/" allowfullscreen="true"></iframe>
         </div>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2019/09/11/uva/uva1587/" data-id="ck84x3tch003jk4tk7ybez6fl" class="article-share-link">分享</a>
+      <a data-url="http://blog.roy4801.tw/2020/03/24/imgui-intro-pt1/" data-id="ck84x3t910004k4tkmvzzu3n9" class="article-share-link">分享</a>
       
       
-        <a href="http://blog.roy4801.tw/2019/09/11/uva/uva1587/#disqus_thread" class="article-comment-link">留言</a>
+        <a href="http://blog.roy4801.tw/2020/03/24/imgui-intro-pt1/#disqus_thread" class="article-comment-link">留言</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Uva/">Uva</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/解題紀錄/">解題紀錄</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C-Library/">C++ Library</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/STL/">STL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/教學/">教學</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/程式/">程式</a></li></ul>
 
     </footer>
   </div>
@@ -189,19 +204,10 @@ ga('send', 'pageview');
     
 <nav id="article-nav">
   
-    <a href="/2020/01/27/在-macOS-Mojave-上正常使用-gdb/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          在 macOS Mojave 上正常使用 gdb
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/09/10/uva/uva202/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2020/01/27/在-macOS-Mojave-上正常使用-gdb/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Uva 202 - Repeating Decimals</div>
+      <div class="article-nav-title">在 macOS Mojave 上正常使用 gdb</div>
     </a>
   
 </nav>
@@ -246,7 +252,7 @@ ga('send', 'pageview');
       
         <strong class="toc-title">文章目錄</strong>
         <div class="toc-widget-list">
-              <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Problem"><span class="toc-number">1.</span> <span class="toc-text">Problem</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#想法"><span class="toc-number">2.</span> <span class="toc-text">想法</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#AC-Code"><span class="toc-number">3.</span> <span class="toc-text">AC Code</span></a></li></ol>
+              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Immediate-mode-GUI-概念"><span class="toc-number">1.</span> <span class="toc-text">Immediate mode GUI 概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Reference"><span class="toc-number">2.</span> <span class="toc-text">Reference</span></a></li></ol>
           </div>
       </div>
     </div>
@@ -311,7 +317,7 @@ window.onload = function() {
 <script>
   var disqus_shortname = 'roy-blog';
   
-  var disqus_url = 'http://blog.roy4801.tw/2019/09/11/uva/uva1587/';
+  var disqus_url = 'http://blog.roy4801.tw/2020/03/24/imgui-intro-pt1/';
   
   (function(){
     var dsq = document.createElement('script');

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.roy4801.tw/"/>
-  <updated>2020-01-30T21:54:16.717Z</updated>
+  <updated>2020-03-23T20:25:07.426Z</updated>
   <id>http://blog.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>dear imgui 介紹 - 輕量級的 GUI Library</title>
+    <link href="http://blog.roy4801.tw/2020/03/24/imgui-intro-pt1/"/>
+    <id>http://blog.roy4801.tw/2020/03/24/imgui-intro-pt1/</id>
+    <published>2020-03-23T20:18:45.000Z</published>
+    <updated>2020-03-23T20:25:07.426Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/irlVLsy.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/ocornut/imgui&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Dear Imgui&lt;/a&gt; 是個輕量、快速的 imtermediate GUI 讓開發者可以非常快速的建立 GUI，被遊戲開發(gamedev)、編輯器(editor)、除錯器(debugger)開發者等使用。&lt;/p&gt;
+&lt;p&gt;使用 imgui 的 code 非常簡單且易於修改，imgui 本身是無狀態的，與一般的 retained mode GUI 相反，imgui 不用儲存 GUI 物件或是註冊回調(Callback)&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="學習紀錄" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/"/>
+    
+      <category term="C/C++" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/C-C/"/>
+    
+    
+      <category term="C++" scheme="http://blog.roy4801.tw/tags/C/"/>
+    
+      <category term="STL" scheme="http://blog.roy4801.tw/tags/STL/"/>
+    
+      <category term="程式" scheme="http://blog.roy4801.tw/tags/%E7%A8%8B%E5%BC%8F/"/>
+    
+      <category term="教學" scheme="http://blog.roy4801.tw/tags/%E6%95%99%E5%AD%B8/"/>
+    
+      <category term="C++ Library" scheme="http://blog.roy4801.tw/tags/C-Library/"/>
+    
+  </entry>
   
   <entry>
     <title>在 macOS Mojave 上正常使用 gdb</title>
@@ -847,13 +879,13 @@
       <category term="C/C++" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/C-C/"/>
     
     
-      <category term="程式" scheme="http://blog.roy4801.tw/tags/%E7%A8%8B%E5%BC%8F/"/>
-    
-      <category term="教學" scheme="http://blog.roy4801.tw/tags/%E6%95%99%E5%AD%B8/"/>
-    
       <category term="C++" scheme="http://blog.roy4801.tw/tags/C/"/>
     
       <category term="STL" scheme="http://blog.roy4801.tw/tags/STL/"/>
+    
+      <category term="程式" scheme="http://blog.roy4801.tw/tags/%E7%A8%8B%E5%BC%8F/"/>
+    
+      <category term="教學" scheme="http://blog.roy4801.tw/tags/%E6%95%99%E5%AD%B8/"/>
     
   </entry>
   
