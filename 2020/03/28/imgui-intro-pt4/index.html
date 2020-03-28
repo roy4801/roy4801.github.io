@@ -3,26 +3,26 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>dear imgui 介紹 - 輕量級的 GUI Library | r0yblog</title>
+  <title>dear imgui 使用 - 單選、複選按鈕 | r0yblog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Dear Imgui 是個輕量、快速的 imtermediate GUI 讓開發者可以非常快速的建立 GUI，被遊戲開發(gamedev)、編輯器(editor)、除錯器(debugger)開發者等使用。 使用 imgui 的 code 非常簡單且易於修改，imgui 本身是無狀態的，與一般的 retained mode GUI 相反，imgui 不用儲存 GUI 物件或是註冊回調(Callba">
+  <meta name="description" content="複選框 Checkbox  Prototype 123bool Checkbox(const char* label, bool* v);// label: 名稱// v    : 是否已經勾選  回傳 bool  當 checkbox 正被選取/取消勾選時為 true 其餘回傳 false   e.g.">
 <meta name="keywords" content="C++,程式,教學,C++ Library,imgui">
 <meta property="og:type" content="article">
-<meta property="og:title" content="dear imgui 介紹 - 輕量級的 GUI Library">
-<meta property="og:url" content="http://blog.roy4801.tw/2020/03/24/imgui-intro-pt1/index.html">
+<meta property="og:title" content="dear imgui 使用 - 單選、複選按鈕">
+<meta property="og:url" content="http://blog.roy4801.tw/2020/03/28/imgui-intro-pt4/index.html">
 <meta property="og:site_name" content="r0yblog">
-<meta property="og:description" content="Dear Imgui 是個輕量、快速的 imtermediate GUI 讓開發者可以非常快速的建立 GUI，被遊戲開發(gamedev)、編輯器(editor)、除錯器(debugger)開發者等使用。 使用 imgui 的 code 非常簡單且易於修改，imgui 本身是無狀態的，與一般的 retained mode GUI 相反，imgui 不用儲存 GUI 物件或是註冊回調(Callba">
+<meta property="og:description" content="複選框 Checkbox  Prototype 123bool Checkbox(const char* label, bool* v);// label: 名稱// v    : 是否已經勾選  回傳 bool  當 checkbox 正被選取/取消勾選時為 true 其餘回傳 false   e.g.">
 <meta property="og:locale" content="zh-TW">
-<meta property="og:image" content="https://i.imgur.com/irlVLsy.png">
-<meta property="og:image" content="https://i.imgur.com/YFSmVdi.gif">
-<meta property="og:image" content="https://i.imgur.com/cz0E7Wt.gif">
-<meta property="og:image" content="https://i.imgur.com/6zdOsUX.png">
-<meta property="og:image" content="https://i.imgur.com/KeFnXt1.gif">
-<meta property="og:updated_time" content="2020-03-28T09:41:48.349Z">
+<meta property="og:image" content="https://i.imgur.com/f9JWE2i.gif">
+<meta property="og:image" content="https://i.imgur.com/yNpRn0Y.png">
+<meta property="og:image" content="https://i.imgur.com/4scz0nA.gif">
+<meta property="og:image" content="https://i.imgur.com/fGH7AkZ.png">
+<meta property="og:image" content="https://i.imgur.com/nkXczwK.gif">
+<meta property="og:updated_time" content="2020-03-28T09:50:37.492Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="dear imgui 介紹 - 輕量級的 GUI Library">
-<meta name="twitter:description" content="Dear Imgui 是個輕量、快速的 imtermediate GUI 讓開發者可以非常快速的建立 GUI，被遊戲開發(gamedev)、編輯器(editor)、除錯器(debugger)開發者等使用。 使用 imgui 的 code 非常簡單且易於修改，imgui 本身是無狀態的，與一般的 retained mode GUI 相反，imgui 不用儲存 GUI 物件或是註冊回調(Callba">
-<meta name="twitter:image" content="https://i.imgur.com/irlVLsy.png">
+<meta name="twitter:title" content="dear imgui 使用 - 單選、複選按鈕">
+<meta name="twitter:description" content="複選框 Checkbox  Prototype 123bool Checkbox(const char* label, bool* v);// label: 名稱// v    : 是否已經勾選  回傳 bool  當 checkbox 正被選取/取消勾選時為 true 其餘回傳 false   e.g.">
+<meta name="twitter:image" content="https://i.imgur.com/f9JWE2i.gif">
   
     <link rel="alternate" href="/atom.xml" title="r0yblog" type="application/atom+xml">
   
@@ -92,10 +92,10 @@ ga('send', 'pageview');
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-imgui-intro-pt1" class="article article-type-post" itemscope="" itemprop="blogPost">
+        <section id="main"><article id="post-imgui-intro-pt4" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2020/03/24/imgui-intro-pt1/" class="article-date">
-  <time datetime="2020-03-23T20:18:45.000Z" itemprop="datePublished">2020-03-24</time>
+    <a href="/2020/03/28/imgui-intro-pt4/" class="article-date">
+  <time datetime="2020-03-28T09:49:35.000Z" itemprop="datePublished">2020-03-28</time>
 </a>
     
   <div class="article-category">
@@ -110,7 +110,7 @@ ga('send', 'pageview');
         
   
     <h1 class="article-title" itemprop="name">
-      dear imgui 介紹 - 輕量級的 GUI Library
+      dear imgui 使用 - 單選、複選按鈕
     </h1>
   
 
@@ -120,38 +120,46 @@ ga('send', 'pageview');
       
         <!-- Table of Contents -->
         
-        <p><img src="https://i.imgur.com/irlVLsy.png" alt=""></p>
-<p><a href="https://github.com/ocornut/imgui" target="_blank" rel="noopener">Dear Imgui</a> 是個輕量、快速的 imtermediate GUI 讓開發者可以非常快速的建立 GUI，被遊戲開發(gamedev)、編輯器(editor)、除錯器(debugger)開發者等使用。</p>
-<p>使用 imgui 的 code 非常簡單且易於修改，imgui 本身是無狀態的，與一般的 retained mode GUI 相反，imgui 不用儲存 GUI 物件或是註冊回調(Callback)</p>
-<p><img src="https://i.imgur.com/YFSmVdi.gif" alt=""><br><img src="https://i.imgur.com/cz0E7Wt.gif" alt=""><br><img src="https://i.imgur.com/6zdOsUX.png" alt=""><br><img src="https://i.imgur.com/KeFnXt1.gif" alt=""></p>
-<h2 id="Immediate-mode-GUI-概念"><a href="#Immediate-mode-GUI-概念" class="headerlink" title="Immediate mode GUI 概念"></a>Immediate mode GUI 概念</h2><p>Immediate mode GUI 跟一般 Retained mode 不同的是，其將資料獨立於 GUI 元件外，在每幀都會根據資料重畫窗口部件，不用考慮 GUI 目前的狀態，大大減少元件增加時，個個元件間相互影響的複雜度上升(retained mode)，但也是由於每次畫面所有元件都要重畫，所以效能會比 Retain mode 差。</p>
-<p>如何畫出一個按鈕：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (ImGui::Button(<span class="string">"Some Button"</span>)) &#123;</span><br><span class="line">    ... <span class="comment">// code which will be called on button pressed</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+        <h2 id="複選框-Checkbox"><a href="#複選框-Checkbox" class="headerlink" title="複選框 Checkbox"></a>複選框 Checkbox</h2><p><img src="https://i.imgur.com/f9JWE2i.gif" alt=""></p>
 <ul>
-<li>dear imgui 的優點<ul>
-<li>快速及輕量</li>
-<li>沒有動態分配(dynamic allocation)</li>
-<li>容易移植(portable)</li>
-<li>容易擴展(expandable)</li>
+<li><p>Prototype</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">Checkbox</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span>* label, <span class="keyword">bool</span>* v)</span></span>;</span><br><span class="line"><span class="comment">// label: 名稱</span></span><br><span class="line"><span class="comment">// v    : 是否已經勾選</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>回傳 bool</p>
+<ul>
+<li>當 checkbox 正被選取/取消勾選時為 <code>true</code></li>
+<li>其餘回傳 <code>false</code></li>
 </ul>
 </li>
+<li><p>e.g.</p>
+</li>
 </ul>
-<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p>IMMEDIATE-MODE GRAPHICAL USER INTERFACES (2005)<br><a href="https://caseymuratori.com/blog_0001" target="_blank" rel="noopener">https://caseymuratori.com/blog_0001</a></p>
-<p>Immediate Mode Graphical User Interfaces<br><a href="http://www.cse.chalmers.se/edu/year/2011/course/TDA361/Advanced%20Computer%20Graphics/IMGUI.pdf" target="_blank" rel="noopener">http://www.cse.chalmers.se/edu/year/2011/course/TDA361/Advanced%20Computer%20Graphics/IMGUI.pdf</a></p>
-<p><a href="https://tw.twincl.com/javascript/reactjs/*631q" target="_blank" rel="noopener">https://tw.twincl.com/javascript/reactjs/*631q</a></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">bool</span> chk = <span class="literal">false</span>;</span><br><span class="line"><span class="keyword">if</span>(ImGui::Checkbox(<span class="string">"test"</span>, &amp;chk))</span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">"changed"</span> &lt;&lt; <span class="string">'\n'</span>;</span><br><span class="line"><span class="keyword">if</span>(chk)</span><br><span class="line">    ImGui::Text(<span class="string">"the box has been checked"</span>);</span><br></pre></td></tr></table></figure>
+<p><img src="https://i.imgur.com/yNpRn0Y.png" alt=""><br><img src="https://i.imgur.com/4scz0nA.gif" alt=""></p>
+<h2 id="單選按鈕-Radio-Button"><a href="#單選按鈕-Radio-Button" class="headerlink" title="單選按鈕 Radio Button"></a>單選按鈕 Radio Button</h2><p><img src="https://i.imgur.com/fGH7AkZ.png" alt=""></p>
+<ul>
+<li><p>Prototype</p>
+  <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">RadioButton</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span>* label, <span class="keyword">int</span>* v, <span class="keyword">int</span> v_button)</span></span>;</span><br><span class="line"><span class="comment">// label    : 名稱</span></span><br><span class="line"><span class="comment">// *v       : 指向儲存選項的 int pointer</span></span><br><span class="line"><span class="comment">// v_button : 該 radio button 所代表的數字</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>example</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">int</span> select = <span class="number">-1</span>;</span><br><span class="line">ImGui::RadioButton(<span class="string">"Zero"</span>, &amp;select, <span class="number">0</span>); ImGui::SameLine();</span><br><span class="line">ImGui::RadioButton(<span class="string">"One"</span>, &amp;select, <span class="number">1</span>); ImGui::SameLine();</span><br><span class="line">ImGui::RadioButton(<span class="string">"Two"</span>, &amp;select, <span class="number">2</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(select &gt;= <span class="number">0</span>)</span><br><span class="line">&#123;</span><br><span class="line">    ImGui::Text(<span class="string">"You Select %d\n"</span>, select);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><img src="https://i.imgur.com/nkXczwK.gif" alt=""></p>
 
         
         <div>
           <hr>
           <p style="margin-bottom: 0;">如果你覺得這篇文章很棒，請你不吝點讚 (ﾟ∀ﾟ)</p>
-          <iframe width="100%" height="230px" scrolling="no" frameborder="0" id="player" src="https://button.like.co/in/embed/a82611141/button/?referrer=http://blog.roy4801.tw/2020/03/24/imgui-intro-pt1/" allowfullscreen="true"></iframe>
+          <iframe width="100%" height="230px" scrolling="no" frameborder="0" id="player" src="https://button.like.co/in/embed/a82611141/button/?referrer=http://blog.roy4801.tw/2020/03/28/imgui-intro-pt4/" allowfullscreen="true"></iframe>
         </div>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2020/03/24/imgui-intro-pt1/" data-id="ck8bfpcf50004yjtk2sik2rrz" class="article-share-link">分享</a>
+      <a data-url="http://blog.roy4801.tw/2020/03/28/imgui-intro-pt4/" data-id="ck8bfpcf80006yjtk3jz51vor" class="article-share-link">分享</a>
       
       
-        <a href="http://blog.roy4801.tw/2020/03/24/imgui-intro-pt1/#disqus_thread" class="article-comment-link">留言</a>
+        <a href="http://blog.roy4801.tw/2020/03/28/imgui-intro-pt4/#disqus_thread" class="article-comment-link">留言</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C-Library/">C++ Library</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/imgui/">imgui</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/教學/">教學</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/程式/">程式</a></li></ul>
@@ -204,19 +212,10 @@ ga('send', 'pageview');
     
 <nav id="article-nav">
   
-    <a href="/2020/03/25/imgui-intro-pt2/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          dear imgui 安裝 - 使用 imgui-SFML
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/01/27/在-macOS-Mojave-上正常使用-gdb/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2020/03/28/imgui-intro-pt3/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">在 macOS Mojave 上正常使用 gdb</div>
+      <div class="article-nav-title">dear imgui 使用 - 視窗、文字及按鈕</div>
     </a>
   
 </nav>
@@ -261,7 +260,7 @@ ga('send', 'pageview');
       
         <strong class="toc-title">文章目錄</strong>
         <div class="toc-widget-list">
-              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Immediate-mode-GUI-概念"><span class="toc-number">1.</span> <span class="toc-text">Immediate mode GUI 概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Reference"><span class="toc-number">2.</span> <span class="toc-text">Reference</span></a></li></ol>
+              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#複選框-Checkbox"><span class="toc-number">1.</span> <span class="toc-text">複選框 Checkbox</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#單選按鈕-Radio-Button"><span class="toc-number">2.</span> <span class="toc-text">單選按鈕 Radio Button</span></a></li></ol>
           </div>
       </div>
     </div>
@@ -326,7 +325,7 @@ window.onload = function() {
 <script>
   var disqus_shortname = 'roy-blog';
   
-  var disqus_url = 'http://blog.roy4801.tw/2020/03/24/imgui-intro-pt1/';
+  var disqus_url = 'http://blog.roy4801.tw/2020/03/28/imgui-intro-pt4/';
   
   (function(){
     var dsq = document.createElement('script');

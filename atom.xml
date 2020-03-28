@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.roy4801.tw/"/>
-  <updated>2020-03-28T09:41:44.161Z</updated>
+  <updated>2020-03-28T09:50:37.492Z</updated>
   <id>http://blog.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,49 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>dear imgui 使用 - 單選、複選按鈕</title>
+    <link href="http://blog.roy4801.tw/2020/03/28/imgui-intro-pt4/"/>
+    <id>http://blog.roy4801.tw/2020/03/28/imgui-intro-pt4/</id>
+    <published>2020-03-28T09:49:35.000Z</published>
+    <updated>2020-03-28T09:50:37.492Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;複選框-Checkbox&quot;&gt;&lt;a href=&quot;#複選框-Checkbox&quot; class=&quot;headerlink&quot; title=&quot;複選框 Checkbox&quot;&gt;&lt;/a&gt;複選框 Checkbox&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/f9JWE2i.gif&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Prototype&lt;/p&gt;
+&lt;figure class=&quot;highlight cpp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Checkbox&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;char&lt;/span&gt;* label, &lt;span class=&quot;keyword&quot;&gt;bool&lt;/span&gt;* v)&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// label: 名稱&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// v    : 是否已經勾選&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;回傳 bool&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;當 checkbox 正被選取/取消勾選時為 &lt;code&gt;true&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;其餘回傳 &lt;code&gt;false&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;e.g.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="學習紀錄" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/"/>
+    
+      <category term="C/C++" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/C-C/"/>
+    
+    
+      <category term="C++" scheme="http://blog.roy4801.tw/tags/C/"/>
+    
+      <category term="程式" scheme="http://blog.roy4801.tw/tags/%E7%A8%8B%E5%BC%8F/"/>
+    
+      <category term="教學" scheme="http://blog.roy4801.tw/tags/%E6%95%99%E5%AD%B8/"/>
+    
+      <category term="C++ Library" scheme="http://blog.roy4801.tw/tags/C-Library/"/>
+    
+      <category term="imgui" scheme="http://blog.roy4801.tw/tags/imgui/"/>
+    
+  </entry>
   
   <entry>
     <title>dear imgui 使用 - 視窗、文字及按鈕</title>
