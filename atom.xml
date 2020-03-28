@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.roy4801.tw/"/>
-  <updated>2020-03-24T19:19:12.715Z</updated>
+  <updated>2020-03-28T09:41:44.161Z</updated>
   <id>http://blog.roy4801.tw/</id>
   
   <author>
@@ -17,11 +17,42 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>dear imgui 使用 - 視窗、文字及按鈕</title>
+    <link href="http://blog.roy4801.tw/2020/03/28/imgui-intro-pt3/"/>
+    <id>http://blog.roy4801.tw/2020/03/28/imgui-intro-pt3/</id>
+    <published>2020-03-28T09:32:36.000Z</published>
+    <updated>2020-03-28T09:41:44.161Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;建立視窗-Window&quot;&gt;&lt;a href=&quot;#建立視窗-Window&quot; class=&quot;headerlink&quot; title=&quot;建立視窗 Window&quot;&gt;&lt;/a&gt;建立視窗 Window&lt;/h2&gt;&lt;figure class=&quot;highlight cpp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ImGui::Begin(&lt;span class=&quot;string&quot;&gt;&quot;Window Title&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// .. window content code here&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ImGui::End();&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/6zd5twX.gif&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="學習紀錄" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/"/>
+    
+      <category term="C/C++" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/C-C/"/>
+    
+    
+      <category term="C++" scheme="http://blog.roy4801.tw/tags/C/"/>
+    
+      <category term="程式" scheme="http://blog.roy4801.tw/tags/%E7%A8%8B%E5%BC%8F/"/>
+    
+      <category term="教學" scheme="http://blog.roy4801.tw/tags/%E6%95%99%E5%AD%B8/"/>
+    
+      <category term="C++ Library" scheme="http://blog.roy4801.tw/tags/C-Library/"/>
+    
+      <category term="imgui" scheme="http://blog.roy4801.tw/tags/imgui/"/>
+    
+  </entry>
+  
+  <entry>
     <title>dear imgui 安裝 - 使用 imgui-SFML</title>
     <link href="http://blog.roy4801.tw/2020/03/25/imgui-intro-pt2/"/>
     <id>http://blog.roy4801.tw/2020/03/25/imgui-intro-pt2/</id>
     <published>2020-03-24T18:40:42.000Z</published>
-    <updated>2020-03-24T19:19:12.715Z</updated>
+    <updated>2020-03-28T09:41:43.036Z</updated>
     
     <summary type="html">
     
@@ -52,6 +83,8 @@
     
       <category term="C++ Library" scheme="http://blog.roy4801.tw/tags/C-Library/"/>
     
+      <category term="imgui" scheme="http://blog.roy4801.tw/tags/imgui/"/>
+    
   </entry>
   
   <entry>
@@ -59,7 +92,7 @@
     <link href="http://blog.roy4801.tw/2020/03/24/imgui-intro-pt1/"/>
     <id>http://blog.roy4801.tw/2020/03/24/imgui-intro-pt1/</id>
     <published>2020-03-23T20:18:45.000Z</published>
-    <updated>2020-03-24T18:41:31.394Z</updated>
+    <updated>2020-03-28T09:41:48.349Z</updated>
     
     <summary type="html">
     
@@ -81,6 +114,8 @@
       <category term="教學" scheme="http://blog.roy4801.tw/tags/%E6%95%99%E5%AD%B8/"/>
     
       <category term="C++ Library" scheme="http://blog.roy4801.tw/tags/C-Library/"/>
+    
+      <category term="imgui" scheme="http://blog.roy4801.tw/tags/imgui/"/>
     
   </entry>
   
