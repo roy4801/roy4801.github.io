@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.roy4801.tw/2020/05/17/spdlog-tutorial/</loc>
+    
+    <lastmod>2020-05-17T12:04:57.983Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.roy4801.tw/2020/03/24/imgui-intro-pt1/</loc>
     
     <lastmod>2020-04-15T17:05:00.454Z</lastmod>

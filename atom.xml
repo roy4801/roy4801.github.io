@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.roy4801.tw/"/>
-  <updated>2020-04-15T17:02:48.015Z</updated>
+  <updated>2020-05-17T12:04:57.983Z</updated>
   <id>http://blog.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>spdlog 介紹與使用</title>
+    <link href="http://blog.roy4801.tw/2020/05/17/spdlog-tutorial/"/>
+    <id>http://blog.roy4801.tw/2020/05/17/spdlog-tutorial/</id>
+    <published>2020-05-17T11:55:35.000Z</published>
+    <updated>2020-05-17T12:04:57.983Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Fast C++ logging library.&lt;br&gt;一個輕量且快速的 log library&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/gabime/spdlog&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/gabime/spdlog&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;特性&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/gabime/spdlog#benchmarks&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;快速&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;header-only&lt;/li&gt;
+&lt;li&gt;豐富、自訂的格式化，使用 &lt;a href=&quot;https://github.com/fmtlib/fmt&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;fmt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;單、多線程 logger&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="學習紀錄" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/"/>
+    
+      <category term="C/C++" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/C-C/"/>
+    
+    
+      <category term="C++" scheme="http://blog.roy4801.tw/tags/C/"/>
+    
+      <category term="程式" scheme="http://blog.roy4801.tw/tags/%E7%A8%8B%E5%BC%8F/"/>
+    
+      <category term="教學" scheme="http://blog.roy4801.tw/tags/%E6%95%99%E5%AD%B8/"/>
+    
+      <category term="C++ Library" scheme="http://blog.roy4801.tw/tags/C-Library/"/>
+    
+      <category term="imgui" scheme="http://blog.roy4801.tw/tags/imgui/"/>
+    
+  </entry>
   
   <entry>
     <title>dear imgui 使用 - 拉桿 Slider</title>
