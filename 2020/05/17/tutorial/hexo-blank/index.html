@@ -3,20 +3,24 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>Uva 11078 - Open Credit System | r0yblog</title>
+  <title>hexo 產生空白的 HTML | r0yblog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="題目 Problem(簡化)有一組數列($a_i$)，對所有$i&amp;lt;j$，求最大的$a_i - a_j$">
-<meta name="keywords" content="解題紀錄,Uva">
+  <meta name="description" content="問題在最近更新 blog 時，寫好一篇文後發現，hexo 產生的 HTML 竟然是空白的。（push 上 Github Page 才發現）順手做個紀錄 原因">
+<meta name="keywords" content="programming,程式,心得,日誌,網誌,blog">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Uva 11078 - Open Credit System">
-<meta property="og:url" content="http://blog.roy4801.tw/2019/05/18/uva/uva11078/index.html">
+<meta property="og:title" content="hexo 產生空白的 HTML">
+<meta property="og:url" content="http://blog.roy4801.tw/2020/05/17/tutorial/hexo-blank/index.html">
 <meta property="og:site_name" content="r0yblog">
-<meta property="og:description" content="題目 Problem(簡化)有一組數列($a_i$)，對所有$i&amp;lt;j$，求最大的$a_i - a_j$">
+<meta property="og:description" content="問題在最近更新 blog 時，寫好一篇文後發現，hexo 產生的 HTML 竟然是空白的。（push 上 Github Page 才發現）順手做個紀錄 原因">
 <meta property="og:locale" content="zh-TW">
-<meta property="og:updated_time" content="2019-05-18T07:51:59.541Z">
+<meta property="og:image" content="https://i.imgur.com/Y8suv5o.png">
+<meta property="og:image" content="https://i.imgur.com/H9SMy0r.png">
+<meta property="og:image" content="https://i.imgur.com/2fb0WYy.png">
+<meta property="og:updated_time" content="2020-05-17T12:44:03.740Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Uva 11078 - Open Credit System">
-<meta name="twitter:description" content="題目 Problem(簡化)有一組數列($a_i$)，對所有$i&amp;lt;j$，求最大的$a_i - a_j$">
+<meta name="twitter:title" content="hexo 產生空白的 HTML">
+<meta name="twitter:description" content="問題在最近更新 blog 時，寫好一篇文後發現，hexo 產生的 HTML 竟然是空白的。（push 上 Github Page 才發現）順手做個紀錄 原因">
+<meta name="twitter:image" content="https://i.imgur.com/Y8suv5o.png">
   
     <link rel="alternate" href="/atom.xml" title="r0yblog" type="application/atom+xml">
   
@@ -86,16 +90,12 @@ ga('send', 'pageview');
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-uva/uva11078" class="article article-type-post" itemscope="" itemprop="blogPost">
+        <section id="main"><article id="post-tutorial/hexo-blank" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2019/05/18/uva/uva11078/" class="article-date">
-  <time datetime="2019-05-18T07:29:18.000Z" itemprop="datePublished">2019-05-18</time>
+    <a href="/2020/05/17/tutorial/hexo-blank/" class="article-date">
+  <time datetime="2020-05-17T12:21:45.000Z" itemprop="datePublished">2020-05-17</time>
 </a>
     
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/解題區/">解題區</a>►<a class="article-category-link" href="/categories/解題區/Uva/">Uva</a>
-  </div>
-
   </div>
   <div class="article-inner">
     
@@ -104,7 +104,7 @@ ga('send', 'pageview');
         
   
     <h1 class="article-title" itemprop="name">
-      Uva 11078 - Open Credit System
+      hexo 產生空白的 HTML
     </h1>
   
 
@@ -114,30 +114,61 @@ ga('send', 'pageview');
       
         <!-- Table of Contents -->
         
-        <p><a href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;Itemid=8&amp;page=show_problem&amp;category=0&amp;problem=2019&amp;mosmsg=Submission+received+with+ID+23355296" target="_blank" rel="noopener">題目</a></p>
-<h1 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h1><p>(簡化)<br>有一組數列($a_i$)，對所有$i&lt;j$，求最大的$a_i - a_j$</p>
-<h1 id="想法"><a href="#想法" class="headerlink" title="想法"></a>想法</h1><p>$O(n^2)$暴力會TLE，但觀察可以發現，對於每個$a_j$，如果$a_i - a_j$要最大，那$a_i$一定越大越好，所以可以直接維護一個最大值($M$)，代表從$1 \sim i$的最大。<br>只要掃一遍，就得到答案。($O(n)$)</p>
-<h1 id="AC-Code"><a href="#AC-Code" class="headerlink" title="AC Code"></a>AC Code</h1><p><a href="https://github.com/roy4801/solved_problems/blob/master/uva/11078.cpp" target="_blank" rel="noopener">https://github.com/roy4801/solved_problems/blob/master/uva/11078.cpp</a></p>
-<h2 id="其他解法"><a href="#其他解法" class="headerlink" title="其他解法"></a>其他解法</h2><p>單調隊列<br><a href="https://csy54.github.io/2019/02/UVa-11078/" target="_blank" rel="noopener">https://csy54.github.io/2019/02/UVa-11078/</a></p>
-<p><a href="https://gist.github.com/roy4801/b417a1a65d2e43f3534f580a3bacd78d" target="_blank" rel="noopener">https://gist.github.com/roy4801/b417a1a65d2e43f3534f580a3bacd78d</a></p>
+        <h2 id="問題"><a href="#問題" class="headerlink" title="問題"></a>問題</h2><p>在最近更新 blog 時，寫好一篇文後發現，hexo 產生的 HTML 竟然是空白的。（push 上 Github Page 才發現）<br>順手做個紀錄</p>
+<h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>node.js 版本(v14.0.0) 太高，降級至 13 或 12 即可解決</p>
+<h2 id="brew-降級"><a href="#brew-降級" class="headerlink" title="brew 降級"></a>brew 降級</h2><p>以降級 <code>node</code> 為例</p>
+<ul>
+<li>查詢 package 安裝腳本 URL<ul>
+<li>之後步驟會用到</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">brew info node</span><br><span class="line"></span><br><span class="line">...</span><br><span class="line">From: https://github.com/Homebrew/homebrew-core/blob/master/Formula/node.rb</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<p><img src="https://i.imgur.com/Y8suv5o.png" alt=""></p>
+<ul>
+<li>查詢歷史版本的安裝腳本<ul>
+<li>複製該 commit hash</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew <span class="built_in">log</span> node</span><br></pre></td></tr></table></figure>
+<p><img src="https://i.imgur.com/H9SMy0r.png" alt=""></p>
+<ul>
+<li>得到 該 commit 版本的檔案<ul>
+<li>用 commit hash 取代剛剛 URL 的 master</li>
+<li>得到 <code>https://github.com/Homebrew/homebrew-core/blob/44c81305cf707d181a87086386ad2e63846cbe75/Formula/node.rb</code></li>
+<li>點選 <code>Raw</code> 獲得 raw 版本的 URL</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://i.imgur.com/2fb0WYy.png" alt=""></p>
+<ul>
+<li>解除安裝新版的 package ，並安裝舊版</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">brew uninstall --ignore-dependencies node</span><br><span class="line">brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/44c81305cf707d181a87086386ad2e63846cbe75/Formula/node.rb</span><br></pre></td></tr></table></figure>
+<ul>
+<li>鎖定該 package 的版本，直到可以更新上去再解除</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew pin node</span><br></pre></td></tr></table></figure>
+<h2 id="參考"><a href="#參考" class="headerlink" title="參考"></a>參考</h2><p>hexo generates empty files #4267<br><a href="https://github.com/hexojs/hexo/issues/4267#issuecomment-619394907" target="_blank" rel="noopener">https://github.com/hexojs/hexo/issues/4267#issuecomment-619394907</a></p>
+<p>hexo generates empty files #4268<br><a href="https://github.com/hexojs/hexo/issues/4268" target="_blank" rel="noopener">https://github.com/hexojs/hexo/issues/4268</a></p>
+<p>Warning: Accessing non-existent property ‘lineno’ of module exports inside circular dependency #4257<br><a href="https://github.com/hexojs/hexo/issues/4257" target="_blank" rel="noopener">https://github.com/hexojs/hexo/issues/4257</a></p>
 
         
         <div>
           <hr>
           <p style="margin-bottom: 0;">如果你覺得這篇文章很棒，請你不吝點讚 (ﾟ∀ﾟ)</p>
-          <iframe width="100%" height="230px" scrolling="no" frameborder="0" id="player" src="https://button.like.co/in/embed/a82611141/button/?referrer=http://blog.roy4801.tw/2019/05/18/uva/uva11078/" allowfullscreen="true"></iframe>
+          <iframe width="100%" height="230px" scrolling="no" frameborder="0" id="player" src="https://button.like.co/in/embed/a82611141/button/?referrer=http://blog.roy4801.tw/2020/05/17/tutorial/hexo-blank/" allowfullscreen="true"></iframe>
         </div>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2019/05/18/uva/uva11078/" data-id="ckab1rif70057neup20utrx7t" class="article-share-link">分享</a>
+      <a data-url="http://blog.roy4801.tw/2020/05/17/tutorial/hexo-blank/" data-id="ckab1ridn0049neupp7293qxr" class="article-share-link">分享</a>
       
       
-        <a href="http://blog.roy4801.tw/2019/05/18/uva/uva11078/#disqus_thread" class="article-comment-link">留言</a>
+        <a href="http://blog.roy4801.tw/2020/05/17/tutorial/hexo-blank/#disqus_thread" class="article-comment-link">留言</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Uva/">Uva</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/解題紀錄/">解題紀錄</a></li></ul>
-
     </footer>
   </div>
   
@@ -186,19 +217,10 @@ ga('send', 'pageview');
     
 <nav id="article-nav">
   
-    <a href="/2019/05/18/uva/uva11059/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Uva 11059 - Maximum Product
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/05/17/uva/uva10685/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2020/05/17/spdlog-tutorial/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Uva 10685 - Nature</div>
+      <div class="article-nav-title">spdlog 介紹與使用</div>
     </a>
   
 </nav>
@@ -243,7 +265,7 @@ ga('send', 'pageview');
       
         <strong class="toc-title">文章目錄</strong>
         <div class="toc-widget-list">
-              <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Problem"><span class="toc-number">1.</span> <span class="toc-text">Problem</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#想法"><span class="toc-number">2.</span> <span class="toc-text">想法</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#AC-Code"><span class="toc-number">3.</span> <span class="toc-text">AC Code</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#其他解法"><span class="toc-number">3.1.</span> <span class="toc-text">其他解法</span></a></li></ol></li></ol>
+              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#問題"><span class="toc-number">1.</span> <span class="toc-text">問題</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#原因"><span class="toc-number">2.</span> <span class="toc-text">原因</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#brew-降級"><span class="toc-number">3.</span> <span class="toc-text">brew 降級</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#參考"><span class="toc-number">4.</span> <span class="toc-text">參考</span></a></li></ol>
           </div>
       </div>
     </div>
@@ -308,7 +330,7 @@ window.onload = function() {
 <script>
   var disqus_shortname = 'roy-blog';
   
-  var disqus_url = 'http://blog.roy4801.tw/2019/05/18/uva/uva11078/';
+  var disqus_url = 'http://blog.roy4801.tw/2020/05/17/tutorial/hexo-blank/';
   
   (function(){
     var dsq = document.createElement('script');

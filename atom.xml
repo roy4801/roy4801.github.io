@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.roy4801.tw/"/>
-  <updated>2020-05-17T12:04:57.983Z</updated>
+  <updated>2020-05-17T12:44:03.740Z</updated>
   <id>http://blog.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo 產生空白的 HTML</title>
+    <link href="http://blog.roy4801.tw/2020/05/17/tutorial/hexo-blank/"/>
+    <id>http://blog.roy4801.tw/2020/05/17/tutorial/hexo-blank/</id>
+    <published>2020-05-17T12:21:45.000Z</published>
+    <updated>2020-05-17T12:44:03.740Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;問題&quot;&gt;&lt;a href=&quot;#問題&quot; class=&quot;headerlink&quot; title=&quot;問題&quot;&gt;&lt;/a&gt;問題&lt;/h2&gt;&lt;p&gt;在最近更新 blog 時，寫好一篇文後發現，hexo 產生的 HTML 竟然是空白的。（push 上 Github Page 才發現）&lt;br&gt;順手做個紀錄&lt;/p&gt;
+&lt;h2 id=&quot;原因&quot;&gt;&lt;a href=&quot;#原因&quot; class=&quot;headerlink&quot; title=&quot;原因&quot;&gt;&lt;/a&gt;原因&lt;/h2&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>spdlog 介紹與使用</title>

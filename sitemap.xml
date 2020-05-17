@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.roy4801.tw/2020/05/17/tutorial/hexo-blank/</loc>
+    
+    <lastmod>2020-05-17T12:44:03.740Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.roy4801.tw/2020/05/17/spdlog-tutorial/</loc>
     
     <lastmod>2020-05-17T12:04:57.983Z</lastmod>
