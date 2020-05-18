@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.roy4801.tw/2020/05/18/tutorial/clion-gdb-debugging/</loc>
+    
+    <lastmod>2020-05-18T13:45:57.897Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.roy4801.tw/2020/03/25/imgui-intro-pt2/</loc>
     
     <lastmod>2020-05-17T20:40:41.338Z</lastmod>

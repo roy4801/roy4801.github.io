@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.roy4801.tw/"/>
-  <updated>2020-05-17T12:54:42.893Z</updated>
+  <updated>2020-05-18T13:45:57.897Z</updated>
   <id>http://blog.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用 CLion + gdb Debug 程式</title>
+    <link href="http://blog.roy4801.tw/2020/05/18/tutorial/clion-gdb-debugging/"/>
+    <id>http://blog.roy4801.tw/2020/05/18/tutorial/clion-gdb-debugging/</id>
+    <published>2020-05-18T13:41:58.000Z</published>
+    <updated>2020-05-18T13:45:57.897Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/r1NLY9U.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;CLion是一款專為開發C及C++所設計的跨平台IDE。它是以IntelliJ為基礎設計的，包含了許多智慧功能來提高開發人員的生產力。支援代碼分析、快速修復和重構，集合的除錯器可以用 GDB 或 LLDB 作為後端，輕鬆調查和解決問題，能夠為程序員提供一個整合式的C/C ++開發環境&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.jetbrains.com/clion/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.jetbrains.com/clion/&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="學習紀錄" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/"/>
+    
+      <category term="C/C++" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/C-C/"/>
+    
+    
+      <category term="C++" scheme="http://blog.roy4801.tw/tags/C/"/>
+    
+      <category term="程式" scheme="http://blog.roy4801.tw/tags/%E7%A8%8B%E5%BC%8F/"/>
+    
+      <category term="教學" scheme="http://blog.roy4801.tw/tags/%E6%95%99%E5%AD%B8/"/>
+    
+      <category term="IDE" scheme="http://blog.roy4801.tw/tags/IDE/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo 產生空白的 HTML</title>
