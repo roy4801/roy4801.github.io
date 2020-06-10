@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.roy4801.tw/"/>
-  <updated>2020-05-18T13:45:57.897Z</updated>
+  <updated>2020-06-04T19:31:06.195Z</updated>
   <id>http://blog.roy4801.tw/</id>
   
   <author>
@@ -17,6 +17,54 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Smart Pointer 介紹/用法</title>
+    <link href="http://blog.roy4801.tw/2020/06/04/c++/smart_pointer/"/>
+    <id>http://blog.roy4801.tw/2020/06/04/c++/smart_pointer/</id>
+    <published>2020-06-04T11:23:16.000Z</published>
+    <updated>2020-06-04T19:31:06.195Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Overview&quot;&gt;&lt;a href=&quot;#Overview&quot; class=&quot;headerlink&quot; title=&quot;Overview&quot;&gt;&lt;/a&gt;Overview&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;unique_ptr&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;move construct only&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;shared_ptr&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;reference counting&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;weak_ptr&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;weak references&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;boost:scoped_ptr&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;only in one scope&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;Smart-Pointer&quot;&gt;&lt;a href=&quot;#Smart-Pointer&quot; class=&quot;headerlink&quot; title=&quot;Smart Pointer ?&quot;&gt;&lt;/a&gt;Smart Pointer ?&lt;/h2&gt;
+    
+    </summary>
+    
+      <category term="學習紀錄" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/"/>
+    
+      <category term="C/C++" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/C-C/"/>
+    
+    
+      <category term="C++" scheme="http://blog.roy4801.tw/tags/C/"/>
+    
+      <category term="程式" scheme="http://blog.roy4801.tw/tags/%E7%A8%8B%E5%BC%8F/"/>
+    
+      <category term="教學" scheme="http://blog.roy4801.tw/tags/%E6%95%99%E5%AD%B8/"/>
+    
+      <category term="Smart Pointer" scheme="http://blog.roy4801.tw/tags/Smart-Pointer/"/>
+    
+      <category term="智慧指標" scheme="http://blog.roy4801.tw/tags/%E6%99%BA%E6%85%A7%E6%8C%87%E6%A8%99/"/>
+    
+  </entry>
+  
+  <entry>
     <title>使用 CLion + gdb Debug 程式</title>
     <link href="http://blog.roy4801.tw/2020/05/18/tutorial/clion-gdb-debugging/"/>
     <id>http://blog.roy4801.tw/2020/05/18/tutorial/clion-gdb-debugging/</id>
@@ -25,7 +73,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/r1NLY9U.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/r1NLY9U.png&quot; alt&gt;&lt;/p&gt;
 &lt;p&gt;CLion是一款專為開發C及C++所設計的跨平台IDE。它是以IntelliJ為基礎設計的，包含了許多智慧功能來提高開發人員的生產力。支援代碼分析、快速修復和重構，集合的除錯器可以用 GDB 或 LLDB 作為後端，輕鬆調查和解決問題，能夠為程序員提供一個整合式的C/C ++開發環境&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.jetbrains.com/clion/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.jetbrains.com/clion/&lt;/a&gt;&lt;/p&gt;
     
@@ -122,7 +170,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/0VGhoZw.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/0VGhoZw.png&quot; alt&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/ocornut/imgui/blob/master/imgui.h#L479&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/ocornut/imgui/blob/master/imgui.h#L479&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;SliderFloat-SliderInt&quot;&gt;&lt;a href=&quot;#SliderFloat-SliderInt&quot; class=&quot;headerlink&quot; title=&quot;SliderFloat / SliderInt&quot;&gt;&lt;/a&gt;SliderFloat / SliderInt&lt;/h3&gt;
     
@@ -154,7 +202,7 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;複選框-Checkbox&quot;&gt;&lt;a href=&quot;#複選框-Checkbox&quot; class=&quot;headerlink&quot; title=&quot;複選框 Checkbox&quot;&gt;&lt;/a&gt;複選框 Checkbox&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/f9JWE2i.gif&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+      &lt;h2 id=&quot;複選框-Checkbox&quot;&gt;&lt;a href=&quot;#複選框-Checkbox&quot; class=&quot;headerlink&quot; title=&quot;複選框 Checkbox&quot;&gt;&lt;/a&gt;複選框 Checkbox&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/f9JWE2i.gif&quot; alt&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Prototype&lt;/p&gt;
 &lt;figure class=&quot;highlight cpp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Checkbox&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;char&lt;/span&gt;* label, &lt;span class=&quot;keyword&quot;&gt;bool&lt;/span&gt;* v)&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// label: 名稱&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// v    : 是否已經勾選&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -198,7 +246,7 @@
     <summary type="html">
     
       &lt;h2 id=&quot;建立視窗-Window&quot;&gt;&lt;a href=&quot;#建立視窗-Window&quot; class=&quot;headerlink&quot; title=&quot;建立視窗 Window&quot;&gt;&lt;/a&gt;建立視窗 Window&lt;/h2&gt;&lt;figure class=&quot;highlight cpp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ImGui::Begin(&lt;span class=&quot;string&quot;&gt;&quot;Window Title&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// .. window content code here&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ImGui::End();&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/6zd5twX.gif&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/6zd5twX.gif&quot; alt&gt;&lt;/p&gt;
     
     </summary>
     
@@ -268,7 +316,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/irlVLsy.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/irlVLsy.png&quot; alt&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/ocornut/imgui&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Dear Imgui&lt;/a&gt; 是個輕量、快速的 imtermediate GUI 讓開發者可以非常快速的建立 GUI，被遊戲開發(gamedev)、編輯器(editor)、除錯器(debugger)開發者等使用。&lt;/p&gt;
 &lt;p&gt;使用 imgui 的 code 非常簡單且易於修改，imgui 本身是無狀態的，與一般的 retained mode GUI 相反，imgui 不用儲存 GUI 物件或是註冊回調(Callback)&lt;/p&gt;
     
@@ -301,7 +349,7 @@
     <summary type="html">
     
       &lt;p&gt;在 macOS 上使用 gdb 時，如果沒有做以下修改，通常會是這樣：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;gdb$ r&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Starting program: /private/tmp/a.out&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Unable to find Mach task port for process-id 20201: (os/kern) failure (0x5).&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; (please check gdb is codesigned - see taskgated(8))&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;gdb$ r&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Starting program: &amp;#x2F;private&amp;#x2F;tmp&amp;#x2F;a.out&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Unable to find Mach task port for process-id 20201: (os&amp;#x2F;kern) failure (0x5).&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; (please check gdb is codesigned - see taskgated(8))&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;這是因為 Darwin 內核預設禁止沒有特殊權限的程序偵錯(Debugging)其他程序，在預設這個選項是關閉的，如果要開啟則要用系統信任的憑證進行簽章(codesign)。&lt;/p&gt;
     
     </summary>
@@ -351,7 +399,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;a href=&quot;&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href&gt;題目&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&quot;Problem&quot;&gt;&lt;a href=&quot;#Problem&quot; class=&quot;headerlink&quot; title=&quot;Problem&quot;&gt;&lt;/a&gt;Problem&lt;/h1&gt;&lt;p&gt;略&lt;/p&gt;
     
     </summary>
@@ -835,7 +883,7 @@
     <summary type="html">
     
       &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;安裝64-bit的ubuntu時，預設是不裝32-bit的lib的，如果你在一個64-bit的環境，執行32-bit的程式。&lt;br&gt;會看到以下畫面&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ ./file1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;bash: ./file1: No such file or directory&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ .&amp;#x2F;file1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;bash: .&amp;#x2F;file1: No such file or directory&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
@@ -854,12 +902,12 @@
     <title>互動媒體專題 參展</title>
     <link href="http://blog.roy4801.tw/2019/01/25/%E4%BA%92%E5%8B%95%E5%AA%92%E9%AB%94%E5%B0%88%E9%A1%8C/"/>
     <id>http://blog.roy4801.tw/2019/01/25/互動媒體專題/</id>
-    <published>2019-01-25T15:19:15.000Z</published>
-    <updated>2019-02-01T17:25:40.000Z</updated>
+    <published>2019-01-25T04:00:00.000Z</published>
+    <updated>2020-06-10T17:29:08.443Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/lOR0hl1.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/lOR0hl1.jpg&quot; alt&gt;&lt;/p&gt;
 &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;這學期的互動媒體概論要寫專題，我在學期初便決定了要寫音樂遊戲。有幸能獲得投票最高，不愧是我跟&lt;a href=&quot;https://github.com/lpc0503&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;我的隊友&lt;/a&gt;爆肝的成果www。雖然說學期初早早就有想法，但到了期中前一星期才算認真開始寫，只能說我的惰性太強，不過經過一星期的爆肝，把基本的功能都做出來後，就直接放置，到了學期末事情才堆在一起QQ，我這種壞習慣真的要改。&lt;/p&gt;
     
     </summary>
@@ -1037,7 +1085,7 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;態度&quot;&gt;&lt;a href=&quot;#態度&quot; class=&quot;headerlink&quot; title=&quot;態度&quot;&gt;&lt;/a&gt;態度&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://www.bootstrapping101.com/wp-content/uploads/2015/12/attitude-success-quote.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+      &lt;h2 id=&quot;態度&quot;&gt;&lt;a href=&quot;#態度&quot; class=&quot;headerlink&quot; title=&quot;態度&quot;&gt;&lt;/a&gt;態度&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://www.bootstrapping101.com/wp-content/uploads/2015/12/attitude-success-quote.jpg&quot; alt&gt;&lt;/p&gt;
 &lt;p&gt;最近心情一直很煩躁，明明這件事不是我的義務，我卻還是多管閒事。&lt;/p&gt;
     
     </summary>

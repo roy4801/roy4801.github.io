@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.8.0">
+<head>
   <meta charset="utf-8">
   
   <title>x86 筆記 ep1. | r0yblog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="CPU(Centrual Processing Unit) 中央處理器  暫存器(register) 儲存運算/待運算的數值/位址   Clock 同步訊號   控制單元CU (Control Unit) 控制操作順序   ALU (Arithmetic Logic Unit) 算術邏輯單元 做數學運算(+, -)/邏輯運算(and, or, not)     CPU與Memory跟I/O裝置之間">
-<meta name="keywords" content="x86">
+  <meta name="description" content="CPU(Centrual Processing Unit) 中央處理器  暫存器(register) 儲存運算&#x2F;待運算的數值&#x2F;位址   Clock 同步訊號   控制單元CU (Control Unit) 控制操作順序   ALU (Arithmetic Logic Unit) 算術邏輯單元 做數學運算(+, -)&#x2F;邏輯運算(and, or, not)     CPU與Memory跟I&#x2F;O裝置之間">
 <meta property="og:type" content="article">
 <meta property="og:title" content="x86 筆記 ep1.">
-<meta property="og:url" content="http://blog.roy4801.tw/2018/10/12/x86-筆記-ep1/index.html">
+<meta property="og:url" content="http://blog.roy4801.tw/2018/10/12/x86-%E7%AD%86%E8%A8%98-ep1/index.html">
 <meta property="og:site_name" content="r0yblog">
-<meta property="og:description" content="CPU(Centrual Processing Unit) 中央處理器  暫存器(register) 儲存運算/待運算的數值/位址   Clock 同步訊號   控制單元CU (Control Unit) 控制操作順序   ALU (Arithmetic Logic Unit) 算術邏輯單元 做數學運算(+, -)/邏輯運算(and, or, not)     CPU與Memory跟I/O裝置之間">
-<meta property="og:locale" content="zh-TW">
-<meta property="og:updated_time" content="2019-07-20T18:33:21.190Z">
+<meta property="og:description" content="CPU(Centrual Processing Unit) 中央處理器  暫存器(register) 儲存運算&#x2F;待運算的數值&#x2F;位址   Clock 同步訊號   控制單元CU (Control Unit) 控制操作順序   ALU (Arithmetic Logic Unit) 算術邏輯單元 做數學運算(+, -)&#x2F;邏輯運算(and, or, not)     CPU與Memory跟I&#x2F;O裝置之間">
+<meta property="og:locale" content="zh_TW">
+<meta property="article:published_time" content="2018-10-12T05:32:11.000Z">
+<meta property="article:modified_time" content="2019-07-20T18:33:21.190Z">
+<meta property="article:author" content="roy4801">
+<meta property="article:tag" content="x86">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="x86 筆記 ep1.">
-<meta name="twitter:description" content="CPU(Centrual Processing Unit) 中央處理器  暫存器(register) 儲存運算/待運算的數值/位址   Clock 同步訊號   控制單元CU (Control Unit) 控制操作順序   ALU (Arithmetic Logic Unit) 算術邏輯單元 做數學運算(+, -)/邏輯運算(and, or, not)     CPU與Memory跟I/O裝置之間">
   
     <link rel="alternate" href="/atom.xml" title="r0yblog" type="application/atom+xml">
   
@@ -26,7 +26,9 @@
   
     
   
-  <link rel="stylesheet" href="/css/style.css">
+  
+<link rel="stylesheet" href="/css/style.css">
+
   
 <!-- Google Analytics -->
 <script type="text/javascript">
@@ -42,8 +44,8 @@ ga('send', 'pageview');
 <!-- End Google Analytics -->
 
 
-</head>
-</html>
+<meta name="generator" content="Hexo 4.2.1"></head>
+
 <body>
   <div id="container">
     <div id="wrap">
@@ -86,14 +88,14 @@ ga('send', 'pageview');
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-x86-筆記-ep1" class="article article-type-post" itemscope="" itemprop="blogPost">
+        <section id="main"><article id="post-x86-筆記-ep1" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/10/12/x86-筆記-ep1/" class="article-date">
+    <a href="/2018/10/12/x86-%E7%AD%86%E8%A8%98-ep1/" class="article-date">
   <time datetime="2018-10-12T05:32:11.000Z" itemprop="datePublished">2018-10-12</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/學習紀錄/">學習紀錄</a>►<a class="article-category-link" href="/categories/學習紀錄/組合語言/">組合語言</a>
+    <a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/">學習紀錄</a>►<a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/%E7%B5%84%E5%90%88%E8%AA%9E%E8%A8%80/">組合語言</a>
   </div>
 
   </div>
@@ -214,24 +216,26 @@ ga('send', 'pageview');
         <div>
           <hr>
           <p style="margin-bottom: 0;">如果你覺得這篇文章很棒，請你不吝點讚 (ﾟ∀ﾟ)</p>
-          <iframe width="100%" height="230px" scrolling="no" frameborder="0" id="player" src="https://button.like.co/in/embed/a82611141/button/?referrer=http://blog.roy4801.tw/2018/10/12/x86-筆記-ep1/" allowfullscreen="true"></iframe>
+          <iframe width="100%" height="230px" scrolling="no" frameborder="0" id="player" src="https://button.like.co/in/embed/a82611141/button/?referrer=http://blog.roy4801.tw/2018/10/12/x86-%E7%AD%86%E8%A8%98-ep1/" allowfullscreen="true"></iframe>
         </div>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2018/10/12/x86-筆記-ep1/" data-id="ckacjh6ju000hq7g6nc15xixt" class="article-share-link">分享</a>
+      <a data-url="http://blog.roy4801.tw/2018/10/12/x86-%E7%AD%86%E8%A8%98-ep1/" data-id="ckb9mrh4z000hcytk5fts6y3x" class="article-share-link">分享</a>
       
       
-        <a href="http://blog.roy4801.tw/2018/10/12/x86-筆記-ep1/#disqus_thread" class="article-comment-link">留言</a>
+        <a href="http://blog.roy4801.tw/2018/10/12/x86-%E7%AD%86%E8%A8%98-ep1/#disqus_thread" class="article-comment-link">留言</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/x86/">x86</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/x86/" rel="tag">x86</a></li></ul>
 
     </footer>
   </div>
   
     
- <script src="/jquery/jquery.min.js"></script>
+ 
+<script src="/jquery/jquery.min.js"></script>
+
   <div id="random_posts">
     <h2>推薦文章</h2>
     <div class="random_posts_ul">
@@ -275,7 +279,7 @@ ga('send', 'pageview');
     
 <nav id="article-nav">
   
-    <a href="/2018/10/12/x86-筆記-ep2/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2018/10/12/x86-%E7%AD%86%E8%A8%98-ep2/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
@@ -285,7 +289,7 @@ ga('send', 'pageview');
     </a>
   
   
-    <a href="/2018/09/27/態度/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2018/09/27/%E6%85%8B%E5%BA%A6/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
       <div class="article-nav-title">雜筆ep1.</div>
     </a>
@@ -303,7 +307,7 @@ ga('send', 'pageview');
       <div id="disqus_thread">
         <noscript>
           Please enable JavaScript to view the
-          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+          <a href="//disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a>
         </noscript>
       </div>
       </section>
@@ -370,7 +374,9 @@ ga('send', 'pageview');
     </div>
   </div>
 </footer>
- <script src="/jquery/jquery.min.js"></script>
+ 
+<script src="/jquery/jquery.min.js"></script>
+
     </div>
     <nav id="mobile-nav">
   
@@ -381,7 +387,7 @@ ga('send', 'pageview');
     <a href="/about" class="mobile-nav-link">關於</a>
   
 </nav>
-    <img class="back-to-top-btn" src="/images/fly-to-top.png">
+    <img class="back-to-top-btn" src="/images/fly-to-top.png"/>
 <script>
 // Elevator script included on the page, already.
 window.onload = function() {
@@ -397,7 +403,7 @@ window.onload = function() {
 <script>
   var disqus_shortname = 'roy-blog';
   
-  var disqus_url = 'http://blog.roy4801.tw/2018/10/12/x86-筆記-ep1/';
+  var disqus_url = 'http://blog.roy4801.tw/2018/10/12/x86-%E7%AD%86%E8%A8%98-ep1/';
   
   (function(){
     var dsq = document.createElement('script');
@@ -445,15 +451,25 @@ window.onload = function() {
   
 
 
- <script src="/js/is.js"></script>
+ 
+<script src="/js/is.js"></script>
 
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
 
 
 <script src="/js/script.js"></script>
+
+
 <script src="/js/elevator.js"></script>
+
   </div>
 </body>
 </html>

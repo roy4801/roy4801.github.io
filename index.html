@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.8.0">
+<head>
   <meta charset="utf-8">
   
   <title>r0yblog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="存放一些有關程式、生活、心得隨筆的網誌">
-<meta name="keywords" content="programming,程式,心得,日誌,網誌,blog">
 <meta property="og:type" content="website">
 <meta property="og:title" content="r0yblog">
 <meta property="og:url" content="http://blog.roy4801.tw/index.html">
 <meta property="og:site_name" content="r0yblog">
 <meta property="og:description" content="存放一些有關程式、生活、心得隨筆的網誌">
-<meta property="og:locale" content="zh-TW">
+<meta property="og:locale" content="zh_TW">
+<meta property="article:author" content="roy4801">
+<meta property="article:tag" content="programming">
+<meta property="article:tag" content="程式">
+<meta property="article:tag" content="心得">
+<meta property="article:tag" content="日誌">
+<meta property="article:tag" content="網誌">
+<meta property="article:tag" content="blog">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="r0yblog">
-<meta name="twitter:description" content="存放一些有關程式、生活、心得隨筆的網誌">
   
     <link rel="alternate" href="/atom.xml" title="r0yblog" type="application/atom+xml">
   
@@ -25,7 +29,9 @@
   
     
   
-  <link rel="stylesheet" href="/css/style.css">
+  
+<link rel="stylesheet" href="/css/style.css">
+
   
 <!-- Google Analytics -->
 <script type="text/javascript">
@@ -41,8 +47,8 @@ ga('send', 'pageview');
 <!-- End Google Analytics -->
 
 
-</head>
-</html>
+<meta name="generator" content="Hexo 4.2.1"></head>
+
 <body>
   <div id="container">
     <div id="wrap">
@@ -87,14 +93,83 @@ ga('send', 'pageview');
       <div class="outer">
         <section id="main">
   
-    <article id="post-tutorial/clion-gdb-debugging" class="article article-type-post" itemscope="" itemprop="blogPost">
+    <article id="post-c++/smart_pointer" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/06/04/c++/smart_pointer/" class="article-date">
+  <time datetime="2020-06-04T11:23:16.000Z" itemprop="datePublished">2020-06-04</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/">學習紀錄</a>►<a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/C-C/">C/C++</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/06/04/c++/smart_pointer/">Smart Pointer 介紹/用法</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h2><ul>
+<li><code>unique_ptr</code><ul>
+<li>move construct only</li>
+</ul>
+</li>
+<li><code>shared_ptr</code><ul>
+<li>reference counting</li>
+</ul>
+</li>
+<li><code>weak_ptr</code><ul>
+<li>weak references</li>
+</ul>
+</li>
+<li><code>boost:scoped_ptr</code><ul>
+<li>only in one scope</li>
+</ul>
+</li>
+</ul>
+<h2 id="Smart-Pointer"><a href="#Smart-Pointer" class="headerlink" title="Smart Pointer ?"></a>Smart Pointer ?</h2>
+        
+          <p class="article-more-link">
+            <a href="/2020/06/04/c++/smart_pointer/#more">繼續閱讀全文 »</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.roy4801.tw/2020/06/04/c++/smart_pointer/" data-id="ckb9mrh7i0045cytk8vov7b8i" class="article-share-link">分享</a>
+      
+      
+        <a href="http://blog.roy4801.tw/2020/06/04/c++/smart_pointer/#disqus_thread" class="article-comment-link">留言</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/" rel="tag">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Smart-Pointer/" rel="tag">Smart Pointer</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%99%E5%AD%B8/" rel="tag">教學</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%99%BA%E6%85%A7%E6%8C%87%E6%A8%99/" rel="tag">智慧指標</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A8%8B%E5%BC%8F/" rel="tag">程式</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+ 
+
+
+  
+    <article id="post-tutorial/clion-gdb-debugging" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/05/18/tutorial/clion-gdb-debugging/" class="article-date">
   <time datetime="2020-05-18T13:41:58.000Z" itemprop="datePublished">2020-05-18</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/學習紀錄/">學習紀錄</a>►<a class="article-category-link" href="/categories/學習紀錄/C-C/">C/C++</a>
+    <a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/">學習紀錄</a>►<a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/C-C/">C/C++</a>
   </div>
 
   </div>
@@ -113,7 +188,7 @@ ga('send', 'pageview');
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="https://i.imgur.com/r1NLY9U.png" alt=""></p>
+        <p><img src="https://i.imgur.com/r1NLY9U.png" alt></p>
 <p>CLion是一款專為開發C及C++所設計的跨平台IDE。它是以IntelliJ為基礎設計的，包含了許多智慧功能來提高開發人員的生產力。支援代碼分析、快速修復和重構，集合的除錯器可以用 GDB 或 LLDB 作為後端，輕鬆調查和解決問題，能夠為程序員提供一個整合式的C/C ++開發環境</p>
 <p><a href="https://www.jetbrains.com/clion/" target="_blank" rel="noopener">https://www.jetbrains.com/clion/</a></p>
         
@@ -124,13 +199,13 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2020/05/18/tutorial/clion-gdb-debugging/" data-id="ckacjh6m5004aq7g68u90lx6g" class="article-share-link">分享</a>
+      <a data-url="http://blog.roy4801.tw/2020/05/18/tutorial/clion-gdb-debugging/" data-id="ckb9mrh7m004ecytk6bf0bhzo" class="article-share-link">分享</a>
       
       
         <a href="http://blog.roy4801.tw/2020/05/18/tutorial/clion-gdb-debugging/#disqus_thread" class="article-comment-link">留言</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/IDE/">IDE</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/教學/">教學</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/程式/">程式</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/" rel="tag">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/IDE/" rel="tag">IDE</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%99%E5%AD%B8/" rel="tag">教學</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A8%8B%E5%BC%8F/" rel="tag">程式</a></li></ul>
 
     </footer>
   </div>
@@ -140,14 +215,14 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-tutorial/hexo-blank" class="article article-type-post" itemscope="" itemprop="blogPost">
+    <article id="post-tutorial/hexo-blank" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/05/17/tutorial/hexo-blank/" class="article-date">
   <time datetime="2020-05-17T12:21:45.000Z" itemprop="datePublished">2020-05-17</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/學習紀錄/">學習紀錄</a>►<a class="article-category-link" href="/categories/學習紀錄/其他/">其他</a>
+    <a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/">學習紀錄</a>►<a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/%E5%85%B6%E4%BB%96/">其他</a>
   </div>
 
   </div>
@@ -176,13 +251,13 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2020/05/17/tutorial/hexo-blank/" data-id="ckacjh6ma004lq7g6dz7tzztl" class="article-share-link">分享</a>
+      <a data-url="http://blog.roy4801.tw/2020/05/17/tutorial/hexo-blank/" data-id="ckb9mrh7n004icytk58zfa7r2" class="article-share-link">分享</a>
       
       
         <a href="http://blog.roy4801.tw/2020/05/17/tutorial/hexo-blank/#disqus_thread" class="article-comment-link">留言</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/node-js/">node.js</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/教學/">教學</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/node-js/" rel="tag">node.js</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%99%E5%AD%B8/" rel="tag">教學</a></li></ul>
 
     </footer>
   </div>
@@ -192,14 +267,14 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-spdlog-tutorial" class="article article-type-post" itemscope="" itemprop="blogPost">
+    <article id="post-spdlog-tutorial" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/05/17/spdlog-tutorial/" class="article-date">
   <time datetime="2020-05-17T11:55:35.000Z" itemprop="datePublished">2020-05-17</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/學習紀錄/">學習紀錄</a>►<a class="article-category-link" href="/categories/學習紀錄/C-C/">C/C++</a>
+    <a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/">學習紀錄</a>►<a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/C-C/">C/C++</a>
   </div>
 
   </div>
@@ -237,13 +312,13 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2020/05/17/spdlog-tutorial/" data-id="ckacjh6jr000fq7g6vsildxjt" class="article-share-link">分享</a>
+      <a data-url="http://blog.roy4801.tw/2020/05/17/spdlog-tutorial/" data-id="ckb9mrh4x000fcytkd0qxesdb" class="article-share-link">分享</a>
       
       
         <a href="http://blog.roy4801.tw/2020/05/17/spdlog-tutorial/#disqus_thread" class="article-comment-link">留言</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C-Library/">C++ Library</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/imgui/">imgui</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/教學/">教學</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/程式/">程式</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/" rel="tag">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C-Library/" rel="tag">C++ Library</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/imgui/" rel="tag">imgui</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%99%E5%AD%B8/" rel="tag">教學</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A8%8B%E5%BC%8F/" rel="tag">程式</a></li></ul>
 
     </footer>
   </div>
@@ -253,14 +328,14 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-imgui-intro-pt5" class="article article-type-post" itemscope="" itemprop="blogPost">
+    <article id="post-imgui-intro-pt5" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/04/16/imgui-intro-pt5/" class="article-date">
   <time datetime="2020-04-15T17:01:48.000Z" itemprop="datePublished">2020-04-16</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/學習紀錄/">學習紀錄</a>►<a class="article-category-link" href="/categories/學習紀錄/C-C/">C/C++</a>
+    <a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/">學習紀錄</a>►<a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/C-C/">C/C++</a>
   </div>
 
   </div>
@@ -279,7 +354,7 @@ ga('send', 'pageview');
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="https://i.imgur.com/0VGhoZw.png" alt=""></p>
+        <p><img src="https://i.imgur.com/0VGhoZw.png" alt></p>
 <p><a href="https://github.com/ocornut/imgui/blob/master/imgui.h#L479" target="_blank" rel="noopener">https://github.com/ocornut/imgui/blob/master/imgui.h#L479</a></p>
 <h3 id="SliderFloat-SliderInt"><a href="#SliderFloat-SliderInt" class="headerlink" title="SliderFloat / SliderInt"></a>SliderFloat / SliderInt</h3>
         
@@ -290,13 +365,13 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2020/04/16/imgui-intro-pt5/" data-id="ckacjh6jq000bq7g6ky1yqldr" class="article-share-link">分享</a>
+      <a data-url="http://blog.roy4801.tw/2020/04/16/imgui-intro-pt5/" data-id="ckb9mrh4u000bcytkhfnpb054" class="article-share-link">分享</a>
       
       
         <a href="http://blog.roy4801.tw/2020/04/16/imgui-intro-pt5/#disqus_thread" class="article-comment-link">留言</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C-Library/">C++ Library</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/imgui/">imgui</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/教學/">教學</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/程式/">程式</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/" rel="tag">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C-Library/" rel="tag">C++ Library</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/imgui/" rel="tag">imgui</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%99%E5%AD%B8/" rel="tag">教學</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A8%8B%E5%BC%8F/" rel="tag">程式</a></li></ul>
 
     </footer>
   </div>
@@ -306,14 +381,14 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-imgui-intro-pt4" class="article article-type-post" itemscope="" itemprop="blogPost">
+    <article id="post-imgui-intro-pt4" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/03/29/imgui-intro-pt4/" class="article-date">
   <time datetime="2020-03-29T05:30:28.000Z" itemprop="datePublished">2020-03-29</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/學習紀錄/">學習紀錄</a>►<a class="article-category-link" href="/categories/學習紀錄/C-C/">C/C++</a>
+    <a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/">學習紀錄</a>►<a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/C-C/">C/C++</a>
   </div>
 
   </div>
@@ -332,7 +407,7 @@ ga('send', 'pageview');
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="複選框-Checkbox"><a href="#複選框-Checkbox" class="headerlink" title="複選框 Checkbox"></a>複選框 Checkbox</h2><p><img src="https://i.imgur.com/f9JWE2i.gif" alt=""></p>
+        <h2 id="複選框-Checkbox"><a href="#複選框-Checkbox" class="headerlink" title="複選框 Checkbox"></a>複選框 Checkbox</h2><p><img src="https://i.imgur.com/f9JWE2i.gif" alt></p>
 <ul>
 <li><p>Prototype</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">Checkbox</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span>* label, <span class="keyword">bool</span>* v)</span></span>;</span><br><span class="line"><span class="comment">// label: 名稱</span></span><br><span class="line"><span class="comment">// v    : 是否已經勾選</span></span><br></pre></td></tr></table></figure>
@@ -354,13 +429,13 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2020/03/29/imgui-intro-pt4/" data-id="ckacjh6jo000aq7g69021atfw" class="article-share-link">分享</a>
+      <a data-url="http://blog.roy4801.tw/2020/03/29/imgui-intro-pt4/" data-id="ckb9mrh4t000acytkew2t6r8y" class="article-share-link">分享</a>
       
       
         <a href="http://blog.roy4801.tw/2020/03/29/imgui-intro-pt4/#disqus_thread" class="article-comment-link">留言</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C-Library/">C++ Library</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/imgui/">imgui</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/教學/">教學</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/程式/">程式</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/" rel="tag">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C-Library/" rel="tag">C++ Library</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/imgui/" rel="tag">imgui</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%99%E5%AD%B8/" rel="tag">教學</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A8%8B%E5%BC%8F/" rel="tag">程式</a></li></ul>
 
     </footer>
   </div>
@@ -370,14 +445,14 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-imgui-intro-pt3" class="article article-type-post" itemscope="" itemprop="blogPost">
+    <article id="post-imgui-intro-pt3" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/03/28/imgui-intro-pt3/" class="article-date">
   <time datetime="2020-03-28T09:32:36.000Z" itemprop="datePublished">2020-03-28</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/學習紀錄/">學習紀錄</a>►<a class="article-category-link" href="/categories/學習紀錄/C-C/">C/C++</a>
+    <a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/">學習紀錄</a>►<a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/C-C/">C/C++</a>
   </div>
 
   </div>
@@ -397,7 +472,7 @@ ga('send', 'pageview');
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="建立視窗-Window"><a href="#建立視窗-Window" class="headerlink" title="建立視窗 Window"></a>建立視窗 Window</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ImGui::Begin(<span class="string">"Window Title"</span>);</span><br><span class="line"><span class="comment">// .. window content code here</span></span><br><span class="line">ImGui::End();</span><br></pre></td></tr></table></figure>
-<p><img src="https://i.imgur.com/6zd5twX.gif" alt=""></p>
+<p><img src="https://i.imgur.com/6zd5twX.gif" alt></p>
         
           <p class="article-more-link">
             <a href="/2020/03/28/imgui-intro-pt3/#more">繼續閱讀全文 »</a>
@@ -406,13 +481,13 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2020/03/28/imgui-intro-pt3/" data-id="ckacjh6jn0007q7g6p4ra0vba" class="article-share-link">分享</a>
+      <a data-url="http://blog.roy4801.tw/2020/03/28/imgui-intro-pt3/" data-id="ckb9mrh4r0007cytk0fg09gg4" class="article-share-link">分享</a>
       
       
         <a href="http://blog.roy4801.tw/2020/03/28/imgui-intro-pt3/#disqus_thread" class="article-comment-link">留言</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C-Library/">C++ Library</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/imgui/">imgui</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/教學/">教學</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/程式/">程式</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/" rel="tag">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C-Library/" rel="tag">C++ Library</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/imgui/" rel="tag">imgui</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%99%E5%AD%B8/" rel="tag">教學</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A8%8B%E5%BC%8F/" rel="tag">程式</a></li></ul>
 
     </footer>
   </div>
@@ -422,14 +497,14 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-imgui-intro-pt2" class="article article-type-post" itemscope="" itemprop="blogPost">
+    <article id="post-imgui-intro-pt2" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/03/25/imgui-intro-pt2/" class="article-date">
   <time datetime="2020-03-24T18:40:42.000Z" itemprop="datePublished">2020-03-25</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/學習紀錄/">學習紀錄</a>►<a class="article-category-link" href="/categories/學習紀錄/C-C/">C/C++</a>
+    <a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/">學習紀錄</a>►<a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/C-C/">C/C++</a>
   </div>
 
   </div>
@@ -467,13 +542,13 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2020/03/25/imgui-intro-pt2/" data-id="ckacjh6jl0006q7g6lqrkd81h" class="article-share-link">分享</a>
+      <a data-url="http://blog.roy4801.tw/2020/03/25/imgui-intro-pt2/" data-id="ckb9mrh4p0006cytkckhv1xmf" class="article-share-link">分享</a>
       
       
         <a href="http://blog.roy4801.tw/2020/03/25/imgui-intro-pt2/#disqus_thread" class="article-comment-link">留言</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C-Library/">C++ Library</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/imgui/">imgui</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/教學/">教學</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/程式/">程式</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/" rel="tag">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C-Library/" rel="tag">C++ Library</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/imgui/" rel="tag">imgui</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%99%E5%AD%B8/" rel="tag">教學</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A8%8B%E5%BC%8F/" rel="tag">程式</a></li></ul>
 
     </footer>
   </div>
@@ -483,14 +558,14 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-imgui-intro-pt1" class="article article-type-post" itemscope="" itemprop="blogPost">
+    <article id="post-imgui-intro-pt1" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/03/24/imgui-intro-pt1/" class="article-date">
   <time datetime="2020-03-23T20:18:45.000Z" itemprop="datePublished">2020-03-24</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/學習紀錄/">學習紀錄</a>►<a class="article-category-link" href="/categories/學習紀錄/C-C/">C/C++</a>
+    <a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/">學習紀錄</a>►<a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/C-C/">C/C++</a>
   </div>
 
   </div>
@@ -509,7 +584,7 @@ ga('send', 'pageview');
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="https://i.imgur.com/irlVLsy.png" alt=""></p>
+        <p><img src="https://i.imgur.com/irlVLsy.png" alt></p>
 <p><a href="https://github.com/ocornut/imgui" target="_blank" rel="noopener">Dear Imgui</a> 是個輕量、快速的 imtermediate GUI 讓開發者可以非常快速的建立 GUI，被遊戲開發(gamedev)、編輯器(editor)、除錯器(debugger)開發者等使用。</p>
 <p>使用 imgui 的 code 非常簡單且易於修改，imgui 本身是無狀態的，與一般的 retained mode GUI 相反，imgui 不用儲存 GUI 物件或是註冊回調(Callback)</p>
         
@@ -520,13 +595,13 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2020/03/24/imgui-intro-pt1/" data-id="ckacjh6jk0005q7g6j79hy2qa" class="article-share-link">分享</a>
+      <a data-url="http://blog.roy4801.tw/2020/03/24/imgui-intro-pt1/" data-id="ckb9mrh4k0002cytke6igaadb" class="article-share-link">分享</a>
       
       
         <a href="http://blog.roy4801.tw/2020/03/24/imgui-intro-pt1/#disqus_thread" class="article-comment-link">留言</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C-Library/">C++ Library</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/imgui/">imgui</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/教學/">教學</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/程式/">程式</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/" rel="tag">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C-Library/" rel="tag">C++ Library</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/imgui/" rel="tag">imgui</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%99%E5%AD%B8/" rel="tag">教學</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A8%8B%E5%BC%8F/" rel="tag">程式</a></li></ul>
 
     </footer>
   </div>
@@ -536,14 +611,14 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-在-macOS-Mojave-上正常使用-gdb" class="article article-type-post" itemscope="" itemprop="blogPost">
+    <article id="post-在-macOS-Mojave-上正常使用-gdb" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2020/01/27/在-macOS-Mojave-上正常使用-gdb/" class="article-date">
+    <a href="/2020/01/27/%E5%9C%A8-macOS-Mojave-%E4%B8%8A%E6%AD%A3%E5%B8%B8%E4%BD%BF%E7%94%A8-gdb/" class="article-date">
   <time datetime="2020-01-26T21:42:06.000Z" itemprop="datePublished">2020-01-27</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/學習紀錄/">學習紀錄</a>►<a class="article-category-link" href="/categories/學習紀錄/macOS/">macOS</a>
+    <a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/">學習紀錄</a>►<a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/macOS/">macOS</a>
   </div>
 
   </div>
@@ -554,7 +629,7 @@ ga('send', 'pageview');
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/01/27/在-macOS-Mojave-上正常使用-gdb/">在 macOS Mojave 上正常使用 gdb</a>
+      <a class="article-title" href="/2020/01/27/%E5%9C%A8-macOS-Mojave-%E4%B8%8A%E6%AD%A3%E5%B8%B8%E4%BD%BF%E7%94%A8-gdb/">在 macOS Mojave 上正常使用 gdb</a>
     </h1>
   
 
@@ -563,75 +638,23 @@ ga('send', 'pageview');
     <div class="article-entry" itemprop="articleBody">
       
         <p>在 macOS 上使用 gdb 時，如果沒有做以下修改，通常會是這樣：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">gdb$ r</span><br><span class="line">Starting program: /private/tmp/a.out</span><br><span class="line">Unable to find Mach task port for process-id 20201: (os/kern) failure (0x5).</span><br><span class="line"> (please check gdb is codesigned - see taskgated(8))</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">gdb$ r</span><br><span class="line">Starting program: &#x2F;private&#x2F;tmp&#x2F;a.out</span><br><span class="line">Unable to find Mach task port for process-id 20201: (os&#x2F;kern) failure (0x5).</span><br><span class="line"> (please check gdb is codesigned - see taskgated(8))</span><br></pre></td></tr></table></figure>
 <p>這是因為 Darwin 內核預設禁止沒有特殊權限的程序偵錯(Debugging)其他程序，在預設這個選項是關閉的，如果要開啟則要用系統信任的憑證進行簽章(codesign)。</p>
         
           <p class="article-more-link">
-            <a href="/2020/01/27/在-macOS-Mojave-上正常使用-gdb/#more">繼續閱讀全文 »</a>
+            <a href="/2020/01/27/%E5%9C%A8-macOS-Mojave-%E4%B8%8A%E6%AD%A3%E5%B8%B8%E4%BD%BF%E7%94%A8-gdb/#more">繼續閱讀全文 »</a>
           </p>
         
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2020/01/27/在-macOS-Mojave-上正常使用-gdb/" data-id="ckacjh6k2000rq7g62obmu7tk" class="article-share-link">分享</a>
+      <a data-url="http://blog.roy4801.tw/2020/01/27/%E5%9C%A8-macOS-Mojave-%E4%B8%8A%E6%AD%A3%E5%B8%B8%E4%BD%BF%E7%94%A8-gdb/" data-id="ckb9mrh58000pcytkfzoeexk8" class="article-share-link">分享</a>
       
       
-        <a href="http://blog.roy4801.tw/2020/01/27/在-macOS-Mojave-上正常使用-gdb/#disqus_thread" class="article-comment-link">留言</a>
+        <a href="http://blog.roy4801.tw/2020/01/27/%E5%9C%A8-macOS-Mojave-%E4%B8%8A%E6%AD%A3%E5%B8%B8%E4%BD%BF%E7%94%A8-gdb/#disqus_thread" class="article-comment-link">留言</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/gdb/">gdb</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/教學/">教學</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
- 
-
-
-  
-    <article id="post-uva/uva1587" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/09/11/uva/uva1587/" class="article-date">
-  <time datetime="2019-09-11T15:56:25.000Z" itemprop="datePublished">2019-09-11</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/解題區/">解題區</a>►<a class="article-category-link" href="/categories/解題區/Uva/">Uva</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/11/uva/uva1587/">Uva 1587 - Box</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><a href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;Itemid=8&amp;page=show_problem&amp;problem=4462" target="_blank" rel="noopener">題目</a></p>
-<h1 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h1><p>給你6個寬$w_i$高$h_i$的紙板，問可不可以組成一個長方體</p>
-        
-          <p class="article-more-link">
-            <a href="/2019/09/11/uva/uva1587/#more">繼續閱讀全文 »</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2019/09/11/uva/uva1587/" data-id="ckacjh6mz005zq7g6h8t9e80x" class="article-share-link">分享</a>
-      
-      
-        <a href="http://blog.roy4801.tw/2019/09/11/uva/uva1587/#disqus_thread" class="article-comment-link">留言</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Uva/">Uva</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/解題紀錄/">解題紀錄</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/gdb/" rel="tag">gdb</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%99%E5%AD%B8/" rel="tag">教學</a></li></ul>
 
     </footer>
   </div>
@@ -644,7 +667,7 @@ ga('send', 'pageview');
 
 
   <nav id="page-nav">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/2/">下一頁&raquo;</a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/2/">下一頁&amp;raquo;</a>
   </nav>
 </section>
            
@@ -662,7 +685,7 @@ ga('send', 'pageview');
       
       
       
-            <a class="email" aria-hidden="true" href="mailto:YTgyNjExMTQxQGdtYWlsLmNvbQo=" target="_blank" title="邮箱"></a>
+            <a class="email" aria-hidden="true"  href="mailto:YTgyNjExMTQxQGdtYWlsLmNvbQo=" target="_blank" title="邮箱"></a>
       
     </div>
   </div>
@@ -675,7 +698,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title categories">分類</h3>
     <div class="widget" id="categories">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Writeup/">Writeup</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/其他/">其他</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/學習紀錄/">學習紀錄</a><span class="category-list-count">17</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/學習紀錄/C-C/">C/C++</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/學習紀錄/Linux/">Linux</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/學習紀錄/macOS/">macOS</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/學習紀錄/其他/">其他</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/學習紀錄/組合語言/">組合語言</a><span class="category-list-count">2</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/心得散文/">心得散文</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/解題區/">解題區</a><span class="category-list-count">17</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/解題區/Uva/">Uva</a><span class="category-list-count">17</span></li></ul></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Writeup/">Writeup</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%85%B6%E4%BB%96/">其他</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/">學習紀錄</a><span class="category-list-count">18</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/C-C/">C/C++</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/Linux/">Linux</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/macOS/">macOS</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/%E5%85%B6%E4%BB%96/">其他</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/%E7%B5%84%E5%90%88%E8%AA%9E%E8%A8%80/">組合語言</a><span class="category-list-count">2</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%BF%83%E5%BE%97%E6%95%A3%E6%96%87/">心得散文</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a><span class="category-list-count">17</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Uva/">Uva</a><span class="category-list-count">17</span></li></ul></li></ul>
     </div>
   </div>
 
@@ -692,7 +715,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title tags">標籤</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/">C++</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-Library/">C++ Library</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CTF/">CTF</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DP/">DP</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IDE/">IDE</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/">Linux</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/STL/">STL</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Uva/">Uva</a><span class="tag-list-count">17</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ctf-tools/">ctf tools</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gdb/">gdb</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/imgui/">imgui</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/node-js/">node.js</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/priority-queue/">priority queue</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/x86/">x86</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/其他/">其他</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/心得/">心得</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/心情散文/">心情散文</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/教學/">教學</a><span class="tag-list-count">14</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/檔案系統/">檔案系統</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/比賽/">比賽</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/程式/">程式</a><span class="tag-list-count">10</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/解題紀錄/">解題紀錄</a><span class="tag-list-count">17</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/資安/">資安</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/" rel="tag">C++</a><span class="tag-list-count">9</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-Library/" rel="tag">C++ Library</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CTF/" rel="tag">CTF</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DP/" rel="tag">DP</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IDE/" rel="tag">IDE</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/" rel="tag">Linux</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/STL/" rel="tag">STL</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Smart-Pointer/" rel="tag">Smart Pointer</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Uva/" rel="tag">Uva</a><span class="tag-list-count">17</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ctf-tools/" rel="tag">ctf tools</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gdb/" rel="tag">gdb</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/imgui/" rel="tag">imgui</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/node-js/" rel="tag">node.js</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/priority-queue/" rel="tag">priority queue</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/x86/" rel="tag">x86</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%85%B6%E4%BB%96/" rel="tag">其他</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BF%83%E5%BE%97/" rel="tag">心得</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BF%83%E6%83%85%E6%95%A3%E6%96%87/" rel="tag">心情散文</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%99%E5%AD%B8/" rel="tag">教學</a><span class="tag-list-count">15</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%99%BA%E6%85%A7%E6%8C%87%E6%A8%99/" rel="tag">智慧指標</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%AA%94%E6%A1%88%E7%B3%BB%E7%B5%B1/" rel="tag">檔案系統</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%AF%94%E8%B3%BD/" rel="tag">比賽</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A8%8B%E5%BC%8F/" rel="tag">程式</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a><span class="tag-list-count">17</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%B3%87%E5%AE%89/" rel="tag">資安</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -702,7 +725,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title tagcloud">標籤雲</h3>
     <div class="widget tagcloud">
-      <a href="/tags/C/" style="font-size: 20.88px;">C++</a> <a href="/tags/C-Library/" style="font-size: 19.5px;">C++ Library</a> <a href="/tags/CTF/" style="font-size: 14px;">CTF</a> <a href="/tags/DP/" style="font-size: 15.38px;">DP</a> <a href="/tags/IDE/" style="font-size: 14px;">IDE</a> <a href="/tags/Linux/" style="font-size: 16.75px;">Linux</a> <a href="/tags/STL/" style="font-size: 14px;">STL</a> <a href="/tags/Uva/" style="font-size: 25px;">Uva</a> <a href="/tags/ctf-tools/" style="font-size: 14px;">ctf tools</a> <a href="/tags/gdb/" style="font-size: 14px;">gdb</a> <a href="/tags/hexo/" style="font-size: 14px;">hexo</a> <a href="/tags/imgui/" style="font-size: 19.5px;">imgui</a> <a href="/tags/node-js/" style="font-size: 14px;">node.js</a> <a href="/tags/priority-queue/" style="font-size: 14px;">priority queue</a> <a href="/tags/x86/" style="font-size: 15.38px;">x86</a> <a href="/tags/其他/" style="font-size: 14px;">其他</a> <a href="/tags/心得/" style="font-size: 18.13px;">心得</a> <a href="/tags/心情散文/" style="font-size: 14px;">心情散文</a> <a href="/tags/教學/" style="font-size: 23.63px;">教學</a> <a href="/tags/檔案系統/" style="font-size: 14px;">檔案系統</a> <a href="/tags/比賽/" style="font-size: 15.38px;">比賽</a> <a href="/tags/程式/" style="font-size: 22.25px;">程式</a> <a href="/tags/解題紀錄/" style="font-size: 25px;">解題紀錄</a> <a href="/tags/資安/" style="font-size: 14px;">資安</a>
+      <a href="/tags/C/" style="font-size: 20.88px;">C++</a> <a href="/tags/C-Library/" style="font-size: 19.5px;">C++ Library</a> <a href="/tags/CTF/" style="font-size: 14px;">CTF</a> <a href="/tags/DP/" style="font-size: 15.38px;">DP</a> <a href="/tags/IDE/" style="font-size: 14px;">IDE</a> <a href="/tags/Linux/" style="font-size: 16.75px;">Linux</a> <a href="/tags/STL/" style="font-size: 14px;">STL</a> <a href="/tags/Smart-Pointer/" style="font-size: 14px;">Smart Pointer</a> <a href="/tags/Uva/" style="font-size: 25px;">Uva</a> <a href="/tags/ctf-tools/" style="font-size: 14px;">ctf tools</a> <a href="/tags/gdb/" style="font-size: 14px;">gdb</a> <a href="/tags/hexo/" style="font-size: 14px;">hexo</a> <a href="/tags/imgui/" style="font-size: 19.5px;">imgui</a> <a href="/tags/node-js/" style="font-size: 14px;">node.js</a> <a href="/tags/priority-queue/" style="font-size: 14px;">priority queue</a> <a href="/tags/x86/" style="font-size: 15.38px;">x86</a> <a href="/tags/%E5%85%B6%E4%BB%96/" style="font-size: 14px;">其他</a> <a href="/tags/%E5%BF%83%E5%BE%97/" style="font-size: 18.13px;">心得</a> <a href="/tags/%E5%BF%83%E6%83%85%E6%95%A3%E6%96%87/" style="font-size: 14px;">心情散文</a> <a href="/tags/%E6%95%99%E5%AD%B8/" style="font-size: 23.63px;">教學</a> <a href="/tags/%E6%99%BA%E6%85%A7%E6%8C%87%E6%A8%99/" style="font-size: 14px;">智慧指標</a> <a href="/tags/%E6%AA%94%E6%A1%88%E7%B3%BB%E7%B5%B1/" style="font-size: 14px;">檔案系統</a> <a href="/tags/%E6%AF%94%E8%B3%BD/" style="font-size: 15.38px;">比賽</a> <a href="/tags/%E7%A8%8B%E5%BC%8F/" style="font-size: 22.25px;">程式</a> <a href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" style="font-size: 25px;">解題紀錄</a> <a href="/tags/%E8%B3%87%E5%AE%89/" style="font-size: 14px;">資安</a>
     </div>
   </div>
 
@@ -712,6 +735,10 @@ ga('send', 'pageview');
     <h3 class="widget-title recent-posts">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2020/06/04/c++/smart_pointer/">Smart Pointer 介紹/用法</a>
+          </li>
         
           <li>
             <a href="/2020/05/18/tutorial/clion-gdb-debugging/">使用 CLion + gdb Debug 程式</a>
@@ -729,10 +756,6 @@ ga('send', 'pageview');
             <a href="/2020/04/16/imgui-intro-pt5/">dear imgui 使用 - 拉桿 Slider</a>
           </li>
         
-          <li>
-            <a href="/2020/03/29/imgui-intro-pt4/">dear imgui 使用 - 單選、複選按鈕</a>
-          </li>
-        
       </ul>
     </div>
   </div>
@@ -742,7 +765,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title archive">彙整</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">五月 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">四月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">三月 2020</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">一月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">九月 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">八月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">三月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">二月 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">一月 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">十一月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">六月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">五月 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">四月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">三月 2020</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">一月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">九月 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">八月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">三月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">二月 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">一月 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">十一月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -755,19 +778,19 @@ ga('send', 'pageview');
         <ul>
             
             <li>
-                <a href="https://blog.kiyohime.tw/">ICEJJ&#39;s BLOG</a>
+                <a href="https://blog.kiyohime.tw/" target="_blank" rel="noopener">ICEJJ&#39;s BLOG</a>
             </li>
             
             <li>
-                <a href="https://halloworld.tw/">Halloworld-website</a>
+                <a href="https://halloworld.tw/" target="_blank" rel="noopener">Halloworld-website</a>
             </li>
             
             <li>
-                <a href="https://blog.suntalk.tw/">SunTalk.blog</a>
+                <a href="https://blog.suntalk.tw/" target="_blank" rel="noopener">SunTalk.blog</a>
             </li>
             
             <li>
-                <a href="https://allem40306.github.io">傑克的程式區</a>
+                <a href="https://allem40306.github.io" target="_blank" rel="noopener">傑克的程式區</a>
             </li>
             
         </ul>
@@ -790,7 +813,9 @@ ga('send', 'pageview');
     </div>
   </div>
 </footer>
- <script src="/jquery/jquery.min.js"></script>
+ 
+<script src="/jquery/jquery.min.js"></script>
+
     </div>
     <nav id="mobile-nav">
   
@@ -801,7 +826,7 @@ ga('send', 'pageview');
     <a href="/about" class="mobile-nav-link">關於</a>
   
 </nav>
-    <img class="back-to-top-btn" src="/images/fly-to-top.png">
+    <img class="back-to-top-btn" src="/images/fly-to-top.png"/>
 <script>
 // Elevator script included on the page, already.
 window.onload = function() {
@@ -863,15 +888,25 @@ window.onload = function() {
   
 
 
- <script src="/js/is.js"></script>
+ 
+<script src="/js/is.js"></script>
 
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
 
 
 <script src="/js/script.js"></script>
+
+
 <script src="/js/elevator.js"></script>
+
   </div>
 </body>
 </html>

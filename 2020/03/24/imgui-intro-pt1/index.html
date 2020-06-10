@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.8.0">
+<head>
   <meta charset="utf-8">
   
   <title>dear imgui 介紹 - 輕量級的 GUI Library | r0yblog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Dear Imgui 是個輕量、快速的 imtermediate GUI 讓開發者可以非常快速的建立 GUI，被遊戲開發(gamedev)、編輯器(editor)、除錯器(debugger)開發者等使用。 使用 imgui 的 code 非常簡單且易於修改，imgui 本身是無狀態的，與一般的 retained mode GUI 相反，imgui 不用儲存 GUI 物件或是註冊回調(Callba">
-<meta name="keywords" content="C++,程式,教學,C++ Library,imgui">
 <meta property="og:type" content="article">
 <meta property="og:title" content="dear imgui 介紹 - 輕量級的 GUI Library">
 <meta property="og:url" content="http://blog.roy4801.tw/2020/03/24/imgui-intro-pt1/index.html">
 <meta property="og:site_name" content="r0yblog">
 <meta property="og:description" content="Dear Imgui 是個輕量、快速的 imtermediate GUI 讓開發者可以非常快速的建立 GUI，被遊戲開發(gamedev)、編輯器(editor)、除錯器(debugger)開發者等使用。 使用 imgui 的 code 非常簡單且易於修改，imgui 本身是無狀態的，與一般的 retained mode GUI 相反，imgui 不用儲存 GUI 物件或是註冊回調(Callba">
-<meta property="og:locale" content="zh-TW">
+<meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://i.imgur.com/irlVLsy.png">
 <meta property="og:image" content="https://i.imgur.com/YFSmVdi.gif">
 <meta property="og:image" content="https://i.imgur.com/cz0E7Wt.gif">
 <meta property="og:image" content="https://i.imgur.com/6zdOsUX.png">
 <meta property="og:image" content="https://i.imgur.com/KeFnXt1.gif">
-<meta property="og:updated_time" content="2020-04-15T17:05:00.454Z">
+<meta property="article:published_time" content="2020-03-23T20:18:45.000Z">
+<meta property="article:modified_time" content="2020-04-15T17:05:00.454Z">
+<meta property="article:author" content="roy4801">
+<meta property="article:tag" content="C++">
+<meta property="article:tag" content="程式">
+<meta property="article:tag" content="教學">
+<meta property="article:tag" content="C++ Library">
+<meta property="article:tag" content="imgui">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="dear imgui 介紹 - 輕量級的 GUI Library">
-<meta name="twitter:description" content="Dear Imgui 是個輕量、快速的 imtermediate GUI 讓開發者可以非常快速的建立 GUI，被遊戲開發(gamedev)、編輯器(editor)、除錯器(debugger)開發者等使用。 使用 imgui 的 code 非常簡單且易於修改，imgui 本身是無狀態的，與一般的 retained mode GUI 相反，imgui 不用儲存 GUI 物件或是註冊回調(Callba">
 <meta name="twitter:image" content="https://i.imgur.com/irlVLsy.png">
   
     <link rel="alternate" href="/atom.xml" title="r0yblog" type="application/atom+xml">
@@ -32,7 +36,9 @@
   
     
   
-  <link rel="stylesheet" href="/css/style.css">
+  
+<link rel="stylesheet" href="/css/style.css">
+
   
 <!-- Google Analytics -->
 <script type="text/javascript">
@@ -48,8 +54,8 @@ ga('send', 'pageview');
 <!-- End Google Analytics -->
 
 
-</head>
-</html>
+<meta name="generator" content="Hexo 4.2.1"></head>
+
 <body>
   <div id="container">
     <div id="wrap">
@@ -92,14 +98,14 @@ ga('send', 'pageview');
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-imgui-intro-pt1" class="article article-type-post" itemscope="" itemprop="blogPost">
+        <section id="main"><article id="post-imgui-intro-pt1" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/03/24/imgui-intro-pt1/" class="article-date">
   <time datetime="2020-03-23T20:18:45.000Z" itemprop="datePublished">2020-03-24</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/學習紀錄/">學習紀錄</a>►<a class="article-category-link" href="/categories/學習紀錄/C-C/">C/C++</a>
+    <a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/">學習紀錄</a>►<a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/C-C/">C/C++</a>
   </div>
 
   </div>
@@ -154,19 +160,21 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2020/03/24/imgui-intro-pt1/" data-id="ckacjh6jk0005q7g6j79hy2qa" class="article-share-link">分享</a>
+      <a data-url="http://blog.roy4801.tw/2020/03/24/imgui-intro-pt1/" data-id="ckb9mrh4k0002cytke6igaadb" class="article-share-link">分享</a>
       
       
         <a href="http://blog.roy4801.tw/2020/03/24/imgui-intro-pt1/#disqus_thread" class="article-comment-link">留言</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C-Library/">C++ Library</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/imgui/">imgui</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/教學/">教學</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/程式/">程式</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/" rel="tag">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C-Library/" rel="tag">C++ Library</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/imgui/" rel="tag">imgui</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%99%E5%AD%B8/" rel="tag">教學</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A8%8B%E5%BC%8F/" rel="tag">程式</a></li></ul>
 
     </footer>
   </div>
   
     
- <script src="/jquery/jquery.min.js"></script>
+ 
+<script src="/jquery/jquery.min.js"></script>
+
   <div id="random_posts">
     <h2>推薦文章</h2>
     <div class="random_posts_ul">
@@ -220,7 +228,7 @@ ga('send', 'pageview');
     </a>
   
   
-    <a href="/2020/01/27/在-macOS-Mojave-上正常使用-gdb/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2020/01/27/%E5%9C%A8-macOS-Mojave-%E4%B8%8A%E6%AD%A3%E5%B8%B8%E4%BD%BF%E7%94%A8-gdb/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
       <div class="article-nav-title">在 macOS Mojave 上正常使用 gdb</div>
     </a>
@@ -238,7 +246,7 @@ ga('send', 'pageview');
       <div id="disqus_thread">
         <noscript>
           Please enable JavaScript to view the
-          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+          <a href="//disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a>
         </noscript>
       </div>
       </section>
@@ -305,7 +313,9 @@ ga('send', 'pageview');
     </div>
   </div>
 </footer>
- <script src="/jquery/jquery.min.js"></script>
+ 
+<script src="/jquery/jquery.min.js"></script>
+
     </div>
     <nav id="mobile-nav">
   
@@ -316,7 +326,7 @@ ga('send', 'pageview');
     <a href="/about" class="mobile-nav-link">關於</a>
   
 </nav>
-    <img class="back-to-top-btn" src="/images/fly-to-top.png">
+    <img class="back-to-top-btn" src="/images/fly-to-top.png"/>
 <script>
 // Elevator script included on the page, already.
 window.onload = function() {
@@ -380,15 +390,25 @@ window.onload = function() {
   
 
 
- <script src="/js/is.js"></script>
+ 
+<script src="/js/is.js"></script>
 
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
 
 
 <script src="/js/script.js"></script>
+
+
 <script src="/js/elevator.js"></script>
+
   </div>
 </body>
 </html>

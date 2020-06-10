@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.8.0">
+<head>
   <meta charset="utf-8">
   
   <title>在64-bit Ubuntu執行32-bit程式 | r0yblog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前言安裝64-bit的ubuntu時，預設是不裝32-bit的lib的，如果你在一個64-bit的環境，執行32-bit的程式。會看到以下畫面 12$ ./file1bash: ./file1: No such file or directory">
-<meta name="keywords" content="心得,Linux">
+  <meta name="description" content="前言安裝64-bit的ubuntu時，預設是不裝32-bit的lib的，如果你在一個64-bit的環境，執行32-bit的程式。會看到以下畫面 12$ .&#x2F;file1bash: .&#x2F;file1: No such file or directory">
 <meta property="og:type" content="article">
 <meta property="og:title" content="在64-bit Ubuntu執行32-bit程式">
 <meta property="og:url" content="http://blog.roy4801.tw/2019/01/26/linux/linux_x86_libs/index.html">
 <meta property="og:site_name" content="r0yblog">
-<meta property="og:description" content="前言安裝64-bit的ubuntu時，預設是不裝32-bit的lib的，如果你在一個64-bit的環境，執行32-bit的程式。會看到以下畫面 12$ ./file1bash: ./file1: No such file or directory">
-<meta property="og:locale" content="zh-TW">
-<meta property="og:updated_time" content="2019-02-01T17:23:46.000Z">
+<meta property="og:description" content="前言安裝64-bit的ubuntu時，預設是不裝32-bit的lib的，如果你在一個64-bit的環境，執行32-bit的程式。會看到以下畫面 12$ .&#x2F;file1bash: .&#x2F;file1: No such file or directory">
+<meta property="og:locale" content="zh_TW">
+<meta property="article:published_time" content="2019-01-26T11:50:16.000Z">
+<meta property="article:modified_time" content="2019-02-01T17:23:46.000Z">
+<meta property="article:author" content="roy4801">
+<meta property="article:tag" content="心得">
+<meta property="article:tag" content="Linux">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="在64-bit Ubuntu執行32-bit程式">
-<meta name="twitter:description" content="前言安裝64-bit的ubuntu時，預設是不裝32-bit的lib的，如果你在一個64-bit的環境，執行32-bit的程式。會看到以下畫面 12$ ./file1bash: ./file1: No such file or directory">
   
     <link rel="alternate" href="/atom.xml" title="r0yblog" type="application/atom+xml">
   
@@ -26,7 +27,9 @@
   
     
   
-  <link rel="stylesheet" href="/css/style.css">
+  
+<link rel="stylesheet" href="/css/style.css">
+
   
 <!-- Google Analytics -->
 <script type="text/javascript">
@@ -42,8 +45,8 @@ ga('send', 'pageview');
 <!-- End Google Analytics -->
 
 
-</head>
-</html>
+<meta name="generator" content="Hexo 4.2.1"></head>
+
 <body>
   <div id="container">
     <div id="wrap">
@@ -86,14 +89,14 @@ ga('send', 'pageview');
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-linux/linux_x86_libs" class="article article-type-post" itemscope="" itemprop="blogPost">
+        <section id="main"><article id="post-linux/linux_x86_libs" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/01/26/linux/linux_x86_libs/" class="article-date">
   <time datetime="2019-01-26T11:50:16.000Z" itemprop="datePublished">2019-01-26</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/學習紀錄/">學習紀錄</a>►<a class="article-category-link" href="/categories/學習紀錄/Linux/">Linux</a>
+    <a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/">學習紀錄</a>►<a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/Linux/">Linux</a>
   </div>
 
   </div>
@@ -115,9 +118,9 @@ ga('send', 'pageview');
         <!-- Table of Contents -->
         
         <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>安裝64-bit的ubuntu時，預設是不裝32-bit的lib的，如果你在一個64-bit的環境，執行32-bit的程式。<br>會看到以下畫面</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ ./file1</span><br><span class="line">bash: ./file1: No such file or directory</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ .&#x2F;file1</span><br><span class="line">bash: .&#x2F;file1: No such file or directory</span><br></pre></td></tr></table></figure>
 <p>用<code>file</code>觀察發現：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ file ./file1</span><br><span class="line">./file1: ELF 32-bit LSB  executable, Intel 80386, version 1 (SYSV), dynamically linked (uses shared libs), for GNU/Linux 2.6.8, not stripped.</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ file .&#x2F;file1</span><br><span class="line">.&#x2F;file1: ELF 32-bit LSB  executable, Intel 80386, version 1 (SYSV), dynamically linked (uses shared libs), for GNU&#x2F;Linux 2.6.8, not stripped.</span><br></pre></td></tr></table></figure>
 <h1 id="解法"><a href="#解法" class="headerlink" title="解法"></a>解法</h1><p>只要安裝32-bit的lib就可解決。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ sudo dpkg --add-architecture i386</span><br><span class="line">$ sudo apt-get update</span><br><span class="line">$ sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386</span><br></pre></td></tr></table></figure>
 <h1 id="參考"><a href="#參考" class="headerlink" title="參考"></a>參考</h1><p>How to run 32-bit app in Ubuntu 64-bit?<br><a href="https://askubuntu.com/questions/454253/how-to-run-32-bit-app-in-ubuntu-64-bit/454254#454254" target="_blank" rel="noopener">https://askubuntu.com/questions/454253/how-to-run-32-bit-app-in-ubuntu-64-bit/454254#454254</a></p>
@@ -132,19 +135,21 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2019/01/26/linux/linux_x86_libs/" data-id="ckacjh6m8004hq7g6b8ih041x" class="article-share-link">分享</a>
+      <a data-url="http://blog.roy4801.tw/2019/01/26/linux/linux_x86_libs/" data-id="ckb9mrh7b0043cytkf8lchis4" class="article-share-link">分享</a>
       
       
         <a href="http://blog.roy4801.tw/2019/01/26/linux/linux_x86_libs/#disqus_thread" class="article-comment-link">留言</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/">Linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/心得/">心得</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/" rel="tag">Linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%BF%83%E5%BE%97/" rel="tag">心得</a></li></ul>
 
     </footer>
   </div>
   
     
- <script src="/jquery/jquery.min.js"></script>
+ 
+<script src="/jquery/jquery.min.js"></script>
+
   <div id="random_posts">
     <h2>推薦文章</h2>
     <div class="random_posts_ul">
@@ -198,7 +203,7 @@ ga('send', 'pageview');
     </a>
   
   
-    <a href="/2019/01/25/互動媒體專題/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2019/01/25/%E4%BA%92%E5%8B%95%E5%AA%92%E9%AB%94%E5%B0%88%E9%A1%8C/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
       <div class="article-nav-title">互動媒體專題 參展</div>
     </a>
@@ -216,7 +221,7 @@ ga('send', 'pageview');
       <div id="disqus_thread">
         <noscript>
           Please enable JavaScript to view the
-          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+          <a href="//disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a>
         </noscript>
       </div>
       </section>
@@ -283,7 +288,9 @@ ga('send', 'pageview');
     </div>
   </div>
 </footer>
- <script src="/jquery/jquery.min.js"></script>
+ 
+<script src="/jquery/jquery.min.js"></script>
+
     </div>
     <nav id="mobile-nav">
   
@@ -294,7 +301,7 @@ ga('send', 'pageview');
     <a href="/about" class="mobile-nav-link">關於</a>
   
 </nav>
-    <img class="back-to-top-btn" src="/images/fly-to-top.png">
+    <img class="back-to-top-btn" src="/images/fly-to-top.png"/>
 <script>
 // Elevator script included on the page, already.
 window.onload = function() {
@@ -358,15 +365,25 @@ window.onload = function() {
   
 
 
- <script src="/js/is.js"></script>
+ 
+<script src="/js/is.js"></script>
 
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
 
 
 <script src="/js/script.js"></script>
+
+
 <script src="/js/elevator.js"></script>
+
   </div>
 </body>
 </html>
