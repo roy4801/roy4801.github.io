@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.roy4801.tw/"/>
-  <updated>2020-06-04T19:31:06.195Z</updated>
+  <updated>2020-06-25T09:39:45.658Z</updated>
   <id>http://blog.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>AIS3 2020 pre-exam writeups+心得</title>
+    <link href="http://blog.roy4801.tw/2020/06/12/ais3/ais3_2020_pre_exam/"/>
+    <id>http://blog.roy4801.tw/2020/06/12/ais3/ais3_2020_pre_exam/</id>
+    <published>2020-06-11T16:41:15.000Z</published>
+    <updated>2020-06-25T09:39:45.658Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;去年也參加過 AIS3 pre-exam 見&lt;a href=&quot;/2019/05/31/ais3/ais3_2019_pre_exam/&quot;&gt;去年心得&lt;/a&gt;，這似乎是變成每年這個時間的定番了呢(笑)，&lt;br&gt;今年課程部份依舊是上課一星期，最後有 Group Project 發表的形式，而不同的是今年因為疫情的影響，原訂辦在交大「似乎」是改成了線上課程（不過聽說又改回實地參加了？）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/TafxMoA.png&quot; width=&quot;870&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/yTg1HJ0.jpg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;scoreboard 備份&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Writeup" scheme="http://blog.roy4801.tw/categories/Writeup/"/>
+    
+    
+      <category term="比賽" scheme="http://blog.roy4801.tw/tags/%E6%AF%94%E8%B3%BD/"/>
+    
+      <category term="心得" scheme="http://blog.roy4801.tw/tags/%E5%BF%83%E5%BE%97/"/>
+    
+      <category term="CTF" scheme="http://blog.roy4801.tw/tags/CTF/"/>
+    
+  </entry>
   
   <entry>
     <title>Smart Pointer 介紹/用法</title>
