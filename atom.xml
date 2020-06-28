@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.roy4801.tw/"/>
-  <updated>2020-06-28T18:29:23.971Z</updated>
+  <updated>2020-06-28T18:49:03.640Z</updated>
   <id>http://blog.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,55 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>OpenGL 筆記 - 第一個三角形</title>
+    <link href="http://blog.roy4801.tw/2020/06/30/opengl/opengl-note-2/"/>
+    <id>http://blog.roy4801.tw/2020/06/30/opengl/opengl-note-2/</id>
+    <published>2020-06-29T18:10:45.000Z</published>
+    <updated>2020-06-28T18:49:03.640Z</updated>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;在 OpenGL 中，所有東西都在 3D 的空間中，而螢幕是 2D 的陣列&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;OpenGL 負責將 3D 座標經過一系列操作轉換成 2D 螢幕的座標&lt;ul&gt;
+&lt;li&gt;稱作「圖形渲染管線(Graphics Render Pipeline)」&lt;ul&gt;
+&lt;li&gt;圖形數據經過一個管道，中間經過各種轉換，最後輸出在畫面上&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;可以分成兩個部分:轉換座標(3D -&amp;gt; 2D)、把 2D 座標轉換成有顏色的像素(pixel)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Render Pipeline 被劃分成多個階段，前一個階段的輸出會作為下一個階段的輸入，每個階段都是高度專門化的&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;GPU 中有成千上萬個小處理核心，為 Pipeline 上的每個階段處理&lt;/li&gt;
+&lt;li&gt;跑在 GPU 中的小程式稱作 &lt;a href=&quot;https://zh.wikipedia.org/wiki/%E7%9D%80%E8%89%B2%E5%99%A8&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Shader (著色器)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;OpenGL 使用的 Shader 語言是: OpenGL Shading Language (GLSL)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;Render-Pipeline-的大概流程&quot;&gt;&lt;a href=&quot;#Render-Pipeline-的大概流程&quot; class=&quot;headerlink&quot; title=&quot;Render Pipeline 的大概流程&quot;&gt;&lt;/a&gt;Render Pipeline 的大概流程&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/PemIOSu.png&quot; alt&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="學習紀錄" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/"/>
+    
+      <category term="C/C++" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/C-C/"/>
+    
+    
+      <category term="程式" scheme="http://blog.roy4801.tw/tags/%E7%A8%8B%E5%BC%8F/"/>
+    
+      <category term="OpenGL" scheme="http://blog.roy4801.tw/tags/OpenGL/"/>
+    
+      <category term="筆記" scheme="http://blog.roy4801.tw/tags/%E7%AD%86%E8%A8%98/"/>
+    
+      <category term="圖學" scheme="http://blog.roy4801.tw/tags/%E5%9C%96%E5%AD%B8/"/>
+    
+  </entry>
   
   <entry>
     <title>OpenGL 筆記 - 環境設定和簡介</title>
