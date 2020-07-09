@@ -93,6 +93,247 @@ ga('send', 'pageview');
       <div class="outer">
         <section id="main">
   
+    <article id="post-x86-筆記-ep2" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/10/12/x86-%E7%AD%86%E8%A8%98-ep2/" class="article-date">
+  <time datetime="2018-10-12T06:45:46.000Z" itemprop="datePublished">2018-10-12</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/">學習紀錄</a>►<a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/%E7%B5%84%E5%90%88%E8%AA%9E%E8%A8%80/">組合語言</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/10/12/x86-%E7%AD%86%E8%A8%98-ep2/">x86 筆記 ep2</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="程式如何執行"><a href="#程式如何執行" class="headerlink" title="程式如何執行"></a>程式如何執行</h2><blockquote>
+<p>這裡有點偏OS的部分</p>
+</blockquote>
+<p>假設有個人在terminal中輸入了<code>a.exe</code></p>
+        
+          <p class="article-more-link">
+            <a href="/2018/10/12/x86-%E7%AD%86%E8%A8%98-ep2/#more">繼續閱讀全文 »</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.roy4801.tw/2018/10/12/x86-%E7%AD%86%E8%A8%98-ep2/" data-id="ckcc5kpd2000lu1tkcdvgby7g" class="article-share-link">分享</a>
+      
+      
+        <a href="http://blog.roy4801.tw/2018/10/12/x86-%E7%AD%86%E8%A8%98-ep2/#disqus_thread" class="article-comment-link">留言</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/x86/" rel="tag">x86</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+ 
+
+
+  
+    <article id="post-x86-筆記-ep1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/10/12/x86-%E7%AD%86%E8%A8%98-ep1/" class="article-date">
+  <time datetime="2018-10-12T05:32:11.000Z" itemprop="datePublished">2018-10-12</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/">學習紀錄</a>►<a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/%E7%B5%84%E5%90%88%E8%AA%9E%E8%A8%80/">組合語言</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/10/12/x86-%E7%AD%86%E8%A8%98-ep1/">x86 筆記 ep1.</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="CPU-Centrual-Processing-Unit"><a href="#CPU-Centrual-Processing-Unit" class="headerlink" title="CPU(Centrual Processing Unit)"></a>CPU(Centrual Processing Unit)</h2><ul>
+<li><p>中央處理器</p>
+<ul>
+<li>暫存器(register)<ul>
+<li>儲存運算/待運算的數值/位址</li>
+</ul>
+</li>
+<li>Clock<ul>
+<li>同步訊號</li>
+</ul>
+</li>
+<li>控制單元CU (Control Unit)<ul>
+<li>控制操作順序</li>
+</ul>
+</li>
+<li>ALU (Arithmetic Logic Unit) 算術邏輯單元<ul>
+<li>做數學運算(+, -)/邏輯運算(and, or, not)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>CPU與Memory跟I/O裝置之間以 <strong>Bus(匯流排)</strong> 連接著</p>
+<ul>
+<li>Data Bus (資料bus)<ul>
+<li>「CPU跟Memory」之間傳輸資料的路徑</li>
+</ul>
+</li>
+<li>I/O Bus<ul>
+<li>「CPU跟I/O裝置」之間傳輸資料的路徑</li>
+</ul>
+</li>
+<li>Control Bus<ul>
+<li>控制memory, I/O裝置</li>
+</ul>
+</li>
+<li>Address Bus<ul>
+<li>指定寫入/讀取的位址（對memory, I/O裝置）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Clock</p>
+<ul>
+<li>Clock cycle (時脈週期)<ul>
+<li>一次電子脈衝所需的時間</li>
+</ul>
+</li>
+<li>每個指令<strong>至少</strong>需要一個以上的cycle( $\ge{1}$)，有些長、有些短。</li>
+<li>Wait State (等待狀態)<ul>
+<li>一個cycle沒做事，就只是等待<del>浪費電</del>。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>指令執行週期</p>
+<ul>
+<li>CPU在執行程式之前，先把當前要執行的指令存到<code>instruction queue</code>中，然後把<code>IP</code>指向下個指令，才開始執行。</li>
+<li>分成三個基本步驟：<ol>
+<li>Fetch （擷取)<ul>
+<li>從<code>instruction queue</code>中拿指令，並改變<code>IP</code></li>
+</ul>
+</li>
+<li>Decode (解碼)<ul>
+<li><code>CU</code>decode送進來的指令，接著把指令的操作對象送到<code>ALU</code>中，並且告訴<code>ALU</code>要執行的運算。</li>
+<li>Fetch operands (擷取運算元)<ul>
+<li>如果指令要操作的對象在memory中，則要等待讀取，會放到一個看不見的register中。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Execute (執行)<ul>
+<li><code>ALU</code>執行運算，把結果放到Named register(有名字的暫存器)中。</li>
+<li>並更新<code>EFLAGS</code></li>
+<li>Store Output operands (儲存輸出運算元)<ul>
+<li>如果輸出要放在memory中，則要等待寫入。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="Cache-快取記憶體"><a href="#Cache-快取記憶體" class="headerlink" title="Cache 快取記憶體"></a>Cache 快取記憶體</h2>
+        
+          <p class="article-more-link">
+            <a href="/2018/10/12/x86-%E7%AD%86%E8%A8%98-ep1/#more">繼續閱讀全文 »</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.roy4801.tw/2018/10/12/x86-%E7%AD%86%E8%A8%98-ep1/" data-id="ckcc5kpct000fu1tk8cl6dk2t" class="article-share-link">分享</a>
+      
+      
+        <a href="http://blog.roy4801.tw/2018/10/12/x86-%E7%AD%86%E8%A8%98-ep1/#disqus_thread" class="article-comment-link">留言</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/x86/" rel="tag">x86</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+ 
+
+
+  
+    <article id="post-態度" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/09/27/%E6%85%8B%E5%BA%A6/" class="article-date">
+  <time datetime="2018-09-27T05:15:00.000Z" itemprop="datePublished">2018-09-27</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%BF%83%E5%BE%97%E6%95%A3%E6%96%87/">心得散文</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/27/%E6%85%8B%E5%BA%A6/">雜筆ep1.</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="態度"><a href="#態度" class="headerlink" title="態度"></a>態度</h2><p><img src="http://www.bootstrapping101.com/wp-content/uploads/2015/12/attitude-success-quote.jpg" alt></p>
+<p>最近心情一直很煩躁，明明這件事不是我的義務，我卻還是多管閒事。</p>
+        
+          <p class="article-more-link">
+            <a href="/2018/09/27/%E6%85%8B%E5%BA%A6/#more">繼續閱讀全文 »</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.roy4801.tw/2018/09/27/%E6%85%8B%E5%BA%A6/" data-id="ckcc5kpdc000xu1tk9medccpb" class="article-share-link">分享</a>
+      
+      
+        <a href="http://blog.roy4801.tw/2018/09/27/%E6%85%8B%E5%BA%A6/#disqus_thread" class="article-comment-link">留言</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%BF%83%E6%83%85%E6%95%A3%E6%96%87/" rel="tag">心情散文</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+ 
+
+
+  
     <article id="post-linux/tmux 基本使用" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/08/25/linux/tmux%20%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/" class="article-date">
@@ -201,9 +442,9 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-c++/C++ next_permutation:perv_permutation用法" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-c++/C++ next_permutation_perv_permutation用法" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/08/23/c++/C++%20next_permutation:perv_permutation%E7%94%A8%E6%B3%95/" class="article-date">
+    <a href="/2018/08/23/c++/C++%20next_permutation_perv_permutation%E7%94%A8%E6%B3%95/" class="article-date">
   <time datetime="2018-08-23T09:48:03.000Z" itemprop="datePublished">2018-08-23</time>
 </a>
     
@@ -219,7 +460,7 @@ ga('send', 'pageview');
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/23/c++/C++%20next_permutation:perv_permutation%E7%94%A8%E6%B3%95/">next_permutation/perv_permutation用法</a>
+      <a class="article-title" href="/2018/08/23/c++/C++%20next_permutation_perv_permutation%E7%94%A8%E6%B3%95/">next_permutation/perv_permutation用法</a>
     </h1>
   
 
@@ -231,16 +472,16 @@ ga('send', 'pageview');
 <p>組合順序交換的依據是照<strong>字典排序</strong>(<em>lexicographically</em>)</p>
         
           <p class="article-more-link">
-            <a href="/2018/08/23/c++/C++%20next_permutation:perv_permutation%E7%94%A8%E6%B3%95/#more">繼續閱讀全文 »</a>
+            <a href="/2018/08/23/c++/C++%20next_permutation_perv_permutation%E7%94%A8%E6%B3%95/#more">繼續閱讀全文 »</a>
           </p>
         
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2018/08/23/c++/C++%20next_permutation:perv_permutation%E7%94%A8%E6%B3%95/" data-id="ckcc5kpff0044u1tkdyjcay46" class="article-share-link">分享</a>
+      <a data-url="http://blog.roy4801.tw/2018/08/23/c++/C++%20next_permutation_perv_permutation%E7%94%A8%E6%B3%95/" data-id="ckcezu8uk0000o9tkhe00e0nn" class="article-share-link">分享</a>
       
       
-        <a href="http://blog.roy4801.tw/2018/08/23/c++/C++%20next_permutation:perv_permutation%E7%94%A8%E6%B3%95/#disqus_thread" class="article-comment-link">留言</a>
+        <a href="http://blog.roy4801.tw/2018/08/23/c++/C++%20next_permutation_perv_permutation%E7%94%A8%E6%B3%95/#disqus_thread" class="article-comment-link">留言</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/" rel="tag">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/STL/" rel="tag">STL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%99%E5%AD%B8/" rel="tag">教學</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A8%8B%E5%BC%8F/" rel="tag">程式</a></li></ul>
@@ -388,23 +629,23 @@ ga('send', 'pageview');
       <ul>
         
           <li>
+            <a href="/2020/07/10/opengl/opengl-note-5/">OpenGL 筆記 - Transform</a>
+          </li>
+        
+          <li>
+            <a href="/2020/07/09/opengl/opengl-note-4/">OpenGL 筆記 - Texture</a>
+          </li>
+        
+          <li>
+            <a href="/2020/07/09/NCPU_2020/">NCPU 2020 心得</a>
+          </li>
+        
+          <li>
             <a href="/2020/07/08/opengl/opengl-note-3/">OpenGL 筆記 - Shader</a>
           </li>
         
           <li>
             <a href="/2020/06/30/opengl/opengl-note-2/">OpenGL 筆記 - 第一個三角形</a>
-          </li>
-        
-          <li>
-            <a href="/2020/06/29/opengl/opengl-note-1/">OpenGL 筆記 - 環境設定和簡介</a>
-          </li>
-        
-          <li>
-            <a href="/2020/06/12/ais3/ais3_2020_pre_exam/">AIS3 2020 pre-exam writeups+心得</a>
-          </li>
-        
-          <li>
-            <a href="/2020/06/04/c++/smart_pointer/">Smart Pointer 介紹/用法</a>
           </li>
         
       </ul>

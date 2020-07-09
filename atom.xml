@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.roy4801.tw/"/>
-  <updated>2020-07-07T16:31:50.238Z</updated>
+  <updated>2020-07-09T16:16:21.662Z</updated>
   <id>http://blog.roy4801.tw/</id>
   
   <author>
@@ -17,11 +17,97 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>OpenGL 筆記 - Transform</title>
+    <link href="http://blog.roy4801.tw/2020/07/10/opengl/opengl-note-5/"/>
+    <id>http://blog.roy4801.tw/2020/07/10/opengl/opengl-note-5/</id>
+    <published>2020-07-10T07:46:00.000Z</published>
+    <updated>2020-07-09T16:16:21.662Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;前面講了 Shader 跟 Texture 都是外觀的表現，但這些都是靜態的圖像，那在 OpenGL 要怎麼讓圖像動起來呢?當然，你可以每一幀都重新配置 VBO ，但這太消耗資源了，更好的方法是用 &lt;em&gt;矩陣(Matrix)&lt;/em&gt; 將座標 &lt;strong&gt;轉換(Transform)&lt;/strong&gt; 過去&lt;/p&gt;
+&lt;h2 id=&quot;向量-Vector&quot;&gt;&lt;a href=&quot;#向量-Vector&quot; class=&quot;headerlink&quot; title=&quot;向量 Vector&quot;&gt;&lt;/a&gt;向量 Vector&lt;/h2&gt;&lt;p&gt;方向，由方向和大小組成&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="學習紀錄" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/"/>
+    
+      <category term="OpenGL" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/OpenGL/"/>
+    
+    
+      <category term="程式" scheme="http://blog.roy4801.tw/tags/%E7%A8%8B%E5%BC%8F/"/>
+    
+      <category term="OpenGL" scheme="http://blog.roy4801.tw/tags/OpenGL/"/>
+    
+      <category term="筆記" scheme="http://blog.roy4801.tw/tags/%E7%AD%86%E8%A8%98/"/>
+    
+      <category term="圖學" scheme="http://blog.roy4801.tw/tags/%E5%9C%96%E5%AD%B8/"/>
+    
+      <category term="Transform" scheme="http://blog.roy4801.tw/tags/Transform/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>OpenGL 筆記 - Texture</title>
+    <link href="http://blog.roy4801.tw/2020/07/09/opengl/opengl-note-4/"/>
+    <id>http://blog.roy4801.tw/2020/07/09/opengl/opengl-note-4/</id>
+    <published>2020-07-09T07:46:00.000Z</published>
+    <updated>2020-07-09T16:16:21.661Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;可以用為每個頂點增加顏色來為圖形添增細節，來建構有趣的圖像。但必須要有足夠多的頂點、顏色，這會帶來很多開銷，每個模型的頂點就會變得很多。&lt;/p&gt;
+&lt;p&gt;紋理(Texture)是一個 2D 的圖片，可以用來增添物體的細節，可以想像 Texture 就像是個有圖案的紙，貼合在 3D 的物體上，這樣就可以讓物體不用增加頂點就增加細節。&lt;br&gt;題外話，Texture 除了圖像之外還能用來儲存大量資訊發送到 Shader 上。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/dl5nCAc.png&quot; alt&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="學習紀錄" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/"/>
+    
+      <category term="OpenGL" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/OpenGL/"/>
+    
+    
+      <category term="程式" scheme="http://blog.roy4801.tw/tags/%E7%A8%8B%E5%BC%8F/"/>
+    
+      <category term="OpenGL" scheme="http://blog.roy4801.tw/tags/OpenGL/"/>
+    
+      <category term="筆記" scheme="http://blog.roy4801.tw/tags/%E7%AD%86%E8%A8%98/"/>
+    
+      <category term="圖學" scheme="http://blog.roy4801.tw/tags/%E5%9C%96%E5%AD%B8/"/>
+    
+      <category term="Texture" scheme="http://blog.roy4801.tw/tags/Texture/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>NCPU 2020 心得</title>
+    <link href="http://blog.roy4801.tw/2020/07/09/NCPU_2020/"/>
+    <id>http://blog.roy4801.tw/2020/07/09/NCPU_2020/</id>
+    <published>2020-07-08T16:28:26.000Z</published>
+    <updated>2020-07-08T17:39:21.373Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Day-01&quot;&gt;&lt;a href=&quot;#Day-01&quot; class=&quot;headerlink&quot; title=&quot;Day 01&quot;&gt;&lt;/a&gt;Day 01&lt;/h2&gt;&lt;p&gt;由於比賽地點在台中，所以我們學校的隊伍會在前一天下午搭遊覽車下去，住在旅店隔天再搭車到逢甲。這天睡到 10 點多才起來，從床上爬起來後，前一天已經先打包行李的緣故，沒花多少時間就出門了（然後就忘記帶手機充電器了）&lt;br&gt;到了學校後準備要印 codebook ，發現有個隊員已經先到，印好 codebook 後，稍微消磨下時間後就跟隊友前往校門口的十字架下等遊覽車來（體感溫度有 3X 度，實在有夠熱）&lt;/p&gt;
+&lt;p&gt;大約兩個多小時的車程後，到了台中的旅店，下車後覺得新奇的是台中的市區怎麼是規劃的方方正正的，一條路可以直接看到底部。旅店的房間是八個人一間房，床是上下舖，放好行李後我們便走到附近的一家烤肉飯吃晚餐，仰角很小的太陽不但很刺眼還很炙熱，尤其是人又很多，我們等了約 15-20 分鐘才開始吃飯。&lt;del&gt;當然比賽前一天晚上喝酒的優良傳統依然有保留下來&lt;/del&gt;，原本打算一點多睡的我，因為室友響亮的鼾聲，我到了三點才睡著。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="心得散文" scheme="http://blog.roy4801.tw/categories/%E5%BF%83%E5%BE%97%E6%95%A3%E6%96%87/"/>
+    
+    
+      <category term="比賽" scheme="http://blog.roy4801.tw/tags/%E6%AF%94%E8%B3%BD/"/>
+    
+      <category term="心得" scheme="http://blog.roy4801.tw/tags/%E5%BF%83%E5%BE%97/"/>
+    
+  </entry>
+  
+  <entry>
     <title>OpenGL 筆記 - Shader</title>
     <link href="http://blog.roy4801.tw/2020/07/08/opengl/opengl-note-3/"/>
     <id>http://blog.roy4801.tw/2020/07/08/opengl/opengl-note-3/</id>
     <published>2020-07-07T16:31:45.000Z</published>
-    <updated>2020-07-07T16:31:50.238Z</updated>
+    <updated>2020-07-09T16:16:21.661Z</updated>
     
     <summary type="html">
     
@@ -32,7 +118,7 @@
     
       <category term="學習紀錄" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/"/>
     
-      <category term="C/C++" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/C-C/"/>
+      <category term="OpenGL" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/OpenGL/"/>
     
     
       <category term="程式" scheme="http://blog.roy4801.tw/tags/%E7%A8%8B%E5%BC%8F/"/>
@@ -52,7 +138,7 @@
     <link href="http://blog.roy4801.tw/2020/06/30/opengl/opengl-note-2/"/>
     <id>http://blog.roy4801.tw/2020/06/30/opengl/opengl-note-2/</id>
     <published>2020-06-29T18:10:45.000Z</published>
-    <updated>2020-06-28T18:49:03.640Z</updated>
+    <updated>2020-07-09T16:16:21.660Z</updated>
     
     <summary type="html">
     
@@ -83,7 +169,7 @@
     
       <category term="學習紀錄" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/"/>
     
-      <category term="C/C++" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/C-C/"/>
+      <category term="OpenGL" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/OpenGL/"/>
     
     
       <category term="程式" scheme="http://blog.roy4801.tw/tags/%E7%A8%8B%E5%BC%8F/"/>
@@ -101,7 +187,7 @@
     <link href="http://blog.roy4801.tw/2020/06/29/opengl/opengl-note-1/"/>
     <id>http://blog.roy4801.tw/2020/06/29/opengl/opengl-note-1/</id>
     <published>2020-06-28T18:10:45.000Z</published>
-    <updated>2020-06-28T18:29:23.971Z</updated>
+    <updated>2020-07-09T16:16:21.659Z</updated>
     
     <summary type="html">
     
@@ -113,7 +199,7 @@
     
       <category term="學習紀錄" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/"/>
     
-      <category term="C/C++" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/C-C/"/>
+      <category term="OpenGL" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/OpenGL/"/>
     
     
       <category term="程式" scheme="http://blog.roy4801.tw/tags/%E7%A8%8B%E5%BC%8F/"/>
@@ -1289,10 +1375,10 @@
   
   <entry>
     <title>next_permutation/perv_permutation用法</title>
-    <link href="http://blog.roy4801.tw/2018/08/23/c++/C++%20next_permutation:perv_permutation%E7%94%A8%E6%B3%95/"/>
-    <id>http://blog.roy4801.tw/2018/08/23/c++/C++ next_permutation:perv_permutation用法/</id>
+    <link href="http://blog.roy4801.tw/2018/08/23/c++/C++%20next_permutation_perv_permutation%E7%94%A8%E6%B3%95/"/>
+    <id>http://blog.roy4801.tw/2018/08/23/c++/C++ next_permutation_perv_permutation用法/</id>
     <published>2018-08-23T09:48:03.000Z</published>
-    <updated>2019-03-31T15:10:09.209Z</updated>
+    <updated>2020-07-09T16:16:21.657Z</updated>
     
     <summary type="html">
     

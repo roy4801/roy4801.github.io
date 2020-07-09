@@ -2,23 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.roy4801.tw/2020/07/10/opengl/opengl-note-5/</loc>
+    
+    <lastmod>2020-07-09T16:16:21.662Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.roy4801.tw/2020/07/08/opengl/opengl-note-3/</loc>
     
-    <lastmod>2020-07-07T16:31:50.238Z</lastmod>
+    <lastmod>2020-07-09T16:16:21.661Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.roy4801.tw/2020/07/09/opengl/opengl-note-4/</loc>
+    
+    <lastmod>2020-07-09T16:16:21.661Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.roy4801.tw/2020/06/30/opengl/opengl-note-2/</loc>
     
-    <lastmod>2020-06-28T18:49:03.640Z</lastmod>
+    <lastmod>2020-07-09T16:16:21.660Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.roy4801.tw/2020/06/29/opengl/opengl-note-1/</loc>
     
-    <lastmod>2020-06-28T18:29:23.971Z</lastmod>
+    <lastmod>2020-07-09T16:16:21.659Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.roy4801.tw/2018/08/23/c++/C++%2520next_permutation_perv_permutation%25E7%2594%25A8%25E6%25B3%2595/</loc>
+    
+    <lastmod>2020-07-09T16:16:21.657Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.roy4801.tw/2020/07/09/NCPU_2020/</loc>
+    
+    <lastmod>2020-07-08T17:39:21.373Z</lastmod>
     
   </url>
   
@@ -229,13 +257,6 @@
     <loc>http://blog.roy4801.tw/2019/05/17/uva/uva10685/</loc>
     
     <lastmod>2019-05-17T16:01:02.051Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.roy4801.tw/2018/08/23/c++/C++%2520next_permutation:perv_permutation%25E7%2594%25A8%25E6%25B3%2595/</loc>
-    
-    <lastmod>2019-03-31T15:10:09.209Z</lastmod>
     
   </url>
   

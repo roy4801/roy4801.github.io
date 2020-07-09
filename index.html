@@ -93,6 +93,163 @@ ga('send', 'pageview');
       <div class="outer">
         <section id="main">
   
+    <article id="post-opengl/opengl-note-5" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/07/10/opengl/opengl-note-5/" class="article-date">
+  <time datetime="2020-07-10T07:46:00.000Z" itemprop="datePublished">2020-07-10</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/">學習紀錄</a>►<a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/OpenGL/">OpenGL</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/07/10/opengl/opengl-note-5/">OpenGL 筆記 - Transform</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>前面講了 Shader 跟 Texture 都是外觀的表現，但這些都是靜態的圖像，那在 OpenGL 要怎麼讓圖像動起來呢?當然，你可以每一幀都重新配置 VBO ，但這太消耗資源了，更好的方法是用 <em>矩陣(Matrix)</em> 將座標 <strong>轉換(Transform)</strong> 過去</p>
+<h2 id="向量-Vector"><a href="#向量-Vector" class="headerlink" title="向量 Vector"></a>向量 Vector</h2><p>方向，由方向和大小組成</p>
+        
+          <p class="article-more-link">
+            <a href="/2020/07/10/opengl/opengl-note-5/#more">繼續閱讀全文 »</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.roy4801.tw/2020/07/10/opengl/opengl-note-5/" data-id="ckcezu8v20003o9tk8j010p5v" class="article-share-link">分享</a>
+      
+      
+        <a href="http://blog.roy4801.tw/2020/07/10/opengl/opengl-note-5/#disqus_thread" class="article-comment-link">留言</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OpenGL/" rel="tag">OpenGL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Transform/" rel="tag">Transform</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%9C%96%E5%AD%B8/" rel="tag">圖學</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A8%8B%E5%BC%8F/" rel="tag">程式</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%AD%86%E8%A8%98/" rel="tag">筆記</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+ 
+
+
+  
+    <article id="post-opengl/opengl-note-4" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/07/09/opengl/opengl-note-4/" class="article-date">
+  <time datetime="2020-07-09T07:46:00.000Z" itemprop="datePublished">2020-07-09</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/">學習紀錄</a>►<a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/OpenGL/">OpenGL</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/07/09/opengl/opengl-note-4/">OpenGL 筆記 - Texture</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>可以用為每個頂點增加顏色來為圖形添增細節，來建構有趣的圖像。但必須要有足夠多的頂點、顏色，這會帶來很多開銷，每個模型的頂點就會變得很多。</p>
+<p>紋理(Texture)是一個 2D 的圖片，可以用來增添物體的細節，可以想像 Texture 就像是個有圖案的紙，貼合在 3D 的物體上，這樣就可以讓物體不用增加頂點就增加細節。<br>題外話，Texture 除了圖像之外還能用來儲存大量資訊發送到 Shader 上。</p>
+<p><img src="https://i.imgur.com/dl5nCAc.png" alt></p>
+        
+          <p class="article-more-link">
+            <a href="/2020/07/09/opengl/opengl-note-4/#more">繼續閱讀全文 »</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.roy4801.tw/2020/07/09/opengl/opengl-note-4/" data-id="ckcezu8uy0001o9tka7hta831" class="article-share-link">分享</a>
+      
+      
+        <a href="http://blog.roy4801.tw/2020/07/09/opengl/opengl-note-4/#disqus_thread" class="article-comment-link">留言</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OpenGL/" rel="tag">OpenGL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Texture/" rel="tag">Texture</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%9C%96%E5%AD%B8/" rel="tag">圖學</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A8%8B%E5%BC%8F/" rel="tag">程式</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%AD%86%E8%A8%98/" rel="tag">筆記</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+ 
+
+
+  
+    <article id="post-NCPU_2020" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/07/09/NCPU_2020/" class="article-date">
+  <time datetime="2020-07-08T16:28:26.000Z" itemprop="datePublished">2020-07-09</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%BF%83%E5%BE%97%E6%95%A3%E6%96%87/">心得散文</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/07/09/NCPU_2020/">NCPU 2020 心得</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Day-01"><a href="#Day-01" class="headerlink" title="Day 01"></a>Day 01</h2><p>由於比賽地點在台中，所以我們學校的隊伍會在前一天下午搭遊覽車下去，住在旅店隔天再搭車到逢甲。這天睡到 10 點多才起來，從床上爬起來後，前一天已經先打包行李的緣故，沒花多少時間就出門了（然後就忘記帶手機充電器了）<br>到了學校後準備要印 codebook ，發現有個隊員已經先到，印好 codebook 後，稍微消磨下時間後就跟隊友前往校門口的十字架下等遊覽車來（體感溫度有 3X 度，實在有夠熱）</p>
+<p>大約兩個多小時的車程後，到了台中的旅店，下車後覺得新奇的是台中的市區怎麼是規劃的方方正正的，一條路可以直接看到底部。旅店的房間是八個人一間房，床是上下舖，放好行李後我們便走到附近的一家烤肉飯吃晚餐，仰角很小的太陽不但很刺眼還很炙熱，尤其是人又很多，我們等了約 15-20 分鐘才開始吃飯。<del>當然比賽前一天晚上喝酒的優良傳統依然有保留下來</del>，原本打算一點多睡的我，因為室友響亮的鼾聲，我到了三點才睡著。</p>
+        
+          <p class="article-more-link">
+            <a href="/2020/07/09/NCPU_2020/#more">繼續閱讀全文 »</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.roy4801.tw/2020/07/09/NCPU_2020/" data-id="ckcdnjs6w0000sjtk0q9gfam5" class="article-share-link">分享</a>
+      
+      
+        <a href="http://blog.roy4801.tw/2020/07/09/NCPU_2020/#disqus_thread" class="article-comment-link">留言</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%BF%83%E5%BE%97/" rel="tag">心得</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%AF%94%E8%B3%BD/" rel="tag">比賽</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+ 
+
+
+  
     <article id="post-opengl/opengl-note-3" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/07/08/opengl/opengl-note-3/" class="article-date">
@@ -100,7 +257,7 @@ ga('send', 'pageview');
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/">學習紀錄</a>►<a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/C-C/">C/C++</a>
+    <a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/">學習紀錄</a>►<a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/OpenGL/">OpenGL</a>
   </div>
 
   </div>
@@ -152,7 +309,7 @@ ga('send', 'pageview');
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/">學習紀錄</a>►<a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/C-C/">C/C++</a>
+    <a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/">學習紀錄</a>►<a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/OpenGL/">OpenGL</a>
   </div>
 
   </div>
@@ -224,7 +381,7 @@ ga('send', 'pageview');
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/">學習紀錄</a>►<a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/C-C/">C/C++</a>
+    <a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/">學習紀錄</a>►<a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/OpenGL/">OpenGL</a>
   </div>
 
   </div>
@@ -497,184 +654,6 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-spdlog-tutorial" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/05/17/spdlog-tutorial/" class="article-date">
-  <time datetime="2020-05-17T11:55:35.000Z" itemprop="datePublished">2020-05-17</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/">學習紀錄</a>►<a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/C-C/">C/C++</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/17/spdlog-tutorial/">spdlog 介紹與使用</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Fast C++ logging library.<br>一個輕量且快速的 log library</p>
-<p><a href="https://github.com/gabime/spdlog" target="_blank" rel="noopener">https://github.com/gabime/spdlog</a></p>
-<ul>
-<li>特性<ul>
-<li><a href="https://github.com/gabime/spdlog#benchmarks" target="_blank" rel="noopener">快速</a></li>
-<li>header-only</li>
-<li>豐富、自訂的格式化，使用 <a href="https://github.com/fmtlib/fmt" target="_blank" rel="noopener">fmt</a></li>
-<li>單、多線程 logger</li>
-</ul>
-</li>
-</ul>
-        
-          <p class="article-more-link">
-            <a href="/2020/05/17/spdlog-tutorial/#more">繼續閱讀全文 »</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2020/05/17/spdlog-tutorial/" data-id="ckcc5kpcz000hu1tk6h0vdlow" class="article-share-link">分享</a>
-      
-      
-        <a href="http://blog.roy4801.tw/2020/05/17/spdlog-tutorial/#disqus_thread" class="article-comment-link">留言</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/" rel="tag">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C-Library/" rel="tag">C++ Library</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/imgui/" rel="tag">imgui</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%99%E5%AD%B8/" rel="tag">教學</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A8%8B%E5%BC%8F/" rel="tag">程式</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
- 
-
-
-  
-    <article id="post-imgui-intro-pt5" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/04/16/imgui-intro-pt5/" class="article-date">
-  <time datetime="2020-04-15T17:01:48.000Z" itemprop="datePublished">2020-04-16</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/">學習紀錄</a>►<a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/C-C/">C/C++</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/16/imgui-intro-pt5/">dear imgui 使用 - 拉桿 Slider</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="https://i.imgur.com/0VGhoZw.png" alt></p>
-<p><a href="https://github.com/ocornut/imgui/blob/master/imgui.h#L479" target="_blank" rel="noopener">https://github.com/ocornut/imgui/blob/master/imgui.h#L479</a></p>
-<h3 id="SliderFloat-SliderInt"><a href="#SliderFloat-SliderInt" class="headerlink" title="SliderFloat / SliderInt"></a>SliderFloat / SliderInt</h3>
-        
-          <p class="article-more-link">
-            <a href="/2020/04/16/imgui-intro-pt5/#more">繼續閱讀全文 »</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2020/04/16/imgui-intro-pt5/" data-id="ckcc5kpco000bu1tk6gm43cft" class="article-share-link">分享</a>
-      
-      
-        <a href="http://blog.roy4801.tw/2020/04/16/imgui-intro-pt5/#disqus_thread" class="article-comment-link">留言</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/" rel="tag">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C-Library/" rel="tag">C++ Library</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/imgui/" rel="tag">imgui</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%99%E5%AD%B8/" rel="tag">教學</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A8%8B%E5%BC%8F/" rel="tag">程式</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
- 
-
-
-  
-    <article id="post-imgui-intro-pt4" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/03/29/imgui-intro-pt4/" class="article-date">
-  <time datetime="2020-03-29T05:30:28.000Z" itemprop="datePublished">2020-03-29</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/">學習紀錄</a>►<a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/C-C/">C/C++</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/29/imgui-intro-pt4/">dear imgui 使用 - 單選、複選按鈕</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="複選框-Checkbox"><a href="#複選框-Checkbox" class="headerlink" title="複選框 Checkbox"></a>複選框 Checkbox</h2><p><img src="https://i.imgur.com/f9JWE2i.gif" alt></p>
-<ul>
-<li><p>Prototype</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">Checkbox</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span>* label, <span class="keyword">bool</span>* v)</span></span>;</span><br><span class="line"><span class="comment">// label: 名稱</span></span><br><span class="line"><span class="comment">// v    : 是否已經勾選</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>回傳 bool</p>
-<ul>
-<li>當 checkbox 正被選取/取消勾選時為 <code>true</code></li>
-<li>其餘回傳 <code>false</code></li>
-</ul>
-</li>
-<li><p>e.g.</p>
-</li>
-</ul>
-        
-          <p class="article-more-link">
-            <a href="/2020/03/29/imgui-intro-pt4/#more">繼續閱讀全文 »</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2020/03/29/imgui-intro-pt4/" data-id="ckcc5kpck0007u1tk97fx50u2" class="article-share-link">分享</a>
-      
-      
-        <a href="http://blog.roy4801.tw/2020/03/29/imgui-intro-pt4/#disqus_thread" class="article-comment-link">留言</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/" rel="tag">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C-Library/" rel="tag">C++ Library</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/imgui/" rel="tag">imgui</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%99%E5%AD%B8/" rel="tag">教學</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A8%8B%E5%BC%8F/" rel="tag">程式</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
- 
-
-
-  
 
 
   <nav id="page-nav">
@@ -709,7 +688,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title categories">分類</h3>
     <div class="widget" id="categories">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Writeup/">Writeup</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%85%B6%E4%BB%96/">其他</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/">學習紀錄</a><span class="category-list-count">21</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/C-C/">C/C++</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/Linux/">Linux</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/macOS/">macOS</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/%E5%85%B6%E4%BB%96/">其他</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/%E7%B5%84%E5%90%88%E8%AA%9E%E8%A8%80/">組合語言</a><span class="category-list-count">2</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%BF%83%E5%BE%97%E6%95%A3%E6%96%87/">心得散文</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a><span class="category-list-count">17</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Uva/">Uva</a><span class="category-list-count">17</span></li></ul></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Writeup/">Writeup</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%85%B6%E4%BB%96/">其他</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/">學習紀錄</a><span class="category-list-count">23</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/C-C/">C/C++</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/Linux/">Linux</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/OpenGL/">OpenGL</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/macOS/">macOS</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/%E5%85%B6%E4%BB%96/">其他</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/%E7%B5%84%E5%90%88%E8%AA%9E%E8%A8%80/">組合語言</a><span class="category-list-count">2</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%BF%83%E5%BE%97%E6%95%A3%E6%96%87/">心得散文</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a><span class="category-list-count">17</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Uva/">Uva</a><span class="category-list-count">17</span></li></ul></li></ul>
     </div>
   </div>
 
@@ -726,7 +705,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title tags">標籤</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/" rel="tag">C++</a><span class="tag-list-count">9</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-Library/" rel="tag">C++ Library</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CTF/" rel="tag">CTF</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DP/" rel="tag">DP</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IDE/" rel="tag">IDE</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/" rel="tag">Linux</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenGL/" rel="tag">OpenGL</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/STL/" rel="tag">STL</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Shader/" rel="tag">Shader</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Smart-Pointer/" rel="tag">Smart Pointer</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Uva/" rel="tag">Uva</a><span class="tag-list-count">17</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ctf-tools/" rel="tag">ctf tools</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gdb/" rel="tag">gdb</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/imgui/" rel="tag">imgui</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/node-js/" rel="tag">node.js</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/priority-queue/" rel="tag">priority queue</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/x86/" rel="tag">x86</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%85%B6%E4%BB%96/" rel="tag">其他</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9C%96%E5%AD%B8/" rel="tag">圖學</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BF%83%E5%BE%97/" rel="tag">心得</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BF%83%E6%83%85%E6%95%A3%E6%96%87/" rel="tag">心情散文</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%99%E5%AD%B8/" rel="tag">教學</a><span class="tag-list-count">15</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%99%BA%E6%85%A7%E6%8C%87%E6%A8%99/" rel="tag">智慧指標</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%AA%94%E6%A1%88%E7%B3%BB%E7%B5%B1/" rel="tag">檔案系統</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%AF%94%E8%B3%BD/" rel="tag">比賽</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A8%8B%E5%BC%8F/" rel="tag">程式</a><span class="tag-list-count">14</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AD%86%E8%A8%98/" rel="tag">筆記</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a><span class="tag-list-count">17</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%B3%87%E5%AE%89/" rel="tag">資安</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/" rel="tag">C++</a><span class="tag-list-count">9</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-Library/" rel="tag">C++ Library</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CTF/" rel="tag">CTF</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DP/" rel="tag">DP</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IDE/" rel="tag">IDE</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/" rel="tag">Linux</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenGL/" rel="tag">OpenGL</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/STL/" rel="tag">STL</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Shader/" rel="tag">Shader</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Smart-Pointer/" rel="tag">Smart Pointer</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Texture/" rel="tag">Texture</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Transform/" rel="tag">Transform</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Uva/" rel="tag">Uva</a><span class="tag-list-count">17</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ctf-tools/" rel="tag">ctf tools</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gdb/" rel="tag">gdb</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/imgui/" rel="tag">imgui</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/node-js/" rel="tag">node.js</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/priority-queue/" rel="tag">priority queue</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/x86/" rel="tag">x86</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%85%B6%E4%BB%96/" rel="tag">其他</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9C%96%E5%AD%B8/" rel="tag">圖學</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BF%83%E5%BE%97/" rel="tag">心得</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BF%83%E6%83%85%E6%95%A3%E6%96%87/" rel="tag">心情散文</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%99%E5%AD%B8/" rel="tag">教學</a><span class="tag-list-count">15</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%99%BA%E6%85%A7%E6%8C%87%E6%A8%99/" rel="tag">智慧指標</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%AA%94%E6%A1%88%E7%B3%BB%E7%B5%B1/" rel="tag">檔案系統</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%AF%94%E8%B3%BD/" rel="tag">比賽</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A8%8B%E5%BC%8F/" rel="tag">程式</a><span class="tag-list-count">16</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AD%86%E8%A8%98/" rel="tag">筆記</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a><span class="tag-list-count">17</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%B3%87%E5%AE%89/" rel="tag">資安</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -736,7 +715,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title tagcloud">標籤雲</h3>
     <div class="widget tagcloud">
-      <a href="/tags/C/" style="font-size: 20.29px;">C++</a> <a href="/tags/C-Library/" style="font-size: 18.71px;">C++ Library</a> <a href="/tags/CTF/" style="font-size: 15.57px;">CTF</a> <a href="/tags/DP/" style="font-size: 15.57px;">DP</a> <a href="/tags/IDE/" style="font-size: 14px;">IDE</a> <a href="/tags/Linux/" style="font-size: 17.14px;">Linux</a> <a href="/tags/OpenGL/" style="font-size: 17.14px;">OpenGL</a> <a href="/tags/STL/" style="font-size: 14px;">STL</a> <a href="/tags/Shader/" style="font-size: 14px;">Shader</a> <a href="/tags/Smart-Pointer/" style="font-size: 14px;">Smart Pointer</a> <a href="/tags/Uva/" style="font-size: 25px;">Uva</a> <a href="/tags/ctf-tools/" style="font-size: 14px;">ctf tools</a> <a href="/tags/gdb/" style="font-size: 14px;">gdb</a> <a href="/tags/hexo/" style="font-size: 14px;">hexo</a> <a href="/tags/imgui/" style="font-size: 18.71px;">imgui</a> <a href="/tags/node-js/" style="font-size: 14px;">node.js</a> <a href="/tags/priority-queue/" style="font-size: 14px;">priority queue</a> <a href="/tags/x86/" style="font-size: 15.57px;">x86</a> <a href="/tags/%E5%85%B6%E4%BB%96/" style="font-size: 14px;">其他</a> <a href="/tags/%E5%9C%96%E5%AD%B8/" style="font-size: 17.14px;">圖學</a> <a href="/tags/%E5%BF%83%E5%BE%97/" style="font-size: 18.71px;">心得</a> <a href="/tags/%E5%BF%83%E6%83%85%E6%95%A3%E6%96%87/" style="font-size: 14px;">心情散文</a> <a href="/tags/%E6%95%99%E5%AD%B8/" style="font-size: 23.43px;">教學</a> <a href="/tags/%E6%99%BA%E6%85%A7%E6%8C%87%E6%A8%99/" style="font-size: 14px;">智慧指標</a> <a href="/tags/%E6%AA%94%E6%A1%88%E7%B3%BB%E7%B5%B1/" style="font-size: 14px;">檔案系統</a> <a href="/tags/%E6%AF%94%E8%B3%BD/" style="font-size: 17.14px;">比賽</a> <a href="/tags/%E7%A8%8B%E5%BC%8F/" style="font-size: 21.86px;">程式</a> <a href="/tags/%E7%AD%86%E8%A8%98/" style="font-size: 17.14px;">筆記</a> <a href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" style="font-size: 25px;">解題紀錄</a> <a href="/tags/%E8%B3%87%E5%AE%89/" style="font-size: 14px;">資安</a>
+      <a href="/tags/C/" style="font-size: 21.7px;">C++</a> <a href="/tags/C-Library/" style="font-size: 19.5px;">C++ Library</a> <a href="/tags/CTF/" style="font-size: 15.1px;">CTF</a> <a href="/tags/DP/" style="font-size: 15.1px;">DP</a> <a href="/tags/IDE/" style="font-size: 14px;">IDE</a> <a href="/tags/Linux/" style="font-size: 16.2px;">Linux</a> <a href="/tags/OpenGL/" style="font-size: 18.4px;">OpenGL</a> <a href="/tags/STL/" style="font-size: 14px;">STL</a> <a href="/tags/Shader/" style="font-size: 14px;">Shader</a> <a href="/tags/Smart-Pointer/" style="font-size: 14px;">Smart Pointer</a> <a href="/tags/Texture/" style="font-size: 14px;">Texture</a> <a href="/tags/Transform/" style="font-size: 14px;">Transform</a> <a href="/tags/Uva/" style="font-size: 25px;">Uva</a> <a href="/tags/ctf-tools/" style="font-size: 14px;">ctf tools</a> <a href="/tags/gdb/" style="font-size: 14px;">gdb</a> <a href="/tags/hexo/" style="font-size: 14px;">hexo</a> <a href="/tags/imgui/" style="font-size: 19.5px;">imgui</a> <a href="/tags/node-js/" style="font-size: 14px;">node.js</a> <a href="/tags/priority-queue/" style="font-size: 14px;">priority queue</a> <a href="/tags/x86/" style="font-size: 15.1px;">x86</a> <a href="/tags/%E5%85%B6%E4%BB%96/" style="font-size: 14px;">其他</a> <a href="/tags/%E5%9C%96%E5%AD%B8/" style="font-size: 18.4px;">圖學</a> <a href="/tags/%E5%BF%83%E5%BE%97/" style="font-size: 20.6px;">心得</a> <a href="/tags/%E5%BF%83%E6%83%85%E6%95%A3%E6%96%87/" style="font-size: 14px;">心情散文</a> <a href="/tags/%E6%95%99%E5%AD%B8/" style="font-size: 22.8px;">教學</a> <a href="/tags/%E6%99%BA%E6%85%A7%E6%8C%87%E6%A8%99/" style="font-size: 14px;">智慧指標</a> <a href="/tags/%E6%AA%94%E6%A1%88%E7%B3%BB%E7%B5%B1/" style="font-size: 14px;">檔案系統</a> <a href="/tags/%E6%AF%94%E8%B3%BD/" style="font-size: 17.3px;">比賽</a> <a href="/tags/%E7%A8%8B%E5%BC%8F/" style="font-size: 23.9px;">程式</a> <a href="/tags/%E7%AD%86%E8%A8%98/" style="font-size: 18.4px;">筆記</a> <a href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" style="font-size: 25px;">解題紀錄</a> <a href="/tags/%E8%B3%87%E5%AE%89/" style="font-size: 14px;">資安</a>
     </div>
   </div>
 
@@ -748,23 +727,23 @@ ga('send', 'pageview');
       <ul>
         
           <li>
+            <a href="/2020/07/10/opengl/opengl-note-5/">OpenGL 筆記 - Transform</a>
+          </li>
+        
+          <li>
+            <a href="/2020/07/09/opengl/opengl-note-4/">OpenGL 筆記 - Texture</a>
+          </li>
+        
+          <li>
+            <a href="/2020/07/09/NCPU_2020/">NCPU 2020 心得</a>
+          </li>
+        
+          <li>
             <a href="/2020/07/08/opengl/opengl-note-3/">OpenGL 筆記 - Shader</a>
           </li>
         
           <li>
             <a href="/2020/06/30/opengl/opengl-note-2/">OpenGL 筆記 - 第一個三角形</a>
-          </li>
-        
-          <li>
-            <a href="/2020/06/29/opengl/opengl-note-1/">OpenGL 筆記 - 環境設定和簡介</a>
-          </li>
-        
-          <li>
-            <a href="/2020/06/12/ais3/ais3_2020_pre_exam/">AIS3 2020 pre-exam writeups+心得</a>
-          </li>
-        
-          <li>
-            <a href="/2020/06/04/c++/smart_pointer/">Smart Pointer 介紹/用法</a>
           </li>
         
       </ul>
@@ -776,7 +755,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title archive">彙整</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">七月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">六月 2020</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">五月 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">四月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">三月 2020</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">一月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">九月 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">八月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">三月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">二月 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">一月 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">十一月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">七月 2020</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">六月 2020</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">五月 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">四月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">三月 2020</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">一月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">九月 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">八月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">三月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">二月 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">一月 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">十一月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
