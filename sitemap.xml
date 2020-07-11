@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.roy4801.tw/2020/07/09/NCPU_2020/</loc>
+    
+    <lastmod>2020-07-11T16:45:10.493Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.roy4801.tw/2020/07/10/opengl/opengl-note-5/</loc>
     
     <lastmod>2020-07-09T16:16:21.662Z</lastmod>
@@ -40,13 +47,6 @@
     <loc>http://blog.roy4801.tw/2018/08/23/c++/C++%2520next_permutation_perv_permutation%25E7%2594%25A8%25E6%25B3%2595/</loc>
     
     <lastmod>2020-07-09T16:16:21.657Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.roy4801.tw/2020/07/09/NCPU_2020/</loc>
-    
-    <lastmod>2020-07-08T17:39:21.373Z</lastmod>
     
   </url>
   
