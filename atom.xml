@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.roy4801.tw/"/>
-  <updated>2020-07-12T16:50:08.590Z</updated>
+  <updated>2020-07-13T18:57:22.084Z</updated>
   <id>http://blog.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,45 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SFML 簡介及環境設置</title>
+    <link href="http://blog.roy4801.tw/2020/07/14/SFML/sfml_time/"/>
+    <id>http://blog.roy4801.tw/2020/07/14/SFML/sfml_time/</id>
+    <published>2020-07-13T18:57:00.000Z</published>
+    <updated>2020-07-13T18:57:22.084Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;S&lt;/strong&gt;imple and &lt;strong&gt;F&lt;/strong&gt;ase &lt;strong&gt;M&lt;/strong&gt;edia &lt;strong&gt;L&lt;/strong&gt;ibrary (SFML) 是一個由 C++ 寫成的跨平台(cross-platfrom)的用於遊戲、多媒體應用開發的 Library，有多個語言的綁定 (Binding) ，分成幾大模塊：系統、視窗、圖形、音訊跟網路。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/b/bf/SFML2.svg&quot; alt&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/SFML/SFML&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/SFML/SFML&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SFML 分成幾大模塊&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;System&lt;/code&gt; 一些基礎建設，例如：向量(vector)、字串、thread、timer&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Window&lt;/code&gt; 管理視窗以及輸入（鍵盤、滑鼠、搖桿等）及 OpenGL&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Graphics&lt;/code&gt; 硬體加速的 2D 圖形：sprite, text, shapes&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Audio&lt;/code&gt; 音訊、錄音、&lt;a href=&quot;https://zh.wikipedia.org/wiki/3D%E9%9F%B3%E6%95%88&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;3D音效&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Network&lt;/code&gt; TDP 與 UDP socket 與 HTTP 跟 FTP&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="學習紀錄" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/"/>
+    
+      <category term="SFML" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/SFML/"/>
+    
+    
+      <category term="C++" scheme="http://blog.roy4801.tw/tags/C/"/>
+    
+      <category term="程式" scheme="http://blog.roy4801.tw/tags/%E7%A8%8B%E5%BC%8F/"/>
+    
+      <category term="筆記" scheme="http://blog.roy4801.tw/tags/%E7%AD%86%E8%A8%98/"/>
+    
+      <category term="SFML" scheme="http://blog.roy4801.tw/tags/SFML/"/>
+    
+  </entry>
   
   <entry>
     <title>OpenGL 筆記 - Coordinate System</title>
