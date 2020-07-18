@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.roy4801.tw/"/>
-  <updated>2020-07-13T18:57:22.084Z</updated>
+  <updated>2020-07-18T21:40:26.129Z</updated>
   <id>http://blog.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>QuadTree - 使用四叉樹優化碰撞檢測</title>
+    <link href="http://blog.roy4801.tw/2020/07/19/ds/quadtree/"/>
+    <id>http://blog.roy4801.tw/2020/07/19/ds/quadtree/</id>
+    <published>2020-07-18T18:10:45.000Z</published>
+    <updated>2020-07-18T21:40:26.129Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在 2D 遊戲中，常常需要做碰撞檢測(Collision Detection)來檢測兩物體是否產生碰撞，而這類的演算法都很耗時間，如果要檢測整個 Scene 的所有物體是否有碰撞，常見的做法是 $O(n^2)$ 掃過去，這樣很大限制了同屏的物體總數，數量一多就會卡頓。&lt;/p&gt;
+&lt;p&gt;優化:對於一個物體，只要檢查它周圍的物體就好。那要怎麼時做這個優化呢?為了找出周圍的物體又去掃 $O(n^2)$ 就不是又回到上面的問題了。&lt;/p&gt;
+&lt;p&gt;那有沒有辦法先用某種資料結構儲存好物體，然後用比較好的複雜度查詢對於一個物體，它周圍的物體的集合? 四叉樹(Quad Tree)就是個用於此問題的資料結構&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="學習紀錄" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/"/>
+    
+      <category term="GamePhysics" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/GamePhysics/"/>
+    
+    
+      <category term="程式" scheme="http://blog.roy4801.tw/tags/%E7%A8%8B%E5%BC%8F/"/>
+    
+      <category term="筆記" scheme="http://blog.roy4801.tw/tags/%E7%AD%86%E8%A8%98/"/>
+    
+      <category term="GamePhysics" scheme="http://blog.roy4801.tw/tags/GamePhysics/"/>
+    
+  </entry>
   
   <entry>
     <title>SFML 簡介及環境設置</title>
@@ -164,7 +192,7 @@
     <link href="http://blog.roy4801.tw/2020/07/09/NCPU_2020/"/>
     <id>http://blog.roy4801.tw/2020/07/09/NCPU_2020/</id>
     <published>2020-07-08T16:28:26.000Z</published>
-    <updated>2020-07-11T16:45:10.493Z</updated>
+    <updated>2020-07-18T21:31:30.662Z</updated>
     
     <summary type="html">
     

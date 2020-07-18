@@ -93,6 +93,59 @@ ga('send', 'pageview');
       <div class="outer">
         <section id="main">
   
+    <article id="post-ds/quadtree" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/07/19/ds/quadtree/" class="article-date">
+  <time datetime="2020-07-18T18:10:45.000Z" itemprop="datePublished">2020-07-19</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/">學習紀錄</a>►<a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/GamePhysics/">GamePhysics</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/07/19/ds/quadtree/">QuadTree - 使用四叉樹優化碰撞檢測</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在 2D 遊戲中，常常需要做碰撞檢測(Collision Detection)來檢測兩物體是否產生碰撞，而這類的演算法都很耗時間，如果要檢測整個 Scene 的所有物體是否有碰撞，常見的做法是 $O(n^2)$ 掃過去，這樣很大限制了同屏的物體總數，數量一多就會卡頓。</p>
+<p>優化:對於一個物體，只要檢查它周圍的物體就好。那要怎麼時做這個優化呢?為了找出周圍的物體又去掃 $O(n^2)$ 就不是又回到上面的問題了。</p>
+<p>那有沒有辦法先用某種資料結構儲存好物體，然後用比較好的複雜度查詢對於一個物體，它周圍的物體的集合? 四叉樹(Quad Tree)就是個用於此問題的資料結構</p>
+        
+          <p class="article-more-link">
+            <a href="/2020/07/19/ds/quadtree/#more">繼續閱讀全文 »</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.roy4801.tw/2020/07/19/ds/quadtree/" data-id="ckcs6bt9p0000ngtkh7h92lbk" class="article-share-link">分享</a>
+      
+      
+        <a href="http://blog.roy4801.tw/2020/07/19/ds/quadtree/#disqus_thread" class="article-comment-link">留言</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GamePhysics/" rel="tag">GamePhysics</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A8%8B%E5%BC%8F/" rel="tag">程式</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%AD%86%E8%A8%98/" rel="tag">筆記</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+ 
+
+
+  
     <article id="post-SFML/sfml_time" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/07/14/SFML/sfml_time/" class="article-date">
@@ -604,79 +657,10 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-c++/smart_pointer" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/06/04/c++/smart_pointer/" class="article-date">
-  <time datetime="2020-06-04T11:23:16.000Z" itemprop="datePublished">2020-06-04</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/">學習紀錄</a>►<a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/C-C/">C/C++</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/06/04/c++/smart_pointer/">Smart Pointer 介紹/用法</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h2><ul>
-<li><code>unique_ptr</code><ul>
-<li>move construct only</li>
-</ul>
-</li>
-<li><code>shared_ptr</code><ul>
-<li>reference counting</li>
-</ul>
-</li>
-<li><code>weak_ptr</code><ul>
-<li>weak references</li>
-</ul>
-</li>
-<li><code>boost:scoped_ptr</code><ul>
-<li>only in one scope</li>
-</ul>
-</li>
-</ul>
-<h2 id="Smart-Pointer"><a href="#Smart-Pointer" class="headerlink" title="Smart Pointer ?"></a>Smart Pointer ?</h2>
-        
-          <p class="article-more-link">
-            <a href="/2020/06/04/c++/smart_pointer/#more">繼續閱讀全文 »</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2020/06/04/c++/smart_pointer/" data-id="ckcc5kpfm004au1tk9lhcb1ay" class="article-share-link">分享</a>
-      
-      
-        <a href="http://blog.roy4801.tw/2020/06/04/c++/smart_pointer/#disqus_thread" class="article-comment-link">留言</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/" rel="tag">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Smart-Pointer/" rel="tag">Smart Pointer</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%99%E5%AD%B8/" rel="tag">教學</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%99%BA%E6%85%A7%E6%8C%87%E6%A8%99/" rel="tag">智慧指標</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A8%8B%E5%BC%8F/" rel="tag">程式</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
- 
-
-
-  
 
 
   <nav id="page-nav">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/2/">下一頁&amp;raquo;</a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/2/">下一頁&amp;raquo;</a>
   </nav>
 </section>
            
@@ -707,7 +691,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title categories">分類</h3>
     <div class="widget" id="categories">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Writeup/">Writeup</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%85%B6%E4%BB%96/">其他</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/">學習紀錄</a><span class="category-list-count">25</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/C-C/">C/C++</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/Linux/">Linux</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/OpenGL/">OpenGL</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/SFML/">SFML</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/macOS/">macOS</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/%E5%85%B6%E4%BB%96/">其他</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/%E7%B5%84%E5%90%88%E8%AA%9E%E8%A8%80/">組合語言</a><span class="category-list-count">2</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%BF%83%E5%BE%97%E6%95%A3%E6%96%87/">心得散文</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a><span class="category-list-count">17</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Uva/">Uva</a><span class="category-list-count">17</span></li></ul></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Writeup/">Writeup</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%85%B6%E4%BB%96/">其他</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/">學習紀錄</a><span class="category-list-count">26</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/C-C/">C/C++</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/GamePhysics/">GamePhysics</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/Linux/">Linux</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/OpenGL/">OpenGL</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/SFML/">SFML</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/macOS/">macOS</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/%E5%85%B6%E4%BB%96/">其他</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/%E7%B5%84%E5%90%88%E8%AA%9E%E8%A8%80/">組合語言</a><span class="category-list-count">2</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%BF%83%E5%BE%97%E6%95%A3%E6%96%87/">心得散文</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a><span class="category-list-count">17</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Uva/">Uva</a><span class="category-list-count">17</span></li></ul></li></ul>
     </div>
   </div>
 
@@ -724,7 +708,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title tags">標籤</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/" rel="tag">C++</a><span class="tag-list-count">10</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-Library/" rel="tag">C++ Library</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CTF/" rel="tag">CTF</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Coordinate/" rel="tag">Coordinate</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DP/" rel="tag">DP</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IDE/" rel="tag">IDE</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/" rel="tag">Linux</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenGL/" rel="tag">OpenGL</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SFML/" rel="tag">SFML</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/STL/" rel="tag">STL</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Shader/" rel="tag">Shader</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Smart-Pointer/" rel="tag">Smart Pointer</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Texture/" rel="tag">Texture</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Transform/" rel="tag">Transform</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Uva/" rel="tag">Uva</a><span class="tag-list-count">17</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ctf-tools/" rel="tag">ctf tools</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gdb/" rel="tag">gdb</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/imgui/" rel="tag">imgui</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/node-js/" rel="tag">node.js</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/priority-queue/" rel="tag">priority queue</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/x86/" rel="tag">x86</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%85%B6%E4%BB%96/" rel="tag">其他</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9C%96%E5%AD%B8/" rel="tag">圖學</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BF%83%E5%BE%97/" rel="tag">心得</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BF%83%E6%83%85%E6%95%A3%E6%96%87/" rel="tag">心情散文</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%99%E5%AD%B8/" rel="tag">教學</a><span class="tag-list-count">15</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%99%BA%E6%85%A7%E6%8C%87%E6%A8%99/" rel="tag">智慧指標</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%AA%94%E6%A1%88%E7%B3%BB%E7%B5%B1/" rel="tag">檔案系統</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%AF%94%E8%B3%BD/" rel="tag">比賽</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A8%8B%E5%BC%8F/" rel="tag">程式</a><span class="tag-list-count">18</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AD%86%E8%A8%98/" rel="tag">筆記</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a><span class="tag-list-count">17</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%B3%87%E5%AE%89/" rel="tag">資安</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/" rel="tag">C++</a><span class="tag-list-count">10</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-Library/" rel="tag">C++ Library</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CTF/" rel="tag">CTF</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Coordinate/" rel="tag">Coordinate</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DP/" rel="tag">DP</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GamePhysics/" rel="tag">GamePhysics</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IDE/" rel="tag">IDE</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/" rel="tag">Linux</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenGL/" rel="tag">OpenGL</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SFML/" rel="tag">SFML</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/STL/" rel="tag">STL</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Shader/" rel="tag">Shader</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Smart-Pointer/" rel="tag">Smart Pointer</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Texture/" rel="tag">Texture</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Transform/" rel="tag">Transform</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Uva/" rel="tag">Uva</a><span class="tag-list-count">17</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ctf-tools/" rel="tag">ctf tools</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gdb/" rel="tag">gdb</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/imgui/" rel="tag">imgui</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/node-js/" rel="tag">node.js</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/priority-queue/" rel="tag">priority queue</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/x86/" rel="tag">x86</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%85%B6%E4%BB%96/" rel="tag">其他</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9C%96%E5%AD%B8/" rel="tag">圖學</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BF%83%E5%BE%97/" rel="tag">心得</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BF%83%E6%83%85%E6%95%A3%E6%96%87/" rel="tag">心情散文</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%99%E5%AD%B8/" rel="tag">教學</a><span class="tag-list-count">15</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%99%BA%E6%85%A7%E6%8C%87%E6%A8%99/" rel="tag">智慧指標</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%AA%94%E6%A1%88%E7%B3%BB%E7%B5%B1/" rel="tag">檔案系統</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%AF%94%E8%B3%BD/" rel="tag">比賽</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A8%8B%E5%BC%8F/" rel="tag">程式</a><span class="tag-list-count">19</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AD%86%E8%A8%98/" rel="tag">筆記</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a><span class="tag-list-count">17</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%B3%87%E5%AE%89/" rel="tag">資安</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -734,7 +718,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title tagcloud">標籤雲</h3>
     <div class="widget tagcloud">
-      <a href="/tags/C/" style="font-size: 21.33px;">C++</a> <a href="/tags/C-Library/" style="font-size: 18.89px;">C++ Library</a> <a href="/tags/CTF/" style="font-size: 15.22px;">CTF</a> <a href="/tags/Coordinate/" style="font-size: 14px;">Coordinate</a> <a href="/tags/DP/" style="font-size: 15.22px;">DP</a> <a href="/tags/IDE/" style="font-size: 14px;">IDE</a> <a href="/tags/Linux/" style="font-size: 16.44px;">Linux</a> <a href="/tags/OpenGL/" style="font-size: 18.89px;">OpenGL</a> <a href="/tags/SFML/" style="font-size: 14px;">SFML</a> <a href="/tags/STL/" style="font-size: 14px;">STL</a> <a href="/tags/Shader/" style="font-size: 14px;">Shader</a> <a href="/tags/Smart-Pointer/" style="font-size: 14px;">Smart Pointer</a> <a href="/tags/Texture/" style="font-size: 14px;">Texture</a> <a href="/tags/Transform/" style="font-size: 14px;">Transform</a> <a href="/tags/Uva/" style="font-size: 23.78px;">Uva</a> <a href="/tags/ctf-tools/" style="font-size: 14px;">ctf tools</a> <a href="/tags/gdb/" style="font-size: 14px;">gdb</a> <a href="/tags/hexo/" style="font-size: 14px;">hexo</a> <a href="/tags/imgui/" style="font-size: 18.89px;">imgui</a> <a href="/tags/node-js/" style="font-size: 14px;">node.js</a> <a href="/tags/priority-queue/" style="font-size: 14px;">priority queue</a> <a href="/tags/x86/" style="font-size: 15.22px;">x86</a> <a href="/tags/%E5%85%B6%E4%BB%96/" style="font-size: 14px;">其他</a> <a href="/tags/%E5%9C%96%E5%AD%B8/" style="font-size: 18.89px;">圖學</a> <a href="/tags/%E5%BF%83%E5%BE%97/" style="font-size: 20.11px;">心得</a> <a href="/tags/%E5%BF%83%E6%83%85%E6%95%A3%E6%96%87/" style="font-size: 14px;">心情散文</a> <a href="/tags/%E6%95%99%E5%AD%B8/" style="font-size: 22.56px;">教學</a> <a href="/tags/%E6%99%BA%E6%85%A7%E6%8C%87%E6%A8%99/" style="font-size: 14px;">智慧指標</a> <a href="/tags/%E6%AA%94%E6%A1%88%E7%B3%BB%E7%B5%B1/" style="font-size: 14px;">檔案系統</a> <a href="/tags/%E6%AF%94%E8%B3%BD/" style="font-size: 17.67px;">比賽</a> <a href="/tags/%E7%A8%8B%E5%BC%8F/" style="font-size: 25px;">程式</a> <a href="/tags/%E7%AD%86%E8%A8%98/" style="font-size: 20.11px;">筆記</a> <a href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" style="font-size: 23.78px;">解題紀錄</a> <a href="/tags/%E8%B3%87%E5%AE%89/" style="font-size: 14px;">資安</a>
+      <a href="/tags/C/" style="font-size: 21.7px;">C++</a> <a href="/tags/C-Library/" style="font-size: 18.4px;">C++ Library</a> <a href="/tags/CTF/" style="font-size: 15.1px;">CTF</a> <a href="/tags/Coordinate/" style="font-size: 14px;">Coordinate</a> <a href="/tags/DP/" style="font-size: 15.1px;">DP</a> <a href="/tags/GamePhysics/" style="font-size: 14px;">GamePhysics</a> <a href="/tags/IDE/" style="font-size: 14px;">IDE</a> <a href="/tags/Linux/" style="font-size: 16.2px;">Linux</a> <a href="/tags/OpenGL/" style="font-size: 18.4px;">OpenGL</a> <a href="/tags/SFML/" style="font-size: 14px;">SFML</a> <a href="/tags/STL/" style="font-size: 14px;">STL</a> <a href="/tags/Shader/" style="font-size: 14px;">Shader</a> <a href="/tags/Smart-Pointer/" style="font-size: 14px;">Smart Pointer</a> <a href="/tags/Texture/" style="font-size: 14px;">Texture</a> <a href="/tags/Transform/" style="font-size: 14px;">Transform</a> <a href="/tags/Uva/" style="font-size: 23.9px;">Uva</a> <a href="/tags/ctf-tools/" style="font-size: 14px;">ctf tools</a> <a href="/tags/gdb/" style="font-size: 14px;">gdb</a> <a href="/tags/hexo/" style="font-size: 14px;">hexo</a> <a href="/tags/imgui/" style="font-size: 18.4px;">imgui</a> <a href="/tags/node-js/" style="font-size: 14px;">node.js</a> <a href="/tags/priority-queue/" style="font-size: 14px;">priority queue</a> <a href="/tags/x86/" style="font-size: 15.1px;">x86</a> <a href="/tags/%E5%85%B6%E4%BB%96/" style="font-size: 14px;">其他</a> <a href="/tags/%E5%9C%96%E5%AD%B8/" style="font-size: 18.4px;">圖學</a> <a href="/tags/%E5%BF%83%E5%BE%97/" style="font-size: 19.5px;">心得</a> <a href="/tags/%E5%BF%83%E6%83%85%E6%95%A3%E6%96%87/" style="font-size: 14px;">心情散文</a> <a href="/tags/%E6%95%99%E5%AD%B8/" style="font-size: 22.8px;">教學</a> <a href="/tags/%E6%99%BA%E6%85%A7%E6%8C%87%E6%A8%99/" style="font-size: 14px;">智慧指標</a> <a href="/tags/%E6%AA%94%E6%A1%88%E7%B3%BB%E7%B5%B1/" style="font-size: 14px;">檔案系統</a> <a href="/tags/%E6%AF%94%E8%B3%BD/" style="font-size: 17.3px;">比賽</a> <a href="/tags/%E7%A8%8B%E5%BC%8F/" style="font-size: 25px;">程式</a> <a href="/tags/%E7%AD%86%E8%A8%98/" style="font-size: 20.6px;">筆記</a> <a href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" style="font-size: 23.9px;">解題紀錄</a> <a href="/tags/%E8%B3%87%E5%AE%89/" style="font-size: 14px;">資安</a>
     </div>
   </div>
 
@@ -744,6 +728,10 @@ ga('send', 'pageview');
     <h3 class="widget-title recent-posts">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2020/07/19/ds/quadtree/">QuadTree - 使用四叉樹優化碰撞檢測</a>
+          </li>
         
           <li>
             <a href="/2020/07/14/SFML/sfml_time/">SFML 簡介及環境設置</a>
@@ -761,10 +749,6 @@ ga('send', 'pageview');
             <a href="/2020/07/09/opengl/opengl-note-4/">OpenGL 筆記 - Texture</a>
           </li>
         
-          <li>
-            <a href="/2020/07/09/NCPU_2020/">NCPU 2020 心得</a>
-          </li>
-        
       </ul>
     </div>
   </div>
@@ -774,7 +758,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title archive">彙整</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">七月 2020</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">六月 2020</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">五月 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">四月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">三月 2020</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">一月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">九月 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">八月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">三月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">二月 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">一月 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">十一月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">七月 2020</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">六月 2020</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">五月 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">四月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">三月 2020</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">一月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">九月 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">八月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">三月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">二月 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">一月 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">十一月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 

@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.roy4801.tw/2020/07/19/ds/quadtree/</loc>
+    
+    <lastmod>2020-07-18T21:40:26.129Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.roy4801.tw/2020/07/09/NCPU_2020/</loc>
+    
+    <lastmod>2020-07-18T21:31:30.662Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.roy4801.tw/2020/07/14/SFML/sfml_time/</loc>
     
     <lastmod>2020-07-13T18:57:22.084Z</lastmod>
@@ -12,13 +26,6 @@
     <loc>http://blog.roy4801.tw/2020/07/13/opengl/opengl-note-6/</loc>
     
     <lastmod>2020-07-12T16:50:08.590Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.roy4801.tw/2020/07/09/NCPU_2020/</loc>
-    
-    <lastmod>2020-07-11T16:45:10.493Z</lastmod>
     
   </url>
   
