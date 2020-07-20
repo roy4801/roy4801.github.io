@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.roy4801.tw/"/>
-  <updated>2020-07-18T21:40:26.129Z</updated>
+  <updated>2020-07-20T14:44:23.160Z</updated>
   <id>http://blog.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,50 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>C++ - chrono 計時</title>
+    <link href="http://blog.roy4801.tw/2020/07/20/c++/chrono/"/>
+    <id>http://blog.roy4801.tw/2020/07/20/c++/chrono/</id>
+    <published>2020-07-20T14:42:03.000Z</published>
+    <updated>2020-07-20T14:44:23.160Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;C++11 提供了 &lt;a href=&quot;http://www.cplusplus.com/reference/chrono/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;code&gt;&amp;lt;chrono&amp;gt;&lt;/code&gt;&lt;/a&gt; 作為時間的 library，除了能夠獲取時間，且可以在多個單位轉換。&lt;/p&gt;
+&lt;p&gt;這個 Library 是只有時間 e.g. 小時、分鐘、秒..等，如果要日期則要使用其他 Library e.g. &lt;a href=&quot;https://github.com/HowardHinnant/date&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;HowardHinnant/date&lt;/a&gt; 或是 &lt;code&gt;ctime()&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;duration&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;時間的長度，可自由決定儲存的單位&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;time_point&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;時間點，相減會得到時間長度(&lt;code&gt;duration&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Clocks&lt;ul&gt;
+&lt;li&gt;根據物理時間回傳時間點(&lt;code&gt;time_point&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;提供不同精度的 clock&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="學習紀錄" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/"/>
+    
+      <category term="C/C++" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/C-C/"/>
+    
+    
+      <category term="C++" scheme="http://blog.roy4801.tw/tags/C/"/>
+    
+      <category term="程式" scheme="http://blog.roy4801.tw/tags/%E7%A8%8B%E5%BC%8F/"/>
+    
+      <category term="教學" scheme="http://blog.roy4801.tw/tags/%E6%95%99%E5%AD%B8/"/>
+    
+      <category term="STL" scheme="http://blog.roy4801.tw/tags/STL/"/>
+    
+  </entry>
   
   <entry>
     <title>QuadTree - 使用四叉樹優化碰撞檢測</title>

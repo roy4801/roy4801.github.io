@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.roy4801.tw/2020/07/20/c++/chrono/</loc>
+    
+    <lastmod>2020-07-20T14:44:23.160Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.roy4801.tw/2020/07/19/ds/quadtree/</loc>
     
     <lastmod>2020-07-18T21:40:26.129Z</lastmod>
