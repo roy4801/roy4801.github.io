@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.roy4801.tw/"/>
-  <updated>2020-07-20T14:44:23.160Z</updated>
+  <updated>2020-07-28T18:23:51.716Z</updated>
   <id>http://blog.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SFML 使用 - 視窗(Window)建立與 OpenGL</title>
+    <link href="http://blog.roy4801.tw/2020/07/29/SFML/sfml_window/"/>
+    <id>http://blog.roy4801.tw/2020/07/29/SFML/sfml_window/</id>
+    <published>2020-07-28T18:19:00.000Z</published>
+    <updated>2020-07-28T18:23:51.716Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/lHiqhyi.png&quot; width=&quot;500&quot;&gt;&lt;/p&gt;
+&lt;p&gt;在 SFML 要建立一個視窗，要使用 &lt;code&gt;sf::RenderWindow&lt;/code&gt; 並指定解析度(Resolution)、標題(Title)便可以建立視窗，開始處理事件(Event)循環，以及畫東西在螢幕上。&lt;/p&gt;
+&lt;figure class=&quot;highlight cpp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;sf::RenderWindow &lt;span class=&quot;title&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(sf::VideoMode(&lt;span class=&quot;number&quot;&gt;1280&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;720&lt;/span&gt;), &lt;span class=&quot;string&quot;&gt;&quot;SFML Window&quot;&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="學習紀錄" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/"/>
+    
+      <category term="SFML" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/SFML/"/>
+    
+    
+      <category term="C++" scheme="http://blog.roy4801.tw/tags/C/"/>
+    
+      <category term="程式" scheme="http://blog.roy4801.tw/tags/%E7%A8%8B%E5%BC%8F/"/>
+    
+      <category term="OpenGL" scheme="http://blog.roy4801.tw/tags/OpenGL/"/>
+    
+      <category term="筆記" scheme="http://blog.roy4801.tw/tags/%E7%AD%86%E8%A8%98/"/>
+    
+      <category term="SFML" scheme="http://blog.roy4801.tw/tags/SFML/"/>
+    
+  </entry>
   
   <entry>
     <title>C++ - chrono 計時</title>
