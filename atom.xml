@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.roy4801.tw/"/>
-  <updated>2020-07-30T04:03:32.860Z</updated>
+  <updated>2021-05-23T19:57:36.349Z</updated>
   <id>http://blog.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Visual Studio Code Remote SSH 無法連線問題</title>
+    <link href="http://blog.roy4801.tw/2021/05/24/tutorial/vscode-remote-ssh-failed/"/>
+    <id>http://blog.roy4801.tw/2021/05/24/tutorial/vscode-remote-ssh-failed/</id>
+    <published>2021-05-23T19:48:01.000Z</published>
+    <updated>2021-05-23T19:57:36.349Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;問題&quot;&gt;&lt;a href=&quot;#問題&quot; class=&quot;headerlink&quot; title=&quot;問題&quot;&gt;&lt;/a&gt;問題&lt;/h2&gt;&lt;p&gt;最近在使用 vscode 並使用 &lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Remote SSH&lt;/a&gt; 透過 SSH 連線至伺服器做事時，遇到了無法連線的問題。&lt;/p&gt;
+&lt;p&gt;如圖所示，在嘗試連線時會卡在歡迎訊息然後出現 &lt;code&gt;Resolver error: Connecting with SSH timed out&lt;/code&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="學習紀錄" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/"/>
+    
+      <category term="其他" scheme="http://blog.roy4801.tw/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/%E5%85%B6%E4%BB%96/"/>
+    
+    
+      <category term="教學" scheme="http://blog.roy4801.tw/tags/%E6%95%99%E5%AD%B8/"/>
+    
+      <category term="vscode" scheme="http://blog.roy4801.tw/tags/vscode/"/>
+    
+  </entry>
   
   <entry>
     <title>SFML 使用 - Event 視窗事件</title>

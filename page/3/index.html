@@ -107,6 +107,70 @@ ga('send', 'pageview');
       <div class="outer">
         <section id="main">
   
+    <article id="post-imgui-intro-pt4" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/03/29/imgui-intro-pt4/" class="article-date">
+  <time datetime="2020-03-29T05:30:28.000Z" itemprop="datePublished">2020-03-29</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/">學習紀錄</a>►<a class="article-category-link" href="/categories/%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/C-C/">C/C++</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/29/imgui-intro-pt4/">dear imgui 使用 - 單選、複選按鈕</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="複選框-Checkbox"><a href="#複選框-Checkbox" class="headerlink" title="複選框 Checkbox"></a>複選框 Checkbox</h2><p><img src="https://i.imgur.com/f9JWE2i.gif" alt></p>
+<ul>
+<li><p>Prototype</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">Checkbox</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span>* label, <span class="keyword">bool</span>* v)</span></span>;</span><br><span class="line"><span class="comment">// label: 名稱</span></span><br><span class="line"><span class="comment">// v    : 是否已經勾選</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>回傳 bool</p>
+<ul>
+<li>當 checkbox 正被選取/取消勾選時為 <code>true</code></li>
+<li>其餘回傳 <code>false</code></li>
+</ul>
+</li>
+<li><p>e.g.</p>
+</li>
+</ul>
+        
+          <p class="article-more-link">
+            <a href="/2020/03/29/imgui-intro-pt4/#more">繼續閱讀全文 »</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.roy4801.tw/2020/03/29/imgui-intro-pt4/" data-id="ckcc5kpck0007u1tk97fx50u2" class="article-share-link">分享</a>
+      
+      
+        <a href="http://blog.roy4801.tw/2020/03/29/imgui-intro-pt4/#disqus_thread" class="article-comment-link">留言</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/" rel="tag">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C-Library/" rel="tag">C++ Library</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/imgui/" rel="tag">imgui</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%99%E5%AD%B8/" rel="tag">教學</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A8%8B%E5%BC%8F/" rel="tag">程式</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+ 
+
+
+  
     <article id="post-imgui-intro-pt3" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/03/28/imgui-intro-pt3/" class="article-date">
@@ -589,58 +653,6 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-uva/uva793" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/06/26/uva/uva793/" class="article-date">
-  <time datetime="2019-06-26T07:43:05.000Z" itemprop="datePublished">2019-06-26</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Uva/">Uva</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/06/26/uva/uva793/">Uva 793 - Network Connections</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><a href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;Itemid=8&amp;page=show_problem&amp;problem=734" target="_blank" rel="noopener">題目</a></p>
-<h1 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h1><p>有一堆電腦用網路連著，今天你是網管，你想知道電腦 $i$ 跟電腦 $j$ 是否有相連（在同個網路內），並且你也可以將兩台電腦相連。有兩個操作：</p>
-        
-          <p class="article-more-link">
-            <a href="/2019/06/26/uva/uva793/#more">繼續閱讀全文 »</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://blog.roy4801.tw/2019/06/26/uva/uva793/" data-id="ckcc5kph4006yu1tkatr8c3jx" class="article-share-link">分享</a>
-      
-      
-        <a href="http://blog.roy4801.tw/2019/06/26/uva/uva793/#disqus_thread" class="article-comment-link">留言</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Uva/" rel="tag">Uva</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
- 
-
-
-  
 
 
   <nav id="page-nav">
@@ -672,6 +684,10 @@ ga('send', 'pageview');
       <ul>
         
           <li>
+            <a href="/2021/05/24/tutorial/vscode-remote-ssh-failed/">Visual Studio Code Remote SSH 無法連線問題</a>
+          </li>
+        
+          <li>
             <a href="/2020/07/30/SFML/sfml_event/">SFML 使用 - Event 視窗事件</a>
           </li>
         
@@ -685,10 +701,6 @@ ga('send', 'pageview');
         
           <li>
             <a href="/2020/07/19/ds/quadtree/">QuadTree - 使用四叉樹優化碰撞檢測</a>
-          </li>
-        
-          <li>
-            <a href="/2020/07/17/opengl/opengl-note-7/">OpenGL 筆記 - Camera</a>
           </li>
         
       </ul>
